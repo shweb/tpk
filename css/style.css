@@ -311,11 +311,12 @@ color: white;
 	color:#ff1d1d;
 	text-decoration:none;
 }
-
-
 .content-bg{
 	background-color:white;
 	padding: 30px 30px 30px 30px;
+}
+.Cmenu{
+	text-align: right;
 }
 
 /* connexion end css */
