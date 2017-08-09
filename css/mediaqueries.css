@@ -15,6 +15,11 @@
 .spacer{
 margin-top:1%;
 }
+.Cmenu{
+	margin-top: 45px;
+	padding-top: 20px;
+	text-align: left !important;
+}
 }
 
 /* Smartphones (portrait) ----------- */
@@ -34,6 +39,11 @@ margin-top:1%;
 .spacer{
 margin-top:1% !important;
 }
+.Cmenu{
+	margin-top: 45px;
+	padding-top: 20px;
+	text-align: left !important;
+}
 }
 @media only screen and (max-width: 768px) {
   /* Styles */
@@ -51,6 +61,7 @@ margin-top:1% !important;
 .spacer{
 margin-top:1% !important;
 }
+
 }
 
 @media only screen and (min-device-width: 800px) and (max-device-width: 999px){

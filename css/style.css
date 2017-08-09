@@ -287,7 +287,7 @@ padding: 35px 35px 35px 35px;
 	position:absolute;
 	background-color:#d70506;
 	color:white;
-	padding: 10px 15px 10px 15px;
+	padding: 15px 20px 15px 20px;
 }
 .spacer{
 margin-top:15%;
@@ -316,6 +316,9 @@ color: white;
 .content-bg{
 	background-color:white;
 	padding: 30px 30px 30px 30px;
+}
+.Cmenu{
+	text-align: right;
 }
 
 /* connexion end css */
