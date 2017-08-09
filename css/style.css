@@ -2,6 +2,9 @@
 h1, h2, h3, h4, h5, li, p {
     word-wrap: break-word;
 }
+body{
+    background-color: #eeeeee;
+}
 #background{
 background-color:#d70506;
 }
@@ -253,7 +256,7 @@ html {
 }
 
 body {
-    margin: 0 0 305px; / bottom = footer height /
+    margin: 0 0 400px; / bottom = footer height /
     padding: 25px;
 }
 
