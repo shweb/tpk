@@ -32,7 +32,7 @@ margin-top:1%;
     position: absolute;
     left: 0;
     bottom: 0;
-  height: 370px;
+    height: 370px;
     width: 100%;
     overflow:hidden;
 }
@@ -52,8 +52,8 @@ margin-top:1% !important;
     background-color: white;
     color: red !important;
     padding: 6px;
-    width: 530px;
-    padding-left: 85px !important;
+        width: 243px !important;
+    padding-left: 80px !important;
     text-align:center;
   }
 
@@ -114,7 +114,7 @@ margin-top:1% !important;
     position: absolute;
     left: 0;
     bottom: 0;
-  height: 370px;
+    height: 370px;
     width: 100%;
     overflow:hidden;
 }

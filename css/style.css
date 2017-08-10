@@ -422,4 +422,12 @@ color: white;
 	background-color: #d70506;
 
 }
+.tab {
+    border-bottom: 1px grey inset;
+    padding-bottom: 25px;
+    padding-top: 21px;
+}
+a:link {
+    text-decoration: none;
+}
 /*--------------------------------------------Mon compte end-------------------------------------------------------------------*/
