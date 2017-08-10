@@ -14,6 +14,39 @@
 }
 }
 
+@media only screen and (min-device-width: 400px) and (max-device-width: 450px) {
+  /* Styles */
+.btn-facebooksign {
+    background-color: #3c5999;
+    color: white;
+    margin-bottom: 12px;
+    padding: 14px 10px 14px 10px;
+    margin-left: 11%;
+}
+}
+
+@media only screen and (min-device-width:500px) and (max-device-width:615px) {
+  /* Styles */
+.btn-facebooksign {
+    background-color: #3c5999;
+    color: white;
+    margin-bottom: 12px;
+    padding: 14px 10px 14px 10px;
+    margin-left: 25%;
+}
+}
+
+@media only screen and (min-device-width:616px) and (max-device-width:767px) {
+  /* Styles */
+.btn-facebooksign {
+    background-color: #3c5999;
+    color: white;
+    margin-bottom: 12px;
+    padding: 14px 10px 14px 10px;
+    margin-left: 32%;
+}
+}
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   /* Styles */
@@ -169,6 +202,8 @@
   }
   /*------------------Mon Compte end--------------------*/
 }
+
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 .facenookconexion {
@@ -180,7 +215,7 @@
     color: white;
     margin-bottom: 12px;
     padding: 14px 10px 14px 10px;
-    margin-left: 32%;
+    margin-left: 33%;
 }
   /* Styles */
   .connexion{
