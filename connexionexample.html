@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+	<link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</head>
+	  <body>
+		 <!-- header start -->	
+		<nav  id="background" class="navbar navbar-default navbar-static-top">
+			 <div class="container">
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">
+					<img src="./img/logo.png" title="tapakila">
+				  </a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						
+						<li><button type="" class="btn btn-success event"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></button></li>
+						<li><a href="#">Panier</a></li>
+						<li role="presentation" class="dropdown"> 
+						<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+						<span class="caret"></span> </a> 
+							<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
+							<li>
+							<form action="./page/recherche.html" method="get">
+							   <input type="text" name="query" placeholder="Search..." autocomplete="off">
+							   <input type="submit" value="Search">
+						   </form>
+						   </li> 
+							</ul> 
+						</li>
+						<li role="presentation" class="dropdown connexion" >
+						
+						<a href="#" class="dropdown-toggle" id="drop7"> Connexion
+						<span class="caret"></span> </li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		 <!-- header end -->
+		<section class="content-elite">
+		
+		<!--/content goes here -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 ">
+					<div class="panel panel-login">
+						<!-- menutab start -->
+						<div class="panel-heading">
+							<div class="row">
+								<div class="col-xs-6">
+									<a href="#" class="active" id="login-form-link">Connexion</a>
+								</div>
+								<div class="col-xs-6">
+									<a href="#" id="register-form-link">S'inscrire</a>
+								</div>
+							</div>
+							<hr>
+						</div>
+						<!-- menutab end -->
+						
+						<!-- formulaire start -->
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<!-- connexion start -->
+									<form id="login-form"  method="post" role="form" style="display: block;">
+										<div class="form-group">
+											<label for="email">E-Mail:</label>
+											<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="e-mail" value="">
+										</div>
+										<div class="form-group">
+											<label for="email">Mots de passe:</label>
+											<input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="********">
+										</div>
+										
+										<div class="form-group">
+											<div class="row">
+												<div class="col-sm-6 col-sm-offset-3">
+													<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Se connecter">
+												</div>
+											</div>
+										</div>
+										
+										<div class="form-group">
+											<div class="row">
+												<div class="col-lg-12">
+													<div class="text-center">
+														<a href="#" tabindex="5" class="réitinitialiser le mots de passe">Réinitialiser le mot de passe</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									<!-- Connexion facebook start-->
+									<div   class="content-conexion">
+										<h5 class="facenookconexion"><strong>Vous ête-vous connecté avec votre compte facebook?</strong></h5>
+										<a href="#"><button type="button" class="btn btn-facebooksign"><img src="img/fblogo.jpeg">Connexion avec facebook</button></a>
+									</div>
+									<!-- connexion facebook end -->
+									</form>		
+									
+									
+									<!-- connexion end -->
+									
+									<!-- inscription start -->
+									<form id="register-form"  method="post" role="form" style="display: none;">
+										<div class="form-group">
+											<label for="email">Nom:</label>
+											<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Nom" value="">
+										</div>
+										<div class="form-group">
+											<label for="pwd">Prénom:</label>
+											<input type="text" name="firtsname" id="username" tabindex="1" class="form-control" placeholder="Prénom" value="">
+										</div>
+										<div class="form-group">
+											<label for="pwd">E-mail:</label>
+											<input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="E-mail" value="e-mail">
+										</div>
+										<div class="form-group">
+											<label for="pwd">Mots de passe:</label>
+											<input type="password" name="mots de passe" id="password" tabindex="2" class="form-control" placeholder="Mots de passe">
+										</div>
+										<div class="form-group">
+											<input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirmer le mots de passe">
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-sm-6 col-sm-offset-3">
+													<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="S'inscire">
+												</div>
+											</div>
+										</div>
+									</form>
+									<!-- inscription end -->
+								</div>
+							</div>
+						</div>
+						<!-- formulaire end -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/content goes here -->
+		</section>
+		<footer>
+		<footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <img class="footer-logo" alt="tapakila" src="./img/logo.png">
+                        <p class="small custom">
+                            By Tapakila.mg<br>
+                            IIB 63 Mahamasina<br>
+                            Antananarivo<br>
+                            Madagascar<br>
+                            +33 12 901432<br>
+                            <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong >Acheter des tickets</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Comment acheter</a></li>
+                            <li><a href="#">Foire aux questions</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong >Organisateurs</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Pour les Organisateurs</a></li>
+                            <li><a href="#">S'enregistrer</a></li>
+                            <li><a href="#">Connexion</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 ">
+                        <a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <div id="fb-root"></div>
+                        <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
+
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div>
+        <div class="footer-bottom">
+            <div class="container small">
+			<ul>
+                        <li><a href="#">A propos de nous</a></li>|
+                        <li><a href="#">Contact</a></li>|
+                        <li><a href="#">Ajouter votre evenement</a></li>|
+                        <li><a href="#">Publicite</a></li>|
+                        <li><a href="#">FAQ</a></li>|
+                        <li><a href="#">Vie privee</a></li>|
+                    </ul>
+                <p>Copyright &copy Tapakila 2017</p>
+            </div>
+        </div>
+    
+		</footer>
+<script typae="text/javascript">
+$('.dropdown-menu ul li a').click(function(event){
+event.stopPropagation();
+$(this).parent().toggleClass('active').siblings().removeClass('active');
+var target=$(this).attr('href');
+$('ul li .tab-content '+target).toggleClass(active in);
+});
+</script>
+
+<script>
+$(function() {
+
+    $('#login-form-link').click(function(e) {
+		$("#login-form").delay(100).fadeIn(100);
+ 		$("#register-form").fadeOut(100);
+		$('#register-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+	$('#register-form-link').click(function(e) {
+		$("#register-form").delay(100).fadeIn(100);
+ 		$("#login-form").fadeOut(100);
+		$('#login-form-link').removeClass('active');
+		$(this).addClass('active');
+		e.preventDefault();
+	});
+
+});
+</script>
+	</body>
+</html>
