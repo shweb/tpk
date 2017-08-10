@@ -87,11 +87,21 @@
     margin-right: 10px;
   }
   /*-------Mon Compte End------------*/
-
+.btn-facebooksign {
+    background-color: #3c5999;
+    color: white;
+    margin-bottom: 10px;
+    padding: 14px 10px 14px 10px;
+    margin-left: -14%;
+}
 
 }
 @media only screen and (max-width: 768px) {
   /* Styles */
+.facenookconexion {
+    color: #6b6b6b;
+    text-align: center;
+}
   .connexion{
    clear:both;
    }
@@ -161,6 +171,17 @@
 }
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+.facenookconexion {
+    color: #6b6b6b;
+    text-align: center;
+}
+.btn-facebooksign {
+    background-color: #3c5999;
+    color: white;
+    margin-bottom: 12px;
+    padding: 14px 10px 14px 10px;
+    margin-left: 32%;
+}
   /* Styles */
   .connexion{
    clear:both;
