@@ -4,6 +4,7 @@ h1, h2, h3, h4, h5, li, p {
 }
 body{
     background-color: #eeeeee;
+	font-size:12px;
 }
 #background{
 background-color:#d70506;
@@ -107,7 +108,7 @@ background-color:none!important;}
     background: #680306 url(../img/searchicon.png) no-repeat center center;
 }
 
-.fa {
+.facebookico {
     background: white;
     color: #0054a6;
     width: 45px;
@@ -371,7 +372,7 @@ footer {
 	margin-top:100px;
 }
 .panel-body {
-    padding: 30px 30px 30px 30px;
+    padding: 10px 35px 20px 35px;
 }
 .content-conexion {
     background-color: #f3f3f3;
@@ -397,5 +398,75 @@ color: white;
 /* create event start */
 .cutsombg{
 background-color:white;	
+}
+
+hr{
+	width: 85%;
+}
+.enregistrer{
+	color: white;
+background-color: #ff1d1d;
+padding: 15px 30px 15px 30px;
+}
+.editer{
+	padding: 10px 25px 10px 25px;
+	margin-left: 13px;
+}
+ul>li>a{
+	color: #93a1a1;
+}
+ul>li>a:hover{
+	color: none;
+}
+.nonpublier{
+background-color: #df3838;
+color: white;
+border: none;
+padding: 10px 20px 10px 20px;
+}
+button.nonpublier:hover:visited:focus{
+color: white;
+}
+.btn-aperçu{
+	background-color:#f1f4f5;
+	color: #fffff;
+	padding: 10px 20px 10px 20px;
+}
+
+.select {
+
+    background-color: white;
+    color: red !important;
+    width: 81%;
+    padding-right: 10px;
+
+}
+a:hover{
+	color:none;
+	
+}
+.select:hover {
+    background-color: white;
+    color: red !important;
+    width: 81%;
+    padding-right: 10px;
+}
+
+.select:before {
+content: '';
+display: block;
+position: absolute;
+right: 100%;
+top: 0px;
+border-top: 19px solid transparent;
+border-bottom: 19px solid transparent;
+border-right: 23px solid white;
+}
+.Confirme{
+padding: 17px 30px;
+background-color: #f5f5f5;
+border-top: 1px solid #ddd;
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;
 }
 /* create event end */

@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</head>
+	  <body>
+		 <!-- header start -->	
+		<nav  id="background" class="navbar navbar-default navbar-static-top">
+			 <div class="container">
+				<div class="navbar-header">
+								  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								  </button>
+								  <a class="navbar-brand" href="#">
+									<img src="./img/logo.png" title="tapakila">
+								  </a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+									<ul class="nav navbar-nav navbar-right">
+										
+										<li><button type="" class="btn btn-success event"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></button></li>
+										<li><a href="#">Panier</a></li>
+										<li role="presentation" class="dropdown"> 
+										<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+										<span class="caret"></span> </a> 
+											<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
+											<li>
+											<form action="./page/recherche.html" method="get">
+											   <input type="text" name="query" placeholder="Search..." autocomplete="off">
+											   <input type="submit" value="Search">
+										   </form>
+										   </li> 
+											</ul> 
+										</li>
+										<li role="presentation" class="dropdown connexion" >
+										
+										<a href="#" class="dropdown-toggle" id="drop7"> Connexion
+										<span class="caret"></span> </li></a>
+									</ul>
+				</div>
+			</div>
+		</nav>
+		
+		 <!-- header end -->
+		<section id="detail">
+			<div class="container">
+				<div class="page-header row">
+					<div class="col-md-9">
+						<h1>Créér un évènement</h1>
+					</div><!-- col-9 -->
+					<div class="col-md-3">
+						<div class="btn-group margin-bottom-5">
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-sm nonpublier dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Nom publié
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a class="btn-sm" href="#">Publié</a></li>
+								</ul>
+							</div>
+						</div>
+						<a class="btn btn-sm btn-default btn-aperçu " href="#" target="_blank">Aperçu</a>    
+					</div>
+				</div>
+		
+		<!-- detail end -->
+				<div class="row">
+					<div class="col-lg-9 col-sm-9">
+						<form method="POST" action="#">
+							<div class="panel panel-content">
+								<div class="panel-body border-bottom">
+									<h2>Details</h2>
+										<div class="clearfix"></div>
+										<div class="form-group ">
+											<label class="control-label ">
+											<span>Titre : *</span>
+											</label>
+											<input type="text" name="titre]" id="titre" class="form-control">
+										</div>
+										<div class="form-group">
+											<label class="control-label ">
+											<span>Categories : </span>
+											</label>
+											<input type="text" name="categories" id="categories" class="form-control">
+										</div>
+										<div class="form-group ">
+											<label class="control-label">
+											<span>Images :</span>
+											</label>
+											<input type="text" name="Image]" id="image]" class="form-control">
+										</div>
+								</div> 
+								<hr>
+							<!-- detail end -->
+							
+							<!-- heure start -->
+								<div class="panel-body border-bottom">
+									<h2>Heures</h2>
+										<div class="row" id="event-duration">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="control-label required">Début</label>
+														<div class="input-group">
+															<label class="input-group-addon" ><i class="fa fa-calendar"></i></label>
+															<input type="text" class="form-control date" value="">
+															<label class="input-group-addon"><i class="fa fa-clock-o"></i></label>
+															<input type="text" class="form-control" value="" autocomplete="off">
+														</div>
+												</div>
+											</div>
+											<div class="col-lg-6">
+												<div class="form-group">
+													<label class="control-label">Fin</label>
+														<div class="input-group">
+															<label class="input-group-addon"><i class="fa fa-calendar"></i></label>
+															<input type="text" class="form-control date" value="">
+															<label class="input-group-addon" ><i class="fa fa-clock-o"></i></label>
+															<input type="text" class="form-control ui-timepicker-input" value="" autocomplete="off">
+														</div>
+												</div>
+											</div> 
+										</div>
+							
+									<div class="form-group form-group-translation et">
+										<label class="control-label" >
+											<span>Notes additionnel sur l'heure</span> 
+										</label>
+										<textarea  class="form-control " " word-wrap: break-word; resize: horizontal; height: 54px;"></textarea>
+									</div>
+							<hr>
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label class="control-label">Débuts des ventes des tickets</label>
+										
+										<div class="radio-custom radio-primary">
+											<input type="radio"  value="" checked="">
+											<label for="starts_published">Lors de la publication</label>
+										</div>
+										
+										<div class="radio-custom radio-primary">
+											<input type="radio" value="dates">
+											<label for="starts_datetime">Date et Heure specifique</label>
+										</div>
+										
+										<div class="input-group padding-left-30 start-datepicker-div hide">
+											<label class="input-group-addon"><i class="fa fa-calendar"></i></label>
+											<input type="text" class="sale_start form-control" value="" data-default="">
+											<label class="input-group-addon"><i class="fa fa-clock-o"></i></label>
+											<input type="text" data-plugin="timepicker" class="sale_start form-control ui-timepicker-input" value="" data-default="" autocomplete="off">
+										</div>
+										
+									</div>
+								</div>
+								
+								<div class="col-lg-6">
+									<div class="form-group">
+										<label class="control-label">Fin de vente des tickets</label>
+										<div class="radio-custom radio-primary">
+											<input type="radio" value="dates" checked="">
+											<label>A une date et heure précise ou plutôt si tout les tickets sont vendus</label>
+										</div>
+										<div class="input-group padding-left-30 end-datepicker-div ">
+											<label class="input-group-addon"><i class="fa fa-calendar"></i></label>
+											<input type="text" class="sale_end form-control" value="" data-default="">
+											<label class="input-group-addon" ><i class="fa fa-clock-o"></i></label>
+											<input type="text" class="sale_end form-control ui-timepicker-input" value="" data-default="" autocomplete="off">
+										</div>
+										
+										<div class="radio-custom radio-primary">
+											<input type="radio" >
+											<label>Seulement si tous les tickets sont vendus </label>
+										</div>
+									</div>
+								</div> 
+							</div> 
+						</div>
+					<!-- heure end-->
+				<hr>
+					<!-- location start -->
+						<div class="panel-body border-bottom">
+							<h2>Localisation :</h2>
+							<form>
+								<div class="form-group">
+									<label for="email">Nom:*</label>
+									<input type="email" class="form-control" id="email">
+									<p>E.X:Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+								</div>
+								<div class="form-group">
+									<label for="adresses">Adresse:</label>
+									<input type="Adresse" class="form-control" id="adress">
+									<em>Entrer l'adresse exact pour l'affichage des directions sur la carte</em>
+									<p>E.X:Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+								</div>
+					 
+							</form>
+
+						</div>
+					  
+					<!-- location end -->
+					<hr>
+					<!-- organisateur start -->
+						<div class="panel-body">
+							<h2>Organisateur</h2>
+							<div class="form-group">
+							User
+							<a class="btn btn-default editer" target="_blank" href="#">Editer</a>
+							</div>   
+						</div>
+					<!-- organisateur end -->
+					
+					  <div class="Confirme">
+						<button type="submit" class="btn btn-default enregistrer ">Enregistrer</button>
+					  </div>
+					  
+					</div> 
+				</form>
+
+			</div>
+			
+			<!-- menu droit start -->
+				<div class="col-lg-3 col-sm-3">
+					<ul class="nav ">
+						<li><strong>Achats</strong></li>
+						<li><a href="#">Rapports</a></li>
+						<li><a href="#">Commandes</a></li>
+						<li><a href="#">Tickets Validés</a></li>   
+						<li><strong>Editer</strong></li>
+						<li><a class="select" href="#" id="details" onClick="changePage('#detail', 'a_compte')">Détails</a></li>
+						<li><a href="#">Types de Ticket  &amp; prix</a></li>
+						<li><a href="#">Site web</a></li>
+						<li><a href="#">PDF</a></li>
+						<li><a href="#">Champs personnaliser</a></li>
+						<li><strong>Paramètre</strong></li>
+						<li><a href="#">Méthodes de payements</a></li>
+					</ul>
+				</div> 
+		</div> 
+	</div> 
+
+<!-- End Page -->
+			
+		</section>
+		<footer>
+		<footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <img class="footer-logo" alt="tapakila" src="./img/logo.png">
+                        <p class="small custom">
+                            By Tapakila.mg<br>
+                            IIB 63 Mahamasina<br>
+                            Antananarivo<br>
+                            Madagascar<br>
+                            +33 12 901432<br>
+                            <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong >Acheter des tickets</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Comment acheter</a></li>
+                            <li><a href="#">Foire aux questions</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong >Organisateurs</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Pour les Organisateurs</a></li>
+                            <li><a href="#">S'enregistrer</a></li>
+                            <li><a href="#">Connexion</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 ">
+                        <a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square facebookico" aria-hidden="true"></i></a>
+                        <div id="fb-root"></div>
+                        <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
+
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div>
+        <div class="footer-bottom">
+            <div class="container small">
+			<ul>
+                        <li><a href="#">A propos de nous</a></li>|
+                        <li><a href="#">Contact</a></li>|
+                        <li><a href="#">Ajouter votre evenement</a></li>|
+                        <li><a href="#">Publicite</a></li>|
+                        <li><a href="#">FAQ</a></li>|
+                        <li><a href="#">Vie privee</a></li>|
+                    </ul>
+                <p>Copyright &copy Tapakila 2017</p>
+            </div>
+        </div>
+    
+		</footer>
+<script typae="text/javascript">
+$('.dropdown-menu ul li a').click(function(event){
+event.stopPropagation();
+$(this).parent().toggleClass('active').siblings().removeClass('active');
+var target=$(this).attr('href');
+$('ul li .tab-content '+target).toggleClass(active in);
+});
+</script>
+	</body>
+</html>
