@@ -45,7 +45,11 @@ margin-top:1% !important;
 	text-align: left !important;
 }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 700px) and (max-width:768px) {
+	.btn-facebooksign {
+    margin-left: 56% !important;
+}
+}
   /* Styles */
   .connexion{
    clear:both;
@@ -61,7 +65,25 @@ margin-top:1% !important;
 .spacer{
 margin-top:1% !important;
 }
+}
 
+
+@media only screen and (max-width: 769px) {
+  /* Styles */
+  .connexion{
+   clear:both;
+   }
+   footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  height: 370px;
+    width: 100%;
+    overflow:hidden;
+}
+.spacer{
+margin-top:1% !important;
+}
 }
 
 @media only screen and (min-device-width: 800px) and (max-device-width: 999px){
@@ -72,6 +94,9 @@ margin-top:1% !important;
   height: 490px;
     width: 100%;
     overflow:hidden;
+}
+.btn-facebooksign {
+    margin-left: 56%;
 }
 }
 /* iPads (portrait and landscape) ----------- */

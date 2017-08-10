@@ -60,7 +60,7 @@
 			<h2 class="pconnex">Connexion</h2>
 				<form id="white-bg">
 					<div class="form-group">
-						<label for="email">Mail:</label>
+						<label for="email">E-Mail:</label>
 						<input type="email" class="form-control" id="email" placeholder="name@domaine.com">
 					</div>
 					<div class="form-group">
@@ -70,19 +70,18 @@
 				</form>
 				<div class="col-md-12 custom-bg">
 					<div class="row ">
-						<div class="col-md-9 col-xs-12">
-							<button type="button" class="btn btn-connecter">Se connecter</button>
+						<div class="col-md-9 ">
+							<a class="btn btn-connecter" href="#" role="button">Se connecter</a>
 						</div>
-						<div class="col-md-3 col-xs-12 Cmenu">
-							<h5><span onClick="changePage('inscription')" class="element">S'inscrire</span></h5>
-							<h5><a class="element" href="#">Reinitialiser le mots de passe</a></h5>
+						<div class="col-md-3  Cmenu">
+							<a href="https://www.facebook.com/tapakila/s"><button type="button" class="btn btn-facebooksign"><img src="img/fblogo.jpeg">Connexion avec facebook</button></a>
+							<a class="element" href="#">Reinitialiser le mots de passe</a>
 						</div>
 					</div>	
 				</div>
 					<div class="spacer hidden-xs"></div>
 				<div class="content-bg">
-					<h5><strong>Vous ête-vous connecté avec votre compte facebook?</strong></h5>
-					<a href="#"><button type="button" class="btn btn-facebooksign"><img src="img/fblogo.jpeg">Connexion avec facebook</button></a>
+					<a href="#inscription" onClick="changePage('inscription')" type="button" class="btn btn-sinscrire btn-lg">S'inscrire</a>
 				</div>
 			</div>
 		</section>
@@ -98,7 +97,7 @@
 						<input type="email" class="form-control" id="email" placeholder="Nom">
 					</div>
 					<div class="form-group">
-						<label for="pwd">Prénoms:</label>
+						<label for="pwd">Prénom:</label>
 						<input type="password" class="form-control" id="pwd" placeholder="prénoms">
 					</div>
 					<div class="form-group">
