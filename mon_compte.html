@@ -62,22 +62,31 @@
 		<!--/content goes here -->
 		<div class="container">
 		
-<div class="row">
-    <div class="col-sm-2 gauche">
-       <img src="img/homme1.png" id="sary">
-        <p id="bonjour">Bonjour!</p>
 
-        <div class="s_menu">
-            <div id="a_compte" class="activeee" onClick="changePage('div_compte', 'a_compte')"> Mon compte</div>
-            <div id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')"> Mes commandes</div>
-            <div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> Evènements passés</div>
-            <div id="a_favoris" onClick="changePage('div_favoris', 'a_favoris')"> Mes Favoris</div>
-            <div id="a_news" onClick="changePage('div_news', 'a_news')"> Newsletter</div>
-        </div>
-    </div>
+		<div class="row">
+			<div class="col-md-2 col-md-offset-3">
+				<img src="img/user.png" id="sary">
+				<p id="bonjour"><strong>Bonjour !</strong></p>
+			</div>
+			<div class="col-md-10">
+				 <h1 id="compte">Mon compte</h1>
+			</div>
+		</div>
+		
+		<div class="row">
+    <div class="col-sm-2 gauche">
+			<div class="s_menu">
+				<div id="a_compte" class="activeee" onClick="changePage('div_compte', 'a_compte')"> Mon compte</div>
+				<div id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')"> Mes commandes</div>
+				<div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> Evènements passés</div>
+				<div id="a_favoris" onClick="changePage('div_favoris', 'a_favoris')"> Mes Favoris</div>
+				<div id="a_news" onClick="changePage('div_news', 'a_news')"> Newsletter</div>
+			</div>
+			</div>
+			</div>
+
     <div class="col-sm-10 droite">
         <div id="div_compte">
-            <h1 id="compte">Mon compte</h1>
             <div class="contre">
                 <div id="pmoncompte" class="form-group">
                     <label for="usr">Nom:</label>

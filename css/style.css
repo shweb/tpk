@@ -540,9 +540,8 @@ display: none;
 }
 
 #sary {
-width: 70px;
-margin-top: 14%;
-margin-left: 30%;
+width: 50px;
+
 
 }
 .menu_droite {
@@ -571,16 +570,8 @@ margin-bottom: 2% !important;
 margin-bottom: 15px;
 padding: 30px 30px 30px 30px;
 }
-#compte {
-margin-top: 4%;
-margin-left: 10px;
 
-}
-#bonjour {
-margin-left: 35%;
-font-size: medium;
 
-}
 .btio2 {
 border-radius: 2% !important;
 margin-bottom: 3% !important;
