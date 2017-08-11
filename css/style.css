@@ -288,17 +288,19 @@ box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.2);
     padding: 20px;
 }
 .panel-login>.panel-heading {
-color: #00415d;
+color: #fff;
 background-color: #fff;
 border-color: #fff;
 text-align:center;
     padding: 15px 0px 0px 0px;
     border: 1px solid #eee;
-    background-color: #ddd;
+    background-color: #000;
+	    border-radius: 7px;
+
 }
 .panel-login>.panel-heading a{
 text-decoration: none;
-color: #666;
+color: #fff;
 font-weight: bold;
 font-size: 15px;
 -webkit-transition: all 0.1s linear;
@@ -307,7 +309,7 @@ transition: all 0.1s linear;
 }
 .panel-login>.panel-heading a.active{
 color: #d70506;
-font-size: 18px;
+font-size: 16px;
 }
 .panel-login>.panel-heading hr{
 margin-top: 10px;
@@ -388,7 +390,7 @@ top: -3px;
 left: 5px;
 }
 .panel-body {
-padding: 10px 35px 20px 35px;
+padding: 40px 35px 20px 35px;
 }
 .content-conexion {
 background-color: #f3f3f3;
