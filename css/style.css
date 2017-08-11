@@ -391,13 +391,14 @@ background-color: #f3f3f3;
 padding: 20px 30px 30px 30px;
 }
 .facenookconexion{
-color:#6b6b6b;;
+color:#6b6b6b;
+text-align: center;
 }
 .btn-facebooksign {
 background-color: #3c5999;
 color: white;
 margin-bottom: 12px;
-padding: 14px 10px 14px 10px;
+padding: 10px 30px 10px 30px;
 border:none;
 border-radius: 2px;
 }
@@ -606,6 +607,9 @@ text-decoration: none;
 background-color:white;
 padding: 30px 30px 30px 30px;
 border-radius: 5px;
+}
+.information{
+	font-size:13px;
 }
 
 
