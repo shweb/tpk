@@ -294,7 +294,7 @@ footer {
 	transition: all 0.1s linear;
 }
 .panel-login>.panel-heading a.active{
-	color: #029f5b;
+	color: #d70506;
 	font-size: 18px;
 }
 .panel-login>.panel-heading hr{
@@ -325,21 +325,20 @@ footer {
 	border-color: #ccc;
 }
 .btn-login {
-	background-color: #59B2E0;
+	background-color: #d70506;
 	outline: none;
 	color: #fff;
 	font-size: 14px;
 	height: auto;
 	font-weight: normal;
 	padding: 14px 0;
-	text-transform: uppercase;
-	border-color: #59B2E6;
+	border-color: #fff;
 }
 .btn-login:hover,
 .btn-login:focus {
 	color: #fff;
-	background-color: #53A3CD;
-	border-color: #53A3CD;
+	background-color: #d70506;
+	border-color: #fff;
 }
 .forgot-password {
 	text-decoration: underline;
@@ -352,24 +351,29 @@ footer {
 }
 
 .btn-register {
-	background-color: #1CB94E;
+	background-color: #d70506;
 	outline: none;
 	color: #fff;
 	font-size: 14px;
 	height: auto;
 	font-weight: normal;
 	padding: 14px 0;
-	text-transform: uppercase;
-	border-color: #1CB94A;
+	border-color: #000;
 }
 .btn-register:hover,
 .btn-register:focus {
 	color: #fff;
-	background-color: #1CA347;
-	border-color: #1CA347;
+	background-color: #d70506;
+	border-color: #000;
 }
 .content-elite{
 	margin-top:100px;
+}
+.remember{
+    margin-top: 5px;
+    position: relative;
+    top: -3px;
+    left: 5px;
 }
 .panel-body {
     padding: 10px 35px 20px 35px;
