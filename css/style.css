@@ -109,13 +109,12 @@ background-color:none!important;}
 }
 
 .facebookico {
-    background: white;
-    color: #0054a6;
-    width: 45px;
-    height: 36px;
-    padding-top: 3px;
-    padding: 10px;
-    border-radius: 6px;
+ background: white;
+color: #0054a6;
+width: 31px;
+height: 33px;
+padding: 10px;
+border-radius: 6px;
 }
 .btnbf {
     background: #0054a6;
@@ -270,7 +269,7 @@ footer {
     overflow:hidden;
 }
 
-/* connexion example start */
+/* connexion-inscription start */
 
 .panel-login {
 	border-color: #ccc;
@@ -390,6 +389,8 @@ footer {
     color: white;
     margin-bottom: 12px;
 padding: 14px 10px 14px 10px;
+border:none;
+border-radius: 2px;
 }
 .btn-facebooksign:hover:active{
 
@@ -397,7 +398,7 @@ color: white;
 
 }
 
-/* connexionexample end */
+/* connexion-inscription end */
 
 /* create event start */
 .cutsombg{
@@ -591,7 +592,7 @@ a:link {
 /* reinitialiser start */
 #bg-custom{
 	background-color:white;
-	padding: 0 14px 30px 6px;
+padding: 30px 30px 30px 30px;
 }
 .alert-info{
 	margin-top:10px;
@@ -602,5 +603,23 @@ a:link {
 	max-height: 50px;
 	height: 50px;
 }
+.btn-send{
+	background-color: #d70506;
+outline: none;
+color: #fff;
+font-size: 14px;
+height: auto;
+font-weight: normal;
+padding: 14px 0;
+border-color: #fff;
+}
+.btn-send:hover{
+border-color: #fff;
+}
+
+.initialize{
+	margin-bottom:35px;
+}
+
 
 /* reinitialiser end */
