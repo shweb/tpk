@@ -554,11 +554,14 @@ border-bottom: 20px solid transparent;
 .contre {
     background-color: white;
 	margin-top: 48px;
+	padding: 30px 30px 30px 30px;
+	margin-bottom: 0;
 
 }
 .contre5 {
     background-color: #f5f5f5;
     padding: 5px;
+	
 
 }
 .forme {
@@ -568,10 +571,7 @@ border-bottom: 20px solid transparent;
     margin-bottom: 2% !important;
 
 }
-.form-group {
-  margin-bottom: 0px;
-    padding: 30px 30px 30px 30px;
-}
+
 
 #bonjour {
     margin-left: 35%;
