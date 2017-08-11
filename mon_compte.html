@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+	<link rel="stylesheet" href="css/animate.css">
+    <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</head>
+	  <body>
+		 <!-- header start -->	
+		<nav  id="background" class="navbar navbar-default navbar-static-top">
+			 <div class="container">
+				<div class="navbar-header">
+								  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								  </button>
+								  <a class="navbar-brand" href="#">
+									<img src="./img/logo.png" title="tapakila">
+								  </a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+									<ul class="nav navbar-nav navbar-right">
+										
+										<li><button type="" class="btn btn-success event"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></button></li>
+										<li><a href="#">Panier</a></li>
+										<li role="presentation" class="dropdown"> 
+										<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+										<span class="caret"></span> </a> 
+											<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
+											<li>
+											<form action="./page/recherche.html" method="get">
+											   <input type="text" name="query" placeholder="Search..." autocomplete="off">
+											   <input type="submit" value="Search">
+										   </form>
+										   </li> 
+											</ul> 
+										</li>
+										<li role="presentation" class="dropdown connexion" >
+										
+										<a href="#" class="dropdown-toggle" id="drop7"> Connexion
+										<span class="caret"></span> </li></a>
+									</ul>
+			</div>
+			</div>
+			</nav>
+		
+		 <!-- header end -->
+		<section id="content" class="debut">
+		
+		
+		
+		<!--/content goes here -->
+		<div class="container">
+		
+<div class="row">
+    <div class="col-sm-2 gauche">
+       <img src="img/homme1.png" id="sary">
+        <p id="bonjour">Bonjour!</p>
+
+        <div class="s_menu">
+            <div id="a_compte" class="activeee" onClick="changePage('div_compte', 'a_compte')"> Mon compte</div>
+            <div id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')"> Mes commandes</div>
+            <div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> Evènements passés</div>
+            <div id="a_favoris" onClick="changePage('div_favoris', 'a_favoris')"> Mes Favoris</div>
+            <div id="a_news" onClick="changePage('div_news', 'a_news')"> Newsletter</div>
+        </div>
+    </div>
+    <div class="col-sm-10 droite">
+        <div id="div_compte">
+            <h1 id="compte">Mon compte</h1>
+            <div class="contre">
+                <div class="form-group">
+                    <label for="usr">Nom:</label>
+                    <input class="form-control forme" id="disabledInput" type="text" placeholder="Dina">
+                    <label for="usr">Prénom:</label>
+                    <input class="form-control forme" id="disabledInput" type="text" placeholder="Vonjy">
+                    <label for="usr">Email:</label>
+                    <input id="email" type="text" class="form-control forme" name="email"
+                           placeholder="dinavonjy@icloud.com">
+                    <label for="usr">Changer mot de passe</label>
+                    <input id="password" type="password" class="form-control forme" name="password"
+                           placeholder="mot de passe actuel">
+                    <input id="password" type="password" class="form-control forme" name="password"
+                           placeholder="Nouveau mot de passe">
+                    <input id="password" type="password" class="form-control forme" name="password"
+                           placeholder="Confirmer mot de passe">
+                </div>
+                <div class="contre5">
+                    <button class="btn btn-danger btio2">Enregistrer</button>
+                </div>
+            </div>
+        </div>
+        <div id="div_commandes" class="hide">
+            <h1 id="compte">Mes commandes</h1>
+            <div class="contre">
+                <div class="lister">
+                    <div class="tab">
+                    <div class="row">
+                        <div class="col-sm-3 imageCommande">
+                            <div class="thumbnail">
+                                <a href="#">
+                                    <img src="img/bodosypoopy.png" alt="Lights" style="width:800px">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-offset-1">
+                           <a href="#"><h3>Lorem ipsum dolor sit amet, vitae enim ultrices</h3></a>
+                            Pellentesque amet vitae suscipit metus, massa at donec ultrices mauris at leo, in aenean,
+                            alique ,sodjgoipedsgijb vkejfoijjivd hkfejfezifrueà ndiazdazirediaufizef nfiuefhzefzefuazuf huhzefe_zh hizhfiezhfefidif hjfzejfeijzeifize fuhefhzfdfd
+                            djifkezofiezferzifizefjzef, izhfihzojijfeffffffffffffffff fhzehjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjf
+                        </div>
+
+                    </div>
+                    </div>
+                    <div class="tab">
+                        <div class="row">
+                            <div class="col-sm-3 imageCommande">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="img/ercimanana.png" alt="Lights" style="width:800px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-offset-1">
+                                <a href="#"><h3>Lorem ipsum dolor sit amet, vitae enim ultrices</h3></a>
+                                Pellentesque amet vitae suscipit metus, massa at donec ultrice
+                                ERICK MANANA MAANA MANANANA MANANNKKNkn
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="div_ev" class="hide">
+            <h1 id="compte">Mes Evènements</h1>
+            <div class="contre">
+                <div class="lister">
+                    <div class="tab">
+                        <div class="row">
+                            <div class="col-sm-3 imageCommande">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="img/bodosypoopy.png" alt="Lights" style="width:800px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-offset-1">
+                                <a href="#"><h3>Lorem ipsum dolor sit amet, vitae enim ultrices</h3></a>
+                                Pellentesque amet vitae suscipit metus, massa at donec ultrices mauris at leo, in aenean,
+                                alique ,sodjgoipedsgijb vkejfoijjivd hkfejfezifrueà ndiazdazirediaufizef nfiuefhzefzefuazuf huhzefe_zh hizhfiezhfefidif hjfzejfeijzeifize fuhefhzfdfd
+                                djifkezofiezferzifizefjzef, izhfihzojijfeffffffffffffffff fhzehjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjf
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="row">
+                            <div class="col-sm-3 imageCommande">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="img/ercimanana.png" alt="Lights" style="width:800px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-offset-1">
+                                <a href="#"><h3>Lorem ipsum dolor sit amet, vitae enim ultrices</h3></a>
+                                Pellentesque amet vitae suscipit metus, massa at donec ultrice
+                                ERICK MANANA MAANA MANANANA MANANNKKNkn
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="div_favoris" class="hide">
+            <h1 id="compte">Mes Favoris</h1>
+            <div class="contre">
+                <div class="lister">
+                    <div class="tab">
+                        <div class="row">
+                            <div class="col-sm-3 imageCommande">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="img/bodosypoopy.png" alt="Lights" style="width:800px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-offset-1">
+                                <a href="#"><h3>Lorem ipsum dolor sit amet, vitae enim ultrices</h3></a>
+                                Pellentesque amet vitae suscipit metus, massa at donec ultrices mauris at leo, in aenean,
+                                alique ,sodjgoipedsgijb vkejfoijjivd hkfejfezifrueà ndiazdazirediaufizef nfiuefhzefzefuazuf huhzefe_zh hizhfiezhfefidif hjfzejfeijzeifize fuhefhzfdfd
+                                djifkezofiezferzifizefjzef, izhfihzojijfeffffffffffffffff fhzehjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjhjf
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="tab">
+                        <div class="row">
+                            <div class="col-sm-3 imageCommande">
+                                <div class="thumbnail">
+                                    <a href="#">
+                                        <img src="img/ercimanana.png" alt="Lights" style="width:800px">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-offset-1">
+                                <a href="#"><h3>Lorem ipsum dolor sit amet, vitae enim ultrices</h3></a>
+                                Pellentesque amet vitae suscipit metus, massa at donec ultrice
+                                ERICK MANANA MAANA MANANANA MANANNKKNkn
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="div_news" class="hide">
+            <h1 id="compte">Newsletter</h1>
+            <div class="contre">
+                <div class="lister">
+                    <div class="row">
+                        <div class="col-sm-3 imageCommande">
+                            <img src="img/ercimanana.png">
+                        </div>
+                        <div class="col-sm-6 pull-right">
+                            <h1>Lorem ipsum dolor sit amet, vitae enim ultrices</h1>
+                            Pellentesque amet vitae suscipit metus, massa at donec ultrices mauris at leo, in aenean,
+                            aliquet
+                            Mar 30-Apr 2, 180-1080rmb
+                            Mahamasina
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+		
+		
+		</div>
+		<!--/content goes here -->
+		
+		
+		
+		</section>
+		<footer>
+		<footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <img class="footer-logo" alt="tapakila" src="./img/logo.png">
+                        <p class="small custom">
+                            By Tapakila.mg<br>
+                            IIB 63 Mahamasina<br>
+                            Antananarivo<br>
+                            Madagascar<br>
+                            +33 12 901432<br>
+                            <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong >Acheter des tickets</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Comment acheter</a></li>
+                            <li><a href="#">Foire aux questions</a></li>
+                            <li><a href="#">Terms of service</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong >Organisateurs</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Pour les Organisateurs</a></li>
+                            <li><a href="#">S'enregistrer</a></li>
+                            <li><a href="#">Connexion</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 ">
+                        <a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <div id="fb-root"></div>
+                        <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
+
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div>
+        <div class="footer-bottom">
+            <div class="container small">
+			<ul>
+                        <li><a href="#">A propos de nous</a></li>|
+                        <li><a href="#">Contact</a></li>|
+                        <li><a href="#">Ajouter votre evenement</a></li>|
+                        <li><a href="#">Publicite</a></li>|
+                        <li><a href="#">FAQ</a></li>|
+                        <li><a href="#">Vie privee</a></li>|
+                    </ul>
+                <p>Copyright &copy Tapakila 2017</p>
+            </div>
+        </div>
+    
+		</footer>
+<script typae="text/javascript">
+$('.dropdown-menu ul li a').click(function(event){
+event.stopPropagation();
+$(this).parent().toggleClass('active').siblings().removeClass('active');
+var target=$(this).attr('href');
+$('ul li .tab-content '+target).toggleClass(active in);
+});
+</script>
+
+<script>
+    function changePage(id, aId) {
+        document.getElementById("div_compte").className = "hide";
+        document.getElementById("div_commandes").className = "hide";
+        document.getElementById("div_ev").className = "hide";
+        document.getElementById("div_favoris").className = "hide";
+        document.getElementById("div_news").className = "hide";
+        document.getElementById(id).className = "show";
+
+        document.getElementById("a_compte").className = "";
+        document.getElementById("a_commandes").className = "";
+        document.getElementById("a_ev").className = "";
+        document.getElementById("a_favoris").className = "";
+        document.getElementById("a_news").className = "";
+        document.getElementById(aId).className = "activeee";
+    }
+</script>
+	</body>
+</html>

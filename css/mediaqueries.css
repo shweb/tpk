@@ -62,16 +62,16 @@
     overflow:hidden;
 }
 /*------Mon Compte--------*/
+
+/*------Mon Compte--------*/
 .activeee {
     display: inline-block;
     position: relative;
     background-color: white;
     color: red !important;
     padding: 6px;
-    width: 530px;
-    padding-left: 202px !important;
-    margin-left: -216px ;
-  //padding-right: 10px;
+        width: 243px !important;
+    padding-left: 80px !important;
     text-align:center;
   }
 
@@ -119,6 +119,8 @@
     font-weight: bold;
     margin-right: 10px;
   }
+  /*-------Mon Compte End------------*/
+
   /*-------Mon Compte End------------*/
 .btn-facebooksign {
     background-color: #3c5999;
