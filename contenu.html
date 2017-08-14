@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>contenu</title>
+</head>
+<body>
+    <div class="container">
+        <div class="col-lg-9 col-sm-9">
+           <div class="rapporter">
+
+               <ul class="nav nav-tabs">
+                   <li class="active">
+                       <a  href="#1" data-toggle="tab">Aperçu</a>
+                   </li>
+                   <li><a href="#2" data-toggle="tab">Ventes</a>
+                   </li>
+                   <li><a href="#3" data-toggle="tab">Ordres</a>
+                   <li><a href="#3" data-toggle="tab">Validations</a>
+                   </li>
+               </ul>
+
+               <div class="tab-content ">
+                   <div class="tab-pane active" id="1">
+                       <form>
+                           <div class="pane1">
+                               <div class="row">
+                                   <div class="col-lg-10 col-lg-offset-1 choix1" >
+                               <select class="form-control" id="sel1">
+                                   <option>Mon événement</option>
+                                   <option>Tous les événements</option>
+                                   <option>Maka en concert</option>
+                                   <option>Se rencontrer</option>
+                               </select>
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="col-lg-6 text-center">
+                                       <div class="counter">
+                                           <div class="counter_number">
+                                               0
+                                               <i class="fa fa-ticket" aria-hidden="true"></i>
+                                               <div class="counter-label">Billets vendus</div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-lg-6 text-center">
+                                       <div class="counter">
+                                           <div class="counter_number">
+                                               0
+                                               <i class="fa fa-eur" aria-hidden="true"></i>
+                                               <div class="counter-label">Rotation</div>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                               </div>
+                           </div>
+                           <div class="panel-body">
+                               <h2>Billets vendus au cours des 30 derniers jours</h2>
+                               <div id="chart-sales" class="ct-chart ct-octave">
+                                   <div class="ct-chart ct-octave" id="chart-sales"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-bar" style="width: 100%; height: 100%;"><g class="ct-grids"><line y1="328.75" y2="328.75" x1="10" x2="712.5" class="ct-grid ct-vertical"></line><line y1="15" y2="15" x1="10" x2="712.5" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><line x1="21.33064516129032" x2="21.33064516129032" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="43.99193548387096" x2="43.99193548387096" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="66.65322580645162" x2="66.65322580645162" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="89.31451612903226" x2="89.31451612903226" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="111.9758064516129" x2="111.9758064516129" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="134.63709677419354" x2="134.63709677419354" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="157.2983870967742" x2="157.2983870967742" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="179.95967741935485" x2="179.95967741935485" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="202.6209677419355" x2="202.6209677419355" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="225.28225806451613" x2="225.28225806451613" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="247.94354838709677" x2="247.94354838709677" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="270.6048387096774" x2="270.6048387096774" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="293.26612903225805" x2="293.26612903225805" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="315.92741935483866" x2="315.92741935483866" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="338.58870967741933" x2="338.58870967741933" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="361.24999999999994" x2="361.24999999999994" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="383.9112903225806" x2="383.9112903225806" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="406.5725806451613" x2="406.5725806451613" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="429.2338709677419" x2="429.2338709677419" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="451.89516129032256" x2="451.89516129032256" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="474.5564516129032" x2="474.5564516129032" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="497.21774193548384" x2="497.21774193548384" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="519.8790322580645" x2="519.8790322580645" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="542.5403225806451" x2="542.5403225806451" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="565.2016129032259" x2="565.2016129032259" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="587.8629032258065" x2="587.8629032258065" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="610.5241935483871" x2="610.5241935483871" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="633.1854838709678" x2="633.1854838709678" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="655.8467741935484" x2="655.8467741935484" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="678.508064516129" x2="678.508064516129" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line><line x1="701.1693548387096" x2="701.1693548387096" y1="328.75" y2="328.75" class="ct-bar" ct:value="0"></line></g></g><g class="ct-labels"><foreignObject style="overflow: visible;" x="10" y="333.75" width="22.661290322580644" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">15</span></foreignObject><foreignObject style="overflow: visible;" x="32.66129032258064" y="333.75" width="22.661290322580644" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">16</span></foreignObject><foreignObject style="overflow: visible;" x="55.32258064516129" y="333.75" width="22.661290322580648" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">17</span></foreignObject><foreignObject style="overflow: visible;" x="77.98387096774194" y="333.75" width="22.66129032258064" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">18</span></foreignObject><foreignObject style="overflow: visible;" x="100.64516129032258" y="333.75" width="22.66129032258064" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">19</span></foreignObject><foreignObject style="overflow: visible;" x="123.30645161290322" y="333.75" width="22.661290322580655" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">20</span></foreignObject><foreignObject style="overflow: visible;" x="145.96774193548387" y="333.75" width="22.66129032258064" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">21</span></foreignObject><foreignObject style="overflow: visible;" x="168.6290322580645" y="333.75" width="22.66129032258064" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">22</span></foreignObject><foreignObject style="overflow: visible;" x="191.29032258064515" y="333.75" width="22.66129032258064" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">23</span></foreignObject><foreignObject style="overflow: visible;" x="213.9516129032258" y="333.75" width="22.66129032258064" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">24</span></foreignObject><foreignObject style="overflow: visible;" x="236.61290322580643" y="333.75" width="22.66129032258064" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">25</span></foreignObject><foreignObject style="overflow: visible;" x="259.2741935483871" y="333.75" width="22.66129032258067" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">26</span></foreignObject><foreignObject style="overflow: visible;" x="281.93548387096774" y="333.75" width="22.661290322580612" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">27</span></foreignObject><foreignObject style="overflow: visible;" x="304.59677419354836" y="333.75" width="22.66129032258067" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">28</span></foreignObject><foreignObject style="overflow: visible;" x="327.258064516129" y="333.75" width="22.661290322580612" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">29</span></foreignObject><foreignObject style="overflow: visible;" x="349.91935483870964" y="333.75" width="22.66129032258067" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">30</span></foreignObject><foreignObject style="overflow: visible;" x="372.5806451612903" y="333.75" width="22.66129032258067" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">31</span></foreignObject><foreignObject style="overflow: visible;" x="395.241935483871" y="333.75" width="22.661290322580612" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">01</span></foreignObject><foreignObject style="overflow: visible;" x="417.9032258064516" y="333.75" width="22.66129032258067" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">02</span></foreignObject><foreignObject style="overflow: visible;" x="440.56451612903226" y="333.75" width="22.661290322580612" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">03</span></foreignObject><foreignObject style="overflow: visible;" x="463.22580645161287" y="333.75" width="22.66129032258067" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">04</span></foreignObject><foreignObject style="overflow: visible;" x="485.88709677419354" y="333.75" width="22.661290322580612" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">05</span></foreignObject><foreignObject style="overflow: visible;" x="508.54838709677415" y="333.75" width="22.661290322580612" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">06</span></foreignObject><foreignObject style="overflow: visible;" x="531.2096774193548" y="333.75" width="22.661290322580726" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">07</span></foreignObject><foreignObject style="overflow: visible;" x="553.8709677419355" y="333.75" width="22.661290322580612" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">08</span></foreignObject><foreignObject style="overflow: visible;" x="576.5322580645161" y="333.75" width="22.661290322580612" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">09</span></foreignObject><foreignObject style="overflow: visible;" x="599.1935483870967" y="333.75" width="22.661290322580726" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">10</span></foreignObject><foreignObject style="overflow: visible;" x="621.8548387096774" y="333.75" width="22.661290322580612" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">11</span></foreignObject><foreignObject style="overflow: visible;" x="644.516129032258" y="333.75" width="22.661290322580612" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">12</span></foreignObject><foreignObject style="overflow: visible;" x="667.1774193548387" y="333.75" width="22.661290322580612" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 23px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">13</span></foreignObject><foreignObject style="overflow: visible;" x="689.8387096774193" y="333.75" width="30" height="20"><span class="ct-label ct-horizontal ct-end" style="width: 30px; height: 20px" xmlns="http://www.w3.org/2000/xmlns/">14</span></foreignObject><foreignObject style="overflow: visible;" y="15" x="10" height="313.75" width="0"><span class="ct-label ct-vertical ct-start" style="height: 314px; width: 0px" xmlns="http://www.w3.org/2000/xmlns/">0</span></foreignObject><foreignObject style="overflow: visible;" y="-15" x="10" height="30" width="0"><span class="ct-label ct-vertical ct-start" style="height: 30px; width: 0px" xmlns="http://www.w3.org/2000/xmlns/">1</span></foreignObject></g></svg></div>
+
+
+                               </div>
+
+                           </div>
+                       </form>
+                   </div>
+                   <div class="tab-pane" id="2">
+                       <div class="rapporter">
+                           <div class="row">
+                               <div class="col-lg-10 col-lg-offset-1">
+                                   <select class="form-control choix2" id="sel2">
+                                       <option>Mon événement</option>
+                                       <option>Tous les événements</option>
+                                       <option>Maka en concert</option>
+                                       <option>Se rencontrer</option>
+                                   </select>
+                                   <br>
+                                   <div class="form-group">
+                                       <p class="text-right">
+                                           <a class="btn btn-default btn-xs" href="#">.xls</a>
+                                           <a class="btn btn-default btn-xs" href="#">.csv</a>
+                                       </p>
+
+                                       <div class="table-responsive">
+                                           <table class="table table-hover table-striped">
+
+                                               <thead class="bg-blue-grey-100">
+                                               <tr>
+                                                   <th>Date</th>
+                                                   <th class="text-right">Ordres</th>
+                                                   <th class="text-right">Ventes</th>
+                                                   <th class="text-right">Billets</th>
+                                               </tr>
+                                               </thead>
+
+                                               <tbody>
+                                               </tbody>
+
+
+                                           </table>
+                                       </div>
+
+
+                                   </div>
+
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="tab-pane" id="3">
+                       <h3>add clearfix to tab-content (see the css)</h3>
+                   </div>
+                   <div class="tab-pane" id="4">
+                       <h3>add clearfix to tab-content (see the css)</h3>
+                   </div>
+               </div>
+
+           </div>
+        </div>
+        <div class="col-lg-3 col-sm-3">
+            retgryrtyhutghfghf brhgertgrt
+        </div>
+    </div>
+</body>
+</html>

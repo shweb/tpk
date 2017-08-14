@@ -654,4 +654,59 @@ border-color: #fff;
 }
 
 /* retour mail end */
+/*--------------------------contenu_eventes---------------------------------*/
+#exTab1 .tab-content {
+    color : white;
+    background-color: red;
+    padding : 5px 15px;
+}
 
+#exTab2 h3 {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+}
+
+/* remove border radius for the tab */
+
+#exTab1 .nav-pills > li > a {
+    border-radius: 0;
+}
+
+/* change border radius for the tab , apply corners on top*/
+
+#exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0 ;
+}
+
+#exTab3 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+}
+
+.pane1{
+    background-color: #f5f5f5;
+}
+.choix1{
+   margin-top: 55px;
+    margin-bottom: 45px;
+
+}
+.choix2{
+    margin-top: 55px;
+    margin-bottom: 5px;
+
+}
+.counter_number{
+    font-size: 50px;
+}
+.counter-label{
+    font-size: 20px;
+}
+.rapporter{
+    background-color: white;
+}
+#sel1{
+    background-color: #f5f5f5;
+}
