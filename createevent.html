@@ -9,8 +9,15 @@
 	<link rel="stylesheet" href="css/mediaqueries.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
+	<link href="css/datepicker.css" rel="stylesheet">
+	<link href="css/clockpiker.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="js/clockpicker.js"></script>
+
+
+
 	</head>
 	  <body>
 		 <!-- header start -->	
@@ -58,7 +65,7 @@
 			<div class="container">
 				<div class="page-menu row">
 					<div class="col-md-9">
-						<h2>Créér un évènement</h2>
+						<h1>Créér un évènement</h1>
 					</div>
 					<div class="col-md-3">
 						<div class="btn-group margin-bottom-5">
@@ -79,7 +86,8 @@
 		<!-- detail end -->
 				<div class="row">
 					<div class="col-lg-9 col-sm-9">
-						<form method="POST" action="#">
+						<div id="div_details">
+											<form method="POST" action="#">
 							<div class="panel panel-content">
 								<div class="panel-body border-bottom">
 									<h2>Details</h2>
@@ -105,33 +113,57 @@
 								</div> 
 								<hr>
 							<!-- detail end -->
-							
+
 							<!-- heure start -->
 								<div class="panel-body border-bottom">
 									<h2>Heures</h2>
 										<div class="row" id="event-duration">
 											<div class="col-md-6">
-												<div class="form-group">
-													<label class="control-label required">Début</label>
-														<div class="input-group">
-															<label class="input-group-addon" ><i class="fa fa-calendar"></i></label>
-															<input type="text" class="form-control date" value="">
-															<label class="input-group-addon"><i class="fa fa-clock-o"></i></label>
-															<input type="text" class="form-control" value="" autocomplete="off">
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group">
+															<label class="control-label required">Début</label>
+																<div class="input-group">
+																	<div class="input-group-addon">
+																	<i class="fa fa-calendar"></i></div>
+																	<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+																</div>
 														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="input-group clockpicker">
+														<span class="input-group-addon">
+															<span class="glyphicon glyphicon-time"></span>
+															</span>
+															<input type="text" class="form-control" value="23:30">
+															
+														</div>
+													</div>
 												</div>
 											</div>
-											<div class="col-lg-6">
-												<div class="form-group">
-													<label class="control-label">Fin</label>
-														<div class="input-group">
-															<label class="input-group-addon"><i class="fa fa-calendar"></i></label>
-															<input type="text" class="form-control date" value="">
-															<label class="input-group-addon" ><i class="fa fa-clock-o"></i></label>
-															<input type="text" class="form-control ui-timepicker-input" value="" autocomplete="off">
+											<div class="col-md-6">
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group">
+															<label class="control-label required">Fin</label>
+																<div class="input-group">
+																	<div class="input-group-addon">
+																	<i class="fa fa-calendar"></i></div>
+																	<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+																</div>
 														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="input-group clockpicker">
+														<span class="input-group-addon">
+															<span class="glyphicon glyphicon-time"></span>
+															</span>
+															<input type="text" class="form-control" value="23:30">
+															
+														</div>
+													</div>
 												</div>
-											</div> 
+											</div>
 										</div>
 							
 									<div class="form-group form-group-translation et">
@@ -173,12 +205,27 @@
 											<input type="radio" value="dates" checked="">
 											<label>A une date et heure précise ou plutôt si tout les tickets sont vendus</label>
 										</div>
-										<div class="input-group padding-left-30 end-datepicker-div ">
-											<label class="input-group-addon"><i class="fa fa-calendar"></i></label>
-											<input type="text" class="sale_end form-control" value="" data-default="">
-											<label class="input-group-addon" ><i class="fa fa-clock-o"></i></label>
-											<input type="text" class="sale_end form-control ui-timepicker-input" value="" data-default="" autocomplete="off">
-										</div>
+										<div class="row">
+													<div class="col-md-6">
+														<div class="form-group">
+															<label class="control-label required">Fin</label>
+																<div class="input-group">
+																	<div class="input-group-addon">
+																	<i class="fa fa-calendar"></i></div>
+																	<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+																</div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="input-group clockpicker">
+														<span class="input-group-addon">
+															<span class="glyphicon glyphicon-time"></span>
+															</span>
+															<input type="text" class="form-control" value="23:30">
+															
+														</div>
+													</div>
+												</div>
 										
 										<div class="radio-custom radio-primary">
 											<input type="radio" >
@@ -229,23 +276,65 @@
 					</div> 
 				</form>
 
-			</div>
+						</div>
+						
+						<div id="div_commandes" class="hide">
+							<h1 id="compte">Mes commandes</h1>
+							<p class="contre5">
+							"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+						</div>
+						
+						<div id="div_rapport" class="hide">
+							<h1 id="compte">Rapport</h1>
+							<p class="contre5">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+						</div>
+						
+						<div id="div_type" class="hide">
+							<h1 id="compte">Types de tickets</h1>
+							<p class="contre5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+						</div>
+						
+						<div id="div_valideTicket" class="hide">
+							<h1 id="compte">Ticket validés</h1>
+							<p class="contre5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+						</div>
+					
+						<div id="div_siteweb" class="hide">
+							<h1 id="compte">site web</h1>
+							<p class="contre5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+						</div>
+						
+						<div id="div_pdf" class="hide">
+							<h1 id="compte">PDF</h1>
+							<p class="contre5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+						</div>
+						
+						<div id="div_cpersonalize" class="hide">
+							<h1 id="compte">Champs personnaliser</h1>
+							<p class="contre5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+						</div>
+						
+						<div id="div_paiement" class="hide">
+							<h1 id="compte">Methode de paiement</h1>
+							<p class="contre5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+						</div>
+					</div>
 			
 			<!-- menu droit start -->
 				<div class="col-lg-3 col-sm-3">
-					<ul class="nav ">
+					<ul class="navtab">
 						<li><strong>Achats</strong></li>
-						<li><a href="#">Rapports</a></li>
-						<li><a href="#">Commandes</a></li>
-						<li><a href="#">Tickets Validés</a></li>   
+						<li><a  href="#" id="a_rapport" onClick="changePage('div_rapport', 'a_rapport')">Rapports</a></li>
+						<li><a href="#" id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')">Commandes</a></li>
+						<li><a href="#" id="a_valideTicket" onClick="changePage('div_valideTicket', 'a_valideTicket')">Tickets Validés</a></li>   
 						<li><strong>Editer</strong></li>
-						<li><a class="select" href="#" id="details" onClick="changePage('#detail', 'a_compte')">Détails</a></li>
-						<li><a href="#">Types de Ticket  &amp; prix</a></li>
-						<li><a href="#">Site web</a></li>
-						<li><a href="#">PDF</a></li>
-						<li><a href="#">Champs personnaliser</a></li>
+						<li><a href="#" id="a_details" class="select" onClick="changePage('div_details', 'a_details')">Détails</a></li>
+						<li><a href="#" id="a_type"  onClick="changePage('div_type', 'a_type')">Types de Ticket  &amp; prix</a></li>
+						<li><a href="#" id="a_siteweb"  onClick="changePage('div_siteweb', 'a_siteweb')">Site web</a></li>
+						<li><a href="#" id="a_pdf"  onClick="changePage('div_pdf', 'a_pdf')">PDF</a></li>
+						<li><a href="#" id="a_cpersonalize"  onClick="changePage('div_cpersonalize', 'a_cpersonalize')">Champs personnaliser</a></li>
 						<li><strong>Paramètre</strong></li>
-						<li><a href="#">Méthodes de payements</a></li>
+						<li><a href="#" id="a_paiement"  onClick="changePage('div_paiement', 'a_paiement')">Méthodes de payements</a></li>
 					</ul>
 				</div> 
 				
@@ -255,8 +344,8 @@
 <!-- End Page -->
 			
 		</section>
-<footer>
-		<footer class="footer">
+
+	<footer class="footer">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -309,8 +398,7 @@
                 <p>Copyright &copy Tapakila 2017</p>
             </div>
         </div>
-    
-		</footer>
+    </footer>
 <script typae="text/javascript">
 $('.dropdown-menu ul li a').click(function(event){
 event.stopPropagation();
@@ -319,5 +407,55 @@ var target=$(this).attr('href');
 $('ul li .tab-content '+target).toggleClass(active in);
 });
 </script>
+<script>
+    function changePage(id, aId) {
+        document.getElementById("div_details").className = "hide";
+        document.getElementById("div_commandes").className = "hide";
+        document.getElementById("div_rapport").className = "hide";
+        document.getElementById("div_type").className = "hide";
+        document.getElementById("div_valideTicket").className = "hide";
+        document.getElementById("div_siteweb").className = "hide";
+        document.getElementById("div_pdf").className = "hide";
+        document.getElementById("div_cpersonalize").className = "hide";
+        document.getElementById("div_paiement").className = "hide";
+        document.getElementById(id).className = "show";
+
+        document.getElementById("a_details").className = "";
+        document.getElementById("a_commandes").className = "";
+        document.getElementById("a_rapport").className = "";
+        document.getElementById("a_type").className = "";
+        document.getElementById("a_valideTicket").className = "";
+        document.getElementById("a_siteweb").className = "";
+        document.getElementById("a_pdf").className = "";
+        document.getElementById("a_cpersonalize").className = "";
+        document.getElementById("a_paiement").className = "";
+        document.getElementById(aId).className = "select";
+    }
+</script>
+
+<script>
+
+	$(document).ready(function(){
+		var date_input=$('input[name="date"]'); //our date input has the name "date"
+		var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+		date_input.datepicker({
+			format: 'mm/dd/yyyy',
+			container: container,
+			todayHighlight: true,
+			autoclose: true,
+		})
+	})
+</script>
+
+<script type="text/javascript">
+$('.clockpicker').clockpicker({
+placement: 'bottom', // clock popover placement
+align: 'left',       // popover arrow align
+donetext: 'Done',     // done button text
+autoclose: false,    // auto close when minute is selected
+vibrate: true        // vibrate the device when dragging clock hand
+});
+</script>
+
 	</body>
 </html>
