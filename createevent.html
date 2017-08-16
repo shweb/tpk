@@ -71,7 +71,7 @@
 						<div class="btn-group margin-bottom-5">
 							<div class="btn-group" role="group">
 								<button type="button" class="btn btn-sm nonpublier dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Nom publié
+									Non publié
 									<span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu">
@@ -87,7 +87,7 @@
 				<div class="row">
 					<div class="col-lg-9 col-sm-9">
 						<div id="div_details">
-											<form method="POST" action="#">
+						<form method="POST" action="#">
 							<div class="panel panel-content">
 								<div class="panel-body border-bottom">
 									<h2>Details</h2>
@@ -100,15 +100,22 @@
 										</div>
 										<div class="form-group">
 											<label class="control-label ">
-											<span>Categories : </span>
+											<span>Catégories : </span>
 											</label>
-											<input type="text" name="categories" id="categories" class="form-control">
+												<div class="form-group">
+												  <select class="form-control">
+													<option> catégorie 1</option>
+													<option>catégorie 2</option>
+													<option>catégorie 3</option>
+													<option>catégories 4</option>
+												  </select>
+												</div>
 										</div>
 										<div class="form-group ">
 											<label class="control-label">
 											<span>Images :</span>
 											</label>
-											<input type="text" name="Image]" id="image]" class="form-control">
+											<input type="text" name="Image" id="image" class="form-control  input-image">
 										</div>
 								</div> 
 								<hr>
@@ -323,17 +330,17 @@
 			<!-- menu droit start -->
 				<div class="col-lg-3 col-sm-3">
 					<ul class="navtab">
-						<li><strong>Achats</strong></li>
+						<li class="categorimenu"><strong>Achats</strong></li>
 						<li><a  href="#" id="a_rapport" onClick="changePage('div_rapport', 'a_rapport')">Rapports</a></li>
 						<li><a href="#" id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')">Commandes</a></li>
 						<li><a href="#" id="a_valideTicket" onClick="changePage('div_valideTicket', 'a_valideTicket')">Tickets Validés</a></li>   
-						<li><strong>Editer</strong></li>
+						<li class="categorimenu"><strong>Editer</strong></li>
 						<li><a href="#" id="a_details" class="select" onClick="changePage('div_details', 'a_details')">Détails</a></li>
 						<li><a href="#" id="a_type"  onClick="changePage('div_type', 'a_type')">Types de Ticket  &amp; prix</a></li>
 						<li><a href="#" id="a_siteweb"  onClick="changePage('div_siteweb', 'a_siteweb')">Site web</a></li>
 						<li><a href="#" id="a_pdf"  onClick="changePage('div_pdf', 'a_pdf')">PDF</a></li>
-						<li><a href="#" id="a_cpersonalize"  onClick="changePage('div_cpersonalize', 'a_cpersonalize')">Champs personnaliser</a></li>
-						<li><strong>Paramètre</strong></li>
+						<li><a href="#" id="a_cpersonalize"  onClick="changePage('div_cpersonalize', 'a_cpersonalize')">Champ additionelles</a></li>
+						<li class="categorimenu"><strong>Paramètre</strong></li>
 						<li><a href="#" id="a_paiement"  onClick="changePage('div_paiement', 'a_paiement')">Méthodes de payements</a></li>
 					</ul>
 				</div> 
