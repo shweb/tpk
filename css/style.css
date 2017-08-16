@@ -647,6 +647,16 @@ font-weight: normal;
 padding: 14px 0;
 border-color: #fff;
 }
+.btn-annuler{
+    background-color: black;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    height: auto;
+    font-weight: normal;
+    padding: 14px 0;
+    border-color: #fff;
+}
 
 
 .initialize{
