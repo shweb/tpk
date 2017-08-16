@@ -286,24 +286,368 @@
 						</div>
 						
 						<div id="div_commandes" class="hide">
-							<h1 id="compte">Mes commandes</h1>
-							<p class="contre5">
-							"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+						 <div id="commande">
+                <div class="com_contenu">
+                    <h2>Commandes</h2>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th class="num">ID</th>
+                                <th>Date</th>
+                                <th>Client</th>
+                                <th>Totale</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td><input type="text" class="form-control" id="usr"></td>
+                                <td><input type="text" class="form-control" id="usr"></td>
+                                <td><input type="text" class="form-control" id="usr"></td>
+                                <td> <select class="form-control">
+                                    <option>Terminé</option>
+                                    <option>En attendant</option>
+                                    <option>Expiré</option>
+                                    <option>Annulé</option>
+                                    <option>Remboursé</option>
+                                </select></td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
 						</div>
 						
 						<div id="div_rapport" class="hide">
-							<h1 id="compte">Rapport</h1>
-							<p class="contre5">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+							           <div id="rapport">
+
+               <ul class="nav nav-tabs nav-tabs1">
+                   <li class="active ">
+                       <a  href="#1" data-toggle="tab">Aperçu</a>
+                   </li>
+                   <li><a href="#2" data-toggle="tab">Ventes</a>
+                   </li>
+                   <li><a href="#3" data-toggle="tab">Ordres</a>
+                   <li><a href="#4" data-toggle="tab">Validations</a>
+                   </li>
+               </ul>
+
+               <div class="tab-content ">
+                   <div class="tab-pane active" id="1">
+                       <form>
+                           <div class="pane1">
+                               <div class="row">
+                                   <div class="col-lg-10 col-lg-offset-1 choix1" >
+                               <select class="form-control" id="sel1">
+                                   <option>Mon événement</option>
+                                   <option>Tous les événements</option>
+                                   <option>Maka en concert</option>
+                                   <option>Se rencontrer</option>
+                               </select>
+                                   </div>
+                               </div>
+                               <div class="row">
+                                   <div class="col-lg-6 text-center">
+                                       <div class="counter">
+                                           <div class="counter_number">
+                                               0
+                                               <i class="fa fa-ticket" aria-hidden="true"></i>
+                                               <div class="counter-label">Billets vendus</div>
+                                           </div>
+                                       </div>
+                                   </div>
+                                   <div class="col-lg-6 text-center">
+                                       <div class="counter">
+                                           <div class="counter_number">
+                                               0
+                                               <i class="fa fa-eur" aria-hidden="true"></i>
+                                               <div class="counter-label">Rotation</div>
+                                           </div>
+                                       </div>
+                                   </div>
+
+                               </div>
+                           </div>
+                           <div class="panel-body">
+                               <h2>Billets vendus au cours des 30 derniers jours</h2>
+                               <div id="chart-sales" class="ct-chart ct-octave">
+                                   <g class="ct-grids"><line y1="381.25" y2="381.25" x1="10" x2="817.5" class="ct-grid ct-vertical"></line><line y1="15" y2="15" x1="10" x2="817.5" class="ct-grid ct-vertical"></line></g>
+
+
+                               </div>
+
+                           </div>
+                       </form>
+                   </div>
+                   <div class="tab-pane" id="2">
+                       <div class="rapporter">
+                           <div class="row">
+                               <div class="col-lg-10 col-lg-offset-1">
+                                   <select class="form-control choix2" id="sel2">
+                                       <option>Mon événement</option>
+                                       <option>Tous les événements</option>
+                                       <option>Maka en concert</option>
+                                       <option>Se rencontrer</option>
+                                   </select>
+                                   <br>
+                                   <div class="form-group">
+                                       <p class="text-right">
+                                           <a class="btn btn-default btn-xs" href="#">.xls</a>
+                                           <a class="btn btn-default btn-xs" href="#">.csv</a>
+                                       </p>
+
+                                       <div class="table-responsive">
+                                           <table class="table table-hover table-striped">
+
+                                               <thead class="bg-blue-grey-100">
+                                               <tr>
+                                                   <th>Date</th>
+                                                   <th class="text-right">Ordres</th>
+                                                   <th class="text-right">Ventes</th>
+                                                   <th class="text-right">Billets</th>
+                                               </tr>
+                                               </thead>
+
+                                               <tbody>
+                                               </tbody>
+
+
+                                           </table>
+                                       </div>
+
+
+                                   </div>
+
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="tab-pane" id="3">
+                       <div class="rapporter">
+                           <div class="row">
+                               <div class="col-lg-10 col-lg-offset-1">
+                                   <select class="form-control choix2" id="sel2">
+                                       <option>Mon événement</option>
+                                       <option>Tous les événements</option>
+                                       <option>Maka en concert</option>
+                                       <option>Se rencontrer</option>
+                                   </select>
+                                   <br>
+                                   <div class="form-group">
+                                       <p class="text-right">
+                                           <a class="btn btn-default btn-xs" href="#">.xls</a>
+                                           <a class="btn btn-default btn-xs" href="#">.csv</a>
+                                       </p>
+
+                                       <div class="table-responsive">
+                                           <table class="table table-hover table-striped">
+
+                                               <thead class="bg-blue-grey-100">
+                                               <tr>
+                                                   <th>Date</th>
+                                                   <th class="text-right">ID</th>
+                                                   <th class="text-right">Date</th>
+                                                   <th class="text-right">Ventes</th>
+                                                   <th class="text-right">Billets</th>
+                                                   <th class="text-right">Billet régulier</th>
+                                                   <th class="text-right">Lang régulier</th>
+                                                   <th class="text-right">Ref</th>
+                                               </tr>
+                                               </thead>
+
+                                               <tbody>
+                                               </tbody>
+
+
+                                           </table>
+                                       </div>
+
+
+                                   </div>
+
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="tab-pane" id="4">
+                       <div class="rapporter">
+                           <div class="row">
+                               <div class="col-lg-10 col-lg-offset-1">
+                                   <select class="form-control choix2" id="sel2">
+                                       <option>Mon événement</option>
+                                       <option>Tous les événements</option>
+                                       <option>Maka en concert</option>
+                                       <option>Se rencontrer</option>
+                                   </select>
+                                   <br>
+                                   <div class="form-group">
+                                       <p class="text-right">
+                                           <a class="btn btn-default btn-xs" href="#">.xls</a>
+                                           <a class="btn btn-default btn-xs" href="#">.csv</a>
+                                       </p>
+
+                                       <div class="table-responsive">
+                                           <table class="table table-hover table-striped">
+
+                                               <thead class="bg-blue-grey-100">
+                                               <tr>
+                                                   <th>Date</th>
+                                                   <th class="text-right">Date</th>
+                                                   <th class="text-right">Codes validés</th>
+                                                   <th class="text-right">Billets validés</th>
+                                               </tr>
+                                               </thead>
+
+                                               <tbody>
+                                               </tbody>
+
+
+                                           </table>
+                                       </div>
+
+
+                                   </div>
+
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+               </div>
+
+           </div>
 						</div>
 						
 						<div id="div_type" class="hide">
-							<h1 id="compte">Types de tickets</h1>
-							<p class="contre5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+						           <div id="type_ticket">
+                <div class="com_contenu_type">
+                    <h2>Type des tickets</h2>
+                    <div class="ticket_type_contenu">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2>Ticket régulier</h2>
+                            </div>
+                            <div class="col-lg-2">
+                                <h2>10.00</h2>
+                                    <p>EUR</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <h2>
+                                <div class="btn-group pull-right">
+                                    <button type="button" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                        Edit</button>
+                                    <button type="button" class="btn btn-default dropdown-toggle pull-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="caret"></span>
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu menu_type">
+                                        <li><a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> Déplacer vers le haut</a></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Déplacer vers le bat</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li><a href="#"><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Dupliquer</a></li>
+                                    </ul>
+                                </div>
+                                </h2>
+                            </div>
+                        </div>
+                        <p>0 sold</p>
+
+
+                    </div>
+
+                    <div class="ticket_type_contenu">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h2>Régulier</h2>
+                            </div>
+                            <div class="col-lg-2">
+                                <h2>0.00</h2>
+                                <p>EUR</p>
+                            </div>
+                            <div class="col-lg-4">
+                                <h2>
+                                    <div class="btn-group pull-right">
+                                        <button type="button" class="btn btn-default">
+                                            <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                            Edit</button>
+                                        <button type="button" class="btn btn-default dropdown-toggle pull-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <ul class="dropdown-menu menu_type">
+                                            <li><a href="#"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> Déplacer vers le haut</a></li>
+                                            <li><a href="#"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Déplacer vers le bat</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#"><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Dupliquer</a></li>
+                                        </ul>
+                                    </div>
+                                </h2>
+                            </div>
+                        </div>
+                        <p>Nombre de billets: 100</p>
+
+                    </div>
+                    <a href=#" class="btn btn-primary btn-outline text-center center-block" role="button">
+                        <i aria-hidden="true"></i> + Ajouter le type de ticket
+                    </a>
+                </div>
+                    <div class="com_contenu_type">
+                        <h2>Événement complet</h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                               <label>
+                                   Nombre maximum de billets</label>
+                                <div class="input-group"><input type="number" name="ticket_limit" value="15" id="ticket_limit" class="form-control" placeholder="∞" min="0">
+                                    <span class="input-group-addon">tickets</span></div>
+                                <p>Nombre maximum de billets pour l'ensemble de l'événement. Vous pouvez également définir les limites par type de ticket.</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <label>Taxe sur la valeur ajoutée</label>
+                                <form>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio">20%
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio">21%
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="optradio">0%
+                                    </label>
+                                </form>
+                            </div>
+                        </div>
+
+
+                </div>
+
+            </div>
 						</div>
 						
 						<div id="div_valideTicket" class="hide">
-							<h1 id="compte">Ticket validés</h1>
-							<p class="contre5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+						<div id="billet">
+                <div class="com_contenu">
+                    <h2>Validation des billets</h2>
+                    <p>
+                        Pour valider les tickets, vous aurez besoin d'un appareil mobile ou d'un ordinateur et d'une connexion Internet.
+
+                        Vous pouvez utiliser cet <a href="#" target="_blank">Exemple de ticket</a> pour vérifier si la validation fonctionne correctement.</p><br>
+                    <h3>Appareils mobiles</h3>
+                    <hr/>
+                    <p>Téléchargez notre application gratuite:</p>
+                    <a href="#" target="_blank"><img src="img/download-appstore.png"></a>
+                    <a href="#" target="_blank"><img src="img/download-playstore.png"></a>
+                    <p class="a1">Ou utiliser payé <a href="#" data-toggle="collapse">Pic2Shop Pro</a>.</p>
+                    <h3 class="h14">Ordinateurs et périphériques spéciaux</h3>
+                    <hr/>
+                    <p>Vous pouvez également utiliser différentes combinaisons de scanners et d'ordinateurs de codes à barres pour valider les tickets. Configurez votre scanner pour décoder les formats "Code QR" et "Code 128" et soumettre le formulaire au <a href="#">https://------  </a>Qui renvoie l'état actuel du ticket et le marque comme étant utilisé.</p>
+
+                </div>
+
+            </div>
 						</div>
 					
 						<div id="div_siteweb" class="hide">

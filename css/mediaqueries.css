@@ -12,6 +12,14 @@
     width: 100%;
     overflow:hidden;
 }
+    /*------------commande_event_------------------*/
+    .com_contenu {
+        padding-left: 22px;
+        padding-right: 22px;
+        margin-top: 41px;
+        padding-top: 28px;
+    }
+    /*-----------commande_events_end-----------------------*/
 }
 
 @media only screen and (min-device-width: 400px) and (max-device-width: 450px) {
