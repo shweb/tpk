@@ -20,6 +20,16 @@
         padding-top: 28px;
     }
     /*-----------commande_events_end-----------------------*/
+    /*--------------Type_ticket------------------*/
+    .com_contenu_type {
+        background-color: white;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 40px;
+        padding-top: 28px;
+        padding-bottom: 36px;
+    }
+    /*--------------Type_ticket-end-----------------*/
 }
 
 @media only screen and (min-device-width: 400px) and (max-device-width: 450px) {

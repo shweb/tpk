@@ -651,8 +651,137 @@
 						</div>
 					
 						<div id="div_siteweb" class="hide">
-							<h1 id="compte">site web</h1>
-							<p class="contre5">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+							<div class="com_contenu_type">
+								<h2>Informations sur le ticket</h2>
+
+								<div class="form-group">
+									<label>
+										<span>Text</span>
+									</label>
+									<textarea class="form-control" rows="5" id="comment"></textarea>
+								</div>
+								<div class="form-group form-group-translation en">
+									<label class="control-label" for="en[image_pdf_file]">
+										<span>Image</span>
+									</label>
+									<div class="dropify-wrapper">
+										<div class="dropify-message"><span class="file-icon"></span>
+											<p>Cliquez ou faites glisser votre fichier ici</p>
+											<p class="dropify-error">Ooops,Quelque chose de mal ajouté.</p></div>
+										<div class="dropify-loader"></div>
+										<div class="dropify-errors-container">
+											<ul></ul>
+										</div>
+										<input type="file" name="en[image_pdf_file]" id="en[image_pdf_file]" data-plugin="dropify"
+											   data-default-file="">
+										<button type="button" class="dropify-clear">Supprimer</button>
+										<div class="dropify-preview"><span class="dropify-render"></span>
+											<div class="dropify-infos">
+												<div class="dropify-infos-inner"><p class="dropify-infos-message">Pour remplacer, cliquez ou
+													faites glisser et déposez un nouveau fichier ici</p></div>
+											</div>
+										</div>
+									</div>
+									<input type="hidden" class="delete" name="en[image_pdf_delete]" id="en[image_pdf_delete]">
+									<input type="hidden" class="filename" name="en[image_pdf]" id="en[image_pdf]" value="">
+									<span class="help-block">L'image couvrira le ticket d'un côté à l'autre. Utilisez un fichier JPG ou PNG de 1240px. Lorsque vous choisissez la hauteur, assurez-vous que tout sur le ticket PDF correspond à une seule page. Les fichiers les plus étendus sont automatiquement réduits.</span>
+								</div>
+							</div>
+							<hr/>
+							<div class="com_contenu_type_ticket">
+								<form>
+									<div class="radio-custom radio-primary">
+										<input type="radio" name="split_tickets" id="split_tickets_1" value="1" checked="">
+										<label for="split_tickets_1">Créer des billets distincts pour chaque participant</label>
+										<span class="help-block">Utile lorsque les participants arrivent séparément.</span>
+									</div>
+									<div class="radio-custom radio-primary">
+										<input type="radio" name="split_tickets" id="split_tickets_0" value="0">
+										<label for="split_tickets_0">Créer un ticket composé</label>
+										<span class="help-block">Utile lorsque les participants arrivent ensemble - de cette façon, vous gagnez du temps lors de la validation des billets.</span>
+									</div>
+								</form>
+							</div>
+							<div class="com_contenu_type_foot">
+								<button type="button" class="btn btn-danger bout">Enregistrer</button>
+
+							</div>
+
+							<div class="com_contenu_type">
+								<h2>Aperçu des tickets</h2>
+								<p>Toutes les données du ticket sont incluses dans le corps du courrier électronique et dans le fichier .pdf
+									joint.</p>
+
+
+								<ul class="nav nav-tabs nav-tabs1">
+									<li class="active ">
+										<a href="#1a" data-toggle="tab">Aperçu</a>
+									</li>
+									<li><a href="#2a" data-toggle="tab">Ventes</a>
+									</li>
+								</ul>
+
+								<div class="tab-content ">
+									<div class="tab-pane active" id="1a">
+										<button type="submit" name="btn" value="send_test_email" class="preview-action btn btn-default btn-sm btn-outline pull-right">Envoyez-moi un email de test</button>
+										<div class=" row menu_int1">
+											<div class="menu_int2">
+												<div class="com_contenu_type">
+													<h2>Tapakila</h2>
+													<p>Merci, voici vos billets! Lorsque vous participez, indiquez le code dans ce courrier électronique ou utilisez le fichier .pdf ci-joint</p>
+													<hr/>
+													<h2>Mes évènements</h2>
+													<strong>Tue 25. July 2017 - 14:00</strong>
+													<p>Location · . Viru 12-34, Tallinn, Estonia <a href="#" target="_blank">Map</a></p>
+													<hr/>
+													<p style="text-align: center; margin: 5px 0; ">1 x Regular ticket</p>
+													<p style="text-align: center">
+														<img src="img/123456TEST.png" class="qt" >
+
+													</p>
+													<p class="small" style="text-align: center; font-size: 13px;">123456TEST</p>
+												</div>
+
+											</div>
+											<table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+												<tbody><tr>
+													<td style="padding: 15px 10px 40px 10px; width: 100%; font-family: sans-serif; text-align: center; color: #888888;">
+														<p class="small" style="font-size: 13px; line-height:22px;">
+															Ticket order 123456<br>
+															This email has been sent to <a href="mailto:dinavonjy@icloud.com">dinavonjy@icloud.com</a><br>
+															<a href="#" style="color:#2CB0E1; text-decoration: none;">Piletimasin</a> · Organize your event
+														</p>
+													</td>
+												</tr>
+												</tbody></table>
+
+
+										</div>
+									</div>
+									<div class="tab-pane" id="2a">
+										<button type="submit" name="btn" value="send_test_email" class="preview-action btn btn-default btn-sm btn-outline pull-right">Envoyez-moi un email de test</button>
+										<div class=" row menu_int2">
+											<div class="menu_int3">
+												<div id="menu_left">
+													<img src="img/123456TEST.png" class="qt">
+
+												</div>
+												<div id="menu_right">
+													<h2>Mon événement</h2>
+													<p>Tue 25. July 2017 - 14:00</p>
+													<p>Location · . Viru 12-34, Tallinn, Estonia</p>
+												</div>
+
+											</div>
+											<hr/>
+
+										</div>
+
+									</div>
+								</div>
+
+
+							</div>
 						</div>
 						
 						<div id="div_pdf" class="hide">
