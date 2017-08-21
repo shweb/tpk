@@ -687,19 +687,23 @@
 									<label class="control-label" for="en[image_pdf_file]">
 										<span>Image</span>
 									</label>
-									<div class="dropify-wrapper" onmouseover="mouseOverFunction()" onmouseout="mouseOutFunction()">
-
-										<div class="dropify-message" id="mot"><span class="file-icon"></span>
-											<i class="glyphicon glyphicon-open"></i>
+									<div class="dropify-wrapper">
+										<div class="dropify-message"><span class="file-icon"></span>
 											<p>Cliquez ou faites glisser votre fichier ici</p>
+											<p class="dropify-error">Ooops,Quelque chose de mal ajouté.</p></div>
+										<div class="dropify-loader"></div>
+										<div class="dropify-errors-container">
+											<ul></ul>
 										</div>
-
-										<input type="file" id="input" type="file" accept="image/*" onchange="loadFile(event)">
-										<img id="output" class="hide"/>
-
-										<button id="button" type="button" class="btn btn-danger hide" onclick="buttonClick()">Supprimer</button>
-
-
+										<input type="file" name="en[image_pdf_file]" id="en[image_pdf_file]" data-plugin="dropify"
+											   data-default-file="">
+										<button type="button" class="dropify-clear">Supprimer</button>
+										<div class="dropify-preview"><span class="dropify-render"></span>
+											<div class="dropify-infos">
+												<div class="dropify-infos-inner"><p class="dropify-infos-message">Pour remplacer, cliquez ou
+													faites glisser et déposez un nouveau fichier ici</p></div>
+											</div>
+										</div>
 									</div>
 									<input type="hidden" class="delete" name="en[image_pdf_delete]" id="en[image_pdf_delete]">
 									<input type="hidden" class="filename" name="en[image_pdf]" id="en[image_pdf]" value="">
@@ -729,19 +733,23 @@
 									<label class="control-label" for="en[image_pdf_file]">
 										<span>Image</span>
 									</label>
-									<div class="dropify-wrapper" onmouseover="mouseOverFunction()" onmouseout="mouseOutFunction()">
-
-										<div class="dropify-message" id="mot"><span class="file-icon"></span>
-											<i class="glyphicon glyphicon-open"></i>
+									<div class="dropify-wrapper">
+										<div class="dropify-message"><span class="file-icon"></span>
 											<p>Cliquez ou faites glisser votre fichier ici</p>
+											<p class="dropify-error">Ooops,Quelque chose de mal ajouté.</p></div>
+										<div class="dropify-loader"></div>
+										<div class="dropify-errors-container">
+											<ul></ul>
 										</div>
-
-										<input type="file" id="input" type="file" accept="image/*" onchange="loadFile(event)">
-										<img id="output" class="hide"/>
-
-										<button id="button" type="button" class="btn btn-danger hide" onclick="buttonClick()">Supprimer</button>
-
-
+										<input type="file" name="en[image_pdf_file]" id="en[image_pdf_file]" data-plugin="dropify"
+											   data-default-file="">
+										<button type="button" class="dropify-clear">Supprimer</button>
+										<div class="dropify-preview"><span class="dropify-render"></span>
+											<div class="dropify-infos">
+												<div class="dropify-infos-inner"><p class="dropify-infos-message">Pour remplacer, cliquez ou
+													faites glisser et déposez un nouveau fichier ici</p></div>
+											</div>
+										</div>
 									</div>
 									<input type="hidden" class="delete" name="en[image_pdf_delete]" id="en[image_pdf_delete]">
 									<input type="hidden" class="filename" name="en[image_pdf]" id="en[image_pdf]" value="">
@@ -813,7 +821,7 @@
 														<p class="small" style="font-size: 13px; line-height:22px;">
 															Ticket order 123456<br>
 															This email has been sent to <a href="mailto:dinavonjy@icloud.com">dinavonjy@icloud.com</a><br>
-															<a href="#" style="color:#2CB0E1; text-decoration: none;">Piletimasin</a> ·
+															<a href="#" style="color:#2CB0E1; text-decoration: none;">Blabla</a> ·
 															Organize your event
 														</p>
 													</td>
@@ -898,16 +906,18 @@
 										<div class="form-group">
 											<label class="control-label block">Tickets</label>
 											<p>
-												Tickets are sent immediately after completing the payment.
+												
+												Les billets sont envoyés immédiatement après avoir effectué le paiement.
 											</p>
 										</div>
 										<div class="form-group">
 
 											<div class="checkbox">
 												<label><input type="checkbox" value="" checked="checked" disabled>
-													Piletimasin can send my customers invoices which are genereted behalf of my
-													organisation.
-													Preview
+													
+												Tapakila peut envoyer les factures de mes clients qui sont bien connues de mon
+												organisation.
+												Aperçu
 													<a href="#" target="_blank">invoice example</a>.
 												</label>
 											</div>
@@ -1107,36 +1117,6 @@ autoclose: false,    // auto close when minute is selected
 vibrate: true        // vibrate the device when dragging clock hand
 });
 </script>
-
-	  <!--Script de l'image------------->
-
-
-		 <script>
-             var output = document.getElementById('output');
-             var button = document.getElementById('button');
-             var input = document.getElementById('input');
-             var loadFile = function(event) {
-                 $('#mot').addClass('hide');
-                 output.src = URL.createObjectURL(event.target.files[0]);
-                 input.className = "hide";
-                 output.className = "show";
-             };
-             function mouseOverFunction(){
-                 if (output.className == "show"){
-                     button.className = "show";
-                 }
-             }
-             function mouseOutFunction(){
-                 button.className = "hide";
-             }
-             function buttonClick(){
-                 $('#mot').removeClass('hide');
-                 input.value = null;
-                 input.className = "show";
-                 output.className = "hide";
-                 button.className = "hide";
-             }
-		 </script>
 
 	</body>
 </html>
