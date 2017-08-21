@@ -29,6 +29,22 @@
         padding-top: 28px;
         padding-bottom: 36px;
     }
+    .com_contenu_type1 {
+        background-color: white;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 40px;
+        padding-top: 28px;
+        padding-bottom: 36px;
+    }
+    .com_contenu_type2 {
+        background-color: white;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 40px;
+        padding-top: 28px;
+        padding-bottom: 36px;
+    }
     /*--------------Type_ticket-end-----------------*/
 }
 
