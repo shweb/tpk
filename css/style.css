@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, li, p {
 word-wrap: break-word;
 }
 a{
-	color:#428bca;
+	color:black;
 }
 .nav > li > a:focus, .nav > li > a:hover {
     text-decoration: none;
@@ -1355,6 +1355,12 @@ background-position: 7px 9px;
 padding-top: 5px !important;
 padding-left: 40px !important;
 font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.time{
+	margin-right: 10px;
+}
+.position{
+	margin-right: 14px;
 }
 /* s'inscrire end */
 /*---------------------------------index-end-------------------------------------*/
