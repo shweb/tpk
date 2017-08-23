@@ -1140,5 +1140,221 @@ input[type="file"]{
 /*----------------------------------------WebSite-end---------------------------------*/
 
 /*----------------------------------index start--------------------------------------*/
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
 
+/* Basic Styles */
+.menupull{
+	color:black;
+}
+
+#sectioncategorie {
+	height: 40px;
+	width: 100%;
+	background: #ffffffe6;
+	font-size: 11pt;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin-top: -20px;
+
+}
+#sectioncategorie ul {
+	padding: 0;
+	margin: 0 -21px;
+	12height: 40px;
+}
+#sectioncategorie li {
+	display: inline;
+	float: left;
+}
+#sectioncategorie a {
+color: #000;
+display: inline-block;
+width: 100px;
+text-align: center;
+text-decoration: none;
+line-height: 40px;
+
+}
+#sectioncategorie li:last-child a {
+	border-right: 0;
+}
+
+#sectioncategorie a#pull {
+	display: none;
+}
+/*Styles for screen 700px > 1000*/
+@media screen and (min-width:500px) and (max-width: 1000px) {
+	#sectioncategorie {
+    height: 100px;
+    width: 100%;
+    background: #ffffffe6;
+    font-size: 11pt;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin-top: -20px;
+}
+}
+
+/*Styles for screen 600px and lower*/
+@media screen and (max-width: 600px) {
+	#sectioncategorie { 
+  		height: auto;
+  	}
+  #sectioncategorie ul {
+  		width: 100%;
+  		display: block;
+  		height: auto;
+  	}
+  	#sectioncategorie li {
+  		width: 50%;
+  		float: left;
+  		position: relative;
+  	}
+
+  	#sectioncategorie a {
+	  	text-align:center;
+	  	width: 100%;
+	  	
+  	}
+}
+
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 480px) {
+	#sectioncategorie {
+		border-bottom: 0;
+	}
+	#sectioncategorie ul {
+		display: none;
+		height: auto;
+	}
+	#sectioncategorie a#pull {
+		display: block;
+		width: 100%;
+		position: relative;
+		background-color: #f8f8f8;
+	}
+	#sectioncategorie a#pull:after {
+		content:"";
+		background: url('nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+	}
+	.menupull{
+	color:black;
+	}
+}
+
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+	#sectioncategorie li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	#sectioncategorie li a {
+		border-bottom: 1px solid #576979;
+		margin-left: 20px;
+	}
+	.menupull{
+	color:black;
+	}
+}
+
+
+
+
+/* section-evenement-start */
+#sectionevenement{
+background: #e5e5e5;
+}
+#sectionevenement li {
+  display: inline; 
+}
+
+#sectionevenement a {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 3px;
+  color: #333;
+  text-decoration: none;
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0));
+  background-repeat: no-repeat;
+  background-size: 100% 0;
+  background-position: left center;
+  transition: background-size .2s;
+}
+#sectionevenement a:hover {
+  background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1));
+  background-size: 100% 100%;
+}
+/* section-evenement-end */
+
+/* carousel-start*/
+#myCarousel{
+	margin-top:25px;
+	margin-bottom:25px;
+}
+
+/* carousel-end */
+/* categories item start */
+.categorie-item{
+border-top: 2px solid #d70506;
+border-bottom: 1px solid #d70506;
+}
+/* categories item end */
+/* s'inscrire start */
+.sinscrire{
+background:url(../img/spectacle.png) no-repeat;
+  background-repeat: no-repeat;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-bottom: 5%;
+background-position: 36% 53%;
+}
+.infopers{
+	text-align:center;
+	color:white;
+	margin-bottom:30px;
+}
+.inscriptioin{
+	font-size: 60px;
+}
+.btn-sinscrire{
+	width: 100%;
+background-color: #d70506;
+color: white;
+padding: 5px 0px ! important;
+}
+.email-subscribe{
+	height: 37px ! important;
+}
+#input-mail{ 
+background:url(../img/email.png) no-repeat #FFF;
+background-size: 20px;
+background-position: 7px 9px;
+}
+
+.placehold {
+padding-top: 5px !important;
+padding-left: 40px !important;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/* s'inscrire end */
 /*---------------------------------index-end-------------------------------------*/
