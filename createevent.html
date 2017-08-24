@@ -748,17 +748,17 @@
 									<label class="control-label" for="en[image_pdf_file]">
 										<span>Image</span>
 									</label>
-									<div class="dropify-wrapper" onmouseover="mouseOverFunction()" onmouseout="mouseOutFunction()">
+									<div class="dropify-wrapper" onmouseover="mouse1OverFunction()" onmouseout="mouse1OutFunction()">
 
-										<div class="dropify-message" id="mot"><span class="file-icon"></span>
+										<div class="dropify-message" id="mot1"><span class="file-icon"></span>
 											<i class="glyphicon glyphicon-open"></i>
 											<p>Cliquez ou faites glisser votre fichier ici</p>
 										</div>
 
-										<input type="file" id="input" type="file" accept="image/*" onchange="loadFile(event)">
-										<img id="output" class="hide"/>
+										<input type="file" id="input1" type="file" accept="image/*" onchange="loadFile1(event)">
+										<img id="output1" class="hide"/>
 
-										<button id="button" type="button" class="btn btn-danger hide" onclick="buttonClick()">Supprimer</button>
+										<button id="button1" type="button" class="btn btn-danger hide" onclick="button1Click()">Supprimer</button>
 
 
 									</div>
@@ -1002,7 +1002,7 @@
 						<li><a href="#" id="a_type"  onClick="changePage('div_type', 'a_type')">Types de Ticket  &amp; prix</a></li>
 						<li><a href="#" id="a_siteweb"  onClick="changePage('div_siteweb', 'a_siteweb')">Site web</a></li>
 						<li><a href="#" id="a_pdf"  onClick="changePage('div_pdf', 'a_pdf')">PDF</a></li>
-						<li><a href="#" id="a_cpersonalize"  onClick="changePage('div_cpersonalize', 'a_cpersonalize')">Champ additionelles</a></li>
+						<li><a href="#" id="a_cpersonalize"  onClick="changePage('div_cpersonalize', 'a_cpersonalize')">Champs additioneles</a></li>
 						<li class="categorimenu"><strong>Paramètre</strong></li>
 						<li><a href="#" id="a_paiement"  onClick="changePage('div_paiement', 'a_paiement')">Méthodes de payements</a></li>
 					</ul>
@@ -1154,6 +1154,33 @@ vibrate: true        // vibrate the device when dragging clock hand
                  input.className = "show";
                  output.className = "hide";
                  button.className = "hide";
+             }
+		 </script>
+		 
+		 <script>
+             var output1 = document.getElementById('output1');
+             var button1 = document.getElementById('button1');
+             var input1 = document.getElementById('input1');
+             var loadFile1 = function(event) {
+                 $('#mot1').addClass('hide');
+                 output1.src = URL.createObjectURL(event.target.files[0]);
+                 input1.className = "hide";
+                 output1.className = "show";
+             };
+             function mouse1OverFunction(){
+                 if (output1.className == "show"){
+                     button1.className = "show";
+                 }
+             }
+             function mouse1OutFunction(){
+                 button1.className = "hide";
+             }
+             function button1Click(){
+                 $('#mot1').removeClass('hide');
+                 input1.value = null;
+                 input1.className = "show";
+                 output1.className = "hide";
+                 button1.className = "hide";
              }
 		 </script>
 		 
