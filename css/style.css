@@ -1444,10 +1444,12 @@ margin-top: 6%;
 .board {
     width: 100%;
     margin: 60px auto;
-  height: 795px;
-    background: #fff;
-
 }
+.bgwhite {
+    background-color: white;
+    padding-top: 25px;
+}
+
 .board .nav-tabs {
     position: relative;
     /* border-bottom: 0; */
@@ -1574,14 +1576,15 @@ li.active span.round-tabs.five{
     
 }
 .nav-tabs > li.active:after {
-    content: " ";
-    position: absolute;
-    left: 45%;
-   opacity:1;
-    margin: 0 auto;
-    bottom: 0px;
-    border: 10px solid transparent;
-    border-bottom-color: #ddd;
+ content: " ";
+position: absolute;
+left: 45%;
+opacity: 29;
+margin: 0 auto;
+bottom: 0px;
+border: 12px solid #0f030300;
+    border-bottom-color: rgba(15, 3, 3, 0);
+border-bottom-color: #000;
     
 }
 .nav-tabs > li a{
@@ -1701,7 +1704,7 @@ left: 35%;
 }
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method.amex {
-	background-image: url("../img/Amex-icon.jpg");
+	background-image: url("../img/orangemoney.png");
 }
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method.vishwa {
