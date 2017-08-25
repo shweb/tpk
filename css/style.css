@@ -1782,3 +1782,113 @@ text-center {
 
 }
 /* search end */
+
+
+/*----------------------------------------details---------------------------------*/
+
+.detail_picture{
+	height: 312px;
+	width: 466px;
+}
+.div_style{
+	border-top: 1px solid #bfabab;
+	height: 48px;
+	padding-top: 13px;
+}
+.div_style1{
+	border-bottom: 1px solid #bfabab;
+	height: 48px;
+	padding-top: 13px;
+}
+.hier{
+	background-color: white;
+}
+
+.hier1{
+	background-color: white;
+	margin-left: 5px;
+	margin-right: 2px;
+
+}
+.hier2{
+	background-color: white;
+	margin-left: 5px;
+	margin-right: 2px;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 25px;
+
+}
+.tableau_detail{
+	margin-top: 10px;
+	background-color: white;
+	margin-left: 5px;
+}
+.tableau_detail table tr th{
+	background-color: #e1e1e1;
+	border-radius: 4px;
+	border-left: 2px solid white;
+	text-align: center;
+}
+.tableau_detail table tr td{
+	text-align: center;
+
+}
+.addtocartbutton{
+	color: white;
+	background-color: #d70506;
+	border-color: #d70506;
+	border-radius: 4px;
+}
+.selec{
+	background-color: white !important;
+	height: 26px;
+	font-size: 10px;
+}
+.colorcode{
+	background-color: #eb6505;
+	width: 18px;
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+.colorcode1{
+	background-color: #761c19;
+	width: 18px;
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+.colorcode2{
+	background-color: #2aabd2;
+	width: 18px;
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+.remarque_details{
+	background-color: #fefcdb;
+	margin-left: 5px;
+}
+.plan_detail{
+	background-color: white;
+	margin-left: 5px;
+	margin-right: 2px;
+}
+.plan_right{
+	border-left: 1px solid #bfabab;
+	margin-top: 104px;
+}
+.haut{
+	border-bottom: 3px solid #da2727;
+    padding-bottom: 35px;
+}
+.icon_kely{
+	width: 41px;
+}
+.image_logo{
+	margin-left: 15px; 
+	margin-bottom:90px;
+	width: 100px;
+}
+
+
+/*----------------------------------details-end-------------------------------------*/

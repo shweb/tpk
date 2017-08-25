@@ -216,6 +216,42 @@
     margin: 35px 0px 35px 92px;
     background-color: #d70506;
 }
+/*-------detail_catalog-------*/
+.hier1 {
+    background-color: white;
+    margin-left: -13px;
+    margin-right: -10px;
+}
+.tableau_detail {
+    margin-top: 10px;
+    background-color: white;
+    margin-left: -2px;
+}
+.detail_picture {
+    height: 221px;
+    width: 292px;
+}
+.plan{
+	width : 250px;
+}
+.plan_detail {
+    background-color: white;
+    margin-left: -12px;
+    margin-right: -11px;
+}
+.hier2 {
+    background-color: white;
+    margin-left: -11px;
+    margin-right: -11px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+}
+
+
+
+/*-------detail_catalog--end-----*/
 
 }
 @media only screen and (max-width: 990px) {
