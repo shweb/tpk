@@ -952,6 +952,7 @@ html|* > svg {
     margin: 35px 0px 35px 63px;
     background-color: #d70506;
 }
+
 .group{
     margin-bottom: 33px;
 }
@@ -1740,3 +1741,29 @@ text-center {
 }
 
 /* checkout end */
+
+/*------------------------ticket_details------------------------------*/
+.aa{
+	color:red;
+}
+.chiffre{
+	width: 70%;
+}
+.chiffre1{
+	margin-bottom: 6px;
+}
+.bout1 {
+    margin: 35px 0px 35px -1px;
+    background-color: black;
+	border-color: black;
+}
+.bout1:hover{
+	background-color: #428bca;
+	border-color: #428bca;
+}
+.bout:hover{
+	background-color: #428bca;
+	border-color: #428bca;
+}
+
+/*------------------------ticket_details-end-----------------------------*

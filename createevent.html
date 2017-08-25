@@ -304,6 +304,8 @@
 
 						</div>
 						
+	<!------------------------------------Commandes--------------------------------------------------------------------------->
+						
 						<div id="div_commandes" class="hide">
 							<div id="commande">
 								<div class="com_contenu">
@@ -337,6 +339,10 @@
 
 							</div>
 						</div>
+		
+		<!------------------------------------Commande-end--------------------------------------------------------------------------->
+		
+			<!-------------------------------------rapport------------------------------------------------------------------------->
 						
 						<div id="div_rapport" class="hide">
 							<div id="rapport">
@@ -540,6 +546,9 @@
 
 							</div>
 						</div>
+			<!------------------------------------Rapport-end--------------------------------------------------------------------------->
+			
+			<!------------------------------------type-ticket-------------------------------------------------------------------------->
 						
 						<div id="div_type" class="hide">
 							<div id="type_ticket">
@@ -621,7 +630,7 @@
 										<p>Nombre de billets: 100</p>
 
 									</div>
-									<a href=#" class="btn btn-primary btn-outline text-center center-block primary" role="button">
+									<a class="btn btn-primary btn-outline text-center center-block primary" role="button" onClick="changePage('div_ticket','a_type')">
 										<i aria-hidden="true"></i> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Ajouter
 										le type de ticket
 									</a>
@@ -664,6 +673,9 @@
 
 							</div>
 						</div>
+		<!------------------------------------type-ticket-end--------------------------------------------------------------------------->
+		
+		<!------------------------------------Ticket validé--------------------------------------------------------------------------->
 						
 						<div id="div_valideTicket" class="hide">
 						<div id="billet">
@@ -687,6 +699,11 @@
 
             </div>
 						</div>
+						
+		<!------------------------------------Ticket validé-end------------------------------------------------------------------------->
+		
+		
+		<!------------------------------------Site web-------------------------------------------------------------------------->
 					
 						<div id="div_siteweb" class="hide">
 							<div class="com_contenu_type">
@@ -732,6 +749,9 @@
 
 							</div>
 						</div>
+	<!------------------------------------Site web-end--------------------------------------------------------------------------->
+	
+	<!------------------------------------PDF--------------------------------------------------------------------------->
 						
 						<div id="div_pdf" class="hide">
 
@@ -869,6 +889,11 @@
 							</div>
 
 						</div>
+		<!------------------------------------PDF-end--------------------------------------------------------------------------->
+		
+		
+		
+		<!------------------------------------Champ additionel--------------------------------------------------------------------------->
 						
 						<div id="div_cpersonalize" class="hide">
 							<div class="com_contenu_type1">
@@ -891,6 +916,10 @@
 							</div>
 
 						</div>
+		<!------------------------------------Champ additionel-end--------------------------------------------------------------------------->
+		
+		
+		<!------------------------------------Methode des payements--------------------------------------------------------------------------->
 						
 						<div id="div_paiement" class="hide">
 							<div class="com_contenu_type1">
@@ -988,6 +1017,139 @@
 
 
 						</div>
+	<!------------------------------------Methode de payement-end--------------------------------------------------------------------------->
+	
+	
+	<!---------------------------ticket---------------------------------------------------------------------------------------->
+	
+	<!----------------------------------création-ticket------------------------------------->
+				<div id="div_ticket" class="hide">
+					
+		<div class="com_contenu_type1">
+			<div class="ticket_details">
+				<h2>Détails du type de ticket</h2><br/>
+				<form>
+					<div class="form-group">
+					  <label for="usr">Nom du type de ticket:*</label>
+					  <input type="text" class="form-control" id="usr">
+					  <span class="help-block">
+					  Par exemple. "Ticket régulier", "Early Bird", "Student"
+					  </span>
+					  
+					</div>
+					<div class="form-group">
+					  <label for="usr">La description</label>
+					  <input type="text" class="form-control" id="usr">
+					  <span class="help-block">
+					  Par exemple. "Vendu jusqu'au 23 juin" ou "Préparez-vous à montrer votre carte étudiante"
+					  </span><br/>
+					  <div class="row">
+						<div class="col-lg-6">
+						<label>
+                            Nombre maximum de billets</label>
+                        <div class="input-group group chiffre1">
+							<input type="number" name="ticket_limit" value="0.01"
+									 id="ticket_limit" class="form-control" placeholder="∞"
+									  min="0" step="0.01">
+								<span class="input-group-addon">AR</span>
+						</div>
+						</div>
+						<div class="col-lg-6">
+						</div>
+					  </div>
+					  <p class="help-block">Prix ​​de l'utilisateur final par billet incluant <a href="index.html" target="_blank" class="aa">Frais Tapakila</a> Et TVA, le cas échéant</p>
+					  
+					  
+					</div>
+				</form>
+			
+			</div>
+		</div>
+		<div class="com_contenu_type2">
+			<h2>Avancée</h2><br/>
+			<form>
+			<div class="row">
+						<div class="col-lg-6">
+						<label>
+                            Nombre maximum de billets</label>
+							<div class="input-group group chiffre1">
+								<input type="number" name="ticket_limit" 
+										 id="ticket_limit" class="form-control" placeholder=""
+										  min="0" >
+									<span class="input-group-addon">Tickets</span>
+							</div>
+						</div>
+						<div class="col-lg-6">
+						</div>
+			 </div>
+			 <p class="help-block">Le nombre maximum de tickets pour l'événement entier est défini sur "15".</p>
+			 <p class="help-block">Ici, vous pouvez définir une limite supplémentaire pour ce type de ticket uniquement. Il sera caché à partir de la page d'achat une fois épuisé</p><br/>
+			 <label>Disponible entre les dates, y compris:</label>
+			 <div class="row" id="event-duration">
+												<div class="row">
+													<div class="col-md-6">
+														<div class="form-group">
+																<div class="input-group">
+																	<div class="input-group-addon">
+																	<i class="fa fa-calendar"></i></div>
+																	<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+																</div>
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+																<div class="input-group">
+																	<div class="input-group-addon">
+																	<i >à</i></div>
+																	<input class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" type="text"/>
+																</div>
+														</div>
+													</div>
+												</div>
+											
+			</div>
+			<p class="help-block">Toute la vente de billets d'événement commence "Quand je publie cet événement" et finit "Seulement lorsque tous les billets ont été vendus"</p>
+			<p class="help-block">Ici, vous pouvez définir une limite supplémentaire pour ce type de ticket uniquement.</p><br/>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="form-group">
+					  <label for="usr">Code de réduction</label>
+					  <input type="text" class="form-control" id="usr">
+					</div>
+				</div>
+				<div class="col-lg-6">
+						<label>Prix ​​discount</label>
+                        <div class="input-group group chiffre">
+							<input type="number" name="ticket_limit" 
+									 id="ticket_limit" class="form-control" placeholder=""
+									  min="0" step="0.01">
+								<span class="input-group-addon">AR</span>
+						</div>
+				</div>
+			</div>
+			<div class="form-group">
+					  <label for="usr">Prix ​​discount</label>
+					  <input type="text" class="form-control" id="usr">
+			</div>
+			<label>Commande manuelle</label>
+			<div class="checkbox">
+				<label><input type="checkbox" value="">Ce type de billet est temporairement non vendu</label>
+			</div>
+			 
+			
+		</div>
+		<div class="com_contenu_type_foot">
+            <button type="button" class="btn btn-danger bout" onClick="changePage('div_type', 'a_type')">Enregistrer</button>
+			<button type="button" class="btn btn-danger bout1" onClick="changePage('div_type', 'a_type')">Annuler</button>
+
+        </div>
+		</form>
+		
+		
+				</div>
+		<!----------------------------------création ticket-end------------------------------------->
+	
+		<!---------------------------ticket-end--------------------------------------------------------------------------------------->
 					</div>
 			
 			<!-- menu droit start -->
@@ -1079,6 +1241,7 @@ $('ul li .tab-content '+target).toggleClass(active in);
 </script>
 <script>
     function changePage(id, aId) {
+	console.log('fghhgfhgfhg');
         document.getElementById("div_details").className = "hide";
         document.getElementById("div_commandes").className = "hide";
         document.getElementById("div_rapport").className = "hide";
@@ -1088,6 +1251,7 @@ $('ul li .tab-content '+target).toggleClass(active in);
         document.getElementById("div_pdf").className = "hide";
         document.getElementById("div_cpersonalize").className = "hide";
         document.getElementById("div_paiement").className = "hide";
+		document.getElementById("div_ticket").className = "hide";
         document.getElementById(id).className = "show";
 
         document.getElementById("a_details").className = "";
@@ -1102,6 +1266,7 @@ $('ul li .tab-content '+target).toggleClass(active in);
         document.getElementById(aId).className = "select";
     }
 </script>
+
 
 <script>
 
