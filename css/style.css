@@ -1771,12 +1771,14 @@ text-center {
 /*------------------------ticket_details-end-----------------------------*
 /* search start */
 .btn-search{
-	margin-bottom: 30px;
+	margin-top:20px;
+	
 }
 .search-bg{
-	background-color:white;
-	height: 285px;
-padding: 10px 0 10px 0px;
+    background-color: white;
+    height: 325px;
+    padding: 15px 45px 10px 45px;
+	margin-bottom: 25px;
 
 }
 /* search end */
