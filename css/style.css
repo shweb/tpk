@@ -1576,15 +1576,14 @@ li.active span.round-tabs.five{
     
 }
 .nav-tabs > li.active:after {
- content: " ";
-position: absolute;
-left: 45%;
-opacity: 29;
-margin: 0 auto;
-bottom: 0px;
-border: 12px solid #0f030300;
-    border-bottom-color: rgba(15, 3, 3, 0);
-border-bottom-color: #000;
+    content: " ";
+    position: absolute;
+    left: 47%;
+   opacity:1;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 10px solid transparent;
+    border-bottom-color: #000;
     
 }
 .nav-tabs > li a{
@@ -1704,7 +1703,7 @@ left: 35%;
 }
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method.amex {
-	background-image: url("../img/orangemoney.png");
+	background-image: url("../img/Amex-icon.jpg");
 }
 
 .paymentWrap .paymentBtnGroup .paymentMethod .method.vishwa {
