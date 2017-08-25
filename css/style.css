@@ -952,6 +952,11 @@ html|* > svg {
     margin: 35px 0px 35px 63px;
     background-color: #d70506;
 }
+.bout1 {
+    margin: 35px 0px 35px 63px;
+    background-color: #428bca;
+	border-color: #428bca;
+}
 .group{
     margin-bottom: 33px;
 }
