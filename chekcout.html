@@ -157,7 +157,7 @@
 									</div>                  
 								</div>                  
 								<p class="text-center">
-									<a href=""  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Preécédent </a>
+									<a href=""  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
 									<a href="" class="btn btn-success btn-outline-rounded green">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
 								</p>
 						</div>
@@ -177,7 +177,7 @@
 									</div>
 								</div>
 								<p class="text-center">
-									<a href=""  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Preécédent </a>
+									<a href=""  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
 									<a href="" class="btn btn-success btn-outline-rounded green">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
 								</p>
 						</div>
@@ -222,7 +222,7 @@
 									</div>
 								</p>
 								<p class="text-center">
-									<a href=""  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Preécédent </a>
+									<a href=""  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
 									<a href="" class="btn btn-success btn-outline-rounded green">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
 								</p>
 						</div>
@@ -386,6 +386,14 @@
             </div>
         </div>
     </footer>
+	<script typae="text/javascript">
+$('.dropdown-menu ul li a').click(function(event){
+event.stopPropagation();
+$(this).parent().toggleClass('active').siblings().removeClass('active');
+var target=$(this).attr('href');
+$('ul li .tab-content '+target).toggleClass(active in);
+});
+</script>
 <script>$(function(){
 $('a[title]').tooltip();
 });
