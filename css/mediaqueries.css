@@ -78,6 +78,16 @@
     margin-top: -76px;
 }
 /*---------------------site_web_end-------------------------*/
+/*-----------------details------------------------*/
+.detail_picture {
+    max-height: 312px;
+    max-width: 308px;
+}
+.plan{
+	width: 312px;
+	
+}
+/*-------------------deatails-end------------------------------*/
 }
 
 
@@ -94,6 +104,31 @@
     margin: 35px 0px 35px 137px;
     background-color: #d70506;
 }
+.detail_picture {
+    height: 268px;
+    width: 360px;
+}
+.hier1 {
+    margin-left: -14px;
+    margin-right: -14px;
+}
+.plan{
+	width: 375px;
+	
+}
+.plan_detail {
+    margin-left: -14px;
+    margin-right: -14px;
+}
+.tableau_detail {
+    margin-left: -12px;
+}
+.hier2 {
+    margin-left: -14px;
+    margin-right: -14px;
+}
+
+
 
 }
 

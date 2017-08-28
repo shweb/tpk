@@ -1787,8 +1787,9 @@ text-center {
 /*----------------------------------------details---------------------------------*/
 
 .detail_picture{
-	height: 312px;
-	width: 466px;
+	max-height: 312px;
+	max-width: 466px;
+	
 }
 .div_style{
 	border-top: 1px solid #bfabab;
