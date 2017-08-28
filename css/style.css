@@ -1539,17 +1539,16 @@ margin-top: 6%;
 
 
 /*----------------------------------------details---------------------------------*/
+.det-picture{
+	margin-top: 27px;
+	border: none;
+}
+.div_style {
+    border-top: 1px solid #bfabab;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
 
-.detail_picture{
-	max-height: 312px;
-	max-width: 466px;
-	
-}
-.div_style{
-	border-top: 1px solid #bfabab;
-	height: 48px;
-	padding-top: 13px;
-}
 .div_style1{
 	border-bottom: 1px solid #bfabab;
 	height: 48px;
