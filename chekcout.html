@@ -7,6 +7,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mediaqueries.css">
+	<link rel="stylesheet" href="css/mediaqueries_sample.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link href="css/datepicker.css" rel="stylesheet">
@@ -30,7 +31,7 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								  </button>
-								  <a class="navbar-brand" href="#">
+								  <a class="navbar-brand" href="index.html">
 									<img src="./img/logo.png" title="tapakila">
 								  </a>
 				</div>
@@ -74,10 +75,10 @@
 								</span> 
 								</a>
 							</li>
-							<li>
+							<li >
 								<a href="#profile" data-toggle="tab" title="Adresse de Facturation">
 								<span class="round-tabs two">
-								<i class="glyphicon glyphicon-map-marker"></i>
+								<i class="glyphicon glyphicon-map-marker "></i>
 								</span> 
 								</a>
 							</li>
@@ -121,8 +122,8 @@
 						
 							</p>
 							<p class="text-center">
-								<a href=""  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
-								<a href="" class="btn btn-success btn-outline-rounded green">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
+								<a href="#home" data-toggle="tab" title="Acceuil"  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
+								<a  href="#profile" data-toggle="tab"  class="btn btn-success btn-outline-rounded green">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
 							</p>
 						</div>
 						</div>
@@ -157,30 +158,30 @@
 									</div>                  
 								</div>                  
 								<p class="text-center">
-									<a href=""  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
-									<a href="" class="btn btn-success btn-outline-rounded green">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
+									<a  href="#home" data-toggle="tab"  class="btn btn-success btn-outline-rounded green "><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
+									<a  href="#messages" data-toggle="tab" title="Adresse de Livraison" class="btn btn-success btn-outline-rounded green">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
 								</p>
 						</div>
 						</div>
 					  
 						<div class="tab-pane fade" id="messages">
-						<div class="bgwhite">
-							<h1 class="head text-center">Adresse de livraison</h1>
-								<div class="container">
-									<div class="resume">
-										<form>
-											<div class="form-group">
-												<label for="mail">Adresse e-mail</label>
-												<input type="mail" class="form-control" id="e-mail">
-											</div> 
-										</form>
+							<div class="bgwhite">
+								<h1 class="head text-center">Adresse de livraison</h1>
+									<div class="container">
+										<div class="resume">
+											<form>
+												<div class="form-group">
+													<label for="mail">Adresse e-mail</label>
+													<input type="mail" class="form-control" id="e-mail">
+												</div> 
+											</form>
+										</div>
 									</div>
-								</div>
-								<p class="text-center">
-									<a href=""  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
-									<a href="" class="btn btn-success btn-outline-rounded green">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
-								</p>
-						</div>
+									<p class="text-center">
+										<a  href="#profile" data-toggle="tab"  data-toggle="tab" class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
+										<a href="#settings" data-toggle="tab" title="Paiment" class="btn btn-success btn-outline-rounded green">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
+									</p>
+							</div>
 						</div>
 					  
 						<div class="tab-pane fade" id="settings">
@@ -222,8 +223,8 @@
 									</div>
 								</p>
 								<p class="text-center">
-									<a href=""  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
-									<a href="" class="btn btn-success btn-outline-rounded green">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
+									<a href="#messages" data-toggle="tab"   class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
+									<a href="#doner" data-toggle="tab" class="btn btn-success btn-outline-rounded green">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
 								</p>
 						</div>
 						</div>
@@ -317,8 +318,8 @@
 										</div>
 										</div>
 										<p class="text-center">
-											<a href=""  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
-											<a href="" class="btn btn-success btn-outline-rounded green">Continuer<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
+											<a href="#settings" data-toggle="tab"  class="btn btn-success btn-outline-rounded green"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
+											<a href="#" class="btn btn-success btn-outline-rounded green">Continuer<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
 										</p>
 									</section>
 								</div>

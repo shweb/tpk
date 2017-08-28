@@ -31,32 +31,39 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								  </button>
-								  <a class="navbar-brand" href="#">
+								  <a class="navbar-brand" href="index.html">
 									<img src="./img/logo.png" title="tapakila">
 								  </a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 									<ul class="nav navbar-nav navbar-right">
 										
-										<li><button type="" class="btn btn-success event"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></button></li>
-										<li><a href="#">Panier</a></li>
+										<li><button href type="" class="btn btn-success event"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></button></li>
+										<li><a href="panier.html">Panier</a></li>
 										<li role="presentation" class="dropdown"> 
-										<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
-										<span class="caret"></span> </a> 
-											<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
-											<li>
-											<form action="./page/recherche.html" method="get">
-											   <input type="text" name="query" placeholder="Search..." autocomplete="off">
-											   <input type="submit" value="Search">
-										   </form>
-										   </li> 
-											</ul> 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+											<span class="caret"></span> </a> 
+												<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
+												<li>
+												<form action="./page/recherche.html" method="get">
+												   <input type="text" name="query" placeholder="Search..." autocomplete="off">
+												   <input type="submit" value="Search">
+												</form>
+											   </li> 
+												</ul> 
 										</li>
-										<li role="presentation" class="dropdown connexion" >
 										
-										<a href="#" class="dropdown-toggle" id="drop7"> Connexion
-										<span class="caret"></span> </li></a>
+										<li role="presentation" class="dropdown connexion" > 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a> 
+												<ul class="dropdown-menu " id="menu3" aria-labelledby="drop6"> 
+													<a href ="connexion.html"><li class="conexion"><strong>Se connecter</strong></li></a> 
+													<a href ="connexion.html"><li class="conexion"><strong>S'inscrire</strong></li></a> 
+												</ul> 
+										</li>
+										
 									</ul>
+
 				</div>
 			</div>
 		</nav>
@@ -125,10 +132,10 @@
 					<div id="footer-btn">
 						<div class="col-md-10 col-sm-10 col-xs-12">
 							<button type="button" class="btn btn-primary achat">Continuer vos achats</button>
-							<button type="button" class="btn btn-success caisse">passer à la caisse</button>
+							<button type="button" class="btn btn-success caisse">Commander</button>
 						</div>
 						<div class="col-md-2 col-sm-2 col-xs-12">
-							<button type="button" class="btn btn-danger vide">Panier Vide</button>
+							<button type="button" class="btn btn-danger vide">Vider panier</button>
 						</div>
 					</div>
 					</div>
