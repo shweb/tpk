@@ -24,35 +24,42 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								  </button>
-								  <a class="navbar-brand" href="#">
+								  <a class="navbar-brand" href="index.html">
 									<img src="./img/logo.png" title="tapakila">
 								  </a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 									<ul class="nav navbar-nav navbar-right">
 										
-										<li><button type="" class="btn btn-success event"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></button></li>
-										<li><a href="#">Panier</a></li>
+										<li><button href type="" class="btn btn-success event"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></button></li>
+										<li><a href="panier.html">Panier</a></li>
 										<li role="presentation" class="dropdown"> 
-										<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
-										<span class="caret"></span> </a> 
-											<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
-											<li>
-											<form action="./page/recherche.html" method="get">
-											   <input type="text" name="query" placeholder="Search..." autocomplete="off">
-											   <input type="submit" value="Search">
-										   </form>
-										   </li> 
-											</ul> 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+											<span class="caret"></span> </a> 
+												<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
+												<li>
+												<form action="./page/recherche.html" method="get">
+												   <input type="text" name="query" placeholder="Search..." autocomplete="off">
+												   <input type="submit" value="Search">
+												</form>
+											   </li> 
+												</ul> 
 										</li>
-										<li role="presentation" class="dropdown connexion" >
 										
-										<a href="#" class="dropdown-toggle" id="drop7"> Connexion
-										<span class="caret"></span> </li></a>
+										<li role="presentation" class="dropdown connexion" > 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a> 
+												<ul class="dropdown-menu " id="menu3" aria-labelledby="drop6"> 
+													<a href ="connexion.html"><li class="conexion">Se connecter</li></a> 
+													<a href ="connexion.html"><li class="conexion">S'inscrire</li></a> 
+												</ul> 
+										</li>
+										
 									</ul>
+
+				</div>
 			</div>
-			</div>
-			</nav>
+		</nav>
 		
 		 <!-- header end -->
 		<section id="content" class="debut">
@@ -94,12 +101,83 @@
 						</div>
 						<div id="div_commandes" class="hide">
 							<h1 id="compte">Mes commandes</h1>
-							<p class="contre5">
-							"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+							<div class="contre">
+								<div class="table-responsive tableau_detail">          
+									  <table class="table table-hover">
+										<thead>
+										  <tr>
+											<th>N°</th>
+											<th>Date</th>
+											<th>Heure</th>
+											<th>Lieu</th>
+											<th>Avatar</th>
+											<th>Titre</th>
+											<th>Status</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<td>1</td>
+											<td>12/10/2017</td>
+											<td>09:00 AM</td>
+											<td>Mahamasina</td>
+											<td><img src="img/mahaleo2.jpeg" class="detail_picture1"></td>
+											<td>Mahaleo en live</td>
+											<td>En attendant</td>
+										  </tr>
+										    <tr>
+											<td>1</td>
+											<td>20/10/2017</td>
+											<td>09:00 PM</td>
+											<td>Mahamasina</td>
+											<td><img src="img/danse.jpg" class="detail_picture1"></td>
+											<td>Live party</td>
+											<td>Annulé</td>
+										  </tr>
+										</tbody>
+									  </table>
+									  </div>
+							</div>
 						</div>
 						<div id="div_ev" class="hide">
 							<h1 id="compte">Mes Evènements</h1>
-							<p class="contre5">"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
+							<div class="contre">
+								<div class="table-responsive tableau_detail">          
+									  <table class="table table-hover">
+										<thead>
+										  <tr>
+											<th>N°</th>
+											<th>Date</th>
+											<th>Heure</th>
+											<th>Lieu</th>
+											<th>Avatar</th>
+											<th>Titre</th>
+											<th>Status</th>
+										  </tr>
+										</thead>
+										<tbody>
+										  <tr>
+											<td>1</td>
+											<td>12/10/2017</td>
+											<td>09:00 AM</td>
+											<td>Mahamasina</td>
+											<td><img src="img/ercimanana.png" class="detail_picture1"></td>
+											<td>Mahaleo en live</td>
+											<td>En attendant</td>
+										  </tr>
+										    <tr>
+											<td>1</td>
+											<td>20/10/2017</td>
+											<td>09:00 PM</td>
+											<td>Mahamasina</td>
+											<td><img src="img/jerry.png" class="detail_picture1"></td>
+											<td>Live party</td>
+											<td>Annulé</td>
+										  </tr>
+										</tbody>
+									  </table>
+									  </div>
+							</div>
 						</div>
 					<div id="div_favoris" class="hide">
 					<h1 id="compte">Mes Favoris</h1>

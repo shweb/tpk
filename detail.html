@@ -23,7 +23,7 @@
 	</head>
 	  <body>
 		 <!-- header start -->	
-		<nav  id="background" class="navbar navbar-default navbar-static-top">
+<nav  id="background" class="navbar navbar-default navbar-static-top">
 			 <div class="container">
 				<div class="navbar-header">
 								  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -32,32 +32,39 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								  </button>
-								  <a class="navbar-brand" href="#">
+								  <a class="navbar-brand" href="index.html">
 									<img src="./img/logo.png" title="tapakila">
 								  </a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 									<ul class="nav navbar-nav navbar-right">
 										
-										<li><button type="" class="btn btn-success event"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></button></li>
-										<li><a href="#">Panier</a></li>
+										<li><button href type="" class="btn btn-success event"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></button></li>
+										<li><a href="panier.html">Panier</a></li>
 										<li role="presentation" class="dropdown"> 
-										<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
-										<span class="caret"></span> </a> 
-											<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
-											<li>
-											<form action="./page/recherche.html" method="get">
-											   <input type="text" name="query" placeholder="Search..." autocomplete="off">
-											   <input type="submit" value="Search">
-										   </form>
-										   </li> 
-											</ul> 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+											<span class="caret"></span> </a> 
+												<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
+												<li>
+												<form action="./page/recherche.html" method="get">
+												   <input type="text" name="query" placeholder="Search..." autocomplete="off">
+												   <input type="submit" value="Search">
+												</form>
+											   </li> 
+												</ul> 
 										</li>
-										<li role="presentation" class="dropdown connexion" >
 										
-										<a href="#" class="dropdown-toggle" id="drop7"> Connexion
-										<span class="caret"></span> </li></a>
+										<li role="presentation" class="dropdown connexion" > 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a> 
+												<ul class="dropdown-menu " id="menu3" aria-labelledby="drop6"> 
+													<a href ="connexion.html"><li class="conexion">Se connecter</li></a> 
+													<a href ="connexion.html"><li class="conexion">S'inscrire</li></a> 
+												</ul> 
+										</li>
+										
 									</ul>
+
 				</div>
 			</div>
 		</nav>
@@ -122,7 +129,7 @@
 										<strong>Date : </strong> 26 Juin 2017
 									</div>
 									<div class="div_style">
-										<strong>Disponiblité : <span class="couleur_mot">Encore disponible<span></strong>
+										<strong>Venu :</strong>
 									</div>
 								</div>
 								
@@ -136,6 +143,7 @@
 									<th>Catégories des prix</th>
 									<th>Quantité</th>
 									<th>Acheter en ligne</th>
+									<th>Disponiblité</th>
 								</tr>
 								</thead>
 								<tbody>
@@ -167,6 +175,9 @@
 									<td>
 										<input name="addtocart" value="Choisir" class="addtocartbutton" type="submit">
 									</td>
+									<td>
+										<span class="couleur_mot">Disponible<span>
+									</td>
 								</tr>
 								<tr>
 									<td><strong>Mardi</strong><p>7:30pm</p></td>
@@ -196,6 +207,9 @@
 									<td>
 										<input name="addtocart" value="Choisir" class="addtocartbutton" type="submit">
 									</td>
+									<td>
+										<span class="couleur_mot">Disponible<span>
+									</td>
 								</tr>
 								<tr>
 									<td><strong>Mardi</strong><p>7:30pm</p></td>
@@ -224,6 +238,9 @@
 									</td>
 									<td>
 										<input name="addtocart" value="Choisir" class="addtocartbutton" type="submit">
+									</td>
+									<td>
+										<span class="couleur_mot">Non Disponible<span>
 									</td>
 								</tr>
 								</tbody>

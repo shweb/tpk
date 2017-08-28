@@ -661,6 +661,11 @@ border-bottom: 20px solid transparent;
 a:link {
     text-decoration: none;
 }
+.detail_picture1{
+	max-width:180px;
+	min-width:180px;
+	max-height: 95px;
+}
  /* mon compte end */ 
 
 
