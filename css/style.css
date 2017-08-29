@@ -1551,11 +1551,12 @@ margin-top: 6%;
 
 .div_style1{
 	border-bottom: 1px solid #bfabab;
-	height: 48px;
+	padding-bottom: 13px;
 	padding-top: 13px;
 }
 .hier{
 	background-color: white;
+	padding-bottom: 13px;
 }
 
 .hier1{
@@ -1644,8 +1645,15 @@ margin-top: 6%;
 	width: 100px;
 }
 .couleur_mot{
-	color:red
+	color:#b91027;
 }
 
 
 /*----------------------------------details-end-------------------------------------*/
+
+/*----------------categorie----------------*/
+.categorie-dj{
+	border-bottom: 3px solid #d70506;
+}
+
+/*--------------------categorie-end---------------------------------*/
