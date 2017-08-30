@@ -1669,5 +1669,26 @@ margin-top: 6%;
 	background-color: white;
 	
 }
+.panier{
+	width: 22%;
+}
+.panier1{
+	border: none;
+}
+.mot_h2{
+	text-align: center;
+}
+.mot_ha{
+	text-align: center;
+	color : #428bca !important;
+}
+.panier_3{
+	margin-top: 35px;
+}
+.panier_4{
+	background-color: white;
+	margin: 80px 32px 35px;
+padding: 35px 25px 25px 25px;
 
+}
 /*----------------------------panier-vide-end-------------------------*/
