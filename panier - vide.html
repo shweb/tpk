@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link href="css/datepicker.css" rel="stylesheet">
+	<link href="css/clockpiker.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="js/clockpicker.js"></script>
+
+
+
+	</head>
+	  <body>
+		 <!-- header start -->	
+			<nav  id="background" class="navbar navbar-default navbar-static-top">
+			 <div class="container">
+				<div class="navbar-header">
+								  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								  </button>
+								  <a class="navbar-brand" href="index.html">
+									<img src="./img/logo.png" title="tapakila">
+								  </a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+									<ul class="nav navbar-nav navbar-right">
+										<li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
+									
+										<li><a href="panier.html">Panier</a></li>
+										<li role="presentation" class="dropdown"> 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+											<span class="caret"></span> </a> 
+												<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
+												<li>
+												<form action="./page/recherche.html" method="get">
+												   <input type="text" name="query" placeholder="Search..." autocomplete="off">
+												   <input type="submit" value="Search">
+												</form>
+											   </li> 
+												</ul> 
+										</li>
+										
+										<li role="presentation" class="dropdown connexion" > 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a> 
+												<ul class="dropdown-menu " id="menu3" aria-labelledby="drop6"> 
+													<a href ="connexion.html"><li class="conexion">Se connecter</li></a> 
+													<a href ="connexion.html"><li class="conexion">S'inscrire</li></a> 
+												</ul> 
+										</li>
+										
+									</ul>
+
+				</div>
+			</div>
+		</nav>
+		 <!-- header end -->
+		 <section id="sectioncategorie" class="clearfix">
+			<div class="container">
+				<ul class="clearfix">
+				<li><a href="#">TOUS</a></li>
+				<li><a href="#">CONCERTS</a></li>
+				<li><a href="#">CABARET</a></li>
+				<li><a href="#">SPORTS</a></li>
+				<li><a href="#">SOIREES</a></li>
+				<li><a href="#">DANSES</a></li>
+				<li><a href="#">FESTIVAL</a></li>
+				<li><a href="#">CINEMA</a></li>
+				<li><a href="#">JEUX</a></li>
+				</ul>
+				<a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
+			</div>
+		</section>
+		<section id="sectionevenement" role="navigation">
+			<div class="container">
+				<ul>
+					<li><a href="./page/tapakilacatalogue.html">Concerts</a></li>
+					<li><a href="./page/tapakilacatalogue.html">Karaoke</a></li>
+					<li><a href="./page/tapakilacatalogue.html">Cabaret</a></li>
+					<li><a href="./page/tapakilacatalogue.html">Foot</a></li>
+					<li><a href="./page/pagesansitem.html">Basket-ball</a></li>
+					<li><a href="./page/tapakilacatalogue.html">Natations</a></li>
+					<li><a href="./page/tapakilacatalogue.html">DJs</a></li>
+					<li><a href="./page/tapakilacatalogue.html">Loung</a></li>
+					<li><a href="./page/pagesansitem.html">Discotheque</a></li>
+					<li><a href="./page/tapakilacatalogue.html">Aerobic</a></li>
+					<li><a href="./page/tapakilacatalogue.html">Zumba</a></li>
+					<li><a href="./page/pagesansitem.html">St Valentin</a></li>
+					<li><a href="./page/tapakilacatalogue.html">26 Juin</a></li>
+					<li><a href="./page/tapakilacatalogue.html">Animations</a></li>
+					<li><a href="./page/tapakilacatalogue.html">Oktoberfest</a></li>
+					<li><a href="./page/pagesansitem.html">Jazz</a></li>
+					<li><a href="./page/tapakilacatalogue.html">Orchestre</a></li>
+					<li><a href="./page/tapakilacatalogue.html">Exposition</a></li>
+					<li><a href="./page/pagesansitem.html">Projections</a></li>
+					<li><a href="./page/pagesansitem.html">Excursions</a></li>
+					<li><a href="./page/pagesansitem.html">Loisirs</a></li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<div class="container">
+				<div class="row haut">
+					<div class="col-lg-2 hier">
+						<div class="">
+							<h2>Payment</h2><br/>
+							<div class="row">
+								<div class="col-lg-4 ">
+									<a><img src="img/orange.png" class="icon_kely"></a>
+								</div>
+								<div class="col-lg-4">
+								<a><img src="img/mvola.png" class="icon_kely"></a>
+								</div>
+								<div class="col-lg-4">
+								<a><img src="img/money.jpg" class="icon_kely"></a>
+								</div>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+							</p>
+							<h2>Sed ut perspiciatis</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+							</p>
+							<h2>Sed ut perspiciatis</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
+							</p>
+						</div>
+						<div class="">
+							<h2>
+								Nos Parternairs
+							</h2><p nos partenaire style="margin-left: 30px;">
+							
+						</div>
+					</div>
+					<div class="col-lg-10 plan_detail">
+						<h2 class="couleur_mot">Votre panier</h2>
+						<p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500 </p>
+					</div>
+				</div>
+			</div>
+
+
+
+<!-- End Page -->
+			
+		</section>
+
+	<footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <img class="footer-logo" alt="tapakila" src="./img/logo.png">
+                        <p class="small custom">
+                            By Tapakila.mg<br>
+                            IIB 63 Mahamasina<br>
+                            Antananarivo<br>
+                            Madagascar<br>
+                            +33 12 901432<br>
+                            <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong >Acheter des tickets</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Comment acheter</a></li>
+                            <li><a href="#">Foire aux questions</a></li>
+                            <li><a href="#">Conditions d'utilisation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong >Organisateurs</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Pour les Organisateurs</a></li>
+                            <li><a href="#">S'enregistrer</a></li>
+                            <li><a href="#">Connexion</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 ">
+                        <a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square facebookico" aria-hidden="true"></i></a>
+                        <div id="fb-root"></div>
+                        <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
+
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div>
+        <div class="footer-bottom">
+            <div class="container small">
+			<ul>
+                        <li><a href="#">A propos de nous</a></li>|
+                        <li><a href="#">Contact</a></li>|
+                        <li><a href="#">Ajouter votre evenement</a></li>|
+                        <li><a href="#">Publicite</a></li>|
+                        <li><a href="#">FAQ</a></li>|
+                        <li><a href="#">Vie privee</a></li>|
+                    </ul>
+                <p>Copyright &copy Tapakila 2017</p>
+            </div>
+        </div>
+    </footer>
+
+	</body>
+</html>
