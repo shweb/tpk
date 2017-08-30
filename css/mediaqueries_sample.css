@@ -30,6 +30,9 @@ font-size: 17px;
 
 
 }
+.disabled{
+			opacity:0.5;
+		}
 
 .liner{
     height: 2px;
