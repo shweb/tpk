@@ -1722,3 +1722,9 @@ hr.couvert:after {
 	margin-bottom:40px;
 }
 /* sans item end */
+
+/*----------recherche_no_result--------*/
+.recherche_no{
+	background-color: white;
+}
+/*--------rechrche_no_recherche_end--------*/
