@@ -1729,9 +1729,7 @@ hr.couvert:after {
 }
 /*--------rechrche_no_recherche_end--------*/
 /* about start */
-.about-bg{
-	background-color:white,
-}
+
 .about-bg>img{
 	width:100%;
 }
@@ -1762,7 +1760,7 @@ color: red;
 
 .about-bg{
 	background-color:white;
-	padding:10px 20px 20px 20px;
+	padding:10px 20px 20px 40px;
 	margin-bottom: 30px;
 	border-radius:5px;
 }
@@ -1793,6 +1791,7 @@ color: red;
 
 .all{
 	border-bottom: 1px solid #e1dbdb;
+	font-size: 27px;
 }
 /* about end */
 
@@ -1859,7 +1858,15 @@ background-color: #d70506;
 }
 
 
-}
-
 /*------------FQ-end--------------------------*/
-
+/* comment vendre billet start */
+.avendre  ul li {
+	list-style-type: disc ! important;
+	margin-bottom:10px;
+}
+/* comment vendre billet end */
+.billet  ul li {
+	list-style-type: disc ! important;
+	margin-bottom:10px;
+	margin-left: 18px;
+}
