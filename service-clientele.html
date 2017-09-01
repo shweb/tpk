@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style1.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+	<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	</head>
+	  <body>
+		 <!-- header start -->	
+		<nav  id="background" class="navbar navbar-default navbar-static-top">
+			 <div class="container">
+				<div class="navbar-header">
+								  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								  </button>
+								  <a class="navbar-brand" href="index.html">
+									<img src="./img/logo.png" title="tapakila">
+								  </a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+									<ul class="nav navbar-nav navbar-right">
+										<li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
+									
+										<li><a href="panier.html">Panier</a></li>
+										<li role="presentation" class="dropdown"> 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+											<span class="caret"></span> </a> 
+												<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
+												<li>
+												<form action="./page/recherche.html" method="get">
+												   <input type="text" name="query" placeholder="Search..." autocomplete="off">
+												   <input type="submit" value="Search">
+												</form>
+											   </li> 
+												</ul> 
+										</li>
+										
+										<li role="presentation" class="dropdown connexion" > 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a> 
+												<ul class="dropdown-menu " id="menu3" aria-labelledby="drop6"> 
+													<a href ="connexion.html"><li class="conexion">Se connecter</li></a> 
+													<a href ="connexion.html"><li class="conexion">S'inscrire</li></a> 
+												</ul> 
+										</li>
+										
+									</ul>
+
+				</div>
+			</div>
+		</nav>
+		
+		 <!-- header end -->
+		 
+		 
+		<!-- section navigation start -->
+		<section id="sectioncategorie" class="clearfix">
+			<div class="container">
+				<ul class="clearfix">
+				<li><a href="categorie.html">TOUS</a></li>
+				<li><a href="categorie.html">CONCERTS</a></li>
+				<li><a href="categorie.html">CABARET</a></li>
+				<li><a href="categorie.html">SPORTS</a></li>
+				<li><a href="categorie.html">SOIREES</a></li>
+				<li><a href="categorie.html">DANSES</a></li>
+				<li><a href="categorie.html">FESTIVAL</a></li>
+				<li><a href="categorie.html">CINEMA</a></li>
+				<li><a href="categorie.html">JEUX</a></li>
+				</ul>
+				<a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
+			</div>
+		</section>
+		
+		<section id="sectionevenement" role="navigation">
+			<div class="container">
+				<ul>
+					<li><a href="categorie.html">Concerts</a></li>
+					<li><a href="categorie.html">Karaoke</a></li>
+					<li><a href="categorie.html">Cabaret</a></li>
+					<li><a href="categorie.html">Foot</a></li>
+					<li><a href="categorie.html">Basket-ball</a></li>
+					<li><a href="categorie.html">Natations</a></li>
+					<li><a href="categorie.html">DJs</a></li>
+					<li><a href="categorie.html">Loung</a></li>
+					<li><a href="categorie.html">Discotheque</a></li>
+					<li><a href="categorie.html">Aerobic</a></li>
+					<li><a href="categorie.html">Zumba</a></li>
+					<li><a href="categorie.html">St Valentin</a></li>
+					<li><a href="categorie.html">26 Juin</a></li>
+					<li><a href="categorie.html">Animations</a></li>
+					<li><a href="categorie.html">Oktoberfest</a></li>
+					<li><a href="categorie.html">Jazz</a></li>
+					<li><a href="categorie.html">Orchestre</a></li>
+					<li><a href="categorie.html">Exposition</a></li>
+					<li><a href="categorie.html">Projections</a></li>
+					<li><a href="categorie.html">Excursions</a></li>
+					<li><a href="categorie.html">Loisirs</a></li>
+				</ul>
+			</div>
+		</section>
+		<!-- section navigation end -->
+		<section id="content" class="debut">
+			<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+				<div class="au">
+					<h2>Service clientèle</h2>
+				</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+				<div class="ai">
+					<h3>Voir notre FAQ</h3>
+				</div>
+				</div>
+			</div>
+			
+			<div class="row tab_client">
+			<div class="col-sm-6 col-sm-offset-3">
+			<ul class="nav nav-tabs nav-tabs2">
+                <li class="active ">
+                    <a href="#1" data-toggle="tab">Pour les acheteurs</a>
+                </li>
+                <li><a href="#2" data-toggle="tab">Pour les vendeurs</a>
+                </li>
+            </ul>
+			</div>
+			</div>
+		<div class="tab-content ">
+			<div class="tab-pane active" id="1">
+				<div class="row">
+					<div class="col-sm-3">
+						
+						<div class="menu_FQ">
+							<div id="a_compte" class="activy" onClick="changePage('div_compte', 'a_compte')"> <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Générale</div>
+							<div id="a_billets" onClick="changePage('div_billets', 'a_billets')"> <span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Acheter les billets</div>
+							<div id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')"> <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Recevoir vos places</div>
+							<div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</div>
+							<div id="a_favoris" onClick="changePage('div_favoris', 'a_favoris')"> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> Recevez votre paiement</div>
+							<div id="a_news" onClick="changePage('div_news', 'a_news')"><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</div>
+							<div id="a_news" onClick="changePage('div_news', 'a_news')"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div id="div_compte">
+							<div class="centre">
+								<div class="row">
+									<div class="col-sm-6">
+										<a><h4 class="titre"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Acheter les billets</h4></a>
+										<p><a>Comment acheter les billets sur Tapakila ?</a></p>
+										<p><a>Les places seront-elles adjacents ?</a></p>
+										<p><a>Où mes places seront-elles situées ?</a></p>
+										<p><a>Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqun d'autre ?</a></p>
+										<p><a> Je n'ai pas reçu de comfirmant ma commande ?</a></p>
+										
+									</div>
+									<div class="col-sm-6">
+										<a><h4 class="titre"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Recevoir vos places</h4></a>
+										<p><a>Quand vais-je reçevoir mes billets ?</a></p>
+										<p><a>Comment télécharger mes billets éléctroniques ?</a></p>
+										<p><a>Je voyage - Où et quand vais-je reçevoir mes billets ?</a></p>		
+										<p><a>Comment modifier moin adresse de livraison ?</a></p>
+										<p><a>Où et quand dois-je retiré mes billets ?</a></p>
+										<p><a>Puis-je  retirer mes billets le jour de l'évenement plûtot que de les recevoir par courrier ? </a></p>
+										<p><a>Pouquoi le prix imprimé sur le  billet est-il différent de celui que j'ai payé ?</a></p>
+										<p><a>Pourquoi il y a-t-il un autre nom sur mes billets ?</a></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+									<a><h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</h4></a>
+										<p><a>Puis-je annuler ou modifier mon achat ?</a></p>
+										<p><a>Mon événement a été annulé ou reprogrammé - Que dois-je faire ?</a></p>
+										<p><a>dfggfghfhfhfghfghfghfg ?</a></p>
+										<p><a>Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqun d'autre ?</a></p>
+										<p><a> Je n'ai pas reçu de comfirmant ma commande ?</a></p>
+									
+									</div>
+									<div class="col-sm-6">
+									<a><h4 class="titre"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> Recevez votre paiement</h4></a>
+										<p><a>Puis-je annuler ou modifier mon achat ?</a></p>
+										<p><a>Mon événement a été annulé ou reprogrammé - Que dois-je faire ?</a></p>
+										<p><a>dfggfghfhfhfghfghfghfg ?</a></p>
+										<p><a>Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqun d'autre ?</a></p>
+										<p><a> Je n'ai pas reçu de comfirmant ma commande ?</a></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+									<a><h4 class="titre"><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</h4></a>
+										<p><a>Puis-je annuler ou modifier mon achat ?</a></p>
+										<p><a>Mon événement a été annulé ou reprogrammé - Que dois-je faire ?</a></p>
+										<p><a>dfggfghfhfhfghfghfghfg ?</a></p>
+										<p><a>Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqun d'autre ?</a></p>
+										<p><a> Je n'ai pas reçu de comfirmant ma commande ?</a></p>
+									
+									</div>
+									<div class="col-sm-6">
+									<a><h4 class="titre"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</h4></a>
+										<p><a>Puis-je annuler ou modifier mon achat ?</a></p>
+										<p><a>Mon événement a été annulé ou reprogrammé - Que dois-je faire ?</a></p>
+										<p><a>dfggfghfhfhfghfghfghfg ?</a></p>
+										<p><a>Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqun d'autre ?</a></p>
+										<p><a> Je n'ai pas reçu de comfirmant ma commande ?</a></p>
+									</div>
+								</div>
+								
+							</div>
+							
+						</div>
+						<div id="div_billets" class="hide">
+							<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Acheter les billets</h4></a>
+								<p>
+								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
+								</p>
+								<p>
+								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
+								</p>
+							</div>
+						</div>
+						<div id="div_commandes" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Recevoir vos places</h4></a>
+								<p>
+								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
+								</p>
+								<p>
+								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
+								</p>
+							</div>
+							
+						</div>
+						<div id="div_ev" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</h4></a>
+								<p>
+								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
+								</p>
+								<p>
+								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
+								</p>
+							</div>
+							
+						</div>
+					<div id="div_favoris" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</h4></a>
+								<p>
+								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
+								</p>
+								<p>
+								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
+								</p>
+							</div>
+					</div>
+					<div id="div_news" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</h4></a>
+								<p>
+								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
+								</p>
+								<p>
+								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
+								</p>
+							</div>
+					</div>
+					</div>
+					<div class="col-sm-3">
+						Eto no misy anle menu droite :D
+					</div>
+				</div>
+			</div>
+		<!---------------------------------------------------id-2--------------------------------------------------->	
+						<div class="tab-pane" id="2">
+								<div class="row">
+					<div class="col-sm-3">
+						
+						<div class="menu_FQ">
+							<div id="a_compte2" class="activy" onClick="change2Page('div_compte2', 'a_compte2')"> <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Générale</div>
+							<div id="a_billets2" onClick="change2Page('div_billets2', 'a_billets2')"> <span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Vendre les billets</div>
+							<div id="a_commandes2" onClick="change2Page('div_commandes2', 'a_commandes2')"> <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Envoyer vos places</div>
+							<div id="a_ev2" onClick="change2Page('div_ev2', 'a_ev2')"> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</div>
+							<div id="a_favoris2" onClick="change2Page('div_favoris2', 'a_favoris2')"> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> Recevez votre paiement</div>
+							<div id="a_news2" onClick="change2Page('div_news2', 'a_news2')"><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</div>
+							<div id="a_news2" onClick="change2Page('div_news2', 'a_news2')"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div id="div_compte2">
+							<div class="centre">
+								<div class="row">
+									<div class="col-sm-6">
+										<a><h4 class="titre"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Vendre les billets</h4></a>
+										<p><a>Comment vendre les billets sur Tapakila ?</a></p>
+										<p><a>Comment modifier mon offre ?</a></p>
+										<p><a>Comment supprimer mon offre ?</a></p>
+										<p><a>Que signifient les options de séparation de billets </a></p>
+										<p><a>Comment puis-je vendre mon billet sur TAPAKILA ?</a></p>
+										
+									</div>
+									<div class="col-sm-6">
+										<a><h4 class="titre"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Envoyer vos places</h4></a>
+										<p><a>Comments envoyer les billets ?</a></p>
+										<p><a>Comment organisé le retrait des billets  par coursier ?</a></p>
+										<p><a>Comment télécharger mes billets éléctroniques ?</a></p>		
+										<p><a>Comment modifier moin adresse de livraison ?</a></p>
+										<p><a>Puis-je envoyer les billets en utilisant une autre méthode de livraison ?</a></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+									<a><h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</h4></a>
+										<p><a>Puis-je annuler ou modifier mon achat ?</a></p>
+										<p><a>Mon événement a été annulé ou reprogrammé - Que dois-je faire ?</a></p>
+										<p><a>dfggfghfhfhfghfghfghfg ?</a></p>
+										<p><a>Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqun d'autre ?</a></p>
+										<p><a> Je n'ai pas reçu de comfirmant ma commande ?</a></p>
+									
+									</div>
+									<div class="col-sm-6">
+									<a><h4 class="titre"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> Recevez votre paiement</h4></a>
+										<p><a>Puis-je annuler ou modifier mon achat ?</a></p>
+										<p><a>Mon événement a été annulé ou reprogrammé - Que dois-je faire ?</a></p>
+										<p><a>dfggfghfhfhfghfghfghfg ?</a></p>
+										<p><a>Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqun d'autre ?</a></p>
+										<p><a> Je n'ai pas reçu de comfirmant ma commande ?</a></p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+									<a><h4 class="titre"><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</h4></a>
+										<p><a>Puis-je annuler ou modifier mon achat ?</a></p>
+										<p><a>Mon événement a été annulé ou reprogrammé - Que dois-je faire ?</a></p>
+										<p><a>dfggfghfhfhfghfghfghfg ?</a></p>
+										<p><a>Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqun d'autre ?</a></p>
+										<p><a> Je n'ai pas reçu de comfirmant ma commande ?</a></p>
+									
+									</div>
+									<div class="col-sm-6">
+									<a><h4 class="titre"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</h4></a>
+										<p><a>Puis-je annuler ou modifier mon achat ?</a></p>
+										<p><a>Mon événement a été annulé ou reprogrammé - Que dois-je faire ?</a></p>
+										<p><a>dfggfghfhfhfghfghfghfg ?</a></p>
+										<p><a>Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqun d'autre ?</a></p>
+										<p><a> Je n'ai pas reçu de comfirmant ma commande ?</a></p>
+									</div>
+								</div>
+								
+							</div>
+							
+						</div>
+						<div id="div_billets2" class="hide">
+							<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Acheter les billets</h4></a>
+								<p>
+								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
+								</p>
+								<p>
+								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
+								</p>
+							</div>
+						</div>
+						<div id="div_commandes2" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Recevoir vos places</h4></a>
+								<p>
+								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
+								</p>
+								<p>
+								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
+								</p>
+							</div>
+							
+						</div>
+						<div id="div_ev2" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</h4></a>
+								<p>
+								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
+								</p>
+								<p>
+								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
+								</p>
+							</div>
+							
+						</div>
+					<div id="div_favoris2" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</h4></a>
+								<p>
+								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
+								</p>
+								<p>
+								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
+								</p>
+							</div>
+					</div>
+					<div id="div_news2" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</h4></a>
+								<p>
+								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
+								</p>
+								<p>
+								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
+								</p>
+							</div>
+					</div>
+					</div>
+					<div class="col-sm-3">
+						sqfsdfgdgdfhfdghjfgykjhjkl;
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+		</div>
+		<!--/content goes here -->
+		
+		
+		
+		</section>
+		<footer>
+		<footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <img class="footer-logo" alt="tapakila" src="./img/logo.png">
+                        <p class="small custom">
+                            By Tapakila.mg<br>
+                            IIB 63 Mahamasina<br>
+                            Antananarivo<br>
+                            Madagascar<br>
+                            +33 12 901432<br>
+                            <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong >Acheter des tickets</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Comment acheter</a></li>
+                            <li><a href="#">Foire aux questions</a></li>
+                            <li><a href="#">Conditions d'utilisation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong >Organisateurs</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Pour les Organisateurs</a></li>
+                            <li><a href="#">S'enregistrer</a></li>
+                            <li><a href="#">Connexion</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 ">
+                        <a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square facebookico" aria-hidden="true"></i></a>
+                        <div id="fb-root"></div>
+                        <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
+
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div>
+        <div class="footer-bottom">
+            <div class="container small">
+			<ul>
+                        <li><a href="#">A propos de nous</a></li>|
+                        <li><a href="#">Contact</a></li>|
+                        <li><a href="#">Ajouter votre evenement</a></li>|
+                        <li><a href="#">Publicite</a></li>|
+                        <li><a href="#">FAQ</a></li>|
+                        <li><a href="#">Vie privee</a></li>|
+                    </ul>
+                <p>Copyright &copy Tapakila 2017</p>
+            </div>
+        </div>
+    
+		</footer>
+<script typae="text/javascript">
+$('.dropdown-menu ul li a').click(function(event){
+event.stopPropagation();
+$(this).parent().toggleClass('active').siblings().removeClass('active');
+var target=$(this).attr('href');
+$('ul li .tab-content '+target).toggleClass(active in);
+});
+</script>
+
+<script>
+    function changePage(id, aId) {
+        document.getElementById("div_compte").className = "hide";
+		document.getElementById("div_billets").className = "hide";
+        document.getElementById("div_commandes").className = "hide";
+        document.getElementById("div_ev").className = "hide";
+        document.getElementById("div_favoris").className = "hide";
+        document.getElementById("div_news").className = "hide";
+        document.getElementById(id).className = "show";
+
+        document.getElementById("a_compte").className = "";
+		document.getElementById("a_billets").className = "";
+        document.getElementById("a_commandes").className = "";
+        document.getElementById("a_ev").className = "";
+        document.getElementById("a_favoris").className = "";
+        document.getElementById("a_news").className = "";
+        document.getElementById(aId).className = "activy";
+    }
+</script>
+<script>
+    function change2Page(id, aId) {
+        document.getElementById("div_compte2").className = "hide";
+		document.getElementById("div_billets2").className = "hide";
+        document.getElementById("div_commandes2").className = "hide";
+        document.getElementById("div_ev2").className = "hide";
+        document.getElementById("div_favoris2").className = "hide";
+        document.getElementById("div_news2").className = "hide";
+        document.getElementById(id).className = "show";
+
+        document.getElementById("a_compte2").className = "";
+		document.getElementById("a_billets2").className = "";
+        document.getElementById("a_commandes2").className = "";
+        document.getElementById("a_ev2").className = "";
+        document.getElementById("a_favoris2").className = "";
+        document.getElementById("a_news2").className = "";
+        document.getElementById(aId).className = "activy";
+    }
+</script>
+	</body>
+</html>

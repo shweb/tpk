@@ -1795,3 +1795,71 @@ color: red;
 	border-bottom: 1px solid #e1dbdb;
 }
 /* about end */
+
+
+/*----------FQ-----------------------------*/
+.activy{
+
+position: relative;
+background-color: white;
+color: red !important;
+width: 262px;
+text-align: center;
+
+
+}
+.menu_FQ{ 
+    margin-top: 27px;
+}
+
+.menu_FQ div {
+ font-size: 17px !important;
+margin-top: 2px;
+color: #93a1a1;
+background-color: white;
+padding: 15px 15px 15px;
+
+}
+.tab_client{
+	border-bottom: 2px solid #5cb85c;
+	margin-top: 47px;
+}
+.nav-tabs2>li.active>a, .nav-tabs1>li.active>a:focus, .nav-tabs1>li.active>a:hover {
+    color: white !important;
+	font-size: 16px;
+    cursor: default;
+    background-color:  #5cb85c!important;
+    border-bottom: 2px double #5cb85c !important;
+}
+.titre{
+	border-bottom: 1px solid grey;
+	padding-bottom: 17px;
+	color: #3c3c3c;
+
+}
+.centre{
+	background-color: white;
+	margin: 27px -27px 23px;
+padding: 20px 28px;
+
+}
+.centre p a{
+	color: #428bca;
+}
+.au{
+background-color: #d70506;
+    text-align: center;
+    padding: 0px;
+    border-radius: 110px 5px;
+    color: white;
+}
+.ai{
+	text-align: center;
+	color: #428bca;
+}
+
+
+}
+
+/*------------FQ-end--------------------------*/
+

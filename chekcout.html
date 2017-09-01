@@ -5,7 +5,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="./img/logo.png">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/mediaqueries.css">
@@ -150,7 +149,7 @@
 								</span> 
 								</a>
 							</li>
-							<li class="disabled" id="li_settings">
+							<li class="disabled" id="li_doner">
 								<a href="#doner" title="Résumer">
 								<span class="round-tabs five">
 								<i class="glyphicon glyphicon-ok"></i>
@@ -177,7 +176,7 @@
 								</p>
 								<p class="text-center">
 									<!--<a href="#home" title="Acceuil" class="btn btn-success btn-outline-rounded green" onClick="change1Page('home','profile')"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>-->
-									<a href="#profile" class="btn btn-success btn-outline-rounded green" onClick="changePage('home','profile')">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
+									<a href="#profile" data-toggle="tab" class="btn btn-success btn-outline-rounded green" onClick="changePage('home','profile')">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
 								</p>
 							</div>
 						</div>
@@ -364,7 +363,7 @@
 											<div class="row">
 												<div class="panel panel-primary filterable">
 													<div class="panel-heading">
-														<h3 class="panel-title">Produit</h3>
+														<h3 class="panel-title">Paiement</h3>
 													</div>
 													<div class="table-responsive">
 														<table class="table">
@@ -379,7 +378,7 @@
 											</div>
 											<p class="text-center">
 												<a href="#settings" data-toggle="tab" class="btn btn-success btn-outline-rounded green" onClick="change1Page('settings','doner')"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
-												<a href="#doner" class="btn btn-success btn-outline-rounded green" onClick="changePage('doner','doner')">Continuer<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
+												<a href="#" class="btn btn-success btn-outline-rounded green">Continuer<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
 											</p>
 										</section>
 									</div>
@@ -410,7 +409,7 @@
 						<p class="titled"><strong>Acheter des tickets</strong></p>
 						<ul class="list-unstyled">
 							<li><a href="#">Comment acheter</a></li>
-							<li><a href="#">Foire aux questions</a></li>
+							<li><a href="service-clientele.html">Foire aux questions</a></li>
 							<li><a href="#">Conditions d'utilisation</a></li>
 						</ul>
 					</div>
@@ -441,7 +440,7 @@
 					<li><a href="#">Contact</a></li>|
 					<li><a href="#">Ajouter votre evenement</a></li>|
 					<li><a href="#">Publicite</a></li>|
-					<li><a href="#">FAQ</a></li>|
+					<li><a href="service-clientele.html">FAQ</a></li>|
 					<li><a href="#">Vie privee</a></li>|
 				</ul>
 				<p>Copyright &copy Tapakila 2017</p>
