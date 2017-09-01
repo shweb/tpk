@@ -1728,3 +1728,70 @@ hr.couvert:after {
 	background-color: white;
 }
 /*--------rechrche_no_recherche_end--------*/
+/* about start */
+.about-bg{
+	background-color:white,
+}
+.about-bg>img{
+	width:100%;
+}
+.label{
+	font-size:13px;
+	color:black;
+}
+.label:hover{
+	text-decoration:underline;
+}
+.newsletter{
+	margin-top:35px;
+}
+.vente{
+	margin-top:35px;
+}
+.top10{
+	margin-top:30px;
+	font-size:30px;
+}
+.mytop{
+margin-top: 27px;
+color: red;
+}
+.space{
+	border-bottom: 1px solid red;
+}
+
+.about-bg{
+	background-color:white;
+	padding:10px 20px 20px 20px;
+	margin-bottom: 30px;
+	border-radius:5px;
+}
+.performe{
+	margin-top:30px;
+}
+.social-bg{
+	background-color:white;
+	padding: 11px 25px 40px 22px;
+	border-radius:5px;
+}
+.champsobligatoire{
+	color:red;
+}
+.Titre{
+	color:red;
+}
+.btn-menu{
+	background-color:red;
+	border:none;
+	margin-top: 7px;
+}
+.btn-menu2{
+	background-color:red;
+	border:none;
+	margin-top: 18px;
+}
+
+.all{
+	border-bottom: 1px solid #e1dbdb;
+}
+/* about end */
