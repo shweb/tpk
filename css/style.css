@@ -1859,7 +1859,10 @@ background-color: #d70506;
 
 
 /*------------FQ-end--------------------------*/
-/* comment vendre billet start */
+/* comment vendre billet et organisateur start */
+.about-bg > h4{
+	margin-top:20px;
+}
 .avendre  ul li {
 	list-style-type: disc ! important;
 	margin-bottom:10px;
