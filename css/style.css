@@ -1796,6 +1796,7 @@ color: red;
 /* about end */
 
 
+
 /*----------FQ-----------------------------*/
 .activy{
 
@@ -1817,18 +1818,21 @@ margin-top: 2px;
 color: #93a1a1;
 background-color: white;
 padding: 15px 15px 15px;
+text-align: center;
 
 }
 .tab_client{
-	border-bottom: 2px solid #5cb85c;
+	border-bottom: 2px solid #d70506;
 	margin-top: 47px;
+	text-align: center;
 }
 .nav-tabs2>li.active>a, .nav-tabs1>li.active>a:focus, .nav-tabs1>li.active>a:hover {
     color: white !important;
 	font-size: 16px;
     cursor: default;
-    background-color:  #5cb85c!important;
-    border-bottom: 2px double #5cb85c !important;
+    background-color:  #d70506!important;
+    border-bottom: 2px double #d70506 !important;
+	text-align: center;
 }
 .titre{
 	border-bottom: 1px solid grey;
@@ -1857,6 +1861,84 @@ background-color: #d70506;
 	color: #428bca;
 }
 
+.personnel{
+	margin-top: 27px;
+background-color: white;
+padding: 1px 7px;
+}
+.top_style{
+	margin-top: -12px;
+background-color: #f6f6ef;
+padding: 16px 21px;
+border-radius: 0px 9px 0px 0px;
+box-shadow: -1px -5px 13px -2px #d70506 inset;
+
+
+}
+.h2_style{
+	background-color: #f6f6ef;
+padding-top: 21px;
+padding-bottom: 16px;
+width: 88%;
+border-radius: 9px 9px 0px 0px;
+padding-left: 21px;
+box-shadow: 0px 7px 6px 0px #d70506 inset;
+
+}
+
+.a_droite{
+	font-size: 10px;
+}
+
+.bouton_droite{
+	width: 90px;
+font-size: 12px;
+padding-right: 23px;
+margin-top: 6px;
+background-color: #d70506;
+border-color: #d70506;
+
+}
+.bouton_droite1{
+	width: 90px;
+font-size: 12px;
+padding-right: 23px;
+margin-top: 16px;
+background-color: #d70506;
+border-color: #d70506;
+
+}
+.radio_menu{
+	font-size: 12px;
+}
+.row_menu{
+	padding-top: 12px;
+}
+.menu_droit{
+	background-color: white;
+}
+.stronger{
+	font-size: 20px ; 
+
+}
+.stronge_title{
+	color : #d70506;
+	
+}
+.top_vente-p p{
+	font-size: 11px;
+}
+.plus{
+	background-color: #d70506;
+	color: white;
+	font-size: 9px;
+	padding: 50%;
+}
+.row_top_vente{
+	border-bottom: 2px solid #d70506;
+	display: flex;
+align-items: center;
+}
 
 /*------------FQ-end--------------------------*/
 /* comment vendre billet et organisateur start */
