@@ -1867,22 +1867,22 @@ background-color: white;
 padding: 1px 7px;
 }
 .top_style{
-	margin-top: -12px;
-background-color: #f6f6ef;
+margin-top: -12px;
+background-color: #fffffd;
 padding: 16px 21px;
 border-radius: 0px 9px 0px 0px;
-box-shadow: -1px -5px 13px -2px #d70506 inset;
+box-shadow: -1px -5px 13px -2px #baa6a6 inset;
 
 
 }
 .h2_style{
-	background-color: #f6f6ef;
+	background-color:  #fffffd;
 padding-top: 21px;
 padding-bottom: 16px;
 width: 88%;
 border-radius: 9px 9px 0px 0px;
 padding-left: 21px;
-box-shadow: 0px 7px 6px 0px #d70506 inset;
+box-shadow: 0px 7px 6px 0px #baa6a6 inset;
 
 }
 
@@ -1939,6 +1939,71 @@ border-color: #d70506;
 	display: flex;
 align-items: center;
 }
+.service_haut{
+	text-align: center;
+	/* background-color: black; */
+	box-shadow: 2px 0px 53px -4px #bcb9b9 inset;
+	color: #d70506;
+}
+
+#menu-accordeon {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+  width: 180px;
+}
+#menu-accordeon ul {
+  padding:0;
+  margin:0;
+  list-style:none;
+  text-align: center;
+}
+#menu-accordeon li {
+   background-color:#729EBF; 
+   background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
+   background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+   border-radius: 6px;
+   margin-bottom:2px;
+   box-shadow: 3px 3px 3px #999;
+   border:solid 1px #333A40
+}
+#menu-accordeon li li {
+   max-height:0;
+   overflow: hidden;
+   transition: all .5s;
+   border-radius:0;
+   background: #444;
+   box-shadow: none;
+   border:none;
+   margin:0
+}
+#menu-accordeon a {
+  display:block;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px 0;
+  font-family: verdana;
+  font-size:1.2em
+}
+#menu-accordeon ul li a, #menu-accordeon li:hover li a {
+  font-size:1em
+}
+#menu-accordeon li:hover {
+   background: #729EBF
+}
+#menu-accordeon li li:hover {
+   background: #999;
+}
+#menu-accordeon ul li:last-child {
+   border-radius: 0 0 6px 6px;
+   border:none;
+}
+#menu-accordeon li:hover li {
+  max-height: 15em;
+}
+
+
 
 /*------------FQ-end--------------------------*/
 /* comment vendre billet et organisateur start */

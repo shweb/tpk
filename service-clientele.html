@@ -10,8 +10,12 @@
 	<link rel="stylesheet" href="css/mediaqueries.css">
 	<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/styles.css">
+   <script src="js/jquery-latest.min.js" type="text/javascript"></script>
+   <script src="js/script.js"></script>
     <script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	
 	</head>
 	  <body>
 		 <!-- header start -->	
@@ -111,6 +115,10 @@
 		</section>
 		<!-- section navigation end -->
 		<section id="content" class="debut">
+			<div class="service_haut">
+			<h3>Bienvenue sur TAPAKILA</h3>
+			<h2>Centre d'Aide</h2>
+			</div>
 			<div class="container">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2">
@@ -144,13 +152,71 @@
 					<div class="col-sm-3">
 						
 						<div class="menu_FQ">
-							<div id="a_compte" class="activy" onClick="changePage('div_compte', 'a_compte')"> <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Générale</div>
-							<div id="a_billets" onClick="changePage('div_billets', 'a_billets')"> <span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Acheter les billets</div>
-							<div id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')"> <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Recevoir vos places</div>
-							<div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</div>
-							<div id="a_favoris" onClick="changePage('div_favoris', 'a_favoris')"> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> Recevez votre paiement</div>
-							<div id="a_news" onClick="changePage('div_news', 'a_news')"><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</div>
-							<div id="a_news" onClick="changePage('div_news', 'a_news')"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</div>
+						<!--------------------------------------------------------------------------->
+
+						<div id='cssmenu'>
+						<ul>
+							<li><div id="a_compte" class="activy" onClick="changePage('div_compte', 'a_compte')"> <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Générale</div></li>
+						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Acheter les billets</a>
+							  <ul>
+								 <li><div id="a_billets" onClick="changePage('div_billets', 'a_billets')"> Comment vendre les billets ?</div>
+									
+								 </li>
+								 <li class='has-sub'><a href='#'><span>Comment modifier mon offre ?</span></a>
+									
+								 </li>
+							  </ul>
+						   </li>
+						   
+						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Recevoir vos places</a>
+							  <ul>
+								 <li><div id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')"> <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Recevoir vos places</div>
+									
+								 </li>
+								 <li class='has-sub'><a href='#'><span>Product 2</span></a>
+									
+								 </li>
+							  </ul>
+						   </li>
+						   
+						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</a>
+							  <ul>
+								 <li><div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</div>
+									
+								 </li>
+								 <li class='has-sub'><a href='#'><span>Product 2</span></a>
+									
+								 </li>
+							  </ul>
+						   </li>
+						   
+						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> Recevez votre paiement</a>
+							  <ul>
+								 <li>	<div id="a_favoris" onClick="changePage('div_favoris', 'a_favoris')"> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> Recevez votre paiement</div>
+									
+								 </li>
+								 <li class='has-sub'><a href='#'><span>Product 2</span></a>
+									
+								 </li>
+							  </ul>
+						   </li>
+						   
+						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</a>
+							  <ul>
+								 <li><div id="a_news" onClick="changePage('div_news', 'a_news')"><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</div>
+									
+								 </li>
+								 <li class='has-sub'><a href='#'><span>Product 2</span></a>
+									
+								 </li>
+							  </ul>
+						   </li>
+						   <li><div id="a_news" onClick="changePage('div_news', 'a_news')"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</div></li>
+						</ul>
+						</div>
+
+						
+						<!------------------------------------------------------------->
 						</div>
 					</div>
 					<div class="col-sm-6">
@@ -222,13 +288,23 @@
 						</div>
 						<div id="div_billets" class="hide">
 							<div class="centre">
-								<a><h4 class="titre"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Acheter les billets</h4></a>
-								<p>
-								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
-								</p>
-								<p>
-								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
-								</p>
+								<a><h4 class="titre"> Comment vendre les billets ?</h4></a>
+								<ol type="i">
+								<li>Cliquez sur le bouton « Vendre des billets » en haut à droite de la page d'accueil.</li>
+								<li>Recherchez l'événement pour lequel vous souhaitez vendre des billets. Si vous ne trouvez pas votre événement, indiquez-le en cliquant <a href="/Browse/eventrequest" rel="nofollow" data-modal="true" target="_blank">ici</a>, et nous l'ajouterons à notre site web</li>
+								<li>Suivez les étapes de saisie des informations relatives à votre billet. Important : indiquez la manière dont vous souhaitez être payé(e) une fois que les billets auront été vendus.</li>
+								<li>Vérifiez et confirmez votre annonce afin qu'elle puisse être mise à la disposition de millions d'acheteurs potentiels dans le monde entier.</li>
+								</ol>
+								<ul class="ul mtm">
+								<li>Donnez à vos acheteurs potentiels le plus d'informations possibles concernant l'emplacement en indiquant le bloc, la rangée et le numéro de la place.</li>
+								<li>Si des billets en place assise sont mis en vente dans une seule annonce, ces places doivent être consécutives.</li>
+								<li>Toute mention spéciale, comme par exemple « billet enfant » ou « vue restreinte » doit figurer clairement.</li>
+								<li>Vérifiez régulièrement les prix auxquels vous avez listé vos billets pour vous assurer qu’ils soient compétitifs.</li>
+								<li>Téléchargez les billets électroniques dès que vous les avez. Ils figureront dans la rubrique Téléchargement instantané sur le site web, et pourront ainsi être vendus plus rapidement.</li>
+								<li>Confirmez rapidement votre vente dès que nous vous aurons informé que les billets ont été vendus.</li>
+								<li>Envoyez vos billets à l'acheteur avant la date limite d'envoi.</li>
+								</ul>
+										
 							</div>
 						</div>
 						<div id="div_commandes" class="hide">
@@ -562,7 +638,147 @@
 					</div>
 					</div>
 					<div class="col-sm-3">
-						sqfsdfgdgdfhfdghjfgykjhjkl;
+											
+					<div class="menu_droit">
+						<div class="menu_d">
+							<div class="personnel">
+							<div class="row">
+								<div class="col-sm-10">
+								<h4 class="h2_style">Espace personnel</h4>
+								</div>
+								<div class="col-sm-2 menu_droite_haut">
+								<h4> </h4>
+								</div>
+							</div>
+							
+								<div class="top_style">
+									<form>
+										<div class="form-group">
+										  <label for="usr">Non d'utilisateur :*</label>
+										  <input type="text" class="form-control" id="usr">
+										</div>
+										<div class="form-group">
+										  <label for="pwd">Mot de passe :*</label>
+										  <input type="password" class="form-control" id="pwd">
+										</div>
+										<div class="row">
+											<div class="col-sm-8">
+												<a class="a_droite"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Créer un compte</a><br/>
+												<a class="a_droite"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span> Mot de passe oublié?</a>
+												
+											</div>
+											<div class="col-sm-4">
+												<button type="button" class="btn btn-info pull-right bouton_droite">Se connecter</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						
+						
+						<div class="menu_d">
+							<div class="personnel">
+							<div class="row">
+								<div class="col-sm-10">
+								<h4 class="h2_style">Newsletter</h4>
+								</div>
+								<div class="col-sm-2">
+								<h4></h4>
+								</div>
+							</div>
+								
+								<div class="top_style">
+									<p>Recevez nos dernier actus !</p>
+									<form>
+										<div class="input-group">
+											<label for="email">Adresse e-mail :*</label>
+											<input id="email" type="text" class="form-control" name="email" placeholder="Email">
+										  </div>
+										<div class="row row_menu">
+											<div class="col-sm-8">
+												<div class="radio radio_menu">
+												  <label><input type="radio" name="optradio">S'inscrire</label>
+												</div>
+												<div class="radio radio_menu">
+												  <label><input type="radio" name="optradio">Se désinscrire</label>
+												</div>
+												
+											</div>
+											<div class="col-sm-4">
+												<button type="button" class="btn btn-info pull-right bouton_droite1">Enregistrer</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						
+						<div class="menu_d">
+							<div class="personnel">
+								<div class="row">
+									<div class="col-sm-10">
+										<h4 class="h2_style">Evénement de ce week-end</h4>
+									</div>
+									<div class="col-sm-2">
+									<h4></h4>
+									</div>
+								</div>
+								<div class="top_style">
+									<form>
+										<div class="row row_top_vente">
+											<div class="col-sm-2">
+												<h4 class="stronger">1</h4>
+											</div>
+											<div class="col-sm-8 top_vente-p">
+												<strong class="stronge_title">LES INSUS</strong>
+												<p>16 Septembre 2017,Stade de France, St Denise</p>
+											</div>
+											<div class="col-sm-2">
+												<span class="glyphicon glyphicon-plus plus" aria-hidden="true"></span>
+											</div>
+										</div>
+										<div class="row row_top_vente">
+											<div class="col-sm-2">
+												<h4 class="stronger">2</h4>
+											</div>
+											<div class="col-sm-8 top_vente-p">
+												<strong class="stronge_title">JAMES NEWTON</strong>
+												<p>16 Octobre 2017,Salle Peyel, St Denise</p>
+											</div>
+											<div class="col-sm-2">
+												<span class="glyphicon glyphicon-plus plus" aria-hidden="true"></span>
+											</div>
+										</div>
+										<div class="row row_top_vente">
+											<div class="col-sm-2">
+												<h4 class="stronger">3</h4>
+											</div>
+											<div class="col-sm-8 top_vente-p">
+												<strong class="stronge_title">ELTON JONH</strong>
+												<p>1 Décembre 2017,Accorhotel, Arena, Paris</p>
+											</div>
+											<div class="col-sm-2">
+												<span class="glyphicon glyphicon-plus plus" aria-hidden="true"></span>
+											</div>
+										</div>
+										<div class="row row_top_vente">
+											<div class="col-sm-2">
+												<h4 class="stronger">4</h4>
+											</div>
+											<div class="col-sm-8 top_vente-p">
+												<strong class="stronge_title">DIANA KRALL</strong>
+												<p>30 Décembre 2017,Stade de France, St Denise</p>
+											</div>
+											<div class="col-sm-2">
+												<span class="glyphicon glyphicon-plus plus" aria-hidden="true"></span>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -679,5 +895,7 @@ $('ul li .tab-content '+target).toggleClass(active in);
         document.getElementById(aId).className = "activy";
     }
 </script>
+
+
 	</body>
 </html>
