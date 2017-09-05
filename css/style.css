@@ -1802,8 +1802,7 @@ color: red;
 
 position: relative;
 background-color: #e1e1e1 !important;
-color: red !important;
-width: 262px;
+color:black !important;
 text-align: center;
 
 
@@ -1850,11 +1849,10 @@ padding: 20px 28px;
 	color: #428bca;
 }
 .auu{
-background-color: #d70506;
+
     text-align: center;
     padding: 0px;
-    border-radius: 110px 5px;
-    color: white;
+    color: black;
 }
 .au{
 background-color: black;

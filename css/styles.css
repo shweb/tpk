@@ -14,9 +14,9 @@
   box-sizing: border-box;
 }
 #cssmenu {
-  width: 261px;
   font-family: Helvetica, Arial, sans-serif;
   color: #ffffff;
+  cursor: pointer;
 }
 #cssmenu ul ul {
   display: none;
@@ -25,7 +25,8 @@
   float: right;
 }
 #cssmenu > ul > li > a {
-  padding: 15px 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-top: 1px solid #b7b7b7;
   cursor: pointer;
   z-index: 2;
@@ -35,12 +36,15 @@
   background: white;
 
 }
+#cssmenu > ul > li > a > span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
 #cssmenu > ul > li > a:hover,
 #cssmenu > ul > li.active > a,
 #cssmenu > ul > li.open > a {
   color: grey;
   background:white;
-
 }
 #cssmenu > ul > li.open > a {
   border-bottom: 1px solid #1682ba;
@@ -137,7 +141,7 @@
   content: "";
   width: 5px;
   height: 5px;
-  right: 20px;
+  right: 5px;
   z-index: 10;
   top: 11.5px;
   border-top: 2px solid #eeeeee;

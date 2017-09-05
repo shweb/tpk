@@ -152,29 +152,28 @@
 					<div class="col-sm-3">
 						
 						<div class="menu_FQ">
-						<!--------------------------------------------------------------------------->
 
 						<div id='cssmenu'>
 						<ul>
 							<li><div id="a_compte" class="activy" onClick="changePage('div_compte', 'a_compte')"> <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Générale</div></li>
-						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Acheter les billets</a>
+						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Acheter les billets</a>
 							  <ul>
-								 <li><div id="a_billets_acheter" onClick="changePage('div_billets_acheter', 'a_billets_acheter')"> Commment acheter des billets sur viagogo?</div>
+								 <li><div id="a_billets_acheter" onClick="changePage('div_billets_acheter', 'a_billets_acheter');">Commment acheter des billets sur viagogo?</div>
 									
 								 </li>
-								 <li><div id="a_places_acheter" onClick="changePage('div_places_acheter', 'a_places_acheter')"> Les places seront-elles adjacentes ?</div>
+								 <li><div id="a_places_acheter" onClick="changePage('div_places_acheter', 'a_places_acheter')">Les places seront-elles adjacentes ?</div>
 									
 								 </li>
-								 <li><div id="a_places_situee" onClick="changePage('div_places_situee', 'a_places_situee')"> Où mes places seront-elles situées ?</div>
+								 <li><div id="a_places_situee" onClick="changePage('div_places_situee', 'a_places_situee')">Où mes places seront-elles situées ?</div>
 									
 								 </li>
-								 <li><div id="a_billets_personnel" onClick="changePage('div_billets_personnel', 'a_billets_personnel')"> Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqu'un d'autre ?</div>
+								 <li><div id="a_billets_personnel" onClick="changePage('div_billets_personnel', 'a_billets_personnel')">Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqu'un d'autre ?</div>
 									
 								 </li>
 							  </ul>
 						   </li>
 						   
-						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Recevoir vos places</a>
+						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-bed" aria-hidden="true"></span>Recevoir vos places</a>
 							  <ul>
 								 <li><div id="a_billets_recu" onClick="changePage('div_billets_recu', 'a_billets_recu')">Quand vais-je recevoir mes billets ?</div>
 									
@@ -204,7 +203,7 @@
 							  </ul>
 						   </li>
 						   
-						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</a>
+						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>Questions d'annulations</a>
 							  <ul>
 								 <li><div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Puis-je annuler ou modifier mon achat ?</div>
 									
@@ -215,7 +214,7 @@
 							  </ul>
 						   </li>
 						   
-						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> Recevez votre paiement</a>
+						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Recevez votre paiement</a>
 							  <ul>
 								 <li>	<div id="a_favoris" onClick="changePage('div_favoris', 'a_favoris')">Quelles sont les méthodes de paiement acceptées ?</div>
 									
@@ -226,7 +225,7 @@
 							  </ul>
 						   </li>
 						   
-						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</a>
+						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Gérer mon compte</a>
 							  <ul>
 								 <li><div id="a_news" onClick="changePage('div_news', 'a_news')"> J'ai saisi une adresse e-mail incorrecte lors de l'inscription, comment puis-je la modifier ?</div>
 									
@@ -245,7 +244,7 @@
 								 </li>
 							  </ul>
 						   </li>
-						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila </a>
+						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>A propos de Tapakila</a>
 							 <ul>
 							 <li><div id="a_tapakila_definition" onClick="changePage('div_tapakila_definition', 'a_tapakila_definition')"> Qu'est-ce que viagogo ?</div>
 									
@@ -255,9 +254,6 @@
 						   </li>
 						</ul>
 						</div>
-
-						
-						<!------------------------------------------------------------->
 						</div>
 					</div>
 					<div class="col-sm-6">
@@ -1319,6 +1315,10 @@ $('ul li .tab-content '+target).toggleClass(active in);
 		document.getElementById("a_compte_commande").className = "";
 		document.getElementById("a_tapakila_definition").className = "";
         document.getElementById(aId).className = "activy";
+
+		if (screen.width <= 750){
+			window.location.hash=id;
+		}
     }
 </script>
 <script>
