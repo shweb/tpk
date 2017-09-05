@@ -1818,7 +1818,7 @@ margin-top: 2px;
 color: #93a1a1;
 background-color: white;
 padding: 15px 15px 15px;
-text-align: center;
+text-align: left;
 
 }
 .tab_client{
@@ -1849,8 +1849,15 @@ padding: 20px 28px;
 .centre p a{
 	color: #428bca;
 }
-.au{
+.auu{
 background-color: #d70506;
+    text-align: center;
+    padding: 0px;
+    border-radius: 110px 5px;
+    color: white;
+}
+.au{
+background-color: black;
     text-align: center;
     padding: 0px;
     border-radius: 110px 5px;
@@ -1942,7 +1949,7 @@ align-items: center;
 .service_haut{
 	text-align: center;
 	/* background-color: black; */
-	box-shadow: 2px 0px 53px -4px #bcb9b9 inset;
+	
 	color: #d70506;
 }
 
