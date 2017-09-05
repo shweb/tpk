@@ -1801,7 +1801,7 @@ color: red;
 .activy{
 
 position: relative;
-background-color: white;
+background-color: #e1e1e1 !important;
 color: red !important;
 width: 262px;
 text-align: center;
@@ -1813,12 +1813,12 @@ text-align: center;
 }
 
 .menu_FQ div {
- font-size: 17px !important;
+ font-size: 13px !important;
 margin-top: 2px;
 color: #93a1a1;
 background-color: white;
 padding: 15px 15px 15px;
-text-align: center;
+text-align: left;
 
 }
 .tab_client{
@@ -1849,8 +1849,15 @@ padding: 20px 28px;
 .centre p a{
 	color: #428bca;
 }
-.au{
+.auu{
 background-color: #d70506;
+    text-align: center;
+    padding: 0px;
+    border-radius: 110px 5px;
+    color: white;
+}
+.au{
+background-color: black;
     text-align: center;
     padding: 0px;
     border-radius: 110px 5px;
@@ -1942,7 +1949,7 @@ align-items: center;
 .service_haut{
 	text-align: center;
 	/* background-color: black; */
-	box-shadow: 2px 0px 53px -4px #bcb9b9 inset;
+	
 	color: #d70506;
 }
 
@@ -2002,9 +2009,22 @@ align-items: center;
 #menu-accordeon li:hover li {
   max-height: 15em;
 }
-
-
-
+.bdrt{
+	padding-top: 20px;
+	border-bottom: 2px solid gainsboro;
+	border-top: 2px solid gainsboro;
+	padding-bottom: 20px;
+	margin-top: 24px;
+	margin-bottom: 24px;
+	
+}
+.provisoire{
+	background-color: #d70506;
+	border: none;
+}
+.class_a{
+	color: red;
+}
 /*------------FQ-end--------------------------*/
 /* comment vendre billet et organisateur start */
 .about-bg > h4{

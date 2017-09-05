@@ -114,11 +114,12 @@
 		<!-- section navigation end -->
 		<!-- section navigation end -->
 		<section id="content" class="debut">
-			<div class="service_haut">
+			
+			<div class="container">
+			<div class="auu">
 			<h3>Bienvenue sur TAPAKILA</h3>
 			<h2>Centre d'Aide</h2>
 			</div>
-			<div class="container">
 			<div class="row">
 				<div class="col-sm-8 col-sm-offset-2">
 				<div class="au">
@@ -158,10 +159,16 @@
 							<li><div id="a_compte" class="activy" onClick="changePage('div_compte', 'a_compte')"> <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Générale</div></li>
 						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Acheter les billets</a>
 							  <ul>
-								 <li><div id="a_billets" onClick="changePage('div_billets', 'a_billets')"> Comment vendre les billets ?</div>
+								 <li><div id="a_billets_acheter" onClick="changePage('div_billets_acheter', 'a_billets_acheter')"> Commment acheter des billets sur viagogo?</div>
 									
 								 </li>
-								 <li class='has-sub'><a href='#'><span>Comment modifier mon offre ?</span></a>
+								 <li><div id="a_places_acheter" onClick="changePage('div_places_acheter', 'a_places_acheter')"> Les places seront-elles adjacentes ?</div>
+									
+								 </li>
+								 <li><div id="a_places_situee" onClick="changePage('div_places_situee', 'a_places_situee')"> Où mes places seront-elles situées ?</div>
+									
+								 </li>
+								 <li><div id="a_billets_personnel" onClick="changePage('div_billets_personnel', 'a_billets_personnel')"> Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqu'un d'autre ?</div>
 									
 								 </li>
 							  </ul>
@@ -169,21 +176,40 @@
 						   
 						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Recevoir vos places</a>
 							  <ul>
-								 <li><div id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')"> <span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Recevoir vos places</div>
+								 <li><div id="a_billets_recu" onClick="changePage('div_billets_recu', 'a_billets_recu')">Quand vais-je recevoir mes billets ?</div>
 									
 								 </li>
-								 <li class='has-sub'><a href='#'><span>Product 2</span></a>
+								 <li><div id="a_billets_download" onClick="changePage('div_billets_download', 'a_billets_download')">Comment télécharger mes billets électroniques ?</div>
 									
 								 </li>
+								 <li><div id="a_billets_voyage" onClick="changePage('div_billets_voyage', 'a_billets_voyage')">Je voyage - Où et quand vais-je recevoir mes billets ?</div>
+									
+								 </li>
+								 <li><div id="a_billets_livraison" onClick="changePage('div_billets_livraison', 'a_billets_livraison')">Comment modifier mon adresse de livraison ?</div>
+									
+								 </li>
+								 <li><div id="a_billets_retirer" onClick="changePage('div_billets_retirer', 'a_billets_retirer')">Où et quand dois-je retirer mes billets ?</div>
+									
+								 </li>
+								 <li><div id="a_billets_plutot" onClick="changePage('div_billets_plutot', 'a_billets_plutot')">Puis-je retirer mes billets le jour de l'événement plutôt que de les recevoir par courrier ?</div>
+									
+								 </li>
+								 <li><div id="a_billets_different" onClick="changePage('div_billets_different', 'a_billets_different')">Pourquoi le prix imprimé sur le billet est-il différent de celui que j'ai payé ?</div>
+									
+								 </li>
+								 <li><div id="a_billets_nom" onClick="changePage('div_billets_nom', 'a_billets_nom')">Pourquoi il y a-t-il un autre nom sur mes billets ?</div>
+									
+								 </li>
+								 
 							  </ul>
 						   </li>
 						   
 						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</a>
 							  <ul>
-								 <li><div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</div>
+								 <li><div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Puis-je annuler ou modifier mon achat ?</div>
 									
 								 </li>
-								 <li class='has-sub'><a href='#'><span>Product 2</span></a>
+								 <li><div id="a_annulation_evenement" onClick="changePage('div_annulation_evenement', 'a_annulation_evenement')"> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Mon événement a été annulé ou reprogrammé - Que dois-je faire?</div>
 									
 								 </li>
 							  </ul>
@@ -191,10 +217,10 @@
 						   
 						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> Recevez votre paiement</a>
 							  <ul>
-								 <li>	<div id="a_favoris" onClick="changePage('div_favoris', 'a_favoris')"> <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> Recevez votre paiement</div>
+								 <li>	<div id="a_favoris" onClick="changePage('div_favoris', 'a_favoris')">Quelles sont les méthodes de paiement acceptées ?</div>
 									
 								 </li>
-								 <li class='has-sub'><a href='#'><span>Product 2</span></a>
+								 <li>	<div id="a_paiement-refuser" onClick="changePage('div_paiement-refuser', 'a_paiement-refuser')">Mon paiement a été refusé</div>
 									
 								 </li>
 							  </ul>
@@ -202,15 +228,31 @@
 						   
 						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</a>
 							  <ul>
-								 <li><div id="a_news" onClick="changePage('div_news', 'a_news')"><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</div>
+								 <li><div id="a_news" onClick="changePage('div_news', 'a_news')"> J'ai saisi une adresse e-mail incorrecte lors de l'inscription, comment puis-je la modifier ?</div>
 									
 								 </li>
-								 <li class='has-sub'><a href='#'><span>Product 2</span></a>
+								 <li><div id="a_compte_email" onClick="changePage('div_compte_email', 'a_compte_email')">Comment modifier l'adresse e-mail de mon compte ?</div>
+									
+								 </li>
+								 <li><div id="a_compte_pswd" onClick="changePage('div_compte_pswd', 'a_compte_pswd')">Comment réinitialiser mon mot de passe ?</div>
+									
+								 </li>
+								  <li><div id="a_compte_newsletter" onClick="changePage('div_compte_newsletter', 'a_compte_newsletter')">Comment se désinscrire de la newsletter ?</div>
+									
+								 </li>
+								 <li><div id="a_compte_commande" onClick="changePage('div_compte_commande', 'a_compte_commande')">Pourquoi est-ce que je ne peux pas voir ma commande ou vente dans mon compte ?</div>
 									
 								 </li>
 							  </ul>
 						   </li>
-						   <li><div id="a_news" onClick="changePage('div_news', 'a_news')"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</div></li>
+						   <li class='active has-sub'><a href='#'><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila </a>
+							 <ul>
+							 <li><div id="a_tapakila_definition" onClick="changePage('div_tapakila_definition', 'a_tapakila_definition')"> Qu'est-ce que viagogo ?</div>
+									
+							 </li>
+							 </ul>
+						   
+						   </li>
 						</ul>
 						</div>
 
@@ -285,71 +327,442 @@
 							</div>
 							
 						</div>
-						<div id="div_billets" class="hide">
+						<div id="div_billets_acheter" class="hide">
 							<div class="centre">
-								<a><h4 class="titre"> Comment vendre les billets ?</h4></a>
-								<ol type="i">
-								<li>Cliquez sur le bouton « Vendre des billets » en haut à droite de la page d'accueil.</li>
-								<li>Recherchez l'événement pour lequel vous souhaitez vendre des billets. Si vous ne trouvez pas votre événement, indiquez-le en cliquant <a href="/Browse/eventrequest" rel="nofollow" data-modal="true" target="_blank">ici</a>, et nous l'ajouterons à notre site web</li>
-								<li>Suivez les étapes de saisie des informations relatives à votre billet. Important : indiquez la manière dont vous souhaitez être payé(e) une fois que les billets auront été vendus.</li>
-								<li>Vérifiez et confirmez votre annonce afin qu'elle puisse être mise à la disposition de millions d'acheteurs potentiels dans le monde entier.</li>
-								</ol>
-								<ul class="ul mtm">
-								<li>Donnez à vos acheteurs potentiels le plus d'informations possibles concernant l'emplacement en indiquant le bloc, la rangée et le numéro de la place.</li>
-								<li>Si des billets en place assise sont mis en vente dans une seule annonce, ces places doivent être consécutives.</li>
-								<li>Toute mention spéciale, comme par exemple « billet enfant » ou « vue restreinte » doit figurer clairement.</li>
-								<li>Vérifiez régulièrement les prix auxquels vous avez listé vos billets pour vous assurer qu’ils soient compétitifs.</li>
-								<li>Téléchargez les billets électroniques dès que vous les avez. Ils figureront dans la rubrique Téléchargement instantané sur le site web, et pourront ainsi être vendus plus rapidement.</li>
-								<li>Confirmez rapidement votre vente dès que nous vous aurons informé que les billets ont été vendus.</li>
-								<li>Envoyez vos billets à l'acheteur avant la date limite d'envoi.</li>
-								</ul>
+								<a><h4 class="titre"> Commment acheter des billets sur Tapakila?</h4></a>
+								<br><br>
+                                <div class="ptxl">
+								<p><br/>&nbsp;Acheter des billets sur viagogo est très simple, il vous suffit de suivre les instructions ci-dessous:</p><br>
+								<p><strong>1&nbsp;</strong>&nbsp;Commencez par recherchez l'événement auquel vous souhaitez assister dans la barre de recherche où il est écrit: Chercher un événement...</p>
+								<p><strong>2&nbsp;</strong>&nbsp;Cliquez sur la date que vous souhaitez</p>
+								<p><strong>3&nbsp;</strong>&nbsp;Selectionez la quantité de billets désirée</p>
+								<p><strong>4&nbsp;</strong>&nbsp;Choisissez vos billets parmi les listings disponibles</p>
+								<p><strong>6&nbsp;</strong>&nbsp;Suivez les différentes étapes &ndash;&nbsp; vérifiez que votre adresse email, numéro de téléphone &amp; adresse sont corrects</p>
+								<p><strong>7&nbsp;</strong>&nbsp;Verifiez les détails de votre commande pour vous assurez que tout vous convient&nbsp;</p>
+								<p><strong>8&nbsp;</strong>&nbsp;Achetez vos billets!&nbsp;</p>
+                                </div>
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
+
 										
 							</div>
 						</div>
-						<div id="div_commandes" class="hide">
+						<div id="div_places_acheter" class="hide">
+							<div class="centre">
+								<a><h4 class="titre">Les places seront-elles adjacentes ?</h4></a>
+								<br><br>
+								Oui, les billets achetés sur une même annonce seront consécutifs, sauf indication contraire transmise lors du processus d'achat. 
+								<br><br>
+
+                                Les billets faisant partie de la catégorie « Place non réservée » n'ont pas d'emplacement spécifique. Les billets faisant partie de la catégorie « admission générale » correspondent généralement à des places debout.
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
+
+
+
+							
+							</div>
+						</div>
+						<div id="div_places_situee" class="hide">
+							<div class="centre">
+								<a><h4 class="titre"> Où mes places seront-elles situées ?</h4></a>
+								<br><br>
+                                <div class="ptxl">
+                                    Les informations relatives au bloc et à la rangée figurant sur le billet sont indiquées sur la page de l'événement, lors de l'achat et sous Mon compte. 
+									La carte interactive figurant sur la page de l'événement vous aidera à déterminer votre emplacement. 
+										<br><br>
+										Tapakila autorise des vendeurs tiers à vendre des billets sur sa plateforme, et transmet les informations relatives à l'emplacement telles que fournies par les vendeurs. 
+										<br><br>
+										N'oubliez pas que vous disposerez de places adjacentes si vous achetez des billets vendus sur une seule annonce, sauf indication contraire transmise lors du processus d'achat.
+
+                                </div>
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
+
+
+
+							
+							</div>
+						</div>
+						<div id="div_billets_personnel" class="hide">
+							<div class="centre">
+								<a><h4 class="titre">Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqu'un d'autre ?</h4></a>
+								
+								<br><br>
+
+                                Oui, viagogo autorise des vendeurs tiers, notamment des particulier, à mettre en ventedes billets sur sa plateforme. Il se peut que le nom de l'acheteur d'origine figure sur les billet, ces billets sont valables. Vous n'êtes pas obligé(e) de posséder un billet à votre nom pour accéder à l'événement.
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
+
+
+
+							
+							</div>
+						</div>
+						<div id="div_billets_recu" class="hide">
 						<div class="centre">
-								<a><h4 class="titre"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Recevoir vos places</h4></a>
-								<p>
-								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
-								</p>
-								<p>
-								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
-								</p>
+								<a><h4 class="titre"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Quand vais-je recevoir mes billets ?</h4></a>
+								<br><br>
+								Vous devriez recevoir vos billets papier ou électroniques au cours de la semaine précédant l'événement. Les billets étant en général émis par les organisateurs une semaine avant la date de l'événement. 
+								<br>
+								<p>Si vous avez acheté des billets en téléchargement immédiat, ils pourront être imprimés quasiment tout de suite. </p>
+								<p>Vous pouvez suivre le statut de votre commande dans la rubrique Achats. </p>
+								Comment vous assurer que vous recevrez vos billets à temps :
+								<ul class='ul'>
+								<li>Assurez-vous que l'adresse de livraison est correcte. Vérifiez votre adresse de livraison <a href="/secure/myaccount/address">ici</a>.</li>
+								<li>Assurez-vous que vous avez sélectionné une adresse de livraison à laquelle une personne sera présente pour signer le bordereau de livraison, votre adresse professionnelle par example.</li>
+								<li>Si vous voyagez pour vous rendre à l'événement, <a href="/secure/myaccount/purchases"> ajoutez dès que possible votre adresse de voyage ainsi qu'une estimation de votre date de départ</a>. Nous ferons en sorte que vos billets soient envoyés à la bonne adresse.</li>
+								<li>Veuillez vous assurer que le numéro de téléphone enregistré dans votre compte est correct afin que nous puissions vous contacter en cas de nécessité.</li>
+								</ul>
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
+
+						</div>
+							
+						</div>
+						
+						<div id="div_billets_download" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Comment télécharger mes billets électroniques ?</h4></a>
+								<br><br>
+								Lorsque vos billets sont prêts à être téléchargés, vous recevez un e-mail de notre part avec un lien pour le téléchargement. En cliquant sur ce lien, vous pouvez voir et imprimer les billets ou les télécharger pour les sauvegarder en tant que fichier PDF. Merci de noter que seule une copie du code barre ne sera acceptée à l'événement. 
+								<br>
+								Vos billets seront également disponibles dans la section Achats de votre compte, il vous suffira de suivre les instructions pour les télécharger. 
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
 							</div>
 							
 						</div>
+						
+						<div id="div_billets_voyage" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Je voyage - Où et quand vais-je recevoir mes billets ?</h4></a>
+								<br><br>
+								Vous devez voyager pour vous rendre à l'événement ? Ne vous inquiétez pas, Tapakila possède un réseau global de près de 60 sites web : les billets peuvent être livrés n'importe où à travers le monde. 
+								<br><br>
+								Si vous voyagez pour vous rendre à l'événement, ajoutez dès que possible votre adresse de voyage et la date étimée de votre départ. Vos billets pourront ainsi être envoyés à la bonne adresse une fois prêts pour l'expédition.
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
+							</div>
+							
+						</div>
+						<div id="div_billets_livraison" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Comment modifier mon adresse de livraison ?</h4></a>
+								<br><br>
+								Vous pouvez modifier votre adresse de livraison à tout moment jusqu'à l'envoi de vos billets. 
+								Consultez la rubrique Achats et cliquez sur le bouton « Modifier l'adresse de livraison ». 
+								<br>
+								Vous pouvez sélectionner une adresse différente sur la liste ou saisir une nouvelle adresse. Vous recevrez un e-mail vous informant de la mise à jour de votre adresse de livraison.
+
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
+							</div>
+							
+						</div>
+						<div id="div_billets_retirer" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Où et quand dois-je retirer mes billets ?</h4></a>
+								<br><br>
+								Dans le cas où vos billets devraient être récupérés sur le lieu ou à proximité de l'événement, vous recevrez en temps voulu un e-mail indiquant l'adresse du point de retrait. 
+
+								<br>
+								Vous pouvez également consulter les instructions dans la rubrique Achats en cliquant sur le lien « Consulter les instructions de retrait ».
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
+							</div>
+							
+						</div>
+						<div id="div_billets_plutot" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Puis-je retirer mes billets le jour de l'événement plutôt que de les recevoir par courrier ?</h4></a>
+								<br><br>
+								Non, si un billet a été programmé pour être livré, il ne peut pas être retiré. 
+
+								<br>
+								Vous devriez recevoir vos billets au cours de la semaine précédant l'événement. Les organisateurs émettant le plus souvent les billets (y compris électroniques) environ une semaine avant la date de l'événement. 
+								<br>
+								Si vous voyagez pour vous rendre à l'événement, ajoutez dès que possible votre adresse de voyage ainsi que la date estimée de votre départ. Une fois les billets prêts à être expédiés, nous nous assurerons de l'envoi de vos billets à la bonne adresse.
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
+							</div>
+							
+						</div>
+						<div id="div_billets_different" class="hide">
+						<div class="centre">
+								<a><h4 class="titre">Pourquoi le prix imprimé sur le billet est-il différent de celui que j'ai payé ?</h4></a>
+								<br><br>
+								Le prix des billets mis en vente sur Tapakila peut être identique, supérieur ou inférieur à la valeur faciale imprimée sur le billet. 
+
+								<br><br>
+								En raison d'une forte demande, le prix des billets pour les événements populaires peut être plus élevés que la valeur faciale. Cependant, de nombreux billet sur Tapakila sont vendus à un prix inférieur à la valeur faciale. 
+
+								<br><br>
+								Tapakila affiche toujours la valeur faciale du billet pour un événement dans la rubrique « Informations importantes » ou sur la « Page d'informations relatives au billet ».
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
+							</div>
+							
+						</div>
+						<div id="div_billets_nom" class="hide">
+						<div class="centre">
+								<a><h4 class="titre">Pourquoi il y a-t-il un autre nom sur mes billets ?</h4></a>
+								<br><br>
+								Tapakila autorise des vendeurs tiers, notamment des particulier, à mettre des billets en vente sur sa plate-forme. Il arrive parfois que le nom de l'acheteur d'origine figure sur les billets. Ces billets sont valables. Vous n'êtes pas obligé(e) de posséder un billet à votre nom pour accéder à l'événement.
+								<br><br>
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
+							</div>
+							
+						</div>
+						
 						<div id="div_ev" class="hide">
 						<div class="centre">
-								<a><h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</h4></a>
-								<p>
-								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
-								</p>
-								<p>
-								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
-								</p>
+								<a><h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Puis-je annuler ou modifier mon achat ?</h4></a>
+								<br><br>
+								Il n'est pas possible d'annuler ou d'échanger les billets une fois l'achat finalisé car les commandes sont considérées comme définitives. Si vous ne pouvez pas utiliser les billets achetés, et qu'il reste du temps avant la date de l'événement, nous vous recommandons de les re-lister en cliquant sur le lien "Vendre" sur l'événement pour lequel vous avez des billets. Nous commercialiserons vos billets sur notre plateforme pour trouver un nouvel acheteur. Nous ne facturons pas de frais supplémentaires pour relister des billets que vous auriez acheté chez nous. Occasionellement, il se peut qu'il y ai des raisons pour que les billets ne puissent être relistés.
+								Généralement ceci est lié à une date de l'événement trop proche pour permettre une livraison sûre ou un téléchargement pour l'acheteur.
+								<br><br>
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
+							</div>
+							
+						</div>
+						<div id="div_annulation_evenement" class="hide">
+						<div class="centre">
+								<a><h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Puis-je annuler ou modifier mon achat ?</h4></a>
+								<br><br>
+								Dans l'eventualité où votre événement serait annulé ou reporté, soyez assuré(e) que nous vous recontacterons dans les plus brefs délais avec les instructions nécéssaires concernant vos billets. En règle générale;
+								<br><br>
+								<ul>
+								<li><strong>En cas d'annulation</strong> &ndash; nous vous demanderons de nous retourner les billets et un remboursement intégral de votre transaction sera effectué après réception de ceux-ci.</li>
+								</ul>
+								<ul>
+								<li><strong>En cas de reprogrammation</strong> &ndash; Les billets restent valides pour la nouvelle date. Veuillez consulter régulièrement vos emails et assurez-vous de vérifier également votre dossier de courrier indésirable ou ''spam''. L'email qui vous sera envoyé sera spécifique à votre événement, et contiendra toutes les informations nécéssaires.</li>
+								</ul>
+
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+								</div>
 							</div>
 							
 						</div>
 					<div id="div_favoris" class="hide">
 						<div class="centre">
-								<a><h4 class="titre"><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</h4></a>
-								<p>
-								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
-								</p>
-								<p>
-								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
-								</p>
+								<a><h4 class="titre">Quelles sont les méthodes de paiement acceptées ?</h4></a>
+								<br><br>Tapakila accepte la plupart des cartes de crédit, PayPal, ainsi que les transferts bancaires directs dans certains pays. 
+								<br><br>Les options de paiement disponibles seront indiquées lors du processus de paiement.
+						</div>
+							<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+							</div>
+					</div>
+					<div id="div_paiement-refuser" class="hide">
+						<div class="centre">
+								<a><h4 class="titre">Mon paiement a été refusé</h4></a>
+								<br><br>
+								
+								<div class="ptxl">
+                                    <p>Si votre paiement est refusé, nous vous suggérons de procéder aux vérifications suivantes:</p>
+									<p>&bull; Essayez une carte de crédit internationale telle que Visa, Mastercard ou American Express, si cela n'est pas déjà fait.<br />&bull; 
+									Vérifiez que le code de sécurité (appelé également CVV2 ou CVC2) est correct. Pour Visa, Mastercard, Maestro, Switch and Electron, il s'agit des 3 chiffres au verso de votre carte de débit. Pour American Express, il s'agit des 4 chiffres se trouvant au recto, à droite de votre carte.<br />&bull; 
+									Assurez-vous que les informations de la carte de débit ou de crédit que vous avez saisies concernent une carte valide non expirée et disposant des fonds suffisants pour honorer cette commande.&nbsp;<br />&bull; 
+									Contactez votre banque ou la société émettrice de votre carte bancaire pour vérifier l'autorisation de paiement à Tapakila.<br />&bull; 
+									Réglez par PayPal, un service gratuit pour payer en ligne sans partager vos informations financières.<br /><br />
+									Si nous ne sommes pas en mesure de valider votre paiment dans les 30 minutes suivant votre achat, nous devrons l'annuler et vous ne serez pas prélevé(e).</p>
+                                </div>
+
+						</div>
+							<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
 							</div>
 					</div>
 					<div id="div_news" class="hide">
 						<div class="centre">
-								<a><h4 class="titre"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</h4></a>
-								<p>
-								Quapropter a natura mihi videtur potius quam ab indigentia orta amicitia, applicatione magis animi cum quodam sensu amandi quam cogitatione quantum illa res utilitatis esset habitura. Quod quidem quale sit, etiam in bestiis quibusdam animadverti potest, quae ex se natos ita amant ad quoddam tempus et ab eis ita amantur ut facile earum sensus appareat. Quod in homine multo est evidentius, primum ex ea caritate quae est inter natos et parentes, quae dirimi nisi detestabili scelere non potest; deinde cum similis sensus exstitit amoris, si aliquem nacti sumus cuius cum moribus et natura congruamus, quod in eo quasi lumen aliquod probitatis et virtutis perspicere videamur.
-								</p>
-								<p>
-								Atque, ut Tullius ait, ut etiam ferae fame monitae plerumque ad eum locum ubi aliquando pastae sunt revertuntur, ita homines instar turbinis degressi montibus impeditis et arduis loca petivere mari confinia, per quae viis latebrosis sese convallibusque occultantes cum appeterent noctes luna etiam tum cornuta ideoque nondum solido splendore fulgente nauticos observabant quos cum in somnum sentirent effusos per ancoralia, quadrupedo gradu repentes seseque suspensis passibus iniectantes in scaphas eisdem sensim nihil opinantibus adsistebant et incendente aviditate saevitiam ne cedentium quidem ulli parcendo obtruncatis omnibus merces opimas velut viles nullis repugnantibus avertebant. haecque non diu sunt perpetrata.
-								</p>
+								<a><h4 class="titre"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">  J'ai saisi une adresse e-mail incorrecte lors de l'inscription, comment puis-je la modifier ?</h4></a>
+								<br><br>
+								Consultez la rubrique Configuration du compte en vous connectant à l'aide de l'e-mail « incorrect » utilisé lors de la première inscription. Cliquez sur le lien « Modifier » situé à côté de l'adresse e-mail.
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+							</div>
+							</div>
+					</div>
+					<div id="div_compte_email" class="hide">
+						<div class="centre">
+								<a><h4 class="titre">Comment modifier l'adresse e-mail de mon compte ?</h4></a>
+								<br><br>
+								Consultez la rubrique Configuration du compte en vous connectant à l'aide de l'e-mail « incorrect » utilisé lors de la première inscription. Cliquez sur le lien « Modifier » situé à côté de l'adresse e-mail.
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+							</div>
+							</div>
+					</div>
+					<div id="div_compte_pswd" class="hide">
+						<div class="centre">
+								<a><h4 class="titre">Comment réinitialiser mon mot de passe ?</h4></a>
+								<br><br>
+								Cliquez <a href="réinitialiser.html" class="class_a">ici</a> pour réinitialiser votre mot de passe.
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+							</div>
+							</div>
+					</div>
+					<div id="div_compte_newsletter" class="hide">
+						<div class="centre">
+								<a><h4 class="titre">Comment se désinscrire de la newsletter ?</h4></a>
+								<br><br>
+								Rendez-vous à la rubrique Configuration du compte et cliquez sur le lien « Modifier » situé à côté de l'onglet « Abonnements » pour modifier vos préférences.
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+							</div>
+							</div>
+					</div>
+					<div id="div_compte_commande" class="hide">
+						<div class="centre">
+								<a><h4 class="titre">Pourquoi est-ce que je ne peux pas voir ma commande ou vente dans mon compte ?</h4></a>
+								<br><br>
+								 <div class="ptxl">
+                                    <p> Les deux principales raisons pour lesquelles les clients ne voient pas leur commande ou leur vente sont:
+										<br/>
+										<br/>
+										<strong> Il se peut que vous soyez connecté sur le mauvais compte</strong>
+										<br/>
+										Il est probable que vous ayez effectué votre achat en étant connecté depuis un deuxième compte à l'aide de l'une de vos autres adresses email, ou par le bais de Facebook.
+										<br/>
+										<br/>
+										<strong> Vous avez fait une faute de frappe dans votre adresse email en utilisant la procédure de paiement pour invité</strong>
+										<br/>
+										Lorsque vous payez en tant qu'invité, l'adresse email que vous entrez deviend l'adresse email de votre compte et celle grâce à laquelle vous pourrez trouver votre commande.
+										<br/>
+										<br/>
+										<em>Afin de résoudre ceci:</em>
+										<p><strong>1</strong> - Consultez vos <a href="mon_compte.html">Paramètres de Compte</a> et prenez note de l'adresse email de ce compte.</p>
+										<p><strong>2</strong> - Déconnectez-vous et tentez de vous reconnecter à l'aide d'une autre adresse email que vous pouvez avoir, ou bien à l'aide de Facebook, afin de voir si vous possédez un deuxième compte sur lequel votre commande pourrait se trouver.</p>
+										<p><strong>3</strong> - Si vous ne parvenez toujours pas à trouver votre commande ou vente, rendez-vous sur notre page mot de passe oublié / aide à la connection.</p>
+								</div>
+
+
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+							</div>
+							</div>
+					</div>
+					
+					<div id="div_tapakila_definition" class="hide">
+						<div class="centre">
+								<a><h4 class="titre">Qu'est-ce que Tapakila ?</h4></a>
+								<br><br>
+								Tapakila est une plate-forme en ligne d'échelle mondiale pour les billets d'événements sportifs, musicaux, et de divertissement en direct. Tapakila vise à fournir aux acheteurs de billets la plus grande sélection de billets possible pour des événements à travers le monde, 
+								et aide les vendeurs de billets, des personnes détenant un billet supplémentaire aux grandes organisations événementielles multi-nationales, à atteindre un large public. 
+								<br><br>
+								viagogo est en partenariat avec un grand nombre des marques mondiales les plus éminentes dans le sport et le divertissement, et a aidé des clients venant de presque tous les pays du monde à avoir accès à des billets dans la langue, devise, et depuis l'appareil de leur choix. 
+								<br><br>
+								Pour toute demande client, merci de visiter la section Aide du site internet viagogo.
+								<br>
+								<div class=" bdrt">
+										<p>Avez-vous trouvé la réponse utile?
+											<a class="pll faqFeedBackYes pointer" href="index.html">Oui</a>
+											<a class="pll faqFeedBackNo pointer" href="service-clientele.html">Non</a>
+										</p>
+										<a href="#" class="btn btn-info  provisoire" role="button">Contacter service clientèle</a>
+							</div>
 							</div>
 					</div>
 					</div>
@@ -858,19 +1271,53 @@ $('ul li .tab-content '+target).toggleClass(active in);
 <script>
     function changePage(id, aId) {
         document.getElementById("div_compte").className = "hide";
-		document.getElementById("div_billets").className = "hide";
-        document.getElementById("div_commandes").className = "hide";
+		document.getElementById("div_billets_acheter").className = "hide";
+		document.getElementById("div_places_acheter").className = "hide";
+		document.getElementById("div_places_situee").className = "hide";
+		document.getElementById("div_billets_personnel").className = "hide";
+        document.getElementById("div_billets_recu").className = "hide";
+		document.getElementById("div_billets_download").className = "hide";
+		document.getElementById("div_billets_voyage").className = "hide";
+		document.getElementById("div_billets_livraison").className = "hide";
+		document.getElementById("div_billets_retirer").className = "hide";
+		document.getElementById("div_billets_plutot").className = "hide";
+		document.getElementById("div_billets_different").className = "hide";
+		document.getElementById("div_billets_nom").className = "hide";
         document.getElementById("div_ev").className = "hide";
+		document.getElementById("div_annulation_evenement").className = "hide";
         document.getElementById("div_favoris").className = "hide";
+		document.getElementById("div_paiement-refuser").className = "hide";
         document.getElementById("div_news").className = "hide";
+		document.getElementById("div_compte_email").className = "hide";
+		document.getElementById("div_compte_pswd").className = "hide";
+		document.getElementById("div_compte_newsletter").className = "hide";
+		document.getElementById("div_compte_commande").className = "hide";
+		document.getElementById("div_tapakila_definition").className = "hide";
         document.getElementById(id).className = "show";
 
         document.getElementById("a_compte").className = "";
-		document.getElementById("a_billets").className = "";
-        document.getElementById("a_commandes").className = "";
+		document.getElementById("a_billets_acheter").className = "";
+		document.getElementById("a_places_acheter").className = "";
+		document.getElementById("a_places_situee").className = "";
+		document.getElementById("a_billets_personnel").className = "";
+        document.getElementById("a_billets_recu").className = "";
+		document.getElementById("a_billets_download").className = "";
+		document.getElementById("a_billets_voyage").className = "";
+		document.getElementById("a_billets_livraison").className = "";
+		document.getElementById("a_billets_retirer").className = "";
+		document.getElementById("a_billets_plutot").className = "";
+		document.getElementById("a_billets_different").className = "";
+		document.getElementById("a_billets_nom").className = "";
         document.getElementById("a_ev").className = "";
+		document.getElementById("a_annulation_evenement").className = "";
         document.getElementById("a_favoris").className = "";
+		document.getElementById("a_paiement-refuser").className = "";
         document.getElementById("a_news").className = "";
+		document.getElementById("a_compte_email").className = "";
+		document.getElementById("a_compte_pswd").className = "";
+		document.getElementById("a_compte_newsletter").className = "";
+		document.getElementById("a_compte_commande").className = "";
+		document.getElementById("a_tapakila_definition").className = "";
         document.getElementById(aId).className = "activy";
     }
 </script>

@@ -101,6 +101,10 @@
   background: #49505a;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
 }
+#cssmenu ul ul li{
+	  border-bottom: 1px solid #b0b1b4;
+
+}
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li.open > a,
 #cssmenu ul ul li.active > a {
