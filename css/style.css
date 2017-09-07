@@ -2051,6 +2051,9 @@ align-items: center;
 .btn-soumettre{
 	background-color:#d70506;
 	color:white;
+	 flex: 1 1 auto;
+  transition: 0.5s;
+  /* box-shadow: 0 0 5px #eee; */
 }
 .btn-soumettre :hover{
 	background-color:#d70506;
@@ -2085,10 +2088,13 @@ color:white;
 .formgroup{
 	color:white;
 }
-
-/* contact page end */
-
 .requiere{
 	color:#d70506;
 	font-size: 11px;
 }
+.slogan{
+	color:white;
+}
+
+/* contact page end */
+
