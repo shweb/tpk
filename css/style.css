@@ -671,7 +671,18 @@ a:link {
 .detail_picture1{
 	max-width:180px;
 	min-width:180px;
-	max-height: 95px;
+    max-height: 95px;
+    overflow: hidden;
+}
+.sary_new{
+    max-width: 241px;
+    min-width: 241px;
+    
+}
+.row_new{
+    border-bottom: 2px solid #D7D7DE;
+    padding-bottom: 47px;
+    padding-top: 37px;
 }
  /* mon compte end */ 
 
@@ -1777,7 +1788,7 @@ color: red;
 	background-color: white;
     padding: 11px 25px 40px 22px;
     margin-top: 27px;
-    border-left: 2px solid grey;
+
 }
 .champsobligatoire{
 	color:red;
@@ -1808,8 +1819,8 @@ color: red;
 .activy{
 
 position: relative;
-background-color: #e1e1e1 !important;
-color:black !important;
+background-color: #2d2d2d !important;
+color: #fff !important;
 text-align: center;
 
 
@@ -1975,8 +1986,8 @@ align-items: center;
 }
 #menu-accordeon li {
    background-color:#729EBF; 
-   background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
-   background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+   /* background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%); */
+   /* background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%); */
    border-radius: 6px;
    margin-bottom:2px;
    box-shadow: 3px 3px 3px #999;
