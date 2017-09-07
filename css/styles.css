@@ -43,7 +43,7 @@
 #cssmenu > ul > li > a:hover,
 #cssmenu > ul > li.active > a,
 #cssmenu > ul > li.open > a {
-  color: grey;
+  color: black;
   background:white;
 }
 #cssmenu > ul > li.open > a {

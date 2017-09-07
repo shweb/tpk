@@ -1773,6 +1773,12 @@ color: red;
 	padding: 11px 25px 40px 22px;
 	border-radius:5px;
 }
+.social-bg1{
+	background-color: white;
+    padding: 11px 25px 40px 22px;
+    margin-top: 27px;
+    border-left: 2px solid grey;
+}
 .champsobligatoire{
 	color:red;
 }
@@ -1815,7 +1821,7 @@ text-align: center;
 .menu_FQ div {
  font-size: 13px !important;
 margin-top: 2px;
-color: #93a1a1;
+color: black;
 background-color: white;
 padding: 15px 15px 15px;
 text-align: left;
@@ -1854,6 +1860,7 @@ padding: 20px 28px;
     text-align: center;
     padding: 0px;
     color: black;
+    font-family: Century Gothic;
 }
 .au{
 background-color: black;
@@ -2036,9 +2043,10 @@ align-items: center;
     font-weight: bold;
     cursor: pointer;
     border-bottom: 4px double #D7D7DE !important;
+    margin-left: -2px;
 }
 .tabs0 li a:hover{
-    background-color: #428bca;
+    background-color: #428bca; border-radius: 3px 3px 0 0;
 }
 /*------------FQ-end--------------------------*/
 /* comment vendre billet et organisateur start */
