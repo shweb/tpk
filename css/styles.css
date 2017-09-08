@@ -47,8 +47,13 @@
   background:white;
 }
 #cssmenu > ul > li.open > a {
-  border-bottom: 1px solid #1682ba;
+  border-bottom: 3px solid #d70506;
+
 }
+#cssmenu>ul>li.open>a>span{
+  border-color: red ;
+}
+
 #cssmenu > ul > li:last-child > a,
 #cssmenu > ul > li.last > a {
   border-bottom: 1px solid #1682ba;
@@ -109,6 +114,7 @@
 	  border-bottom: 1px solid #b0b1b4;
 
 }
+
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li.open > a,
 #cssmenu ul ul li.active > a {
