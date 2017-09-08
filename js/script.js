@@ -8,6 +8,7 @@ $('#cssmenu li.has-sub>a').on('click', function(){
 			element.find('li').removeClass('open');
 			element.find('ul').slideUp();
 			document.getElementById(aId).className = "activy";
+			
 		}
 		else {
 			element.addClass('open');
@@ -35,11 +36,13 @@ $('#cssmenu li.has-sub>a').on('click', function(){
 		if (l > 0.7) {
 			$('#cssmenu>ul>li>a').css('text-shadow', '0 1px 1px rgba(0, 0, 0, .35)');
 			$('#cssmenu>ul>li>a>span').css('border-color', 'blur');
+			
 		}
 		else
 		{
 			$('#cssmenu>ul>li>a').css('text-shadow', '0 1px 0 rgba(255, 255, 255, .35)');
 			$('#cssmenu>ul>li>a>span').css('border-color', 'rgba(255, 255, 255, .35)');
+			
 		}
 	})();
 
