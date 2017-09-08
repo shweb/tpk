@@ -2059,6 +2059,12 @@ align-items: center;
 .tabs0 li a:hover{
     background-color: #428bca; border-radius: 3px 3px 0 0;
 }
+#div_compte2 a{
+cursor: pointer;
+}
+#div_compte a{
+    cursor: pointer;
+    }
 /*------------FQ-end--------------------------*/
 /* comment vendre billet et organisateur start */
 .about-bg > h4{
