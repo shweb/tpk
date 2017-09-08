@@ -672,6 +672,21 @@ text-decoration: none;
 max-width:180px;
 min-width:180px;
 max-height: 95px;
+	max-width:180px;
+	min-width:180px;
+    max-height: 95px;
+    overflow: hidden;
+}
+.sary_new{
+    max-width: 241px;
+    min-width: 241px;
+    
+}
+.row_new{
+    border-bottom: 2px solid #D7D7DE;
+    padding-bottom: 47px;
+    padding-top: 37px;
+
 }
 /* mon compte end */ 
 
@@ -1773,6 +1788,12 @@ background-color:white;
 padding: 11px 25px 40px 22px;
 border-radius:5px;
 }
+.social-bg1{
+	background-color: white;
+    padding: 11px 25px 40px 22px;
+    margin-top: 27px;
+
+}
 .champsobligatoire{
 color:red;
 }
@@ -1802,8 +1823,8 @@ font-size: 27px;
 .activy{
 
 position: relative;
-background-color: #e1e1e1 !important;
-color:black !important;
+background-color: #2d2d2d !important;
+color: #fff !important;
 text-align: center;
 
 
@@ -1815,7 +1836,7 @@ margin-top: 27px;
 .menu_FQ div {
 font-size: 13px !important;
 margin-top: 2px;
-color: #93a1a1;
+color: black;
 background-color: white;
 padding: 15px 15px 15px;
 text-align: left;
@@ -1854,6 +1875,10 @@ color: #428bca;
 text-align: center;
 padding: 0px;
 color: black;
+    text-align: center;
+    padding: 0px;
+    color: black;
+    font-family: Century Gothic;
 }
 .au{
 background-color: black;
@@ -1973,7 +1998,15 @@ background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
 border-radius: 6px;
 margin-bottom:2px;
 box-shadow: 3px 3px 3px #999;
-border:solid 1px #333A40
+border:solid 1px #333A40;
+   background-color:#729EBF; 
+   /* background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%); */
+   /* background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%); */
+   border-radius: 6px;
+   margin-bottom:2px;
+   box-shadow: 3px 3px 3px #999;
+   border:solid 1px #333A40
+
 }
 #menu-accordeon li li {
 max-height:0;
@@ -2039,7 +2072,28 @@ border-bottom: 4px double #D7D7DE !important;
 }
 .tabs0 li a:hover{
 background-color: #428bca;
+
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #dfdfe0;
+    background: #D7D7DE;
+    padding: 12px 18px;
+    color: black;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 4px double #D7D7DE !important;
+    margin-left: -2px;
 }
+.tabs0 li a:hover{
+    background-color: #428bca; border-radius: 3px 3px 0 0;
+}
+#div_compte2 a{
+cursor: pointer;
+}
+#div_compte a{
+    cursor: pointer;
+    }
 /*------------FQ-end--------------------------*/
 /* comment vendre billet et organisateur start */
 .about-bg > h4{

@@ -7,6 +7,7 @@ $('#cssmenu li.has-sub>a').on('click', function(){
 			element.removeClass('open');
 			element.find('li').removeClass('open');
 			element.find('ul').slideUp();
+			document.getElementById(aId).className = "activy";
 		}
 		else {
 			element.addClass('open');
@@ -15,6 +16,7 @@ $('#cssmenu li.has-sub>a').on('click', function(){
 			element.siblings('li').removeClass('open');
 			element.siblings('li').find('li').removeClass('open');
 			element.siblings('li').find('ul').slideUp();
+			document.getElementById(aId).className = "activy";
 		}
 	});
 
