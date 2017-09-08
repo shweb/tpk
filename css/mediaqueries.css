@@ -290,8 +290,15 @@
    
 }
 }
-
+@media only screen and (max-width: 850px) {
+	/* detailup start */
+.box1{
+	margin-top:-40% !important;
+}
+}
+/* detail end */
 @media only screen and (max-width: 768px) {
+
 	
   /* Styles */
 .facenookconexion {

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tapakila-Contact</title>
+	<link rel="shortcut icon" href="./img/logo.png">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/mediaqueries.css">
+		<link rel="stylesheet" href="css/mediaqueries_sample.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<link href="css/datepicker.css" rel="stylesheet">
+	<link href="css/clockpiker.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/datepicker.js"></script>
+	<script src="js/clockpicker.js"></script>
+	</head>
+	  <body>
+		 <!-- header start -->	
+		<nav  id="background" class="navbar navbar-default navbar-static-top">
+			 <div class="container">
+				<div class="navbar-header">
+								  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								  </button>
+								  <a class="navbar-brand" href="index.html">
+									<img src="./img/logo.png" title="tapakila">
+								  </a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+									<ul class="nav navbar-nav navbar-right">
+										<li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
+									
+										<li><a href="panier.html">Panier</a></li>
+										<li role="presentation" class="dropdown"> 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+											<span class="caret"></span> </a> 
+												<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
+												<li>
+												<form action="./page/recherche.html" method="get">
+												   <input type="text" name="query" placeholder="Search..." autocomplete="off">
+												   <input type="submit" value="Search">
+												</form>
+											   </li> 
+												</ul> 
+										</li>
+										
+										<li role="presentation" class="dropdown connexion" > 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a> 
+												<ul class="dropdown-menu " id="menu3" aria-labelledby="drop6"> 
+													<a href ="connexion.html"><li class="conexion">Se connecter</li></a> 
+													<a href ="connexion.html"><li class="conexion">S'inscrire</li></a> 
+												</ul> 
+										</li>
+										
+									</ul>
+
+				</div>
+			</div>
+		</nav>
+		<!-- header end -->
+		
+		<!-- section navigation start -->
+		<section id="sectioncategorie" class="clearfix">
+			<div class="container">
+				<ul class="clearfix">
+				<li><a href="categorie.html">TOUS</a></li>
+				<li><a href="categorie.html">CONCERTS</a></li>
+				<li><a href="categorie.html">CABARET</a></li>
+				<li><a href="categorie.html">SPORTS</a></li>
+				<li><a href="categorie.html">SOIREES</a></li>
+				<li><a href="categorie.html">DANSES</a></li>
+				<li><a href="categorie.html">FESTIVAL</a></li>
+				<li><a href="categorie.html">CINEMA</a></li>
+				<li><a href="categorie.html">JEUX</a></li>
+				</ul>
+				<a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
+			</div>
+		</section>
+		
+		<section id="sectionevenement" role="navigation">
+			<div class="container">
+				<ul>
+					<li><a href="categorie.html">Concerts</a></li>
+					<li><a href="categorie.html">Karaoke</a></li>
+					<li><a href="categorie.html">Cabaret</a></li>
+					<li><a href="categorie.html">Foot</a></li>
+					<li><a href="categorie.html">Basket-ball</a></li>
+					<li><a href="categorie.html">Natations</a></li>
+					<li><a href="categorie.html">DJs</a></li>
+					<li><a href="categorie.html">Loung</a></li>
+					<li><a href="categorie.html">Discotheque</a></li>
+					<li><a href="categorie.html">Aerobic</a></li>
+					<li><a href="categorie.html">Zumba</a></li>
+					<li><a href="categorie.html">St Valentin</a></li>
+					<li><a href="categorie.html">26 Juin</a></li>
+					<li><a href="categorie.html">Animations</a></li>
+					<li><a href="categorie.html">Oktoberfest</a></li>
+					<li><a href="categorie.html">Jazz</a></li>
+					<li><a href="categorie.html">Orchestre</a></li>
+					<li><a href="categorie.html">Exposition</a></li>
+					<li><a href="categorie.html">Projections</a></li>
+					<li><a href="categorie.html">Excursions</a></li>
+					<li><a href="categorie.html">Loisirs</a></li>
+				</ul>
+			</div>
+		</section>
+		<!-- section navigation end -->
+		
+		<div id="background-detail"><img src="img/mahaleo.jpg"  style="width:100%;"></div>
+		<div class="container"> 
+				<div class="box1">
+				<h3>Detail sur l'événement</h3>
+					<img class="imgdetails" src="img/mahaleo.jpg"  style="width:100%;">
+						<div class="descriptionevent">
+							<h3 >Descritpion</h3>
+							<p class="text-left"> Lorem ipsum dolor sit amet, lorem lipsum sur 'lorem ipsum' mais lorem ipsem ? Lorem.
+							Lorum ipsum ou loreum ipsum encore generateur faux textes mais lorem ipsom. Lorem ipsum, faux texte, 
+							'ipsum', lorem ipsum generator. Lorem ipsun. Lorem ipsum dolor sit encore ipsum. Lorem epsum et ipsem 
+							lorum sur loren ipsum encore faux texte latin pour 'lorem' et lorem ipsum text. Lorem ipsum dolor, lorem ipsus.
+							Liens associés : lorem ipsum et lorem ipsum</p>
+							<div class="infodes">
+								<ul>
+								<li><i class="fa fa-product-hunt" aria-hidden="true"></i><strong>Programme :</strong><small>&nbsp 35é anniversaire</small></li>
+								<li><i class="fa fa-map-marker" aria-hidden="true"></i><strong>Localisation</strong> <small> &nbsp Palais des sports </small></li>
+								<li><i class="fa fa-calendar-o" aria-hidden="true"></i><strong>Date :</strong> <small> &nbsp 20 janvier 2018</small></li>
+								</ul>
+							</div>
+						</div>
+				<div class="chosetickets">
+					<h3>Choisir tickets</h3>
+					<div class="table-responsive tableau_detail">
+							<table class="table table-hover">
+								<thead>
+								<tr>
+									<th>Debut vente</th>
+									<th>Catégories des prix</th>
+									<th>Quantité</th>
+									<th>Acheter en ligne</th>
+									<th>Disponiblité</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td><strong>12/04/2017</strong><p>7:30pm</p></td>
+									<td><span class="colorcode" style="background-color: #eb6505;">&nbsp;</span>
+										Area A
+										/ <b>182 RMB</b>    </td>
+									<td>
+										<div class="row">
+											<div class="col-lg-8 col-lg-offset-2">
+												<form>
+													<div class="form-group">
+														<select class="form-control selec" id="sel1">
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select>
+													</div>
+												</form>
+
+											</div>
+										</div>
+
+
+
+									</td>
+									<td>
+										<input name="addtocart" value="Choisir" class="addtocartbutton" type="submit">
+									</td>
+									<td>
+										<span class="couleur_mot">Disponible<span>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>12/04/2017</strong><p>7:30pm</p></td>
+									<td><span class="colorcode2" style="background-color: #eb6505;">&nbsp;</span>
+										Area A
+										/ <b>182 RMB</b>    </td>
+									<td>
+										<div class="row">
+											<div class="col-lg-8 col-lg-offset-2">
+												<form>
+													<div class="form-group">
+														<select class="form-control selec" id="sel1">
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select>
+													</div>
+												</form>
+
+											</div>
+										</div>
+
+
+
+									</td>
+									<td>
+										<input name="addtocart" value="Choisir" class="addtocartbutton" type="submit">
+									</td>
+									<td>
+										<span class="couleur_mot">Disponible<span>
+									</td>
+								</tr>
+								<tr>
+									<td><strong>12/04/2017</strong><p>7:30pm</p></td>
+									<td><span class="colorcode1">&nbsp;</span>
+										Area A
+										/ <b>182 RMB</b>    </td>
+									<td>
+										<div class="row">
+											<div class="col-lg-8 col-lg-offset-2">
+												<form>
+													<div class="form-group">
+														<select class="form-control selec" id="sel1">
+															<option>1</option>
+															<option>2</option>
+															<option>3</option>
+															<option>4</option>
+														</select>
+													</div>
+												</form>
+
+											</div>
+										</div>
+
+
+
+									</td>
+									<td>
+										<input name="addtocart" value="Choisir" class="addtocartbutton" type="submit">
+									</td>
+									<td>
+										<span class="couleur_mot">Epuisé<span>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+				</div>
+				
+				<div class="methpayment">
+					<h3>Methode de paiement</h3>
+						<div class="row">
+							<div class="paymentCont">
+								<div class="paymentWrap">
+									<div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
+										<label class="btn paymentMethod active">
+											<div class="method visa"></div>
+											<input type="radio" name="options" checked> 
+										</label>
+										<label class="btn paymentMethod">
+											<div class="method master-card"></div>
+											<input type="radio" name="options"> 
+										</label>
+										<label class="btn paymentMethod">
+											<div class="method amex"></div>
+											<input type="radio" name="options">
+										</label>
+										<label class="btn paymentMethod">
+											<div class="method vishwa"></div>
+											<input type="radio" name="options"> 
+										</label>
+										<label class="btn paymentMethod">
+											<div class="method ez-cash"></div>
+											<input type="radio" name="options"> 
+										</label>
+									</div>        
+								</div>
+							</div>
+						</div>					
+				</div>
+				
+			</div>    
+			
+
+
+		</div>
+
+		
+	<!-- footer start -->
+		<footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <img class="footer-logo" alt="tapakila" src="./img/logo.png">
+                        <p class="small custom">
+                            By Tapakila.mg<br>
+                            IIB 63 Mahamasina<br>
+                            Antananarivo<br>
+                            Madagascar<br>
+                            +33 12 901432<br>
+                            <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong >Acheter des tickets</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="Acheteur.html">Comment acheter</a></li>
+                            <li><a href="service-clientele.html">Foire aux questions</a></li>
+                            <li><a href="#">Conditions d'utilisation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong >Organisateurs</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="organisateur.html">Pour les Organisateurs</a></li>
+                            <li><a href="#">S'enregistrer</a></li>
+                            <li><a href="#">Connexion</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 ">
+                        <a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square facebookico" aria-hidden="true"></i></a>
+                        <div id="fb-root"></div>
+                        <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
+
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div>
+        <div class="footer-bottom">
+            <div class="container small">
+			<ul>
+                        <li><a href="#">A propos de nous</a></li>|
+                        <li><a href="#">Contact</a></li>|
+                        <li><a href="#">Ajouter votre evenement</a></li>|
+                        <li><a href="#">Publicite</a></li>|
+                        <li><a href="service-clientele.html">FAQ</a></li>|
+                        <li><a href="#">Vie privee</a></li>|
+                    </ul>
+                <p>Copyright &copy Tapakila 2017</p>
+            </div>
+        </div>
+    
+		</footer>
+		<!-- footer end -->
+		
+		<!-- script start -->
+		<script typae="text/javascript">
+		$('.dropdown-menu ul li a').click(function(event){
+		event.stopPropagation();
+		$(this).parent().toggleClass('active').siblings().removeClass('active');
+		var target=$(this).attr('href');
+		$('ul li .tab-content '+target).toggleClass(active in);
+		});
+		</script>
+		<script>
+		$(function() {
+		var pull 		= $('#pull');
+		menu 		= $('#sectioncategorie ul');
+		menuHeight	= menu.height();
+
+		$(pull).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+		});
+
+		$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 320 && menu.is(':hidden')) {
+		menu.removeAttr('style');
+		}
+		});
+		});
+		</script>
+		<!-- script end -->
+</body></html>
+		
+		<!-- script start -->
+		<script typae="text/javascript">
+		$('.dropdown-menu ul li a').click(function(event){
+		event.stopPropagation();
+		$(this).parent().toggleClass('active').siblings().removeClass('active');
+		var target=$(this).attr('href');
+		$('ul li .tab-content '+target).toggleClass(active in);
+		});
+		</script>
+		<script>
+		$(function() {
+		var pull 		= $('#pull');
+		menu 		= $('#sectioncategorie ul');
+		menuHeight	= menu.height();
+
+		$(pull).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+		});
+
+		$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 320 && menu.is(':hidden')) {
+		menu.removeAttr('style');
+		}
+		});
+		});
+		</script>
+		<!-- script end -->
+</body></html>
