@@ -672,20 +672,20 @@ text-decoration: none;
 max-width:180px;
 min-width:180px;
 max-height: 95px;
-	max-width:180px;
-	min-width:180px;
-    max-height: 95px;
-    overflow: hidden;
+max-width:180px;
+min-width:180px;
+max-height: 95px;
+overflow: hidden;
 }
 .sary_new{
-    max-width: 241px;
-    min-width: 241px;
-    
+max-width: 241px;
+min-width: 241px;
+
 }
 .row_new{
-    border-bottom: 2px solid #D7D7DE;
-    padding-bottom: 47px;
-    padding-top: 37px;
+border-bottom: 2px solid #D7D7DE;
+padding-bottom: 47px;
+padding-top: 37px;
 
 }
 /* mon compte end */ 
@@ -1789,9 +1789,9 @@ padding: 11px 25px 40px 22px;
 border-radius:5px;
 }
 .social-bg1{
-	background-color: white;
-    padding: 11px 25px 40px 22px;
-    margin-top: 27px;
+background-color: white;
+padding: 11px 25px 40px 22px;
+margin-top: 27px;
 
 }
 .champsobligatoire{
@@ -1875,10 +1875,10 @@ color: #428bca;
 text-align: center;
 padding: 0px;
 color: black;
-    text-align: center;
-    padding: 0px;
-    color: black;
-    font-family: Century Gothic;
+text-align: center;
+padding: 0px;
+color: black;
+font-family: Century Gothic;
 }
 .au{
 background-color: black;
@@ -1999,13 +1999,13 @@ border-radius: 6px;
 margin-bottom:2px;
 box-shadow: 3px 3px 3px #999;
 border:solid 1px #333A40;
-   background-color:#729EBF; 
-   /* background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%); */
-   /* background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%); */
-   border-radius: 6px;
-   margin-bottom:2px;
-   box-shadow: 3px 3px 3px #999;
-   border:solid 1px #333A40
+background-color:#729EBF; 
+/* background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%); */
+/* background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%); */
+border-radius: 6px;
+margin-bottom:2px;
+box-shadow: 3px 3px 3px #999;
+border:solid 1px #333A40
 
 }
 #menu-accordeon li li {
@@ -2073,27 +2073,27 @@ border-bottom: 4px double #D7D7DE !important;
 .tabs0 li a:hover{
 background-color: #428bca;
 
-    display: inline-block;
-    text-align: center;
-    border: 1px solid #dfdfe0;
-    background: #D7D7DE;
-    padding: 12px 18px;
-    color: black;
-    border-radius: 3px 3px 0 0;
-    font-weight: bold;
-    cursor: pointer;
-    border-bottom: 4px double #D7D7DE !important;
-    margin-left: -2px;
+display: inline-block;
+text-align: center;
+border: 1px solid #dfdfe0;
+background: #D7D7DE;
+padding: 12px 18px;
+color: black;
+border-radius: 3px 3px 0 0;
+font-weight: bold;
+cursor: pointer;
+border-bottom: 4px double #D7D7DE !important;
+margin-left: -2px;
 }
 .tabs0 li a:hover{
-    background-color: #428bca; border-radius: 3px 3px 0 0;
+background-color: #428bca; border-radius: 3px 3px 0 0;
 }
 #div_compte2 a{
 cursor: pointer;
 }
 #div_compte a{
-    cursor: pointer;
-    }
+cursor: pointer;
+}
 /*------------FQ-end--------------------------*/
 /* comment vendre billet et organisateur start */
 .about-bg > h4{
@@ -2183,11 +2183,11 @@ padding: 10px 80px 30px 80px;
 border:3px solid;
 }
 .descriptionevent{
-	margin-top:35px;
-	margin-bottom:35px;
+margin-top:35px;
+margin-bottom:35px;
 }
 .chosetickets{
-	margin-bottom:35px;
+margin-bottom:35px;
 }
 .choseplace{
 margin-bottom:35px;	
@@ -2245,9 +2245,84 @@ right:0;
 border-width:0 0 10px 10px;
 }
 .fa-product-hunt ,.fa-calendar-o {
-	margin-right:15px;
+margin-right:15px;
 }
 .fa-map-marker{
-	margin-right: 20px;
+margin-right: 20px;
+}
+.icos{
+margin-right: 20px;
+}
+.Pcenter{
+padding: 10px 100px 10px 100px;
+}
+
+.text-nowrap {
+white-space: nowrap;
+}
+.ticket-col.ticket-amount {
+text-align: right;
+margin-top: -7px;
+}
+.ticket .ticket-col {
+padding-left: 15px;
+padding-right: 15px;
+float: left;
+}
+.btn-outline.btn-default {
+color: #3a5069;
+background-color: transparent;
+}
+
+.btn-circle {
+border-radius: 50%;
+padding: .1em;
+width: 1.8em;
+}
+.ticket-col.ticket-amount .bootstrap-select, #buy-tickets .ticket .ticket-col.ticket-amount select {
+min-width: 63px;
+max-width: 50px;
+display: inline-block;
+background: 0 0;
+}
+.ticket.selected .ticket-amount .bootstrap-select .btn-default {
+background-color: #fff;
+font-weight: 500;
+}
+
+.ticket-col.ticket-amount .bootstrap-select .btn-default {
+background-color: #f3f3f3;
+font-weight: 400;
+font-size: 18px;
+padding: 8px 0 5px 11px;
+}
+.input-group-btn:first-child > .smoins {
+margin-right: 4px;
+}
+.input-group-btn:last-child > .splus {
+margin-left: 4px;
+}
+.position{
+margin-right: -185px;
+margin-left: 30px;
+
+}
+.input-group .form-control:first-child, .input-group-addon:first-child, .input-group-btn:first-child > .smoins {
+border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+border-top-left-radius: 12px;
+border-bottom-left-radius: 12px;
+}
+.input-group .form-control:last-child, .input-group-addon:first-child, .input-group-btn:last-child > .splus {
+border-top-right-radius: 12px;
+border-bottom-right-radius: 12px;
+border-top-left-radius: 12px;
+border-bottom-left-radius: 12px;
+}
+.btn-validé{
+color: #fff;
+background-color: #d9534f;
+border-color: #d43f3a;
+padding: 10px 25px 10px 24px;
 }
 /* detail end */
