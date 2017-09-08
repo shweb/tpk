@@ -77,7 +77,6 @@
 							<div id="a_compte" class="activeee" onClick="changePage('div_compte', 'a_compte')"> Mon compte</div>
 							<div id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')"> Mes commandes</div>
 							<div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> Historiques</div>
-							<div id="a_favoris" onClick="changePage('div_favoris', 'a_favoris')"> Mes Favoris</div>
 							<div id="a_news" onClick="changePage('div_news', 'a_news')"> Newsletter</div>
 						</div>
 					</div>
@@ -180,10 +179,7 @@
 									  </div>
 							</div>
 						</div>
-					<div id="div_favoris" class="hide">
-					<h1 id="compte">Mes Favoris</h1>
-					<p class="contre5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-					</div>
+					
 					<div id="div_news" class="hide">
 						<h1 id="compte">Newsletter</h1>
 						<div class="contre">
@@ -299,14 +295,12 @@ $('ul li .tab-content '+target).toggleClass(active in);
         document.getElementById("div_compte").className = "hide";
         document.getElementById("div_commandes").className = "hide";
         document.getElementById("div_ev").className = "hide";
-        document.getElementById("div_favoris").className = "hide";
         document.getElementById("div_news").className = "hide";
         document.getElementById(id).className = "show";
 
         document.getElementById("a_compte").className = "";
         document.getElementById("a_commandes").className = "";
         document.getElementById("a_ev").className = "";
-        document.getElementById("a_favoris").className = "";
         document.getElementById("a_news").className = "";
         document.getElementById(aId).className = "activeee";
     }
