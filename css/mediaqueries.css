@@ -7,6 +7,19 @@
 	#custom-white .alert-success {
     text-align: center;
 }
+.tabs0 li a {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #dfdfe0;
+  background: #D7D7DE;
+  padding: 12px 18px;
+  color: black;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 4px double #D7D7DE !important;
+  margin-left: 60px;
+}
 
 
 /* panier end */
@@ -279,8 +292,27 @@
     padding-bottom: 25px;
 }
 
-
-
+.tabs0 li a {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #dfdfe0;
+  background: #D7D7DE;
+  padding: 12px 18px;
+  color: black;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 4px double #D7D7DE !important;
+  margin-left: 60px;
+}
+.nav-tabs>li.active>a{
+  color: #fff;
+  cursor: default;
+  background-color: #680306;
+  border: none;
+  border-bottom-color: transparent;
+  margin-left: 54px;
+}
 /*-------detail_catalog--end-----*/
 
 }
@@ -548,6 +580,7 @@
  .connexion{
    clear:both;
    }
+
 }
 
 /* Samsung Galaxy S3 (portrait) ----------- */
@@ -564,6 +597,7 @@
   .connexion{
    clear:both;
    }
+
 }
 
 /* Samsung Galaxy S4 (portrait) ----------- */
@@ -572,6 +606,7 @@
   .connexion{
    clear:both;
    }
+
 }
 
 /* Samsung Galaxy S5 (landscape) ----------- */
