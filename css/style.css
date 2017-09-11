@@ -2284,11 +2284,12 @@ padding: 8px 0 5px 11px;
 }
 .input-group-btn:first-child > .smoins {
 margin-right: 4px;
+
 }
 .input-group-btn:last-child > .splus {
 margin-left: 4px;
 }
-.position{
+.postions{
 margin-right: -185px;
 margin-left: 30px;
 
@@ -2307,11 +2308,7 @@ border-bottom-right-radius: 12px;
 border-top-left-radius: 12px;
 border-bottom-left-radius: 12px;
 }
-.position{
-margin-right: -185px;
-margin-left: 30px;
 
-}
 
 .btn-validé{
 color: #fff;
