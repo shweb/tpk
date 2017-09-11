@@ -122,36 +122,36 @@
 				<div class="board">
 					<div class="board-inner">
 						<ul class="nav nav-tabs" id="myTab">
-							<li class="active" id="li_home">
-								<a href="#home" data-toggle="tab" title="Acceuil">
+							<li class="active" id="li_home" onClick="changePageLi('home')">
+								<a href="#" title="Acceuil">
 								<span class="round-tabs one">
 								<i class="glyphicon glyphicon-home"></i>
 								</span> 
 								</a>
 							</li>
-							<li class="disabled" id="li_profile">
-								<a href="#profile" title="Adresse de Facturation">
+							<li class="disabled" id="li_profile" onClick="changePageLi('profile')">
+								<a href="#" title="Adresse de Facturation">
 								<span class="round-tabs two">
 								<i class="glyphicon glyphicon-map-marker disable" ></i>
 								</span> 
 								</a>
 							</li>
 							<li class="disabled" id="li_messages">
-								<a href="#messages" title="Adresse de Livraison">
+								<a href="#" title="Adresse de Livraison">
 								<span class="round-tabs three">
 								<i class="glyphicon glyphicon-send"></i>
 								</span> 
 								</a>
 							</li>
 							<li class="disabled" id="li_settings">
-								<a href="#settings" title="Paiment">
+								<a href="#" title="Paiment">
 								<span class="round-tabs four">
 								<i class="glyphicon glyphicon-link"></i>
 								</span> 
 								</a>
 							</li>
 							<li class="disabled" id="li_doner">
-								<a href="#doner" title="Résumer">
+								<a href="#" title="Résumer">
 								<span class="round-tabs five">
 								<i class="glyphicon glyphicon-ok"></i>
 								</span> 
@@ -212,8 +212,8 @@
 									</div>
 								</div>
 								<p class="text-center">
-									<a href="#home" data-toggle="tab" class="btn btn-success btn-outline-rounded green " onClick="change1Page('home','profile')"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
-									<a href="#messages" data-toggle="tab" title="Adresse de Livraison" class="btn btn-success btn-outline-rounded green" onClick="changePage('profile','messages')">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
+									<a href="#home" class="btn btn-success btn-outline-rounded green " onClick="changePage('profile','home')"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
+									<a href="#messages" title="Adresse de Livraison" class="btn btn-success btn-outline-rounded green" onClick="changePage('profile','messages')">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
 								</p>
 							</div>
 						</div>
@@ -277,7 +277,7 @@
 									</div>
 								</p>
 								<p class="text-center">
-									<a href="#messages" data-toggle="tab" class="btn btn-success btn-outline-rounded green" onClick="change1Page('messages','settings')"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
+									<a href="#messages" data-toggle="tab" class="btn btn-success btn-outline-rounded green" onClick="changePage('settings','messages')"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
 									<a href="#doner" data-toggle="tab" class="btn btn-success btn-outline-rounded green" onClick="changePage('settings','doner')">Suivant<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
 								</p>
 							</div>
@@ -378,7 +378,7 @@
 												</div>
 											</div>
 											<p class="text-center">
-												<a href="#settings" data-toggle="tab" class="btn btn-success btn-outline-rounded green" onClick="change1Page('settings','doner')"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
+												<a href="#settings" data-toggle="tab" class="btn btn-success btn-outline-rounded green" onClick="changePage('doner','settings')"><span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-left"></span> Précédent </a>
 												<a href="#" class="btn btn-success btn-outline-rounded green">Continuer<span style="margin-left:10px;" class="glyphicon glyphicon-circle-arrow-right"></span></a>
 											</p>
 										</section>
@@ -477,18 +477,23 @@
 			$('#'+idNext).addClass('in active');
 			$('#'+idNow).removeClass('in active');
 		}
-	</script>
-	<script>
-		function change1Page(idNext, idNow) {
-			//li reto
-			$('#li_'+idNow).removeClass('active');
-			$('#li_'+idNow).addClass('disabled');
-			$('#li_'+idNext).removeClass('disabled');
-			$('#li_'+idNext).addClass('active');
-
-			//contenu
-			$('#'+idNext).addClass('in active');
-			$('#'+idNow).removeClass('in active');
+		function changePageLi(name) {
+			if (document.getElementById("li_"+name).className != "disabled"){
+				$('#li_home').removeClass('active');
+				$('#li_profile').removeClass('active');
+				$('#li_messages').removeClass('active');
+				$('#li_settings').removeClass('active');
+				$('#li_doner').removeClass('active');
+				
+				$('#home').removeClass('active');
+				$('#profile').removeClass('active');
+				$('#messages').removeClass('active');
+				$('#settings').removeClass('active');
+				$('#doner').removeClass('active');
+				
+				$('#li_' + name).addClass('active');
+				$('#' + name).addClass('in active');
+			}
 		}
 	</script>
 
