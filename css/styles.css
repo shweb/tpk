@@ -64,7 +64,7 @@
 }
 #cssmenu > ul > li:last-child > a,
 #cssmenu > ul > li.last > a {
-  border-bottom: 1px solid #1682ba;
+  /* border-bottom: 1px solid #1682ba; */
 }
 .holder {
   width: 0;

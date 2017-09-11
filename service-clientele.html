@@ -149,24 +149,24 @@
 
 								<div id='cssmenu'>
 									<ul id="coco">
-										<li class='active has-sub activy' onClick="changePage('div_compte', 'a_compte')" id="a_compte"><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Generale</a>
+										<li class='active has-sub' onClick="changePage('div_compte', 'a_compte')" id="a_compte"><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Generale</a>
 										<li>
 										<li class='active has-sub' id="li_achat_billet"><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Acheter les billets</a>
 											<ul>
 												<li>
-													<div id="a_billets_acheter" onClick="changePage('div_billets_acheter', 'a_billets_acheter')">Commment acheter des billets sur Tapalika?</div>
+													<div id="a_billets_acheter" onClick="changePage('div_billets_acheter', 'a_billets_acheter', 'li_achat_billet')">Commment acheter des billets sur Tapalika?</div>
 
 												</li>
 												<li>
-													<div id="a_places_acheter" onClick="changePage('div_places_acheter', 'a_places_acheter')">Les places seront-elles adjacentes ?</div>
+													<div id="a_places_acheter" onClick="changePage('div_places_acheter', 'a_places_acheter', 'li_achat_billet')">Les places seront-elles adjacentes ?</div>
 
 												</li>
 												<li>
-													<div id="a_places_situee" onClick="changePage('div_places_situee', 'a_places_situee')">Où mes places seront-elles situées ?</div>
+													<div id="a_places_situee" onClick="changePage('div_places_situee', 'a_places_situee', 'li_achat_billet')">Où mes places seront-elles situées ?</div>
 
 												</li>
 												<li>
-													<div id="a_billets_personnel" onClick="changePage('div_billets_personnel', 'a_billets_personnel')">Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqu'un d'autre ?</div>
+													<div id="a_billets_personnel" onClick="changePage('div_billets_personnel', 'a_billets_personnel', 'li_achat_billet')">Puis-je acheter des billets personnalisés sur lesquels figure le nom de quelqu'un d'autre ?</div>
 
 												</li>
 											</ul>
@@ -175,35 +175,35 @@
 										<li class='active has-sub' id="li_recevoir_place"><a href='#'><span class="glyphicon glyphicon-bed" aria-hidden="true"></span>Recevoir vos places</a>
 											<ul>
 												<li>
-													<div id="a_billets_recu" onClick="changePage('div_billets_recu', 'a_billets_recu')">Quand vais-je recevoir mes billets ?</div>
+													<div id="a_billets_recu" onClick="changePage('div_billets_recu', 'a_billets_recu', 'li_recevoir_place')">Quand vais-je recevoir mes billets ?</div>
 
 												</li>
 												<li>
-													<div id="a_billets_download" onClick="changePage('div_billets_download', 'a_billets_download')">Comment télécharger mes billets électroniques ?</div>
+													<div id="a_billets_download" onClick="changePage('div_billets_download', 'a_billets_download', 'li_recevoir_place')">Comment télécharger mes billets électroniques ?</div>
 
 												</li>
 												<li>
-													<div id="a_billets_voyage" onClick="changePage('div_billets_voyage', 'a_billets_voyage')">Je voyage - Où et quand vais-je recevoir mes billets ?</div>
+													<div id="a_billets_voyage" onClick="changePage('div_billets_voyage', 'a_billets_voyage', 'li_recevoir_place')">Je voyage - Où et quand vais-je recevoir mes billets ?</div>
 
 												</li>
 												<li>
-													<div id="a_billets_livraison" onClick="changePage('div_billets_livraison', 'a_billets_livraison')">Comment modifier mon adresse de livraison ?</div>
+													<div id="a_billets_livraison" onClick="changePage('div_billets_livraison', 'a_billets_livraison', 'li_recevoir_place')">Comment modifier mon adresse de livraison ?</div>
 
 												</li>
 												<li>
-													<div id="a_billets_retirer" onClick="changePage('div_billets_retirer', 'a_billets_retirer')">Où et quand dois-je retirer mes billets ?</div>
+													<div id="a_billets_retirer" onClick="changePage('div_billets_retirer', 'a_billets_retirer', 'li_recevoir_place')">Où et quand dois-je retirer mes billets ?</div>
 
 												</li>
 												<li>
-													<div id="a_billets_plutot" onClick="changePage('div_billets_plutot', 'a_billets_plutot')">Puis-je retirer mes billets le jour de l'événement plutôt que de les recevoir par courrier ?</div>
+													<div id="a_billets_plutot" onClick="changePage('div_billets_plutot', 'a_billets_plutot', 'li_recevoir_place')">Puis-je retirer mes billets le jour de l'événement plutôt que de les recevoir par courrier ?</div>
 
 												</li>
 												<li>
-													<div id="a_billets_different" onClick="changePage('div_billets_different', 'a_billets_different')">Pourquoi le prix imprimé sur le billet est-il différent de celui que j'ai payé ?</div>
+													<div id="a_billets_different" onClick="changePage('div_billets_different', 'a_billets_different', 'li_recevoir_place')">Pourquoi le prix imprimé sur le billet est-il différent de celui que j'ai payé ?</div>
 
 												</li>
 												<li>
-													<div id="a_billets_nom" onClick="changePage('div_billets_nom', 'a_billets_nom')">Pourquoi il y a-t-il un autre nom sur mes billets ?</div>
+													<div id="a_billets_nom" onClick="changePage('div_billets_nom', 'a_billets_nom', 'li_recevoir_place')">Pourquoi il y a-t-il un autre nom sur mes billets ?</div>
 
 												</li>
 
@@ -213,7 +213,7 @@
 										<li class='active has-sub' id="li_question_ann"><a href='#'><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>Questions d'annulations</a>
 											<ul>
 												<li>
-													<div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Puis-je annuler ou modifier mon achat
+													<div id="a_ev" onClick="changePage('div_ev', 'a_ev', 'li_question_ann')"> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Puis-je annuler ou modifier mon achat
 														?</div>
 
 												</li>
@@ -229,11 +229,11 @@
 										<li class='active has-sub' id="li_receive_paiement"><a href='#'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Recevez votre paiement</a>
 											<ul>
 												<li>
-													<div id="a_favoris" onClick="changePage('div_favoris', 'a_favoris')">Quelles sont les méthodes de paiement acceptées ?</div>
+													<div id="a_favoris" onClick="changePage('div_favoris', 'a_favoris', 'li_receive_paiement')">Quelles sont les méthodes de paiement acceptées ?</div>
 
 												</li>
 												<li>
-													<div id="a_paiement-refuser" onClick="changePage('div_paiement-refuser', 'a_paiement-refuser')">Mon paiement a été refusé</div>
+													<div id="a_paiement-refuser" onClick="changePage('div_paiement-refuser', 'a_paiement-refuser', 'li_receive_paiement')">Mon paiement a été refusé</div>
 
 												</li>
 											</ul>
@@ -242,23 +242,23 @@
 										<li class='active has-sub' id="li_gerer_compte"><a href='#'><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Gérer mon compte</a>
 											<ul>
 												<li>
-													<div id="a_news" onClick="changePage('div_news', 'a_news')"> J'ai saisi une adresse e-mail incorrecte lors de l'inscription, comment puis-je la modifier ?</div>
+													<div id="a_news" onClick="changePage('div_news', 'a_news', 'li_gerer_compte')"> J'ai saisi une adresse e-mail incorrecte lors de l'inscription, comment puis-je la modifier ?</div>
 
 												</li>
 												<li>
-													<div id="a_compte_email" onClick="changePage('div_compte_email', 'a_compte_email')">Comment modifier l'adresse e-mail de mon compte ?</div>
+													<div id="a_compte_email" onClick="changePage('div_compte_email', 'a_compte_email', 'li_gerer_compte')">Comment modifier l'adresse e-mail de mon compte ?</div>
 
 												</li>
 												<li>
-													<div id="a_compte_pswd" onClick="changePage('div_compte_pswd', 'a_compte_pswd')">Comment réinitialiser mon mot de passe ?</div>
+													<div id="a_compte_pswd" onClick="changePage('div_compte_pswd', 'a_compte_pswd', 'li_gerer_compte')">Comment réinitialiser mon mot de passe ?</div>
 
 												</li>
 												<li>
-													<div id="a_compte_newsletter" onClick="changePage('div_compte_newsletter', 'a_compte_newsletter')">Comment se désinscrire de la newsletter ?</div>
+													<div id="a_compte_newsletter" onClick="changePage('div_compte_newsletter', 'a_compte_newsletter', 'li_gerer_compte')">Comment se désinscrire de la newsletter ?</div>
 
 												</li>
 												<li>
-													<div id="a_compte_commande" onClick="changePage('div_compte_commande', 'a_compte_commande')">Pourquoi est-ce que je ne peux pas voir ma commande ou vente dans mon compte ?</div>
+													<div id="a_compte_commande" onClick="changePage('div_compte_commande', 'a_compte_commande', 'li_gerer_compte')">Pourquoi est-ce que je ne peux pas voir ma commande ou vente dans mon compte ?</div>
 
 												</li>
 											</ul>
@@ -266,23 +266,23 @@
 										<li class='active has-sub' id="li_a_propos"><a href='#'><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>A propos de Tapakila</a>
 											<ul>
 												<li>
-													<div id="a_tapakila_definition" onClick="changePage('div_tapakila_definition', 'a_tapakila_definition')"> Qu'est-ce que Tapakila ?</div>
+													<div id="a_tapakila_definition" onClick="changePage('div_tapakila_definition', 'a_tapakila_definition', 'li_a_propos')"> Qu'est-ce que Tapakila ?</div>
 
 												</li>
 												<li>
-													<div id="a_tapakila_garantie" onClick="changePage('div_tapakila_garantie', 'a_tapakila_garantie')"> Qu'est-ce que la garantie Tapakila?</div>
+													<div id="a_tapakila_garantie" onClick="changePage('div_tapakila_garantie', 'a_tapakila_garantie', 'li_a_propos')"> Qu'est-ce que la garantie Tapakila?</div>
 
 												</li>
 												<li>
-													<div id="a_tapakila_recouvre" onClick="changePage('div_tapakila_recouvre', 'a_tapakila_recouvre')"> Que recouvrent les frais Tapakila?</div>
+													<div id="a_tapakila_recouvre" onClick="changePage('div_tapakila_recouvre', 'a_tapakila_recouvre', 'li_a_propos')"> Que recouvrent les frais Tapakila?</div>
 
 												</li>
 												<li>
-													<div id="a_tapakila_terme" onClick="changePage('div_tapakila_terme', 'a_tapakila_terme')"> Quelles sont les Termes et Conditions de Tapalika ?</div>
+													<div id="a_tapakila_terme" onClick="changePage('div_tapakila_terme', 'a_tapakila_terme', 'li_a_propos')"> Quelles sont les Termes et Conditions de Tapalika ?</div>
 
 												</li>
 												<li>
-													<div id="a_tapakila_contact" onClick="changePage('div_tapakila_contact', 'a_tapakila_contact')">Comment puis-je contacter Tapakila ?</div>
+													<div id="a_tapakila_contact" onClick="changePage('div_tapakila_contact', 'a_tapakila_contact', 'li_a_propos')">Comment puis-je contacter Tapakila ?</div>
 
 												</li>
 											</ul>
@@ -1153,24 +1153,24 @@
 
 								<div id='cssmenu'>
 									<ul id="coco2">
-											<li class='active has-sub activy' onClick="changePage('div_compte2', 'a_compte2')" id="a_compte2"><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Generale</a>
+											<li class='active has-sub ' onClick="changePage('div_compte2', 'a_compte2')" id="a_compte2"><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Generale</a>
 												<li>
 										<li class='active has-sub' id="li_ach"><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Acheter les billets</a>
 											<ul>
 												<li>
-													<div id="a_billets" onClick="changePage('div_billets', 'a_billets')"> Comment vendre les billets ?</div>
+													<div id="a_billets" onClick="changePage('div_billets', 'a_billets','li_ach')"> Comment vendre les billets ?</div>
 
 												</li>
 												<li>
-													<div id="a_offre" onClick="changePage('div_offre', 'a_offre')"> Comment modifier mon offre ?</div>
+													<div id="a_offre" onClick="changePage('div_offre', 'a_offre','li_ach')"> Comment modifier mon offre ?</div>
 
 												</li>
 												<li>
-													<div id="a_supprimer_offre" onClick="changePage('div_supprimer_offre', 'a_supprimer_offre')"> Comment supprimer mon offre ?</div>
+													<div id="a_supprimer_offre" onClick="changePage('div_supprimer_offre', 'a_supprimer_offre','li_ach')"> Comment supprimer mon offre ?</div>
 
 												</li>
 												<li>
-													<div id="a_options_offre" onClick="changePage('div_options_offre', 'a_options_offre')"> Que signifient les options de séparation de billets ?</div>
+													<div id="a_options_offre" onClick="changePage('div_options_offre', 'a_options_offre','li_ach')"> Que signifient les options de séparation de billets ?</div>
 
 												</li>
 											</ul>
@@ -1179,19 +1179,19 @@
 										<li class='active has-sub' id="li_envoyer"><a href='#'><span class="glyphicon glyphicon-bed" aria-hidden="true"></span>Envoyer vos places</a>
 											<ul>
 												<li>
-													<div id="a_places_envoyer" onClick="changePage('div_places_envoyer', 'a_places_envoyer')">Comment envoyer vos places ?</div>
+													<div id="a_places_envoyer" onClick="changePage('div_places_envoyer', 'a_places_envoyer','li_envoyer')">Comment envoyer vos places ?</div>
 
 												</li>
 												<li>
-													<div id="a_places_organiser" onClick="changePage('div_places_organiser', 'a_places_organiser')">Comment organiser le retrait des billets par coursier ?</div>
+													<div id="a_places_organiser" onClick="changePage('div_places_organiser', 'a_places_organiser','li_envoyer')">Comment organiser le retrait des billets par coursier ?</div>
 
 												</li>
 												<li>
-													<div id="a_billets_electronique" onClick="changePage('div_billets_electronique', 'a_billets_electronique')">Comment télécharger des billets électroniques ?</div>
+													<div id="a_billets_electronique" onClick="changePage('div_billets_electronique', 'a_billets_electronique','li_envoyer')">Comment télécharger des billets électroniques ?</div>
 
 												</li>
 												<li>
-													<div id="a_billets_autre" onClick="changePage('div_billets_autre', 'a_billets_autre')">Puis-je envoyer les billets en utilisant une autre méthode de livraison ?</div>
+													<div id="a_billets_autre" onClick="changePage('div_billets_autre', 'a_billets_autre','li_envoyer')">Puis-je envoyer les billets en utilisant une autre méthode de livraison ?</div>
 
 												</li>
 
@@ -1200,11 +1200,11 @@
 										<li class='active has-sub' id="li_recevez"><a href='#'><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>Recevez votre paiement</a>
 											<ul>
 												<li>
-													<div id="a_vente_paiement" onClick="changePage('div_vente_paiement', 'a_vente_paiement')">Quand vais-je recevoir un paiement pour ma vente ?</div>
+													<div id="a_vente_paiement" onClick="changePage('div_vente_paiement', 'a_vente_paiement','li_recevez')">Quand vais-je recevoir un paiement pour ma vente ?</div>
 
 												</li>
 												<li>
-													<div id="a_vente_methode" onClick="changePage('div_vente_methode', 'a_vente_methode')">Comment modifier la méthode de paiement choisie pour la réception des paiements ?</div>
+													<div id="a_vente_methode" onClick="changePage('div_vente_methode', 'a_vente_methode','li_recevez')">Comment modifier la méthode de paiement choisie pour la réception des paiements ?</div>
 
 												</li>
 											</ul>
@@ -1214,7 +1214,7 @@
 										<li class='active has-sub' id="li_annulation"><a href='#'><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span>Questions d'annulations</a>
 											<ul>
 												<li>
-													<div id="a_ev2" onClick="changePage('div_ev2', 'a_ev2')"> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Puis-je annuler ma vente ?</div>
+													<div id="a_ev2" onClick="changePage('div_ev2', 'a_ev2','li_annulation')"> <span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Puis-je annuler ma vente ?</div>
 
 												</li>
 											</ul>
@@ -1224,23 +1224,23 @@
 										<li class='active has-sub' id="li_gererr"><a href='#'><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Gérer mon compte</a>
 											<ul>
 												<li>
-													<div id="a_news2" onClick="changePage('div_news2', 'a_news2')"> J'ai saisi une adresse e-mail incorrecte lors de l'inscription, comment puis-je la modifier ?</div>
+													<div id="a_news2" onClick="changePage('div_news2', 'a_news2','li_gererr')"> J'ai saisi une adresse e-mail incorrecte lors de l'inscription, comment puis-je la modifier ?</div>
 
 												</li>
 												<li>
-													<div id="a_compte_email2" onClick="changePage('div_compte_email2', 'a_compte_email2')">Comment modifier l'adresse e-mail de mon compte ?</div>
+													<div id="a_compte_email2" onClick="changePage('div_compte_email2', 'a_compte_email2','li_gererr')">Comment modifier l'adresse e-mail de mon compte ?</div>
 
 												</li>
 												<li>
-													<div id="a_compte_pswd2" onClick="changePage('div_compte_pswd2', 'a_compte_pswd2')">Comment réinitialiser mon mot de passe ?</div>
+													<div id="a_compte_pswd2" onClick="changePage('div_compte_pswd2', 'a_compte_pswd2','li_gererr')">Comment réinitialiser mon mot de passe ?</div>
 
 												</li>
 												<li>
-													<div id="a_compte_newsletter2" onClick="changePage('div_compte_newsletter2', 'a_compte_newsletter2')">Comment se désinscrire de la newsletter ?</div>
+													<div id="a_compte_newsletter2" onClick="changePage('div_compte_newsletter2', 'a_compte_newsletter2','li_gererr')">Comment se désinscrire de la newsletter ?</div>
 
 												</li>
 												<li>
-													<div id="a_compte_commande2" onClick="changePage('div_compte_commande2', 'a_compte_commande2')">Pourquoi est-ce que je ne peux pas voir ma commande ou vente dans mon compte ?</div>
+													<div id="a_compte_commande2" onClick="changePage('div_compte_commande2', 'a_compte_commande2','li_gererr')">Pourquoi est-ce que je ne peux pas voir ma commande ou vente dans mon compte ?</div>
 
 												</li>
 											</ul>
@@ -1253,19 +1253,19 @@
 
 												</li>
 												<li>
-													<div id="a_tapakila_garantie2" onClick="changePage('div_tapakila_garantie2', 'a_tapakila_garantie2')"> Qu'est-ce que la garantie Tapakila?</div>
+													<div id="a_tapakila_garantie2" onClick="changePage('div_tapakila_garantie2', 'a_tapakila_garantie2','li_tapakila')"> Qu'est-ce que la garantie Tapakila?</div>
 
 												</li>
 												<li>
-													<div id="a_tapakila_recouvre2" onClick="changePage('div_tapakila_recouvre2', 'a_tapakila_recouvre2')"> Que recouvrent les frais Tapakila?</div>
+													<div id="a_tapakila_recouvre2" onClick="changePage('div_tapakila_recouvre2', 'a_tapakila_recouvre2','li_tapakila')"> Que recouvrent les frais Tapakila?</div>
 
 												</li>
 												<li>
-													<div id="a_tapakila_terme2" onClick="changePage('div_tapakila_terme2', 'a_tapakila_terme2')"> Quelles sont les Termes et Conditions de Tapalika ?</div>
+													<div id="a_tapakila_terme2" onClick="changePage('div_tapakila_terme2', 'a_tapakila_terme2','li_tapakila')"> Quelles sont les Termes et Conditions de Tapalika ?</div>
 
 												</li>
 												<li>
-													<div id="a_tapakila_contact2" onClick="changePage('div_tapakila_contact2', 'a_tapakila_contact2')">Comment puis-je contacter Tapakila ?</div>
+													<div id="a_tapakila_contact2" onClick="changePage('div_tapakila_contact2', 'a_tapakila_contact2','li_tapakila')">Comment puis-je contacter Tapakila ?</div>
 
 												</li>
 											</ul>
@@ -1330,11 +1330,11 @@
 									</div>
 									<div class="col-lg-6">
 										<a><h4 class="titre"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</h4></a>
-											<p><a onClick="changePage('div_tapakila_definition2', 'a_tapakila_definition2')">Qu'est-ce que Tapakila ?</a></p>
-											<p><a onClick="changePage('div_tapakila_garantie2', 'a_tapakila_garantie2')">Qu'est-ce que la garantie Tapakila?</a></p>
-											<p><a onClick="changePage('div_tapakila_recouvre2', 'a_tapakila_recouvre2')"> Que recouvrent les frais Tapakila?</a></p>
-											<p><a onClick="changePage('div_tapakila_terme2', 'a_tapakila_terme2')"> Quelles sont les Termes et Conditions de Tapalika ?</a></p>
-											<p><a onClick="changePage('div_tapakila_contact2', 'a_tapakila_contact2')"> Comment puis-je contacter Tapakila ?</a></p>
+											<p><a onClick="changePage('div_tapakila_definition2', 'a_tapakila_definition2','li_tapakila')">Qu'est-ce que Tapakila ?</a></p>
+											<p><a onClick="changePage('div_tapakila_garantie2', 'a_tapakila_garantie2','li_tapakila')">Qu'est-ce que la garantie Tapakila?</a></p>
+											<p><a onClick="changePage('div_tapakila_recouvre2', 'a_tapakila_recouvre2','li_tapakila')"> Que recouvrent les frais Tapakila?</a></p>
+											<p><a onClick="changePage('div_tapakila_terme2', 'a_tapakila_terme2','li_tapakila')"> Quelles sont les Termes et Conditions de Tapalika ?</a></p>
+											<p><a onClick="changePage('div_tapakila_contact2', 'a_tapakila_contact2','li_tapakila')"> Comment puis-je contacter Tapakila ?</a></p>
 									</div>
 								</div>
 								
@@ -2495,8 +2495,8 @@
 
 	<script>
 		function changePage(id, aId, liId) { 
-			$('#coco li').removeClass('open');
-			$('#coco2 li').removeClass('open');
+			 $('#coco li').removeClass('open');
+			 $('#coco2 li').removeClass('open');
 		
 
 			if (liId) {
