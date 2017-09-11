@@ -130,7 +130,7 @@
 
 
 			<div class="row tab_client">
-				<div class="col-sm-6 col-sm-offset-3">
+				<div class="col-lg-6 col-lg-offset-3">
 					<ul class="nav nav-tabs nav-tabs2 tabs0">
 						<li class="active ">
 							<a href="#1" data-toggle="tab" onClick="changePage('div_compte', 'a_compte')">Pour les acheteurs</a>
@@ -143,15 +143,14 @@
 			<div class="tab-content ">
 				<div class="tab-pane active" id="1">
 					<div class="row">
-						<div class="col-sm-3">
+						<div class="col-lg-3">
 
 							<div class="menu_FQ">
 
 								<div id='cssmenu'>
-									<ul>
+									<ul id="coco">
+										<li class='active has-sub activy' onClick="changePage('div_compte', 'a_compte')" id="a_compte"><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Generale</a>
 										<li>
-											<div id="a_compte" class="activy" onClick="changePage('div_compte', 'a_compte')"> <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Générale</div>
-										</li>
 										<li class='active has-sub' id="li_achat_billet"><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Acheter les billets</a>
 											<ul>
 												<li>
@@ -293,11 +292,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-lg-6">
 							<div id="div_compte">
 								<div class="centre">
 									<div class="row">
-										<div class="col-sm-6">
+										<div class="col-lg-6">
 											
 												<h4 class="titre"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Acheter les billets</h4>
 											
@@ -308,7 +307,7 @@
 
 
 										</div>
-										<div class="col-sm-6">
+										<div class="col-lg-6">
 											
 												<h4 class="titre"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Recevoir vos places</h4>
 											
@@ -323,7 +322,7 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-sm-6">
+										<div class="col-lg-6">
 											
 												<h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</h4>
 											
@@ -334,7 +333,7 @@
 
 
 										</div>
-										<div class="col-sm-6">
+										<div class="col-lg-6">
 											<a>
 												<h4 class="titre"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> Recevez votre paiement</h4></a>
 										<p><a onClick="changePage('div_favoris', 'a_favoris', 'li_receive_paiement')">Quelles sont les méthodes de paiement acceptées ?</a></p>
@@ -343,7 +342,7 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-sm-6">
+									<div class="col-lg-6">
 									<h4 class="titre"><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</h4>
 										<p><a onClick="changePage('div_news', 'a_news', 'li_gerer_compte')">J'ai saisi une adresse e-mail incorrecte lors de l'inscription, comment puis-je la modifier ?</a></p>
 										<p><a onClick="changePage('div_compte_email', 'a_compte_email', 'li_gerer_compte')">Comment modifier l'adresse e-mail de mon compte ?</a></p>
@@ -352,7 +351,7 @@
 										<p><a onClick="changePage('div_compte_commande', 'a_compte_commande', 'li_gerer_compte')"> Pourquoi est-ce que je ne peux pas voir ma commande ou vente dans mon compte ?</a></p>
 									
 									</div>
-									<div class="col-sm-6">
+									<div class="col-lg-6">
 									<a><h4 class="titre"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</h4></a>
 										<p><a onClick="changePage('div_tapakila_definition', 'a_tapakila_definition', 'li_a_propos')">Qu'est-ce que Tapakila ?</a></p>
 										<p><a onClick="changePage('div_tapakila_garantie', 'a_tapakila_garantie', 'li_a_propos')">Qu'est-ce que la garantie Tapakila?</a></p>
@@ -1034,7 +1033,7 @@
 					</div>
 
 					</div>
-					<div class="col-sm-3 social-bg1">
+					<div class="col-lg-3 social-bg1">
 						<div class="espacepersonnel">
 							<h3 class="all">Espace personnel</h3>
 								<form>
@@ -1049,7 +1048,7 @@
 								</form>
 								
 								<div class="row">
-									<div class="col-md-7">
+									<div class="col-lg-7">
 										<div>
 										<a href="#"><span class="fa fa-caret-square-o-right label" > Créer un compte</span></a>
 										</div>
@@ -1057,7 +1056,7 @@
 											<a href="#"><span class="fa fa-caret-square-o-right label" > Mots de passe oubliè ?</span></a>
 										</div>
 									</div>
-									<div class="col-md-5">
+									<div class="col-lg-5">
 										<button type="button" class="btn btn-primary btn-menu">connecter</button>
 									</div>
 								</div>
@@ -1072,7 +1071,7 @@
 									</div>
 								</form>
 								<div class="row">
-									<div class="col-md-7">
+									<div class="col-lg-7">
 										<div class="radio">
 											<label><input type="radio" name="optradio">s'inscrire</label>
 										</div>
@@ -1080,7 +1079,7 @@
 											<label><input type="radio" name="optradio">Se desinscrire</label>
 										</div>
 									</div>
-									<div class="col-md-5">
+									<div class="col-lg-5">
 										<button type="button" class="btn btn-primary btn-menu2">Enregistrer</button>
 									</div>
 								</div>
@@ -1088,49 +1087,49 @@
 							<div class="vente">
 								<h3 class="all">événement de ce week-end</h3>
 								<div class="row space">
-									<div class="col-md-2">
+									<div class="col-lg-2">
 										<label class="top10">1</label>
 									</div>
-									<div class="col-md-8">
+									<div class="col-lg-8">
 										<h5 class="Titre"><strong>Mahaleo</strong></h5>
 										<p>
 											<div class="price"><i class="glyphicon glyphicon-time time"></i> Apr 1, 100rmb</div>
 											<div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Paris</div>
 									</div>
 									</p>
-									<div class="col-md-2">
+									<div class="col-lg-2">
 										<a href="#"><label class="glyphicon glyphicon-plus mytop"></label></a>
 									</div>
 
 								</div>
 								<div class="row space">
-									<div class="col-md-2">
+									<div class="col-lg-2">
 										<label class="top10">2</label>
 									</div>
-									<div class="col-md-8">
+									<div class="col-lg-8">
 										<h5 class="Titre"><strong>Ambondrona</strong></h5>
 										<p>
 											<div class="price"><i class="glyphicon glyphicon-time time"></i> Apr 1, 100rmb</div>
 											<div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Paris</div>
 									</div>
 									</p>
-									<div class="col-md-2">
+									<div class="col-lg-2">
 										<a href="#"><label class="glyphicon glyphicon-plus mytop"></label></a>
 									</div>
 
 								</div>
 								<div class="row space">
-									<div class="col-md-2">
+									<div class="col-lg-2">
 										<label class="top10">3</label>
 									</div>
-									<div class="col-md-8">
+									<div class="col-lg-8">
 										<h5 class="Titre"><strong>Bodo</strong></h5>
 										<p>
 											<div class="price"><i class="glyphicon glyphicon-time time"></i> Apr 1, 100rmb</div>
 											<div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Paris</div>
 									</div>
 									</p>
-									<div class="col-md-2">
+									<div class="col-lg-2">
 										<a href="#"><label class="glyphicon glyphicon-plus mytop"></label></a>
 									</div>
 
@@ -1148,15 +1147,14 @@
 
 				<div class="tab-pane" id="2">
 					<div class="row">
-						<div class="col-sm-3">
+						<div class="col-lg-3">
 
 							<div class="menu_FQ">
 
 								<div id='cssmenu'>
-									<ul>
-										<li>
-											<div id="a_compte2" class="activy" onClick="changePage('div_compte2', 'a_compte2')"> <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Générale</div>
-										</li>
+									<ul id="coco2">
+											<li class='active has-sub activy' onClick="changePage('div_compte2', 'a_compte2')" id="a_compte2"><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Generale</a>
+												<li>
 										<li class='active has-sub' id="li_ach"><a href='#'><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Acheter les billets</a>
 											<ul>
 												<li>
@@ -1277,11 +1275,11 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-sm-6">
+						<div class="col-lg-6">
 							<div id="div_compte2">
 								<div class="centre">
 									<div class="row">
-										<div class="col-sm-6">
+										<div class="col-lg-6">
 											<a>
 												<h4 class="titre"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span> Vendre les billets</h4>
 											</a>
@@ -1292,7 +1290,7 @@
 
 
 										</div>
-										<div class="col-sm-6">
+										<div class="col-lg-6">
 											<a>
 												<h4 class="titre"><span class="glyphicon glyphicon-bed" aria-hidden="true"></span> Envoyer vos places</h4>
 											</a>
@@ -1304,7 +1302,7 @@
 										</div>
 									</div>
 									<div class="row">
-										<div class="col-sm-6">
+										<div class="col-lg-6">
 											<a>
 												<h4 class="titre"><span class="glyphicon glyphicon-minus-sign" aria-hidden="true"></span> Questions d'annulations</h4>
 											</a>
@@ -1312,7 +1310,7 @@
 
 
 										</div>
-										<div class="col-sm-6">
+										<div class="col-lg-6">
 											<a>
 												<h4 class="titre"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"> Recevez votre paiement</h4></a>
 										<p><a onClick="changePage('div_vente_paiement', 'a_vente_paiement','li_recevez')">Quand vais-je recevoir un paiement pour ma vente ?</a></p>
@@ -1321,7 +1319,7 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-sm-6">
+									<div class="col-lg-6">
 									<a><h4 class="titre"><span class="glyphicon glyphicon-user" aria-hidden="true"> Gérer mon compte</h4></a>
 										<p><a onClick="changePage('div_news2', 'a_news2','li_gererr')">J'ai saisi une adresse e-mail incorrecte lors de l'inscription, comment puis-je la modifier ?</a></p>
 										<p><a onClick="changePage('div_compte_email2', 'a_compte_email2','li_gererr')">Comment modifier l'adresse e-mail de mon compte ?</a></p>
@@ -1330,7 +1328,7 @@
 										<p><a onClick="changePage('div_compte_commande2', 'a_compte_commande2','li_gererr')"> Pourquoi est-ce que je ne peux pas voir ma commande ou vente dans mon compte ?</a></p>
 									
 									</div>
-									<div class="col-sm-6">
+									<div class="col-lg-6">
 										<a><h4 class="titre"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true">   A propos de Tapakila</h4></a>
 											<p><a onClick="changePage('div_tapakila_definition2', 'a_tapakila_definition2')">Qu'est-ce que Tapakila ?</a></p>
 											<p><a onClick="changePage('div_tapakila_garantie2', 'a_tapakila_garantie2')">Qu'est-ce que la garantie Tapakila?</a></p>
@@ -2314,7 +2312,7 @@
 
 
 								</div>
-								<div class="col-sm-3 social-bg1">
+								<div class="col-lg-3 social-bg1">
 
 									<div class="espacepersonnel">
 										<h3 class="all">Espace personnel</h3>
@@ -2330,7 +2328,7 @@
 										</form>
 
 										<div class="row">
-											<div class="col-md-7">
+											<div class="col-lg-7">
 												<div>
 													<a href="#"><span class="fa fa-caret-square-o-right label" > Créer un compte</span></a>
 												</div>
@@ -2338,7 +2336,7 @@
 													<a href="#"><span class="fa fa-caret-square-o-right label" > Mots de passe oubliè ?</span></a>
 												</div>
 											</div>
-											<div class="col-md-5">
+											<div class="col-lg-5">
 												<button type="button" class="btn btn-primary btn-menu">connecter</button>
 											</div>
 										</div>
@@ -2353,7 +2351,7 @@
 											</div>
 										</form>
 										<div class="row">
-											<div class="col-md-7">
+											<div class="col-lg-7">
 												<div class="radio">
 													<label><input type="radio" name="optradio">s'inscrire</label>
 												</div>
@@ -2361,7 +2359,7 @@
 													<label><input type="radio" name="optradio">Se desinscrire</label>
 												</div>
 											</div>
-											<div class="col-md-5">
+											<div class="col-lg-5">
 												<button type="button" class="btn btn-primary btn-menu2">Enregistrer</button>
 											</div>
 										</div>
@@ -2369,49 +2367,49 @@
 									<div class="vente">
 										<h3 class="all">événement de ce week-end</h3>
 										<div class="row space">
-											<div class="col-md-2">
+											<div class="col-lg-2">
 												<label class="top10">1</label>
 											</div>
-											<div class="col-md-8">
+											<div class="col-lg-8">
 												<h5 class="Titre"><strong>Mahaleo</strong></h5>
 												<p>
 													<div class="price"><i class="glyphicon glyphicon-time time"></i> Apr 1, 100rmb</div>
 													<div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Paris</div>
 											</div>
 											</p>
-											<div class="col-md-2">
+											<div class="col-lg-2">
 												<a href="#"><label class="glyphicon glyphicon-plus mytop"></label></a>
 											</div>
 
 										</div>
 										<div class="row space">
-											<div class="col-md-2">
+											<div class="col-lg-2">
 												<label class="top10">2</label>
 											</div>
-											<div class="col-md-8">
+											<div class="col-lg-8">
 												<h5 class="Titre"><strong>Ambondrona</strong></h5>
 												<p>
 													<div class="price"><i class="glyphicon glyphicon-time time"></i> Apr 1, 100rmb</div>
 													<div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Paris</div>
 											</div>
 											</p>
-											<div class="col-md-2">
+											<div class="col-lg-2">
 												<a href="#"><label class="glyphicon glyphicon-plus mytop"></label></a>
 											</div>
 
 										</div>
 										<div class="row space">
-											<div class="col-md-2">
+											<div class="col-lg-2">
 												<label class="top10">3</label>
 											</div>
-											<div class="col-md-8">
+											<div class="col-lg-8">
 												<h5 class="Titre"><strong>Bodo</strong></h5>
 												<p>
 													<div class="price"><i class="glyphicon glyphicon-time time"></i> Apr 1, 100rmb</div>
 													<div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Paris</div>
 											</div>
 											</p>
-											<div class="col-md-2">
+											<div class="col-lg-2">
 												<a href="#"><label class="glyphicon glyphicon-plus mytop"></label></a>
 											</div>
 
@@ -2434,7 +2432,7 @@
 		<div class="footer-top">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-4 col-xs-6">
+					<div class="col-lg-4 col-xs-6">
 						<img class="footer-logo" alt="tapakila" src="./img/logo.png">
 						<p class="small custom">
 							By Tapakila.mg<br> IIB 63 Mahamasina<br> Antananarivo
@@ -2443,7 +2441,7 @@
 							<a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
 						</p>
 					</div>
-					<div class="col-sm-3 col-xs-6">
+					<div class="col-lg-3 col-xs-6">
 						<p class="titled"><strong>Acheter des tickets</strong></p>
 						<ul class="list-unstyled">
 							<li><a href="Acheteur.html">Comment acheter</a></li>
@@ -2451,7 +2449,7 @@
 							<li><a href="#">Conditions d'utilisation</a></li>
 						</ul>
 					</div>
-					<div class="col-sm-3 col-xs-6">
+					<div class="col-lg-3 col-xs-6">
 						<p class="titled"><strong>Organisateurs</strong></p>
 						<ul class="list-unstyled">
 							<li><a href="organisateur.html">Pour les Organisateurs</a></li>
@@ -2459,7 +2457,7 @@
 							<li><a href="#">Connexion</a></li>
 						</ul>
 					</div>
-					<div class="col-sm-2 col-xs-6 ">
+					<div class="col-lg-2 col-xs-6 ">
 						<a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square facebookico" aria-hidden="true"></i></a>
 						<div id="fb-root"></div>
 						<div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small"
@@ -2497,6 +2495,10 @@
 
 	<script>
 		function changePage(id, aId, liId) { 
+			$('#coco li').removeClass('open');
+			$('#coco2 li').removeClass('open');
+		
+
 			if (liId) {
 				
 				document.getElementById("li_achat_billet").children[1].style.display = "none";
@@ -2505,6 +2507,7 @@
 				document.getElementById("li_receive_paiement").children[1].style.display = "none";
 				document.getElementById("li_gerer_compte").children[1].style.display = "none";
 				document.getElementById("li_a_propos").children[1].style.display = "none";
+				
 
 				document.getElementById("li_ach").children[1].style.display = "none";
 				document.getElementById("li_envoyer").children[1].style.display = "none";

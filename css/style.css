@@ -2070,21 +2070,7 @@ font-weight: bold;
 cursor: pointer;
 border-bottom: 4px double #D7D7DE !important;
 }
-.tabs0 li a:hover{
-background-color: #428bca;
 
-display: inline-block;
-text-align: center;
-border: 1px solid #dfdfe0;
-background: #D7D7DE;
-padding: 12px 18px;
-color: black;
-border-radius: 3px 3px 0 0;
-font-weight: bold;
-cursor: pointer;
-border-bottom: 4px double #D7D7DE !important;
-margin-left: -2px;
-}
 .tabs0 li a:hover{
 background-color: #428bca; border-radius: 3px 3px 0 0;
 }
@@ -2314,11 +2300,19 @@ border-top-left-radius: 12px;
 border-bottom-left-radius: 12px;
 }
 .input-group-btn:last-child > .splus {
+
+margin-left: 4px;
 border-top-right-radius: 12px;
 border-bottom-right-radius: 12px;
 border-top-left-radius: 12px;
 border-bottom-left-radius: 12px;
 }
+.position{
+margin-right: -185px;
+margin-left: 30px;
+
+}
+
 .btn-validé{
 color: #fff;
 background-color: #d9534f;
