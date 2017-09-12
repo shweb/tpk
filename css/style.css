@@ -1748,6 +1748,11 @@ background-color: white;
 
 .about-bg>img{
 width:100%;
+margin-bottom: 15px;
+}
+.about-bg ul li{
+	list-style-type: disc ! important;
+	margin-left:15px;
 }
 .label{
 font-size:13px;
