@@ -219,7 +219,9 @@
 			</div>
 					
 		</section>
-<footer class="footer">
+		
+<!-- footer start -->
+		<footer class="footer">
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -239,15 +241,15 @@
                         <ul class="list-unstyled">
                             <li><a href="Acheteur.html">Comment acheter</a></li>
                             <li><a href="service-clientele.html">Foire aux questions</a></li>
-                            <li><a href="#">Conditions d'utilisation</a></li>
+                            <li><a href="termservice.html">Conditions d'utilisation</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-3 col-xs-6">
                         <p class="titled"><strong >Organisateurs</strong></p>
                         <ul class="list-unstyled">
                             <li><a href="organisateur.html">Pour les Organisateurs</a></li>
-                            <li><a href="#">S'enregistrer</a></li>
-                            <li><a href="#">Connexion</a></li>
+                            <li><a href="connexion.html">S'enregistrer</a></li>
+                            <li><a href="connexion.html">Connexion</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-2 col-xs-6 ">
@@ -262,9 +264,9 @@
         <div class="footer-bottom">
             <div class="container small">
 			<ul>
-                        <li><a href="#">A propos de nous</a></li>|
-                        <li><a href="#">Contact</a></li>|
-                        <li><a href="#">Ajouter votre evenement</a></li>|
+                        <li><a href="aboutus.html">A propos de nous</a></li>|
+                        <li><a href="contactpage.html">Contact</a></li>|
+                        <li><a href="createevent">Ajouter votre evenement</a></li>|
                         <li><a href="#">Publicite</a></li>|
                         <li><a href="service-clientele.html">FAQ</a></li>|
                         <li><a href="#">Vie privee</a></li>|
@@ -274,13 +276,36 @@
         </div>
     
 		</footer>
+		<!-- footer end -->
+		
+		<!-- script start -->
 <script typae="text/javascript">
-$('.dropdown-menu ul li a').click(function(event){
-event.stopPropagation();
-$(this).parent().toggleClass('active').siblings().removeClass('active');
-var target=$(this).attr('href');
-$('ul li .tab-content '+target).toggleClass(active in);
-});
+		$('.dropdown-menu ul li a').click(function(event){
+		event.stopPropagation();
+		$(this).parent().toggleClass('active').siblings().removeClass('active');
+		var target=$(this).attr('href');
+		$('ul li .tab-content '+target).toggleClass(active in);
+		});
+</script>
+
+<script>
+		$(function() {
+		var pull 		= $('#pull');
+		menu 		= $('#sectioncategorie ul');
+		menuHeight	= menu.height();
+
+		$(pull).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+		});
+
+		$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 320 && menu.is(':hidden')) {
+		menu.removeAttr('style');
+		}
+		});
+		});
 </script>
 	</body>
 </html>

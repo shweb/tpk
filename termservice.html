@@ -25,39 +25,46 @@
 									<span class="icon-bar"></span>
 									<span class="icon-bar"></span>
 								  </button>
-								  <a class="navbar-brand" href="#">
+								  <a class="navbar-brand" href="index.html">
 									<img src="./img/logo.png" title="tapakila">
 								  </a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 									<ul class="nav navbar-nav navbar-right">
-										
-										<li><button type="" class="btn btn-success event"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></button></li>
-										<li><a href="#">Panier</a></li>
+										<li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
+									
+										<li><a href="panier.html">Panier</a></li>
 										<li role="presentation" class="dropdown"> 
-										<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
-										<span class="caret"></span> </a> 
-											<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
-											<li>
-											<form action="./page/recherche.html" method="get">
-											   <input type="text" name="query" placeholder="Search..." autocomplete="off">
-											   <input type="submit" value="Search">
-										   </form>
-										   </li> 
-											</ul> 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+											<span class="caret"></span> </a> 
+												<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
+												<li>
+												<form action="./page/recherche.html" method="get">
+												   <input type="text" name="query" placeholder="Search..." autocomplete="off">
+												   <input type="submit" value="Search">
+												</form>
+											   </li> 
+												</ul> 
 										</li>
-										<li role="presentation" class="dropdown connexion" >
 										
-										<a href="#" class="dropdown-toggle" id="drop7"> Connexion
-										<span class="caret"></span> </li></a>
+										<li role="presentation" class="dropdown connexion" > 
+											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a> 
+												<ul class="dropdown-menu " id="menu3" aria-labelledby="drop6"> 
+													<a href ="connexion.html"><li class="conexion">Se connecter</li></a> 
+													<a href ="connexion.html"><li class="conexion">S'inscrire</li></a> 
+												</ul> 
+										</li>
+										
 									</ul>
+
+				</div>
 			</div>
-			</div>
-			</nav>
+		</nav>
+		<!-- header end -->
 		
-		 <!-- header end -->
-		 <!-------menu------->
-	<section id="sectioncategorie" class="clearfix">
+		<!-- section navigation start -->
+		<section id="sectioncategorie" class="clearfix">
 			<div class="container">
 				<ul class="clearfix">
 				<li><a href="categorie.html">TOUS</a></li>
@@ -72,7 +79,7 @@
 				</ul>
 				<a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
 			</div>
-	</section>
+		</section>
 		
 		<section id="sectionevenement" role="navigation">
 			<div class="container">
@@ -101,6 +108,7 @@
 				</ul>
 			</div>
 		</section>
+		<!-- section navigation end -->
 		
 		<section>
 			<div class="container">
@@ -226,7 +234,8 @@
 				</div>
 			</div>
 		</section>
-<footer>
+		
+	<!-- footer start -->
 		<footer class="footer">
         <div class="footer-top">
             <div class="container">
@@ -247,15 +256,15 @@
                         <ul class="list-unstyled">
                             <li><a href="Acheteur.html">Comment acheter</a></li>
                             <li><a href="service-clientele.html">Foire aux questions</a></li>
-                            <li><a href="#">Conditions d'utilisation</a></li>
+                            <li><a href="termservice.html">Conditions d'utilisation</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-3 col-xs-6">
                         <p class="titled"><strong >Organisateurs</strong></p>
                         <ul class="list-unstyled">
                             <li><a href="organisateur.html">Pour les Organisateurs</a></li>
-                            <li><a href="#">S'enregistrer</a></li>
-                            <li><a href="#">Connexion</a></li>
+                            <li><a href="connexion.html">S'enregistrer</a></li>
+                            <li><a href="connexion.html">Connexion</a></li>
                         </ul>
                     </div>
                     <div class="col-sm-2 col-xs-6 ">
@@ -270,9 +279,9 @@
         <div class="footer-bottom">
             <div class="container small">
 			<ul>
-                        <li><a href="#">A propos de nous</a></li>|
-                        <li><a href="#">Contact</a></li>|
-                        <li><a href="#">Ajouter votre evenement</a></li>|
+                        <li><a href="aboutus.html">A propos de nous</a></li>|
+                        <li><a href="contactpage.html">Contact</a></li>|
+                        <li><a href="createevent">Ajouter votre evenement</a></li>|
                         <li><a href="#">Publicite</a></li>|
                         <li><a href="service-clientele.html">FAQ</a></li>|
                         <li><a href="#">Vie privee</a></li>|
@@ -282,13 +291,57 @@
         </div>
     
 		</footer>
+		<!-- footer end -->
+		
+		<!-- script start -->
 <script typae="text/javascript">
-$('.dropdown-menu ul li a').click(function(event){
-event.stopPropagation();
-$(this).parent().toggleClass('active').siblings().removeClass('active');
-var target=$(this).attr('href');
-$('ul li .tab-content '+target).toggleClass(active in);
+		$('.dropdown-menu ul li a').click(function(event){
+		event.stopPropagation();
+		$(this).parent().toggleClass('active').siblings().removeClass('active');
+		var target=$(this).attr('href');
+		$('ul li .tab-content '+target).toggleClass(active in);
+		});
+</script>
+
+<script>
+		$(function() {
+		var pull 		= $('#pull');
+		menu 		= $('#sectioncategorie ul');
+		menuHeight	= menu.height();
+
+		$(pull).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+		});
+
+		$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 320 && menu.is(':hidden')) {
+		menu.removeAttr('style');
+		}
+		});
+		});
+</script>
+		
+<script>
+		$(document).on('click', '.number-spinner button', function () {    
+	var btn = $(this),
+		oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+		newVal = 0;
+	
+	if (btn.attr('data-dir') == 'up') {
+		newVal = parseInt(oldValue) + 1;
+	} 
+	
+	else {
+		if (oldValue > 0) {
+			newVal = parseInt(oldValue) - 1;
+		} else {
+			newVal = 0;
+		}
+	}
+	btn.closest('.number-spinner').find('input').val(newVal);
 });
 </script>
-	</body>
-</html>
+		<!-- script end -->
+</body></html>
