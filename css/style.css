@@ -2157,9 +2157,10 @@ color:white;
 }
 
 /* contact page end */
+
 /* detailpage */
-#background-detail{
-background-image:url('../img/add-event.png');
+.landingpage{
+	width:100%;
 }
 .background-white{
 background-color:white;
@@ -2322,3 +2323,31 @@ border-color: #d43f3a;
 padding: 10px 25px 10px 24px;
 }
 /* detail end */
+
+
+
+table caption {
+	padding: .5em 0;
+}
+
+@media screen and (max-width: 767px) {
+  table caption {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
+}
+.table-responsive {
+    min-height: .01%  ! important;
+    overflow-x: inherit ! important;
+}
+.dispo{
+	margin-left: 30px;
+}
+.epuise{
+margin-left: 40px;	
+}
