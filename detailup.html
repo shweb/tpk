@@ -152,53 +152,51 @@
 								<tbody>
 									<tr>
 										<td><strong>Ticket standart</strong><p>Description tickets</p></td>
-										<td><b>4000 Ar</b></td>
+										<td><b id="prixUnit1">4000</b> Ar</td>
 										<td>
 											<div class="row postions">
 												<div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 ">
 													<div class="input-group number-spinner">
 														<span class="input-group-btn">
-															<button class="btn btn-default btn-circle smoins" data-dir="dwn"><span class="fa fa-minus"></span></button>
+															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
 														</span>
 														<input type="text" class="form-control text-center" value="0">
 														<span class="input-group-btn">
-															<button class="btn btn-default btn-circle splus " data-dir="up"><span class="fa fa-plus"></span></button>
+															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
 														</span>
 													</div>
 												</div>
 												<div class="col-md-4 col-md-offset-1">
-												<span class="couleur_mot dispo ">Disponible<span>
+												<span class="couleur_mot dispo " id="disponible">Disponible<span>
 												</div>
 											</div>
 										</td>
 									</tr>
 									<tr>
 										<td><strong>Ticket VIP</strong><p>Description tickets</p></td>
-										<td><b>4000 Ar</b></td>
+										<td><b id="prixUnit1">4000</b> Ar</td>
 										<td>
 											<div class="row postions">
-													<div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1">
-														<div class="input-group number-spinner">
-															<span class="input-group-btn">
-																<button class="btn btn-default btn-circle smoins" data-dir="dwn"><span class="fa fa-minus"></span></button>
-															</span>
-															<input type="text" class="form-control text-center" value="0">
-															
-															<span class="input-group-btn">
-																<button class="btn btn-default btn-circle splus " data-dir="up"><span class="fa fa-plus"></span></button>
-															</span>
-															
-														</div>
+												<div class="col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 ">
+													<div class="input-group number-spinner">
+														<span class="input-group-btn">
+															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+														</span>
+														<input type="text" class="form-control text-center" value="0">
+														<span class="input-group-btn">
+															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
+														</span>
 													</div>
-													<div class="col-md-4 col-md-offset-1">
-												<span class="couleur_mot epuise ">Epuisé<span>
+												</div>
+												<div class="col-md-4 col-md-offset-1">
+												<span class="couleur_mot dispo " id="disponible">Disponible<span>
 												</div>
 											</div>
 										</td>
 									</tr>
 									<tr>
 										<td></td>
-										<td><b>8000 AR</b></td>
+										<td><b id="total"></b> Ar</td>
 										<td></td>
 									</tr>
 									<tr>
@@ -302,23 +300,44 @@
 </script>
 		
 <script>
-		$(document).on('click', '.number-spinner button', function () {    
+<!-- calcul up down 1 start -->
+	$(document).ready(function(){
+		console.log('ready');
+		$('#total').html('0');
+	});
+	$(document).on('click', '.number-spinner button', function () {    
 	var btn = $(this),
 		oldValue = btn.closest('.number-spinner').find('input').val().trim(),
 		newVal = 0;
 	
 	if (btn.attr('data-dir') == 'up') {
-		newVal = parseInt(oldValue) + 1;
+		if(oldValue < 10) {
+			newVal = parseInt(oldValue) + 1;
+			var prixUnit1 = 4000 * newVal;
+			$('#total').html(0+prixUnit1);
+			$('#disponible').html('Disponible');
+			btn.closest('.number-spinner').find('input').val(newVal);
+		} else if(oldValue == 10){
+			$('#disponible').html('Epuisé');
+			$('#btn-up').attr('disabled','true');
+		}
+		
 	} 
-	
 	else {
 		if (oldValue > 0) {
 			newVal = parseInt(oldValue) - 1;
-		} else {
-			newVal = 0;
+			var prixUnit1 = 4000 * newVal;
+			$('#total').html(0+prixUnit1);
+			$('#disponible').html('Disponible');
+			$('#btn-up').removeAttr('disabled');
+			btn.closest('.number-spinner').find('input').val(newVal);
 		}
 	}
-	btn.closest('.number-spinner').find('input').val(newVal);
+<!-- calcul up down 1 end -->	
+
+
+	
+	
 });
 </script>
 		<!-- script end -->

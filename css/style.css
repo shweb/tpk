@@ -2351,3 +2351,54 @@ table caption {
 .epuise{
 margin-left: 40px;	
 }
+
+
+click {
+  padding: 10px 20px;
+  background-color: #000;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+
+#hidden-info {
+  display: none;
+	background-color: #fff;
+  padding: 10px 20px;
+}
+#hidden-info h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.input-style {
+  background-color: #fff;
+  padding: 10px 5px;
+}
+.input-style label {
+  color: #ccc;
+}
+.input-style input {
+  border: none;
+  font-size: 16px;
+}
+.input-style input:focus {
+    outline-width: 0;
+}
+
+input[type=submit] {
+  padding: 10px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  margin: 10px 0;
+}
+
+*{
+  margin: 0; 
+  padding: 0; 
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
