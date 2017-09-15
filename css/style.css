@@ -1772,11 +1772,13 @@ margin-top:30px;
 font-size:30px;
 }
 .mytop{
-margin-top: 27px;
+margin-top: 44px;
 color: red;
 }
 .space{
 border-bottom: 1px solid red;
+width: 268px;
+margin-left: 0px;
 }
 
 .about-bg{
@@ -1804,6 +1806,13 @@ color:red;
 }
 .Titre{
 color:red;
+text-align: center;
+}
+.price{
+  padding-left: 13px;
+}
+.date{
+  padding-left: 13px;
 }
 .btn-menu{
 background-color:red;
@@ -2365,8 +2374,10 @@ margin-left: 40px;
 
 #hidden-info {
   display: none;
-	background-color: #fff;
-  padding: 10px 20px;
+  background-color: #fff;
+  margin-left: -18px;
+  margin-right: -23px;
+ 
 }
 #hidden-info h3 {
   text-align: center;
@@ -2385,8 +2396,10 @@ margin-left: 40px;
 
 #hidden-info1 {
   display: none;
-	background-color: #fff;
-  padding: 10px 20px;
+  background-color: #fff;
+  margin-left: -18px;
+  margin-right: -23px;
+
 }
 #hidden-info1 h3 {
   text-align: center;
@@ -2404,8 +2417,10 @@ margin-left: 40px;
 
 #hidden-info2 {
   display: none;
-	background-color: #fff;
-  padding: 10px 20px;
+  background-color: #fff;
+  margin-left: -18px;
+  margin-right: -23px;
+
 }
 #hidden-info2 h3 {
   text-align: center;
