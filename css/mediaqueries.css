@@ -317,6 +317,22 @@
 
 }
 @media only screen and (max-width: 990px) {
+
+.contactpg , .infoline h2 , .message {
+   text-align:center;
+}
+	.important{
+margin-top: 10px !important;
+
+}
+		.slogan {
+    text-align: left;
+    margin-bottom: 35px !important;
+}
+.message {
+    margin-top: 35px ! important;
+
+}
 	.search-bg {
     height: 424px ! important;
    
@@ -330,6 +346,7 @@
 }
 /* detail end */
 @media only screen and (max-width: 768px) {
+
 	.Pcenter {
     padding: 10px 10px 10px 10px !important;
 }
