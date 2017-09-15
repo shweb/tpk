@@ -1751,8 +1751,8 @@ width:100%;
 margin-bottom: 15px;
 }
 .about-bg ul li{
-	list-style-type: disc ! important;
-	margin-left:15px;
+list-style-type: disc ! important;
+margin-left:15px;
 }
 .label{
 font-size:13px;
@@ -2102,65 +2102,60 @@ margin-left: 18px;
 /* comment vendre billet end */
 
 /* contact page start */
-.bg-contact {
-background-color: black;
-margin-top: 35px;
-padding: 20px 30px;
-}
-
-.btn-soumettre{
-background-color:#d70506;
-color:white;
-flex: 1 1 auto;
-transition: 0.5s;
-/* box-shadow: 0 0 5px #eee; */
-}
-.btn-soumettre :hover{
-background-color:#d70506;
-color:white;
-}
-.contact{
-color:white;
-
-}
-.contact a {
-color:#d70506;
-
-}
-
-.titreC{
-color:white;
-margin-bottom:35px;
-margin-top:20px;
-/* textecadre start */
-border: 1px solid #fff;
-padding: 10px;
--moz-border-radius-topleft: 5px;
--moz-border-radius-topright: 5px; 
--moz-border-radius-bottomright: 5px;
--moz-border-radius-bottomleft: 5px;
-/* textecadre end */
-}
-.informations{
-color:#d70506;
-padding-top:15px;
-}
-.formgroup{
-color:white;
-}
-.requiere{
-color:#d70506;
-font-size: 11px;
+.contactpg{
+color:	#d70506;
+border-bottom:2px solid #d70506;
+margin-bottom:30px;
 }
 .slogan{
-color:white;
+text-align:left;
+margin-bottom:90px;
+}
+.message{
+margin-top:0;
+}
+.bgcontact{
+background-color:white;
+padding:20px 38px 20px 38px;
+margin-top:70px;
+}
+.infoline > ul > li .fa {
+color: #8e8e8e;
+font-size: 20px;
+margin-right: 20px;
+margin-bottom: 14px;
+}
+.important{
+margin-top: -35px;
+}
+.infoline h2 {
+	color:#8e8e8e;
+
 }
 
+.social{
+display: inline-block;
+width: 39px;
+height: 39px;
+margin: 5px;
+background: center center no-repeat;
+background-image: none;
+}
+.ico-social{
+border-bottom:3px solid #d70506;
+}
+.require{
+color:	#d70506;
+font-size:20px;
+}
+.bulle{
+margin-top: 20px;
+}
 /* contact page end */
 
 /* detailpage */
 .landingpage{
-	width:100%;
+width:100%;
 }
 .background-white{
 background-color:white;
@@ -2327,26 +2322,26 @@ padding: 10px 25px 10px 24px;
 
 
 table caption {
-	padding: .5em 0;
+padding: .5em 0;
 }
 
 @media screen and (max-width: 767px) {
-  table caption {
-    border-bottom: 1px solid #ddd;
-  }
+table caption {
+border-bottom: 1px solid #ddd;
+}
 }
 
 .p {
-  text-align: center;
-  padding-top: 140px;
-  font-size: 14px;
+text-align: center;
+padding-top: 140px;
+font-size: 14px;
 }
 .table-responsive {
-    min-height: .01%  ! important;
-    overflow-x: inherit ! important;
+min-height: .01%  ! important;
+overflow-x: inherit ! important;
 }
 .dispo{
-	margin-left: 30px;
+margin-left: 30px;
 }
 .epuise{
 margin-left: 40px;	
@@ -2354,90 +2349,90 @@ margin-left: 40px;
 
 
 .click {
-  padding: 10px 20px;
-  background-color: #000;
-  width: 100%;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
+padding: 10px 20px;
+background-color: #000;
+width: 100%;
+color: #fff;
+cursor: pointer;
+display: inline-block;
 }
 
 
 #hidden-info {
-  display: none;
-	background-color: #fff;
-  padding: 10px 20px;
+display: none;
+background-color: #fff;
+padding: 10px 20px;
 }
 #hidden-info h3 {
-  text-align: center;
-  margin-bottom: 15px;
+text-align: center;
+margin-bottom: 15px;
 }
 
 .click1 {
-  padding: 10px 20px;
-  background-color: #000;
-  width: 100%;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
+padding: 10px 20px;
+background-color: #000;
+width: 100%;
+color: #fff;
+cursor: pointer;
+display: inline-block;
 }
 
 
 #hidden-info1 {
-  display: none;
-	background-color: #fff;
-  padding: 10px 20px;
+display: none;
+background-color: #fff;
+padding: 10px 20px;
 }
 #hidden-info1 h3 {
-  text-align: center;
-  margin-bottom: 15px;
+text-align: center;
+margin-bottom: 15px;
 }
 .click2 {
-  padding: 10px 20px;
-  background-color: #000;
-  width: 100%;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
+padding: 10px 20px;
+background-color: #000;
+width: 100%;
+color: #fff;
+cursor: pointer;
+display: inline-block;
 }
 
 
 #hidden-info2 {
-  display: none;
-	background-color: #fff;
-  padding: 10px 20px;
+display: none;
+background-color: #fff;
+padding: 10px 20px;
 }
 #hidden-info2 h3 {
-  text-align: center;
-  margin-bottom: 15px;
+text-align: center;
+margin-bottom: 15px;
 }
 
 .input-style {
-  background-color: #fff; 
-  padding: 10px 5px;
+background-color: #fff; 
+padding: 10px 5px;
 }
 .input-style label {
-  color: #ccc;
+color: #ccc;
 }
 .input-style input {
-  border: none;
-  font-size: 16px;
+border: none;
+font-size: 16px;
 }
 .input-style input:focus {
-    outline-width: 0;
+outline-width: 0;
 }
 
 input[type=submit] {
-  padding: 10px;
-  background-color: #000;
-  border: none;
-  color: #fff;
-  margin: 10px 0;
+padding: 10px;
+background-color: #000;
+border: none;
+color: #fff;
+margin: 10px 0;
 }
 
 *{
-  margin: 0; 
-  padding: 0; 
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+margin: 0; 
+padding: 0; 
+-moz-box-sizing: border-box;
+box-sizing: border-box;
 }
