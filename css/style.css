@@ -2437,6 +2437,7 @@ margin-left: 40px;
   -webkit-transition: border .2s ease-in-out;
   -o-transition: border .2s ease-in-out;
   transition: border .2s ease-in-out;
+  margin-top: 65px;
 }
 
 .input-style {
