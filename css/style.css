@@ -1772,11 +1772,13 @@ margin-top:30px;
 font-size:30px;
 }
 .mytop{
-margin-top: 27px;
+margin-top: 44px;
 color: red;
 }
 .space{
 border-bottom: 1px solid red;
+width: 268px;
+margin-left: 0px;
 }
 
 .about-bg{
@@ -1804,6 +1806,13 @@ color:red;
 }
 .Titre{
 color:red;
+text-align: center;
+}
+.price{
+padding-left: 13px;
+}
+.date{
+padding-left: 13px;
 }
 .btn-menu{
 background-color:red;
@@ -2129,7 +2138,7 @@ margin-bottom: 14px;
 margin-top: -35px;
 }
 .infoline h2 {
-	color:#8e8e8e;
+color:#8e8e8e;
 
 }
 
@@ -2359,9 +2368,15 @@ display: inline-block;
 
 
 #hidden-info {
+
 display: none;
 background-color: #fff;
 padding: 10px 20px;
+display: none;
+background-color: #fff;
+margin-left: -18px;
+margin-right: -23px;
+
 }
 #hidden-info h3 {
 text-align: center;
@@ -2379,9 +2394,14 @@ display: inline-block;
 
 
 #hidden-info1 {
+
 display: none;
 background-color: #fff;
 padding: 10px 20px;
+display: none;
+background-color: #fff;
+margin-left: -18px;
+margin-right: -23px;
 }
 #hidden-info1 h3 {
 text-align: center;
@@ -2398,13 +2418,31 @@ display: inline-block;
 
 
 #hidden-info2 {
+
 display: none;
 background-color: #fff;
 padding: 10px 20px;
+display: none;
+background-color: #fff;
+margin-left: -18px;
+margin-right: -23px;
 }
 #hidden-info2 h3 {
 text-align: center;
 margin-bottom: 15px;
+}
+.thumb1{
+display: block;
+padding: 4px;
+margin-bottom: -51px;
+line-height: 1.42857143;
+background-color: #fff;
+border: none !important;
+border-radius: 4px;
+-webkit-transition: border .2s ease-in-out;
+-o-transition: border .2s ease-in-out;
+transition: border .2s ease-in-out;
+margin-top: 65px;
 }
 
 .input-style {
