@@ -1619,6 +1619,7 @@ border-color: #428bca;
 .btn-search{
 margin-top:20px;
 border-radius: 9px;
+width: 215px;
 
 }
 .search-bg{
@@ -1627,7 +1628,7 @@ margin-bottom: 25px;
 padding-bottom: 20px;
 border-radius: 0px 0px 9px 9px;
 box-shadow: 3px 6px 10px -5px;
-position: relative;
+
 
 }
 .text-recherhe{
