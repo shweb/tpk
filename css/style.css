@@ -1551,14 +1551,34 @@ border-color: #428bca;
 /* search start */
 .btn-search{
 margin-top:20px;
+border-radius: 9px;
 
 }
 .search-bg{
 background-color: white;
-height: 325px;
-padding: 15px 45px 10px 45px;
 margin-bottom: 25px;
+padding-bottom: 20px;
+border-radius: 0px 0px 9px 9px;
+box-shadow: 3px 6px 10px -5px;
 
+}
+.text-recherhe{
+  background-color: #d70506;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  text-align: center;
+  color: white;
+  border-radius: 9px 9px 0px 0px;
+}
+.mot_recherche{
+  text-align: end;
+  padding-top: 6px;
+}
+.row_recherche{
+  padding-top: 20px
+}
+.form_recherche{
+  border-radius: 11px;
 }
 /* search end */
 
