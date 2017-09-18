@@ -534,9 +534,13 @@ padding-right: 10px;
 
 }
 a:hover{
-color:none;
+color:none !important;
 
 }
+
+.caption a {
+	color :black;
+} 
 .creat> ul>li>a{
 cursor: pointer;
 }
@@ -1233,7 +1237,9 @@ width: 73px;
 background-color:white;
 text-align: center;
 
-box-shadow: 0 0 20px rgba(194, 194, 194, 0.6);
+}
+div.calendar:hover{
+	box-shadow: 0 0 20px rgba(122, 122, 122, 0.6);
 background-image:	-webkit-radial-gradient(center, #eee, #fff);
 background-image:	-moz-radial-gradient(center, #eee, #fff);
 -webkit-backface-visibility:hidden;
@@ -1255,12 +1261,25 @@ color:#fff;
 font-style: bold;
 font-size: 1em;
 padding:3px;
-background-color: #d93e3e;	
-background-image: -webkit-gradient(linear,left top, left bottom,color-stop(0.0,#e37f80),color-stop(0.85, #d93e3e));
-background-image: -moz-gradient(linear,left top, left bottom,color-stop(0.0,#e37f80),color-stop(0.85, #d93e3e));
-background-image: -ms-gradient(linear,left top, left bottom,color-stop(0.0,#e37f80),color-stop(0.85, #d93e3e));
-background-image: -o-gradient(linear,left top, left bottom,color-stop(0.0,#e37f80),color-stop(0.85, #d93e3e));
-background-image: gradient(linear,left top, left bottom,color-stop(0.0,#e37f80),color-stop(0.85, #d93e3e));
+background-color: #5cb85c;	
+-webkit-border-radius:	5px 5px 0 0;
+-moz-border-radius:		5px 5px 0 0;
+-ms-border-radius:		5px 5px 0 0;
+-o-border-radius:		5px 5px 0 0;
+border-radius: 			0 0 0 0;
+}
+.prx{
+	color:#d70506;
+	font-size: 15px;
+}
+div.calendar h1:hover {
+margin:0;
+text-align: center;
+color:#fff;
+font-style: bold;
+font-size: 1em;
+padding:3px;
+background-color: #d70506;	
 -webkit-border-radius:	5px 5px 0 0;
 -moz-border-radius:		5px 5px 0 0;
 -ms-border-radius:		5px 5px 0 0;
@@ -1511,11 +1530,11 @@ font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .time{
 margin-right: 10px;
-color: #b91027;
+color: #d70506;
 }
 .position{
 margin-right: 11px;
-color: #b91027;
+color: #d70506;
 }
 
 /* zoom */
@@ -1543,7 +1562,8 @@ overflow: hidden;
 /* zomm end */
 
 /* s'inscrire end */
-/*---------------------------------index-end-------------------------------------*/
+/*---------------------------------
+-end-------------------------------------*/
 /* partenaire */
 .partenaire{
 max-width:65%;	
@@ -1880,8 +1900,16 @@ text-align: center;
 }
 .price{
 padding-left: 13px;
-margin-top: 15px;
 }
+.prixfx{
+padding-left: 13px;
+margin-top: 5px;
+}
+.prices{
+margin-right: 14px;
+    color: #d70506;
+}
+
 
 .date{
 padding-left: 13px;
@@ -2191,7 +2219,6 @@ margin-bottom:30px;
 }
 .slogan {
 text-align: left;
-margin-bottom: 34%;
 }
 .message{
 margin-top:0;
@@ -2205,11 +2232,16 @@ margin-top:70px;
 color: #8e8e8e;
 font-size: 20px;
 margin-right: 20px;
-margin-bottom: 14px;
+margin-bottom: 5px;
 }
 .important{
 margin-top: -35px;
 }
+.btnoblg > ul > li {
+
+}
+
+
 .infoline h2 {
 color:#8e8e8e;
 
@@ -2232,25 +2264,19 @@ border-bottom:3px solid #d70506;
 color:	#d70506;
 font-size:18px;
 }
-sub{
-bottom: -6px;
-}
-.require1{
-margin-left: 72px;
-}
-.require2 {
-margin-left: 18px;
+sup {
+    top: 1px;
 }
 
-.require3 {
-
-margin-left: 12px;
-
+.btnenvoye{
+	margin-bottom:20px;
 }
-#formcontact{
-margin-top:70px
+.spaceconect{
+	height:165px;
 }
-
+.spacemessage{
+	height:50px;
+}
 #formcontact .form-control {
 border: 3px solid #b8b6b6;
 border-radius: 4px;
