@@ -122,58 +122,61 @@
 				<h1 class="contactpg">Contact</h1>
 					<div class="row">
 						<div class="col-lg-5">
-							<p class="slogan"><b>Avec Tapakila vous aurrez vos billets d'entrée à nos événement sans frais d'envoi ,sans déplacement,sans perdre de temps</b></p>
+							<div class="slogan">
+								<b><p>Avec Tapakila vous aurrez vos billets </p><p>d'entrée à nos événement sans frais</p><p> d'envoi ,sans déplacement,</p><p>sans perdre de temps...</p></b>
+							</div>
 							<div class="infoline">
 								<h2>Infoline </h2>
 									<ul>
-										<li><i class="fa fa-home"></i><b>Mahamasina</b></li>
-										<li><i class="fa fa-phone"></i><b>032 54 230 24</b></li>
-										<li><i class="fa fa-envelope"></i><b>Trustylabs@gmail.com</b></li>
-										<li><i class="fa fa-globe" aria-hidden="true"></i><b>www.Tapakila.com</b></li>
+										<li class=" statictitle"><i class="fa fa-home"></i><b>Mahamasina</b></li>
+										<li class=" statictitle"><i class="fa fa-phone"></i><b>032 54 230 24</b></li>
+										<li class=" statictitle"><i class="fa fa-envelope"></i><b>Trustylabs@gmail.com</b></li>
+										<li class=" statictitle"><i class="fa fa-globe" aria-hidden="true"></i><b>www.Tapakila.com</b></li>
 									</ul>
 							</div>
 						
 						</div>
 						<div class="col-lg-7">
 							<h2 class="message">Laissez nous un message</h2>
-								<form>
+								<form id="formcontact">
 								
 									<div class="form-group row">
-										<label for="staticEmail" class="col-sm-4 col-form-label">Nom :&nbsp <span class="require">*</span></label>
-										<div class="col-sm-8">
-											<input type="password" class="form-control" id="inputPassword">
+										<label  class="col-sm-3 col-form-label statictitle ">Nom &nbsp <sub class="require1">*</sub></label>
+										<div class="col-sm-9">
+											<input type="password" class="form-control border" id="inputPassword">
 										</div>
 									</div>
 									
 									<div class="form-group row">
-										<label for="inputPassword" class="col-sm-4 col-form-label">Adresse / Phone : &nbsp <span class="require">*</span> </label>
-										<div class="col-sm-8">
-											<input type="password" class="form-control" id="inputPassword">
+										<label for="inputPassword" class="col-sm-3 col-form-label statictitle">Email/Phone  &nbsp <sub class="require2">*</sub> </label>
+										<div class="col-sm-9">
+											<input type="password" class="form-control border" id="inputPassword">
 										</div>
 									</div>
 									
 									<div class="form-group row">
-										<label for="staticEmail" class="col-sm-4 col-form-label">Organisateur :&nbsp <span class="require">*</span></label>
-											<div class="col-sm-8">
-												<select class="form-control" id="sel1">
-													<option>Acheteur</option>
-													<option>Vendeur</option>
-													<option>Oraganisateur</option>
-													<option>Participant</option>
+										<label for="staticEmail" class="col-sm-3 col-form-label statictitle">Organisateur &nbsp <sub class="require3">*</sub></label>
+											<div class="col-sm-9">
+												<select class="form-control border" id="sel1">
+													<option></option>
+													<option></option>
+													<option></option>
+													<option></option>
 												</select>
 
 											</div>
 									</div>	
 									
 									<div class="form-group row">
-										<label for="inputPassword" class="col-sm-4 col-form-label">Votre message : &nbsp <span class="require">*</span> </label>
-											<div class="col-sm-8">
+										<label for="inputPassword" class="col-sm-3 col-form-label statictitle">Votre message  &nbsp <sub class="require4">*</sub> </label>
+											<div class="col-sm-9">
 												<div class="form-group">
 													<textarea class="form-control" rows="5" id="comment"></textarea>
 												</div> 
 											</div>
 									</div>
 								</form>
+								<button  type="button" class="col-md-3 col-md-offset-9 btn btn-success pull-right">Envoyer</button>
 						</div>
 					</div>
 						
@@ -181,14 +184,14 @@
 					
 	            <div class="row ico-social">
 					<div class="col-lg-6 footer-social">
-							<a href="#" target="_blank"><img class="social" src="./img/twitter.png"></a>
-							<a href="#" target="_blank"><img class="social" src="./img/dribbble.png"></a>
 							<a href="#" target="_blank"><img class="social" src="./img/facebook.png"></a>
+							<a href="#" target="_blank"><img class="social" src="./img/twitter.png"></a>
 							<a href="#" target="_blank"><img class="social" src="./img/google-plus.png"></a>
+							<a href="#" target="_blank"><img class="social" src="./img/dribbble.png"></a>
 					</div>
 					
 	                <div class="col-lg-6 col-lg-offset-10 important ">
-	                    <p><span class="require">*</span> : champs obligatoire</p>
+	                    <sub class="require5">*</sub> : champs obligatoire
 	                </div>
 	                
 	            </div>
