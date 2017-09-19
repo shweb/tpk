@@ -173,8 +173,6 @@
 
 }
 
-
-
 @media only screen and (min-device-width:500px) and (max-device-width:615px) {
   /* Styles */
 .btn-facebooksign {
@@ -383,6 +381,38 @@
   margin-left: 22px;
 }
 }
+
+@media only screen and (max-width: 950px){
+	.custom-container{
+	padding :0 15px !important;
+}
+}
+
+@media only screen and (max-width: 990px) {
+
+.contactpg , .infoline h2 , .message {
+   text-align:center;
+}
+	.important{
+margin-top: 10px !important;
+
+}
+		.slogan {
+    text-align: left;
+    margin-bottom: 35px !important;
+}
+.message {
+    margin-top: 35px ! important;
+
+}
+.form_recherche {
+  border-radius: 11px;
+  width: 90%;
+  margin-left: 17px;
+}
+
+}
+
 @media only screen and (max-width: 850px) {
 	/* detailup start */
 .box1{
@@ -391,6 +421,7 @@
 }
 /* detail end */
 @media only screen and (max-width: 768px) {
+
 
 	.Pcenter {
     padding: 10px 10px 10px 10px !important;
@@ -728,10 +759,11 @@ text-align: center;
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-    
+
     }
 /* Desktops and laptops ----------- */
 @media only screen and (max-width: 1199px) {
+
 .spaceconect {
     height: 0 ! important;
 }
