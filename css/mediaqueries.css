@@ -112,8 +112,10 @@
   margin-top:20px;
   border-radius: 9px;
   margin-left: 14%;
-  
-  
+  }
+  .select_recherche{
+    margin-left: 22px;
+    width: 94%;
   }
 }
 
@@ -167,6 +169,10 @@
   width: 90%;
   margin-left: 17px;
 }
+.select_recherche{
+  margin-left: 22px;
+  width: 94%;
+}
 
 
 
@@ -192,8 +198,10 @@
   margin-top:20px;
   border-radius: 9px;
   margin-left: 14%;
-  
-  
+  }
+  .select_recherche{
+    margin-left: 22px;
+    width: 94%;
   }
 }
 
@@ -236,10 +244,7 @@
 .btn-search{
   margin-top:20px;
   border-radius: 9px;
-  margin-left: 14%;
-  
-  
-  
+  margin-left: 14%; 
   }
 /*------Mon Compte--------*/
 
@@ -376,6 +381,9 @@
   width: 89%;
   margin-left: 6%;
 }
+.select_recherche{
+  margin-left: 22px;
+}
 }
 @media only screen and (max-width: 990px) {
 
@@ -485,6 +493,10 @@ margin-top: 10px !important;
     margin-left: 5%;
     width: 30%;
   }
+  .select_recherche{
+    margin-left: 22px;
+    width: 94%;
+  }
   /*------------------Mon Compte end--------------------*/
 }
 
@@ -572,6 +584,10 @@ margin-top: 10px !important;
     width: 90%;
     margin-left: 17px;
 }
+.select_recherche{
+  margin-left: 22px;
+  width: 94%;
+}
   /*-------------Mon Compte end------------------*/
 }
 
@@ -585,6 +601,10 @@ margin-top: 10px !important;
     border-radius: 11px;
     width: 96%;
     margin-left: 17px;
+}
+.select_recherche{
+  margin-left: 22px;
+  width: 94%;
 }
 .btn-search{
   margin-top:20px;
