@@ -1829,6 +1829,7 @@ padding: 0;
 border: none;
 border-top: 5px solid #d4d4d4;
 text-align: center;
+width: 100%;
 }
 hr.couvert:after {
 content: "Tapakila vous a couvert";
