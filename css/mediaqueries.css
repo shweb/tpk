@@ -385,6 +385,12 @@
   margin-left: 22px;
 }
 }
+@media only screen and (max-width: 950px){
+	.custom-container{
+	padding :0 15px !important;
+}
+}
+
 @media only screen and (max-width: 990px) {
 
 .contactpg , .infoline h2 , .message {
@@ -417,6 +423,7 @@ margin-top: 10px !important;
 }
 /* detail end */
 @media only screen and (max-width: 768px) {
+
 
 	.Pcenter {
     padding: 10px 10px 10px 10px !important;
@@ -755,10 +762,11 @@ margin-top: 10px !important;
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
 
-    
+
     }
 /* Desktops and laptops ----------- */
 @media only screen and (max-width: 1199px) {
+
 .spaceconect {
     height: 0 ! important;
 }
