@@ -738,8 +738,17 @@ margin-top: 10px !important;
     
     }
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* Styles */
+@media only screen and (max-width: 1199px) {
+.spaceconect {
+    height: 0 ! important;
+}
+.infoline {
+    margin-bottom: 0 ! important;
+}
+.spacemessage {
+    height: 28px ! important;
+}
+
  
 }
 

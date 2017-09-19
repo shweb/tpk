@@ -2260,7 +2260,13 @@ margin-bottom: 5px;
 .important{
 margin-top: -35px;
 }
-.btnoblg > ul > li {
+.btnoblg  ul  li {
+position: relative;
+display: block;
+padding: 10px 15px;
+margin-bottom: -1px;
+background-color: #fff;
+border: 0px solid #ddd;
 
 }
 
@@ -2274,8 +2280,8 @@ margin-bottom: 15%;
 }
 .social{
 display: inline-block;
-width: 39px;
-height: 39px;
+width: 35px;
+height: 35px;
 margin: 5px;
 background: center center no-repeat;
 background-image: none;
@@ -2290,9 +2296,13 @@ font-size:18px;
 sup {
     top: 1px;
 }
-
-.btnenvoye{
-	margin-bottom:20px;
+.btnenvoie {
+    padding: 10px 30px 10px 30px;
+	margin-bottom:15px;
+	
+}
+#sectionmod  .col-md-offset-6{
+	margin-left: 46% ! important;
 }
 .spaceconect{
 	height:165px;
