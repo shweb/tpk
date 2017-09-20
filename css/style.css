@@ -1245,6 +1245,7 @@ position: relative;
 	height:60px;
 }
 
+/* commit */
 div.calendar {
 height: 64px;
 width: 70px;
@@ -1252,9 +1253,7 @@ background-color:white;
 text-align: center;
 
 }
-.PHL{
-	margin-left:-10px;
-}
+/* commit */
 div.calendar:hover{
 	box-shadow: 0 0 20px rgba(122, 122, 122, 0.6);
 background-image:	-webkit-radial-gradient(center, #eee, #fff);
@@ -1546,6 +1545,7 @@ padding-top: 5px !important;
 padding-left: 40px !important;
 font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+/* commit */
 .time{
 margin-right: 5px;
 color: #d70506;
@@ -1554,7 +1554,7 @@ color: #d70506;
 margin-right: 5px;
 color: #d70506;
 }
-
+/* commit */
 /* zoom */
 .mg-image img {
 -webkit-transition: all 1s ease; /* Safari and Chrome */
@@ -1952,11 +1952,12 @@ padding-left: 13px;
 padding-left: 13px;
 margin-top: 5px;
 }
+/* commit */
 .prices{
 margin-right: 6px;
     color: #d70506;
 }
-
+/* commit */
 
 .date{
 padding-left: 13px;
