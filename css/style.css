@@ -1912,7 +1912,7 @@ color: red;
 .space{
 border-bottom: 1px solid red;
 width: 268px;
-margin-left: 0px;
+margin-left: 17px;
 }
 
 .about-bg{
@@ -1924,10 +1924,11 @@ border-radius:5px;
 .performe{
 margin-top:30px;
 }
-.social-bg{
-background-color:white;
-padding: 11px 25px 40px 22px;
-border-radius:5px;
+
+.social-bg {
+background-color: white;
+padding: 11px 25px 40px 25px;
+border-radius: 5px;
 }
 .social-bg1{
 background-color: white;
