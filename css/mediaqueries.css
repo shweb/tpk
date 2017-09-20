@@ -421,6 +421,14 @@ margin-top: 10px !important;
 }
 /* detail end */
 @media only screen and (max-width: 768px) {
+	.recherche_no {
+    background-color: none !important;
+}
+#custom-white {
+    background-color: none !important;
+    padding: 6px 0px 35px 0 !important;
+
+}
 
 
 	.Pcenter {
