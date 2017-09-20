@@ -1697,16 +1697,32 @@ box-shadow: 3px 6px 10px -5px;
 margin-top: 27px;
 border: none;
 }
-.div_style {
-border-top: 1px solid #bfabab;
-padding-top: 13px;
-padding-bottom: 13px;
+.image_detail{
+  width: 617px;
 }
-
+.div_style {
+  border-top: 1px solid #d70506;
+  padding-top: 8px;
+  padding-bottom: 14px;
+}
+.btn_reset{
+  width: 100%;
+  background-color: #d70506;
+}
+.btn_acheterr{
+  width: 100%;
+  background-color: #5cb85c;
+}
+.td_detail{
+  border-bottom: hidden;
+}
 .div_style1{
 border-bottom: 1px solid #bfabab;
 padding-bottom: 13px;
 padding-top: 13px;
+}
+.tableau_detail>table>thead>tr>th{
+  color: #d70506;
 }
 .hier{
 background-color: white;
@@ -1717,7 +1733,14 @@ padding-bottom: 13px;
 background-color: white;
 margin-left: 5px;
 margin-right: 2px;
+margin-top: 22px;
+box-shadow: 3px 3px 3px #999;
+border-radius: 7px;
 
+}
+.voir{
+  border-top: 3px solid #d70506;
+  margin-top: 35px;
 }
 .hier2{
 background-color: white;
@@ -1799,7 +1822,22 @@ margin-bottom:90px;
 width: 100px;
 }
 .couleur_mot{
-color:#b91027;
+color:#d70506;
+}
+.p_detail{
+  padding-top: 8px;
+}
+#programme{
+  margin-right: 35px;
+}
+#localisation{
+  margin-right: 33px;
+}
+#date{
+  margin-right: 85px;
+}
+#heure{
+  margin-right: 75px;
 }
 
 
@@ -2156,7 +2194,6 @@ background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
 background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
 border-radius: 6px;
 margin-bottom:2px;
-box-shadow: 3px 3px 3px #999;
 border:solid 1px #333A40;
 background-color:#729EBF; 
 /* background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%); */
@@ -2426,12 +2463,14 @@ left:auto;
 right:0;
 border-width:0 0 10px 10px;
 }
-.fa-product-hunt ,.fa-calendar-o {
-margin-right:15px;
+.zav{
+  color: #d70506;
+  margin-right: 15px;
 }
-.fa-map-marker{
-margin-right: 20px;
-}
+.loc{
+  margin-right: 25px;
+} 
+
 .icos{
 margin-right: 17px;
 }
@@ -2486,8 +2525,8 @@ margin-right: 4px;
 margin-left: 4px;
 }
 .postions{
-margin-right: -185px;
-margin-left: 30px;
+  margin-right: -202px;
+  margin-left: -31px;
 
 }
 .input-group-btn:first-child > .smoins {

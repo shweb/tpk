@@ -121,11 +121,11 @@
 		 <!-- header end -->
 		<section>
 			<div class="container">
-				<div class="row haut">
+				<div class="row">
 					<div class="col-lg-12 ">
 						<div>
 							<div class="row hier1">
-								<div class="col-lg-6 ">
+								<div class="col-lg-7 ">
 								<!---- <img src="img/mahaleo2.jpeg" class="detail_picture"> ---->
 								
 								<div class="thumbnail det-picture">
@@ -135,131 +135,125 @@
 							</div>
 							
 								</div>
-								<div class="col-lg-6">
-									<h2>Samoela en live</h2>
+								<div class="col-lg-5">
+									<h2 class="couleur_mot">Samoela en live: 27 Août 2017</h2>
 									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
-									<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
 									<div class="div_style">
-										<strong>Programme :  </strong>optio cumque nihil impedit
+										<i class="fa fa-product-hunt fa-2x zav" aria-hidden="true"></i><strong id="programme"class="couleur_mot"> Programme :  </strong>optio cumque nihil impedit
+										</div>
+									<div class="div_style">
+											<i class="fa fa-map-marker fa-2x loc zav" aria-hidden="true"></i><strong id="localisation" class="couleur_mot"> Localisation : </strong> Mahamasina
 									</div>
 									<div class="div_style">
-										<strong>Date : </strong> 26 Juin 2017
+											<i class="fa fa-calendar-o fa-2x  zav" aria-hidden="true"></i><strong id="date" class="couleur_mot"> Date : </strong> 26 Juin 2017
 									</div>
 									<div class="div_style">
-										<strong>Heure d'ouverture :</strong> 10:00 AM
+											<i class="fa fa-clock-o fa-2x zav" aria-hidden="true"></i><strong id="heure" class="couleur_mot">  Heure :</strong> 10:00 AM
+									</div>
+									<div class="div_style">
+											<strong class="couleur_mot zav"> Partagez sur :</strong> <img src="img/facebook.png" alt="">
 									</div>
 								</div>
 								
-							</div>
-						</div>
+							
 						<div class="table-responsive tableau_detail">
 							<table class="table table-hover">
 								<thead>
 								<tr>
-									<th>Debut vente</th>
-									<th>Catégories des prix</th>
-									<th>Quantité</th>
-									<th>Acheter en ligne</th>
+									<th>Type de ticket</th>
 									<th>Disponiblité</th>
+									<th>Quantité</th>
+									<th>Prix unitaire</th>
+									<th>Totale</th>
 								</tr>
 								</thead>
 								<tbody>
 								<tr>
-									<td><strong>12/04/2017</strong><p>7:30pm</p></td>
-									<td><span class="colorcode" style="background-color: #eb6505;">&nbsp;</span>
-										Area A
-										/ <b>182 RMB</b>    </td>
+									<td><strong>VIP</strong><p>Description</p></td>
+									<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets">20</p> tickets</td>
 									<td>
-										<div class="row">
-											<div class="col-lg-8 col-lg-offset-2">
-												<form>
-													<div class="form-group">
-														<select class="form-control selec" id="sel1">
-															<option>1</option>
-															<option>2</option>
-															<option>3</option>
-															<option>4</option>
-														</select>
+											<div class="row postions">
+												<div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 ">
+													<div class="input-group number-spinner">
+														<span class="input-group-btn">
+															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+														</span>
+														<input class="form-control text-center" value="0" type="text">
+														<span class="input-group-btn">
+															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
+														</span>
 													</div>
-												</form>
-
-											</div>
-										</div>
-
-
-
+												</div>
+												<div class="col-md-4 col-md-offset-1">
+												</div></div></td>
+									<td>
+											<b>4000</b> Ar
 									</td>
 									<td>
-										<input name="addtocart" value="Choisir" class="addtocartbutton" type="submit">
-									</td>
-									<td>
-										<span class="couleur_mot">Disponible<span>
+											<b id="prixUnit1">0</b> Ar
 									</td>
 								</tr>
 								<tr>
-									<td><strong>12/04/2017</strong><p>7:30pm</p></td>
-									<td><span class="colorcode2" style="background-color: #eb6505;">&nbsp;</span>
-										Area A
-										/ <b>182 RMB</b>    </td>
+									<td><strong>Standard</strong><p>Description</p></td>
+									<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p id="tickets2">20</p> tickets</td>
 									<td>
-										<div class="row">
-											<div class="col-lg-8 col-lg-offset-2">
-												<form>
-													<div class="form-group">
-														<select class="form-control selec" id="sel1">
-															<option>1</option>
-															<option>2</option>
-															<option>3</option>
-															<option>4</option>
-														</select>
+											<div class="row postions">
+												<div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 ">
+													<div class="input-group number-spinner2">
+														<span class="input-group-btn">
+															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+														</span>
+														<input class="form-control text-center" value="0" type="text">
+														<span class="input-group-btn">
+															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up2"><span class="fa fa-plus"></span></button>
+														</span>
 													</div>
-												</form>
-
-											</div>
-										</div>
-
-
-
+												</div>
+												<div class="col-md-4 col-md-offset-1">
+												</div></div></td>
+									<td>
+											<b>4000</b> Ar
 									</td>
 									<td>
-										<input name="addtocart" value="Choisir" class="addtocartbutton" type="submit">
-									</td>
-									<td>
-										<span class="couleur_mot">Disponible<span>
+											<b id="prixUnit2">0</b> Ar
 									</td>
 								</tr>
 								<tr>
-									<td><strong>12/04/2017</strong><p>7:30pm</p></td>
-									<td><span class="colorcode1">&nbsp;</span>
-										Area A
-										/ <b>182 RMB</b>    </td>
+									<td><strong>Standard</strong><p>Description</p></td>
+									<td><i class="fa fa-close fa-2x" aria-hidden="true"></i><p>Non disponible</p></td>
 									<td>
-										<div class="row">
-											<div class="col-lg-8 col-lg-offset-2">
-												<form>
-													<div class="form-group">
-														<select class="form-control selec" id="sel1">
-															<option>1</option>
-															<option>2</option>
-															<option>3</option>
-															<option>4</option>
-														</select>
-													</div>
-												</form>
-
-											</div>
-										</div>
-
-
-
 									</td>
 									<td>
-										<input name="addtocart" value="Choisir" class="addtocartbutton" type="submit">
+											<b>4000</b> Ar
 									</td>
 									<td>
-										<span class="couleur_mot">Epuisé<span>
+											
 									</td>
 								</tr>
+								<tr>
+										<td class="td_detail"></td>
+										<td class="td_detail"></td>
+										<td class="td_detail">
+										</td>
+										<td>
+												<strong>Total</strong>
+										</td>
+										<td>
+												<b id="total">0</b> Ar
+										</td>
+									</tr>
+									<tr>
+											<td></td>
+											<td></td>
+											<td>
+											</td>
+											<td>
+													<button type="submit" class=" btn btn-danger btn_reset">Reset</button>
+											</td>
+											<td>
+													<button type="submit" class=" btn btn-success btn_acheterr">Acheter</button>
+											</td>
+										</tr>
 								</tbody>
 							</table>
 						</div>
@@ -314,8 +308,8 @@
 				</div>
 				
 								
-				<div class="">
-					<h2 class="couleur_mot">Vous aimeriez aussi</h2><br/>
+				<div class="voir">
+					<h2 class="couleur_mot">Voir aussi</h2><br/>
 					<div class="row">
 						<div class="col-sm-6 col-md-4">
 							<div class="thumbnail">
@@ -450,6 +444,95 @@
         </div>
     
 		</footer>
+
+
+		<script>
+				<!-- calcul up down 1 start -->
+					$(document).ready(function(){
+						$('#total').html('0');
+					});
+					var newticket = 20;
+					$(document).on('click', '.number-spinner button', function () {    
+						var btn = $(this),
+							oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+							newVal = 0;
+						if (btn.attr('data-dir') == 'up') {
+							if(oldValue < 20) {
+								newVal = parseInt(oldValue) + 1;
+								var prixUnit1 = 4000 * newVal;
+								newticket-=1;
+								$('#tickets').html(newticket);
+								$('#prixUnit1').html(0+prixUnit1);
+								
+								btn.closest('.number-spinner').find('input').val(newVal);
+								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
+								$('#total').html(total);
+							} else if(oldValue == 20){
+								$('#tickets').html('Epuisé');
+								$('tickets').removeClass('fa-unlock i')
+								$('tickets').addClass('fa-lock i')
+								$('#btn-up').attr('disabled','true');
+								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
+								$('#total').html(total);
+							}
+							
+						} 
+						else {
+							if (oldValue > 0) {
+								newVal = parseInt(oldValue) - 1;
+								var prixUnit1 = 4000 * newVal;
+								newticket+=1;
+								$('#prixUnit1').html(0+prixUnit1);
+								$('#tickets').html(newticket);
+								$('#btn-up').removeAttr('disabled');
+								btn.closest('.number-spinner').find('input').val(newVal);
+								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
+								$('#total').html(total);
+							}
+						}
+					});
+				<!-- calcul up down 1 end -->	
+				
+				$(document).on('click', '.number-spinner2 button', function () {    
+					var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
+						var btn = $(this),
+							oldValue = btn.closest('.number-spinner2').find('input').val().trim(),
+							newVal = 0;
+						
+						if (btn.attr('data-dir') == 'up') {
+							if(oldValue < 20) {
+								newVal = parseInt(oldValue) + 1;
+								var prixUnit1 = 4000 * newVal;
+								newticket-=1;
+								$('#prixUnit2').html(0+prixUnit1);
+								$('#tickets2').html(newticket);
+								btn.closest('.number-spinner2').find('input').val(newVal);
+								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
+								$('#total').html(total);
+							} else if(oldValue == 20){
+								$('#disponible2').html('Epuisé');
+								$('#btn-up2').attr('disabled','true');
+								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
+								$('#total').html(total);
+							}
+							
+						} 
+						else {
+							if (oldValue > 0) {
+								newVal = parseInt(oldValue) - 1;
+								var prixUnit1 = 4000 * newVal;
+								newticket+=1;
+								$('#prixUnit2').html(0+prixUnit1);
+								$('#tickets').html(newticket);
+								$('#btn-up2').removeAttr('disabled');
+								btn.closest('.number-spinner2').find('input').val(newVal);
+								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
+								$('#total').html(total);
+							}
+						}
+					});
+				</script>
+						<!-- script end -->
 
 	</body>
 </html>
