@@ -518,7 +518,10 @@ margin-top: 10px !important;
 
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 950px) and (max-device-width: 1024px) {
+	.custom-container {
+    padding: 0 0px !important;
+}
 .facenookconexion {
     color: #6b6b6b;
     text-align: center;

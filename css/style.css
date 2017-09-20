@@ -1246,11 +1246,14 @@ position: relative;
 }
 
 div.calendar {
-height: 66px;
-width: 73px;
+height: 64px;
+width: 70px;
 background-color:white;
 text-align: center;
 
+}
+.PHL{
+	margin-left:-10px;
 }
 div.calendar:hover{
 	box-shadow: 0 0 20px rgba(122, 122, 122, 0.6);
@@ -1300,11 +1303,10 @@ background-color: #d70506;
 -o-border-radius:		5px 5px 0 0;
 border-radius: 			0 0 0 0;
 }
-.cbg{ 
-background-color: #f8f8f8;
-padding: 10px 10px 10px 10px;
-
-} 
+.cbg {
+    background-color: #f8f8f8;
+    padding: 12px 0px 8px 0px;
+}
 
 div.calendar p {
 font-size: 18px;
@@ -1545,11 +1547,11 @@ padding-left: 40px !important;
 font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .time{
-margin-right: 10px;
+margin-right: 5px;
 color: #d70506;
 }
 .position{
-margin-right: 11px;
+margin-right: 5px;
 color: #d70506;
 }
 
@@ -1951,7 +1953,7 @@ padding-left: 13px;
 margin-top: 5px;
 }
 .prices{
-margin-right: 14px;
+margin-right: 6px;
     color: #d70506;
 }
 
