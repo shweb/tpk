@@ -218,6 +218,13 @@
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
+	.tabl li  .active  a {
+    background-color: #d70506 !important;
+    border: none !important;
+    color: white !important;
+	margin-right:0px !important;
+}
+
 	.replik >ul>li{
 	display:inline-block;
 	margin-left:9px !important;
@@ -363,13 +370,14 @@
   border-bottom: 4px double #D7D7DE !important;
   margin-left: 60px;
 }
+
+
 .nav-tabs>li.active>a{
   color: #fff;
   cursor: default;
   background-color: #680306;
   border: none;
   border-bottom-color: transparent;
-  margin-left: 54px;
 }
 /*-------detail_catalog--end-----*/
 .form_recherche {
@@ -515,7 +523,9 @@ margin-top: 10px !important;
   }
   /*------------------Mon Compte end--------------------*/
 }
+@media screen and (min-width:1000px) {
 
+}
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 950px) and (max-device-width: 1024px) {
@@ -747,6 +757,10 @@ text-align: center;
 
 /* Samsung Galaxy S4 (portrait) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	.tabl > li {
+    float: left;
+    margin-bottom: 10px ! important;
+}
   /* Styles */
   .connexion {
    clear:both;
