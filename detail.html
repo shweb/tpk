@@ -170,7 +170,7 @@
 								<tbody>
 								<tr>
 									<td><strong>VIP</strong><p>Description</p></td>
-									<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets">20</p> tickets</td>
+									<td class="clock"><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets">20</p> tickets</td>
 									<td>
 											<div class="row postions">
 												<div class="col-md-4 col-md-offset-2  ">
@@ -178,7 +178,7 @@
 														<span class="input-group-btn">
 															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
 														</span>
-														<input class="form-control text-center" value="0" type="text">
+														<input class="form-control text-center ui" value="0" type="text">
 														<span class="input-group-btn">
 															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
 														</span>
@@ -195,7 +195,7 @@
 								</tr>
 								<tr>
 									<td><strong>Standard</strong><p>Description</p></td>
-									<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p id="tickets2">20</p> tickets</td>
+									<td class="unlock">  <i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets2">20</p> tickets</td>
 									<td>
 											<div class="row postions">
 												<div class="col-md-4 col-md-offset-2 ">
@@ -203,7 +203,7 @@
 														<span class="input-group-btn">
 															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
 														</span>
-														<input class="form-control text-center" value="0" type="text">
+														<input class="form-control text-center ui" value="0" type="text">
 														<span class="input-group-btn">
 															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up2"><span class="fa fa-plus"></span></button>
 														</span>
@@ -469,8 +469,8 @@
 								$('#total').html(total);
 							} else if(oldValue == 20){
 								$('#tickets').html('Epuisé');
-								$('tickets').removeClass('fa-unlock i')
-								$('tickets').addClass('fa-lock i')
+								$('.clock i').removeClass('fa-unlock');
+								$('.clock i').addClass('fa-lock');
 								$('#btn-up').attr('disabled','true');
 								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
 								$('#total').html(total);
@@ -485,6 +485,8 @@
 								$('#prixUnit1').html(0+prixUnit1);
 								$('#tickets').html(newticket);
 								$('#btn-up').removeAttr('disabled');
+								$('.clock i').removeClass('fa-lock');
+								$('.clock i').addClass('fa-unlock');
 								btn.closest('.number-spinner').find('input').val(newVal);
 								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
 								$('#total').html(total);
@@ -510,7 +512,9 @@
 								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
 								$('#total').html(total);
 							} else if(oldValue == 20){
-								$('#disponible2').html('Epuisé');
+								$('#tickets2').html('Epuisé');
+								$('.unlock i').removeClass('fa-unlock');
+								$('.unlock i').addClass('fa-lock');
 								$('#btn-up2').attr('disabled','true');
 								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
 								$('#total').html(total);
@@ -523,8 +527,10 @@
 								var prixUnit1 = 4000 * newVal;
 								newticket+=1;
 								$('#prixUnit2').html(0+prixUnit1);
-								$('#tickets').html(newticket);
+								$('#tickets2').html(newticket);
 								$('#btn-up2').removeAttr('disabled');
+								$('.unlock i').removeClass('fa-lock');
+								$('.unlock i').addClass('fa-unlock');
 								btn.closest('.number-spinner2').find('input').val(newVal);
 								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
 								$('#total').html(total);
