@@ -147,29 +147,28 @@
 									<strong class="couleur_mot zav"> Partagez sur :</strong> <img src="img/facebook.png" style="width: 22px;">
 							</div>
 						</div>
-					</div>
-
-					<div id="men1">
-						<h2 class="choseevent">Date de l'événement</h2> 
+					</div> 
+					
+					<div class="men1">
 							<ul class="nav nav-tabs tabl" role="tablist">
 							
-								<li class="col-md-3 active">
+								<li class=" active">
 									<a href="#about" role="tab" data-toggle="tab">22 Dec</a>
 								</li>
 								
-								<li class="col-md-3">
+								<li>
 									<a href="#team" role="tab" data-toggle="tab">23 dec</a>
 								</li>
 								
-								<li class="col-md-3">
+								<li>
 								<a href="#events" role="tab" data-toggle="tab">24 dec</a>
 								</li>
 								
-								<li class="col-md-3">
+								<li>
 								<a href="#resources" role="tab" data-toggle="tab">25 dec</a>
 								</li>
 						</ul>
-					</div>
+					
 
 					<div class="tab-content">
 						<div class="tab-pane tabulation  fade active in" id="about">
@@ -188,7 +187,7 @@
 									<tbody>
 										<tr>
 											<td><strong>VIP</strong><p>Description</p></td>
-											<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets">20</p> tickets</td>
+											<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p class="tickets">20</p> tickets</td>
 											<td class="tableau-center">
 												<div class="tests">
 													<div class="input-group number-spinner">
@@ -207,7 +206,7 @@
 										</tr>
 										<tr>
 											<td><strong>Standard</strong><p>Description</p></td>
-											<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p id="tickets2">20</p> tickets</td>
+											<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p class="tickets2">20</p> tickets</td>
 												<td class="tableau-center">
 													<div class="tests">
 														<div class="input-group number-spinner2">
@@ -265,7 +264,7 @@
 									<tbody>
 										<tr>
 											<td><strong>VIP</strong><p>Description</p></td>
-											<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets">60</p> tickets</td>
+											<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p class="tickets">60</p> tickets</td>
 											<td class="tableau-center">
 												<div class="tests">
 													<div class="input-group number-spinner">
@@ -284,7 +283,7 @@
 										</tr>
 										<tr>
 											<td><strong>Standard</strong><p>Description</p></td>
-											<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p id="tickets2">60</p> tickets</td>
+											<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p class="tickets2">60</p> tickets</td>
 											<td class="tableau-center">
 												<div class="tests">
 													<div class="input-group number-spinner2">
@@ -342,7 +341,7 @@
 									<tbody>
 										<tr>
 											<td><strong>VIP</strong><p>Description</p></td>
-											<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets">60</p> tickets</td>
+											<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p class="tickets">60</p> tickets</td>
 											<td class="tableau-center">
 												<div class="tests">
 													<div class="input-group number-spinner">
@@ -361,7 +360,7 @@
 										</tr>
 										<tr>
 											<td><strong>Standard</strong><p>Description</p></td>
-											<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p id="tickets2">60</p> tickets</td>
+											<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p class="tickets2">60</p> tickets</td>
 											<td class="tableau-center">
 												<div class="tests">
 													<div class="input-group number-spinner2">
@@ -418,7 +417,7 @@
 									<tbody>
 										<tr>
 											<td><strong>VIP</strong><p>Description</p></td>
-											<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets">60</p> tickets</td>
+											<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p class="tickets">60</p> tickets</td>
 											<td class="tableau-center">
 												<div class="tests">
 													<div class="input-group number-spinner">
@@ -437,7 +436,7 @@
 										</tr>
 										<tr>
 											<td><strong>Standard</strong><p>Description</p></td>
-											<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p id="tickets2">60</p> tickets</td>
+											<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p class="tickets2">60</p> tickets</td>
 											<td class="tableau-center">
 												<div class="tests">
 													<div class="input-group number-spinner2">
@@ -479,7 +478,8 @@
 								</table>
 							</div>
 						</div>
-							
+						
+					</div>		
 					</div>
 				</div>
 					
@@ -666,14 +666,14 @@
 								newVal = parseInt(oldValue) + 1;
 								var prixUnit1 = 4000 * newVal;
 								newticket-=1;
-								$('#tickets').html(newticket);
+								$('.tickets').html(newticket);
 								$('#prixUnit1').html(0+prixUnit1);
 								
 								btn.closest('.number-spinner').find('input').val(newVal);
 								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
 								$('#total').html(total);
 							} else if(oldValue == 20){
-								$('#tickets').html('Epuisé');
+								$('.tickets').html('Epuisé');
 								$('.clock i').removeClass('fa-unlock');
 								$('.clock i').addClass('fa-lock');
 								$('#btn-up').attr('disabled','true');
@@ -688,7 +688,7 @@
 								var prixUnit1 = 4000 * newVal;
 								newticket+=1;
 								$('#prixUnit1').html(0+prixUnit1);
-								$('#tickets').html(newticket);
+								$('.tickets').html(newticket);
 								$('#btn-up').removeAttr('disabled');
 								$('.clock i').removeClass('fa-lock');
 								$('.clock i').addClass('fa-unlock');
@@ -712,12 +712,12 @@
 								var prixUnit1 = 4000 * newVal;
 								newticket-=1;
 								$('#prixUnit2').html(0+prixUnit1);
-								$('#tickets2').html(newticket);
+								$('.tickets2').html(newticket);
 								btn.closest('.number-spinner2').find('input').val(newVal);
 								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
 								$('#total').html(total);
 							} else if(oldValue == 20){
-								$('#tickets2').html('Epuisé');
+								$('.tickets2').html('Epuisé');
 								$('.unlock i').removeClass('fa-unlock');
 								$('.unlock i').addClass('fa-lock');
 								$('#btn-up2').attr('disabled','true');
@@ -732,7 +732,7 @@
 								var prixUnit1 = 4000 * newVal;
 								newticket+=1;
 								$('#prixUnit2').html(0+prixUnit1);
-								$('#tickets2').html(newticket);
+								$('.tickets2').html(newticket);
 								$('#btn-up2').removeAttr('disabled');
 								$('.unlock i').removeClass('fa-lock');
 								$('.unlock i').addClass('fa-unlock');
