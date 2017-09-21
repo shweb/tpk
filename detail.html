@@ -209,6 +209,7 @@
 									<td>
 											<b>4000</b> Ar
 									</td>
+									<td class="clock"><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets">20</p> tickets</td>
 									<td>
 											<b id="prixUnit1">0</b> Ar
 									</td>
@@ -223,7 +224,7 @@
 														<span class="input-group-btn">
 															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
 														</span>
-														<input class="form-control text-center" value="0" type="text">
+														<input class="form-control text-center ui" value="0" type="text">
 														<span class="input-group-btn">
 															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up2"><span class="fa fa-plus"></span></button>
 														</span>
@@ -312,6 +313,7 @@
 												
 											
 									</td>
+									<td class="unlock">  <i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets2">20</p> tickets</td>
 									<td>
 											<b>4000</b> Ar
 									</td>
@@ -329,7 +331,7 @@
 														<span class="input-group-btn">
 															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
 														</span>
-														<input class="form-control text-center" value="0" type="text">
+														<input class="form-control text-center ui" value="0" type="text">
 														<span class="input-group-btn">
 															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up2"><span class="fa fa-plus"></span></button>
 														</span>
@@ -606,6 +608,7 @@
 					<h2 class="couleur_mot">Voir aussi</h2><br/>
 					<div class="row">
 						<div class="col-sm-6 col-md-4">
+							<a href="detailup.html">
 							<div class="thumbnail"  onmouseover="mouseover('month12','title1')" onmouseleave="mouseleave('month12','title1')">
 								<div class="mg-image">
 									<img src="img/rigby.jpg" >
@@ -632,6 +635,7 @@
 									</a>
 								</div>
 							</div>
+							</a>
 						</div>
 						<div class="col-sm-6 col-md-4">
 							<div class="thumbnail" onmouseover="mouseover('month1','title2')" onmouseleave="mouseleave('month1','title2')">
@@ -789,8 +793,8 @@
 								$('#total').html(total);
 							} else if(oldValue == 20){
 								$('#tickets').html('Epuisé');
-								$('tickets').removeClass('fa-unlock i')
-								$('tickets').addClass('fa-lock i')
+								$('.clock i').removeClass('fa-unlock');
+								$('.clock i').addClass('fa-lock');
 								$('#btn-up').attr('disabled','true');
 								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
 								$('#total').html(total);
@@ -805,6 +809,8 @@
 								$('#prixUnit1').html(0+prixUnit1);
 								$('#tickets').html(newticket);
 								$('#btn-up').removeAttr('disabled');
+								$('.clock i').removeClass('fa-lock');
+								$('.clock i').addClass('fa-unlock');
 								btn.closest('.number-spinner').find('input').val(newVal);
 								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
 								$('#total').html(total);
@@ -830,7 +836,9 @@
 								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
 								$('#total').html(total);
 							} else if(oldValue == 20){
-								$('#disponible2').html('Epuisé');
+								$('#tickets2').html('Epuisé');
+								$('.unlock i').removeClass('fa-unlock');
+								$('.unlock i').addClass('fa-lock');
 								$('#btn-up2').attr('disabled','true');
 								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
 								$('#total').html(total);
@@ -843,8 +851,10 @@
 								var prixUnit1 = 4000 * newVal;
 								newticket+=1;
 								$('#prixUnit2').html(0+prixUnit1);
-								$('#tickets').html(newticket);
+								$('#tickets2').html(newticket);
 								$('#btn-up2').removeAttr('disabled');
+								$('.unlock i').removeClass('fa-lock');
+								$('.unlock i').addClass('fa-unlock');
 								btn.closest('.number-spinner2').find('input').val(newVal);
 								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
 								$('#total').html(total);
@@ -852,6 +862,7 @@
 						}
 					});
 				</script>
+
 				<script>
 
 $(".nav-tabs").find("li a").last().click();
@@ -874,6 +885,45 @@ $(".nav-tabs").find("li a").each(function(key, val) {
 
 });
 				</script>
+
+			
+
+			<script type="text/javascript">
+				$('.dropdown-menu ul li a').click(function(event){
+				event.stopPropagation();
+				$(this).parent().toggleClass('active').siblings().removeClass('active');
+				var target=$(this).attr('href');
+				$('ul li .tab-content '+target).toggleClass(active);
+				});
+				function mouseover(id,idtext){
+					$('#'+id+'').css('background','#d70506');
+					$('#'+idtext+'').css('color','#d70506');
+				}
+				function mouseleave(id,idtext){
+					$('#'+id+'').css('background','#5cb85c');
+					$('#'+idtext+'').css('color','#333');
+				}
+		</script>
+		
+		<script>
+				$(function() {
+				var pull 		= $('#pull');
+				menu 		= $('#sectioncategorie ul');
+				menuHeight	= menu.height();
+		
+				$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+				});
+		
+				$(window).resize(function(){
+				var w = $(window).width();
+				if(w > 320 && menu.is(':hidden')) {
+				menu.removeAttr('style');
+				}
+				});
+				});
+		</script>
 						<!-- script end -->
 
 	</body>
