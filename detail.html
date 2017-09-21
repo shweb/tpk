@@ -25,7 +25,7 @@
 	  <body>
 		 <!-- header start -->	
 		<nav  id="background" class="navbar navbar-default navbar-static-top">
-			 <div class="container">
+			 <div class="container custom-container">
 				<div class="navbar-header">
 								  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 									<span class="sr-only">Toggle navigation</span>
@@ -73,7 +73,7 @@
 		
 		<!-- section navigation start -->
 		<section id="sectioncategorie" class="clearfix">
-			<div class="container">
+			<div class="container custom-container">
 				<ul class="clearfix">
 				<li><a href="categorie.html">TOUS</a></li>
 				<li><a href="categorie.html">CONCERTS</a></li>
@@ -90,7 +90,7 @@
 		</section>
 		
 		<section id="sectionevenement" role="navigation">
-			<div class="container">
+			<div class="container custom-container">
 				<ul>
 					<li><a href="categorie.html">Concerts</a></li>
 					<li><a href="categorie.html">Karaoke</a></li>
@@ -120,42 +120,59 @@
 		
 		 <!-- header end -->
 		<section>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 ">
-						<div>
-							<div class="row hier1">
-								<div class="col-lg-7 ">
-								<!---- <img src="img/mahaleo2.jpeg" class="detail_picture"> ---->
-								
+			<div class="container custom-container">
+			<div class=" hier1">
+						<div class="row ">
+							<div class="col-lg-7 ">
 								<div class="thumbnail det-picture">
-								<img src="img/dj1.jpg" class="image_detail"> 
-		
-
+									<img src="img/dj1.jpg" class="image_detail"> 
+								</div>
 							</div>
-							
+							<div class="col-lg-5">
+								<h3 class="couleur_mot">Samoela en live: 27 Août 2017</h3>
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+								<div class="div_style">
+									<i class="fa fa-product-hunt fa-2x zav" aria-hidden="true"></i><strong id="programme"class="couleur_mot"> Programme :  </strong>optio cumque nihil impedit
+									</div>
+								<div class="div_style">
+										<i class="fa fa-map-marker fa-2x loc zav" aria-hidden="true"></i><strong id="localisation" class="couleur_mot"> Localisation : </strong> Mahamasina
 								</div>
-								<div class="col-lg-5">
-									<h2 class="couleur_mot">Samoela en live: 27 Août 2017</h2>
-									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
-									<div class="div_style">
-										<i class="fa fa-product-hunt fa-2x zav" aria-hidden="true"></i><strong id="programme"class="couleur_mot"> Programme :  </strong>optio cumque nihil impedit
-										</div>
-									<div class="div_style">
-											<i class="fa fa-map-marker fa-2x loc zav" aria-hidden="true"></i><strong id="localisation" class="couleur_mot"> Localisation : </strong> Mahamasina
-									</div>
-									<div class="div_style">
-											<i class="fa fa-calendar-o fa-2x  zav" aria-hidden="true"></i><strong id="date" class="couleur_mot"> Date : </strong> 26 Juin 2017
-									</div>
-									<div class="div_style">
-											<i class="fa fa-clock-o fa-2x zav" aria-hidden="true"></i><strong id="heure" class="couleur_mot">  Heure :</strong> 10:00 AM
-									</div>
-									<div class="div_style">
-											<strong class="couleur_mot zav"> Partagez sur :</strong> <img src="img/facebook.png" alt="">
-									</div>
+								<div class="div_style">
+										<i class="fa fa-calendar-o fa-2x  zav" aria-hidden="true"></i><strong id="date" class="couleur_mot"> Date : </strong> 26 Juin 2017
 								</div>
-								
-							
+								<div class="div_style">
+										<i class="fa fa-clock-o fa-2x zav" aria-hidden="true"></i><strong id="heure" class="couleur_mot">  Heure :</strong> 10:00 AM
+								</div>
+								<div class="div_style">
+										<strong class="couleur_mot zav"> Partagez sur :</strong> <img src="img/facebook.png" style="width: 22px;">
+								</div>
+							</div>
+						</div>
+
+							<div id="men1">
+	<!-- <!-- Nav tabs -->       <h2 class="choseevent">Date de l'événement</h2> 
+									<ul class="nav nav-tabs tabl" role="tablist">
+									
+										<li class="col-md-3 active">
+											<a href="#about" role="tab" data-toggle="tab">22 Dec</a>
+										</li>
+										
+										<li class="col-md-3">
+											<a href="#team" role="tab" data-toggle="tab">23 dec</a>
+										</li>
+										
+										<li class="col-md-3">
+										<a href="#events" role="tab" data-toggle="tab">24 dec</a>
+										</li>
+										
+										<li class="col-md-3">
+										<a href="#resources" role="tab" data-toggle="tab">25 dec</a>
+										</li>
+								</ul>
+							</div>
+<!-- Tab panes -->
+							<div class="tab-content">
+								<div class="tab-pane tabulation  fade active in" id="about">
 						<div class="table-responsive tableau_detail">
 							<table class="table table-hover">
 								<thead>
@@ -171,21 +188,24 @@
 								<tr>
 									<td><strong>VIP</strong><p>Description</p></td>
 									<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets">20</p> tickets</td>
-									<td>
-											<div class="row postions">
-												<div class="col-md-4 col-md-offset-2  ">
-													<div class="input-group number-spinner">
-														<span class="input-group-btn">
-															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
-														</span>
-														<input class="form-control text-center" value="0" type="text">
-														<span class="input-group-btn">
-															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
-														</span>
-													</div>
-												</div>
-												<div class="col-md-4 col-md-offset-1">
-												</div></div></td>
+									<td class="tableau-center">
+											
+									<div class="tests">
+
+											<div class="input-group number-spinner">
+												<span class="input-group-btn test2">
+													<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+												</span>
+												<input class="form-control text-center" value="0" type="text">
+												<span class="input-group-btn test3">
+													<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
+												</span>
+											</div>
+
+									</div>
+												
+											
+									</td>
 									<td>
 											<b>4000</b> Ar
 									</td>
@@ -196,9 +216,9 @@
 								<tr>
 									<td><strong>Standard</strong><p>Description</p></td>
 									<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p id="tickets2">20</p> tickets</td>
-									<td>
-											<div class="row postions">
-												<div class="col-md-4 col-md-offset-2 ">
+									<td class="tableau-center">
+											
+												<div class="tests">
 													<div class="input-group number-spinner2">
 														<span class="input-group-btn">
 															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
@@ -209,8 +229,8 @@
 														</span>
 													</div>
 												</div>
-												<div class="col-md-4 col-md-offset-1">
-												</div></div></td>
+											
+									</td>
 									<td>
 											<b>4000</b> Ar
 									</td>
@@ -257,114 +277,412 @@
 								</tbody>
 							</table>
 						</div>
-						<!-- <div class="remarque_details">
-							<div>
-								<b>Remarque:</b> Les informations pour les bulliet pour cet evenement ne sont pas en temps réel.Parfois les billets se vendent plus vite que nous ne pouvons mettre à jours le site.En semaine , la disponibilité est mise a jours pluisieur fois tout au long de la journée.Dans le cas ,la confirmation final sera envoyée dans les 24 heures, Merci.
-							</div>
-						</div>
-						<div class="row plan_detail">
-							<div class="col-lg-8">
-								<h2>PLAN</h2>
-								<br/>
-								<div class="thumbnail det-picture">
-								<img src="img/plan.gif">
 								</div>
-							</div>
-							<div class="col-lg-4 plan_right">
-								<h2>Sed ut perspiciatis</h2>
-								<br>
-								<p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-									Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
-							</div>
+								<div class="tab-pane tabulation fade" id="team">
+										<div class="table-responsive tableau_detail">
+							<table class="table table-hover">
+								<thead>
+								<tr>
+									<th>Type de ticket</th>
+									<th>Disponiblité</th>
+									<th>Quantité</th>
+									<th>Prix unitaire</th>
+									<th>Totale</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td><strong>VIP</strong><p>Description</p></td>
+									<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets">60</p> tickets</td>
+									<td class="tableau-center">
+											
+									<div class="tests">
 
+											<div class="input-group number-spinner">
+												<span class="input-group-btn test2">
+													<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+												</span>
+												<input class="form-control text-center" value="0" type="text">
+												<span class="input-group-btn test3">
+													<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
+												</span>
+											</div>
+
+									</div>
+												
+											
+									</td>
+									<td>
+											<b>4000</b> Ar
+									</td>
+									<td>
+											<b id="prixUnit1">0</b> Ar
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Standard</strong><p>Description</p></td>
+									<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p id="tickets2">60</p> tickets</td>
+									<td class="tableau-center">
+											
+												<div class="tests">
+													<div class="input-group number-spinner2">
+														<span class="input-group-btn">
+															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+														</span>
+														<input class="form-control text-center" value="0" type="text">
+														<span class="input-group-btn">
+															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up2"><span class="fa fa-plus"></span></button>
+														</span>
+													</div>
+												</div>
+											
+									</td>
+									<td>
+											<b>4000</b> Ar
+									</td>
+									<td>
+											<b id="prixUnit2">0</b> Ar
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Standard</strong><p>Description</p></td>
+									<td><i class="fa fa-close fa-2x" aria-hidden="true"></i><p>Non disponible</p></td>
+									<td>
+									</td>
+									<td>
+											<b>4000</b> Ar
+									</td>
+									<td>
+											
+									</td>
+								</tr>
+								<tr>
+										<td class="td_detail"></td>
+										<td class="td_detail"></td>
+										<td class="td_detail">
+										</td>
+										<td>
+												<strong>Total</strong>
+										</td>
+										<td>
+												<b id="total">0</b> Ar
+										</td>
+									</tr>
+									<tr>
+											<td></td>
+											<td></td>
+											<td>
+											</td>
+											<td>
+													<button type="submit" class=" btn btn-danger btn_reset">Reset</button>
+											</td>
+											<td>
+													<button type="submit" class=" btn btn-success btn_acheterr">Acheter</button>
+											</td>
+										</tr>
+								</tbody>
+							</table>
 						</div>
-						<div class="hier2">
-							<h2>FAQ</h2>
-							<div class="div_style1">
-							<a href="#" target="_blank">Lorem ipsum dolor sit amet, consectetuer</a>
-							</div>
-							<div class="div_style1">
-							<a href="#" target="_blank">Lorem ipsum dolor sit amet, consectetuer</a>
-							</div>
-							<div class="div_style1">
-							<a href="#" target="_blank">Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</a>
-							 
-							</div>
-							<div class="div_style1">
-							<a href="#" target="_blank">Lorem ipsum dolor sit amet, consectetuer</a>
-							
-							</div>
-							<div class="div_style1">
-							<a href="#" target="_blank">Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</a>
-							 
-							</div>
-							
-						
-						
-						</div> -->
+								</div>
+								<div class="tab-pane  tabulation fade" id="events">
+										<div class="table-responsive tableau_detail">
+							<table class="table table-hover">
+								<thead>
+								<tr>
+									<th>Type de ticket</th>
+									<th>Disponiblité</th>
+									<th>Quantité</th>
+									<th>Prix unitaire</th>
+									<th>Totale</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td><strong>VIP</strong><p>Description</p></td>
+									<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets">1000</p> tickets</td>
+									<td class="tableau-center">
+											
+									<div class="tests">
 
+											<div class="input-group number-spinner">
+												<span class="input-group-btn test2">
+													<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+												</span>
+												<input class="form-control text-center" value="0" type="text">
+												<span class="input-group-btn test3">
+													<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
+												</span>
+											</div>
 
-					</div>
-				</div>
+									</div>
+												
+											
+									</td>
+									<td>
+											<b>4000</b> Ar
+									</td>
+									<td>
+											<b id="prixUnit1">0</b> Ar
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Standard</strong><p>Description</p></td>
+									<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p id="tickets2">1000</p> tickets</td>
+									<td class="tableau-center">
+											
+												<div class="tests">
+													<div class="input-group number-spinner2">
+														<span class="input-group-btn">
+															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+														</span>
+														<input class="form-control text-center" value="0" type="text">
+														<span class="input-group-btn">
+															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up2"><span class="fa fa-plus"></span></button>
+														</span>
+													</div>
+												</div>
+											
+									</td>
+									<td>
+											<b>4000</b> Ar
+									</td>
+									<td>
+											<b id="prixUnit2">0</b> Ar
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Standard</strong><p>Description</p></td>
+									<td><i class="fa fa-close fa-2x" aria-hidden="true"></i><p>Non disponible</p></td>
+									<td>
+									</td>
+									<td>
+											<b>4000</b> Ar
+									</td>
+									<td>
+											
+									</td>
+								</tr>
+								<tr>
+										<td class="td_detail"></td>
+										<td class="td_detail"></td>
+										<td class="td_detail">
+										</td>
+										<td>
+												<strong>Total</strong>
+										</td>
+										<td>
+												<b id="total">0</b> Ar
+										</td>
+									</tr>
+									<tr>
+											<td></td>
+											<td></td>
+											<td>
+											</td>
+											<td>
+													<button type="submit" class=" btn btn-danger btn_reset">Reset</button>
+											</td>
+											<td>
+													<button type="submit" class=" btn btn-success btn_acheterr">Acheter</button>
+											</td>
+										</tr>
+								</tbody>
+							</table>
+						</div>
+								</div>
+								<div class="tab-pane tabulation fade" id="resources">
+										<div class="table-responsive tableau_detail">
+							<table class="table table-hover">
+								<thead>
+								<tr>
+									<th>Type de ticket</th>
+									<th>Disponiblité</th>
+									<th>Quantité</th>
+									<th>Prix unitaire</th>
+									<th>Totale</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td><strong>VIP</strong><p>Description</p></td>
+									<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p id="tickets">200</p> tickets</td>
+									<td class="tableau-center">
+											
+									<div class="tests">
+
+											<div class="input-group number-spinner">
+												<span class="input-group-btn test2">
+													<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+												</span>
+												<input class="form-control text-center" value="0" type="text">
+												<span class="input-group-btn test3">
+													<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
+												</span>
+											</div>
+
+									</div>
+												
+											
+									</td>
+									<td>
+											<b>4000</b> Ar
+									</td>
+									<td>
+											<b id="prixUnit1">0</b> Ar
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Standard</strong><p>Description</p></td>
+									<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p id="tickets2">200</p> tickets</td>
+									<td class="tableau-center">
+											
+												<div class="tests">
+													<div class="input-group number-spinner2">
+														<span class="input-group-btn">
+															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+														</span>
+														<input class="form-control text-center" value="0" type="text">
+														<span class="input-group-btn">
+															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up2"><span class="fa fa-plus"></span></button>
+														</span>
+													</div>
+												</div>
+											
+									</td>
+									<td>
+											<b>4000</b> Ar
+									</td>
+									<td>
+											<b id="prixUnit2">0</b> Ar
+									</td>
+								</tr>
+								<tr>
+									<td><strong>Standard</strong><p>Description</p></td>
+									<td><i class="fa fa-close fa-2x" aria-hidden="true"></i><p>Non disponible</p></td>
+									<td>
+									</td>
+									<td>
+											<b>4000</b> Ar
+									</td>
+									<td>
+											
+									</td>
+								</tr>
+								<tr>
+										<td class="td_detail"></td>
+										<td class="td_detail"></td>
+										<td class="td_detail">
+										</td>
+										<td>
+												<strong>Total</strong>
+										</td>
+										<td>
+												<b id="total">0</b> Ar
+										</td>
+									</tr>
+									<tr>
+											<td></td>
+											<td></td>
+											<td>
+											</td>
+											<td>
+													<button type="submit" class=" btn btn-danger btn_reset">Reset</button>
+											</td>
+											<td>
+													<button type="submit" class=" btn btn-success btn_acheterr">Acheter</button>
+											</td>
+										</tr>
+								</tbody>
+							</table>
+						</div>
+								</div>
+								
+							</div>
+							</div>
+						
 				
 								
 				<div class="voir">
 					<h2 class="couleur_mot">Voir aussi</h2><br/>
 					<div class="row">
 						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail">
-							<a href="detail.html">
-							<div class="mg-image">
-								<img src="img/afisy.jpg" alt="tence_mena" >
+							<div class="thumbnail"  onmouseover="mouseover('month12','title1')" onmouseleave="mouseleave('month12','title1')">
+								<div class="mg-image">
+									<img src="img/rigby.jpg" >
+								</div>
+							
+								<div class="caption taille ">
+									<a href="detailup.html">
+										<div class="limitelengh"><h3 ><a id="title1" href="#">Rugby</a></h3></div>
+										<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg in suscipitrterg in suscipitrterg in </p></a><br/></div>
+											<div class="row cbg">
+												<div class="col-md-3 col-xs-3">
+													<div class="calendar">
+														<h1 class="month" id="month12">Nov</h1>
+														<label class="jour">Mar</label>
+														<p class="day">20</p>
+													</div>
+												</div>
+												<div class="col-md-9 col-xs-9">
+													<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">610000</b> AR</div></a>
+													<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
+													<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
+												</div>
+											</div>	
+									</a>
+								</div>
 							</div>
-								<div class="caption">
-									<h3><a href="detail.html">Lorem ipsum dolor sit amet, vitae enim ultrices</a></h3>
-									<p>Pellentesque amet vitae suscipit metus, massa at donec ultrices mauris at leo, in aenean, aliquet</p><br/>
-									<div>
-										
-											<div class="price"><i class="glyphicon glyphicon-time time"></i> Apr 1, 100rmb</div>
-											<div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Andreas Ottensamer has captured audiences</div>
-										
+						</div>
+						<div class="col-sm-6 col-md-4">
+							<div class="thumbnail" onmouseover="mouseover('month1','title2')" onmouseleave="mouseleave('month1','title2')">
+							<a href="detailup.html">
+								<div class="mg-image">
+									<img src="img/tence.jpg" alt="tence_mena" >
+								</div>
+								<div class="caption taille">
+									<div class="limitelengh"><h3><a id="title2" href="#">tence mena</a></h3></div>
+									<div class="limite"><a href="#"><p>Pellentesque amet </p></a><br/></div>
+									<div class="row cbg">
+										<div class="col-md-3 col-xs-3">
+											<div class="calendar">
+												<h1 class="month" id="month1">Dec</h1>
+												<label class="jour">Lun</label>
+												<p class="day">30</p>
+											</div>
+										</div>
+										<div class="col-md-9 col-xs-9 ">
+											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">100000</b> AR</div></a>
+											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
+											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
+										</div>
 									</div>
-
 								</div>
 							</a>
 							</div>
 						</div>
 						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail">
-							<a href="detail.html">
-							<div class="mg-image">
-								<img src="img/run.jpg" alt="tence_mena" >
+							<div class="thumbnail"  onmouseover="mouseover('month2','title3')" onmouseleave="mouseleave('month2','title3')">
+							<a href="detailup.html">
+								<div class="mg-image">
+									<img src="img/dubuald3.jpg">
 								</div>
-								<div class="caption">
-									<h3><a href="detail.html">Lorem ipsum dolor sit amet, vitae enim ultrices</a></h3>
-									<p>Pellentesque amet vitae suscipit metus, massa at donec ultrices mauris at leo, in aenean, aliquet</p><br/>
-									<div>
-										
-											<div class="price"><i class="glyphicon glyphicon-time time"></i> Apr 1, 100rmb</div>
-											<div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Andreas Ottensamer has captured audiences</div>
-										
-									</div>
-
-								</div>
-							</a>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail">
-							<a href="detail.html">
-							<div class="mg-image">
-								<img src="img/motocross.jpg" alt="tence_mena" >
-							</div>
-								<div class="caption">
-									<h3><a href="detail.html">Lorem ipsum dolor sit amet, vitae enim ultrices</a></h3>
-									<p>Pellentesque amet vitae suscipit metus, massa at donec ultrices mauris at leo, in aenean, aliquet</p><br/>
-									<div>
-										
-											<div class="price"><i class="glyphicon glyphicon-time time"></i> Apr 1, 100rmb</div>
-											<div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Andreas Ottensamer has captured audiences</div>
-										
+								<div class="caption taille">
+								<div class="limitelengh"><h3><a id="title3" href="#">Lorem ipsum dolor </a></h3></div>
+								<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg in aenean, aliquetsuscipitrterg in aenean, aliquet</p></a><br/></div>
+									
+									<div  class="row cbg">
+										<div class="col-md-3 col-xs-3">
+											<div class="calendar">	
+												<a href="#"><h1 class="month" id="month2">Jan</h1></a>
+												<a href="#"><label class="jour">jeu</label></a>
+												<a href="#"><p class="day">31</p></a>
+											</div>
+										</div>
+										<div class="col-md-9 col-xs-9 ">
+											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">7000</b> AR</a></div></a>
+											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
+											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
+										</div>
 									</div>
 
 								</div>
@@ -373,78 +691,80 @@
 						</div>
 					</div>
 				</div>
-
-
-	  </body>
-</html>
-
-
-</div>
-
-				</div>
-
-			</div>
-
-<!-- End Page -->
-			
+			</div>	
 		</section>
 
-<footer class="footer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 col-xs-6">
-                        <img class="footer-logo" alt="tapakila" src="./img/logo.png">
-                        <p class="small custom">
-                            By Tapakila.mg<br>
-                            IIB 63 Mahamasina<br>
-                            Antananarivo<br>
-                            Madagascar<br>
-                            +33 12 901432<br>
-                            <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
-                        </p>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <p class="titled"><strong >Acheter des tickets</strong></p>
-                        <ul class="list-unstyled">
-                            <li><a href="Acheteur.html">Comment acheter</a></li>
-                            <li><a href="service-clientele.html">Foire aux questions</a></li>
-                            <li><a href="#">Conditions d'utilisation</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3 col-xs-6">
-                        <p class="titled"><strong >Organisateurs</strong></p>
-                        <ul class="list-unstyled">
-                            <li><a href="organisateur.html">Pour les Organisateurs</a></li>
-                            <li><a href="#">S'enregistrer</a></li>
-                            <li><a href="#">Connexion</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2 col-xs-6 ">
-                        <a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square facebookico" aria-hidden="true"></i></a>
-                        <div id="fb-root"></div>
-                        <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
+		<footer class="footer">
+				<div class="footer-top">
+					<div class="container custom-container">
+						<div class="row">
+							<div class="col-sm-4 col-xs-6">
+								<img class="footer-logo" alt="tapakila" src="./img/logo.png">
+								<p class="small custom">
+									By Tapakila.mg<br>
+									IIB 63 Mahamasina<br>
+									Antananarivo<br>
+									Madagascar<br>
+									+33 12 901432<br>
+									<a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
+								</p>
+							</div>
+							<div class="col-sm-3 col-xs-6">
+								<p class="titled"><strong >Acheter des tickets</strong></p>
+								<ul class="list-unstyled">
+									<li><a href="Acheteur.html">Comment acheter</a></li>
+									<li><a href="service-clientele.html">Foire aux questions</a></li>
+									<li><a href="#">Conditions d'utilisation</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3 col-xs-6">
+								<p class="titled"><strong >Organisateurs</strong></p>
+								<ul class="list-unstyled">
+									<li><a href="organisateur.html">Pour les Organisateurs</a></li>
+									<li><a href="#">S'enregistrer</a></li>
+									<li><a href="#">Connexion</a></li>
+								</ul>
+							</div>
+							<div class="col-sm-2 col-xs-6 ">
+								<a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square facebookico" aria-hidden="true"></i></a>
+								<div id="fb-root"></div>
+								<div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
 
-                    </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div>
-        <div class="footer-bottom">
-            <div class="container small">
-			<ul>
-                        <li><a href="#">A propos de nous</a></li>|
-                        <li><a href="#">Contact</a></li>|
-                        <li><a href="#">Ajouter votre evenement</a></li>|
-                        <li><a href="#">Publicite</a></li>|
-                        <li><a href="service-clientele.html">FAQ</a></li>|
-                        <li><a href="#">Vie privee</a></li>|
-                    </ul>
-                <p>Copyright &copy Tapakila 2017</p>
-            </div>
-        </div>
-    
+							</div>
+						</div> <!-- row -->
+					</div> <!-- container -->
+				</div>
+				<div class="footer-bottom">
+					<div class="container custom-container small">
+					<ul>
+								<li><a href="#">A propos de nous</a></li>|
+								<li><a href="#">Contact</a></li>|
+								<li><a href="#">Ajouter votre evenement</a></li>|
+								<li><a href="#">Publicite</a></li>|
+								<li><a href="service-clientele.html">FAQ</a></li>|
+								<li><a href="#">Vie privee</a></li>|
+							</ul>
+						<p>Copyright &copy Tapakila 2017</p>
+					</div>
+				</div>
 		</footer>
-
+		
+<script type="text/javascript">
+		$('.dropdown-menu ul li a').click(function(event){
+		event.stopPropagation();
+		$(this).parent().toggleClass('active').siblings().removeClass('active');
+		var target=$(this).attr('href');
+		$('ul li .tab-content '+target).toggleClass(active);
+		});
+		function mouseover(id,idtext){
+			$('#'+id+'').css('background','#d70506');
+			$('#'+idtext+'').css('color','#d70506');
+		}
+		function mouseleave(id,idtext){
+			$('#'+id+'').css('background','#5cb85c');
+			$('#'+idtext+'').css('color','#333');
+		}
+</script>
 
 		<script>
 				<!-- calcul up down 1 start -->
@@ -531,6 +851,28 @@
 							}
 						}
 					});
+				</script>
+				<script>
+
+$(".nav-tabs").find("li a").last().click();
+
+var url = document.URL;
+var hash = url.substring(url.indexOf('#'));
+
+$(".nav-tabs").find("li a").each(function(key, val) {
+
+  if (hash == $(val).attr('href')) {
+
+    $(val).click();
+
+  }
+  $(val).click(function(ky, vl) {
+
+    console.log($(this).attr('href'));
+    location.hash = $(this).attr('href');
+  });
+
+});
 				</script>
 						<!-- script end -->
 
