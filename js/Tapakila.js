@@ -24,12 +24,7 @@ $('.dropdown-menu ul li a').click(function(event) {
     $('ul li .tab-content ' + target).toggleClass(active);
 });
 
-$('.dropdown-menu ul li a').click(function(event) {
-    event.stopPropagation();
-    $(this).parent().toggleClass('active').siblings().removeClass('active');
-    var target = $(this).attr('href');
-    $('ul li .tab-content ' + target).toggleClass(active in );
-});
+
 // colortextcalendar cart-------------------------------
 
 function mouseover(id, idtext) {
