@@ -1,584 +1,742 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tapakila-accueil</title>
-	<link rel="shortcut icon" href="./img/logo.png">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/mediaqueries.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link href="css/datepicker.css" rel="stylesheet">
-	<link href="css/clockpiker.css" rel="stylesheet">
+    <title>Tapakila-accueil</title>
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/clockpiker.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/datepicker.js"></script>
-	<script src="js/clockpicker.js"></script>
-	</head>
-	  <body>
-		 <!-- header start -->	
-		<nav  id="background" class="navbar navbar-default navbar-static-top">
-			 <div class="container custom-container ">
-				<div class="navbar-header">
-								  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								  </button>
-								  <a class="navbar-brand" href="index.html">
-									<img src="./img/logo.png" title="tapakila">
-								  </a>
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-									<ul class="nav navbar-nav navbar-right">
-										<li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
-									
-										<li><a href="panier.html">Panier</a></li>
-										<li role="presentation" class="dropdown"> 
-											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
-											<span class="caret"></span> </a> 
-												<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
-												<li>
-												<form action="./page/recherche.html" method="get">
-												   <input type="text" name="query" placeholder="Search..." autocomplete="off">
-												   <input type="submit" value="Search">
-												</form>
-											   </li> 
-												</ul> 
-										</li>
-										
-										<li role="presentation" class="dropdown connexion" > 
-											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
-												<span class="caret"></span> </a> 
-												<ul class="dropdown-menu " id="menu3" aria-labelledby="drop6"> 
-													<a href ="connexion.html"><li class="conexion">Se connecter</li></a> 
-													<a href ="connexion.html"><li class="conexion">S'inscrire</li></a> 
-												</ul> 
-										</li>
-										
-									</ul>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/clockpicker.js"></script>
+    <script src="js/Tapakila.js"></script>
+</head>
 
-				</div>
-			</div>
-		</nav>
-		<!-- header end -->
-		
-		<!-- section navigation start -->
-		<section id="sectioncategorie" class="clearfix">
-			<div class="container custom-container">
-				<ul class="clearfix">
-				<li><a href="categorie.html">TOUS</a></li>
-				<li><a href="categorie.html">CONCERTS</a></li>
-				<li><a href="categorie.html">CABARET</a></li>
-				<li><a href="categorie.html">SPORTS</a></li>
-				<li><a href="categorie.html">SOIREES</a></li>
-				<li><a href="categorie.html">DANSES</a></li>
-				<li><a href="categorie.html">FESTIVAL</a></li>
-				<li><a href="categorie.html">CINEMA</a></li>
-				<li><a href="categorie.html">JEUX</a></li>
-				</ul>
-				<a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
-			</div>
-		</section>
-		
-		<section id="sectionevenement" role="navigation">
-			<div class="container custom-container">
-				<ul>
-					<li><a href="categorie.html">Concerts</a></li>
-					<li><a href="categorie.html">Karaoke</a></li>
-					<li><a href="categorie.html">Cabaret</a></li>
-					<li><a href="categorie.html">Foot</a></li>
-					<li><a href="categorie.html">Basket-ball</a></li>
-					<li><a href="categorie.html">Natations</a></li>
-					<li><a href="categorie.html">DJs</a></li>
-					<li><a href="categorie.html">Loung</a></li>
-					<li><a href="categorie.html">Discotheque</a></li>
-					<li><a href="categorie.html">Aerobic</a></li>
-					<li><a href="categorie.html">Zumba</a></li>
-					<li><a href="categorie.html">St Valentin</a></li>
-					<li><a href="categorie.html">26 Juin</a></li>
-					<li><a href="categorie.html">Animations</a></li>
-					<li><a href="categorie.html">Oktoberfest</a></li>
-					<li><a href="categorie.html">Jazz</a></li>
-					<li><a href="categorie.html">Orchestre</a></li>
-					<li><a href="categorie.html">Exposition</a></li>
-					<li><a href="categorie.html">Projections</a></li>
-					<li><a href="categorie.html">Excursions</a></li>
-					<li><a href="categorie.html">Loisirs</a></li>
-				</ul>
-			</div>
-		</section>
-		<!-- section navigation end -->
-		
-		<!-- slide carousel start -->
-		<section id="carousel-slide">
-			<div class="container custom-container">
-				<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					<!-- Indicators -->
-					<ol class="carousel-indicators">
-					  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					  <li data-target="#myCarousel" data-slide-to="1"></li>
-					  <li data-target="#myCarousel" data-slide-to="2"></li>
-					  <li data-target="#myCarousel" data-slide-to="3"></li>
-					</ol>
+<body>
+    <!-- header start -->
+    <nav id="background" class="navbar navbar-default navbar-static-top">
+        <div class="container custom-container ">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" title="tapakila">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
 
-					<!-- Wrapper for slides -->
-					<div class="carousel-inner">
-					  <div class="item active">
-						<img src="img/stephani.jpg"  style="width:100%;">
-					  </div>
+                    <li><a href="panier.html">Panier</a></li>
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+											<span class="caret"></span> </a>
+                        <ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6">
+                            <li>
+                                <form action="./page/recherche.html" method="get">
+                                    <input type="text" name="query" placeholder="Search..." autocomplete="off">
+                                    <input type="submit" value="Search">
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
 
-					  <div class="item">
-						<img src="img/prod-trusty.jpg"  style="width:100%;">
-					  </div>
+                    <li role="presentation" class="dropdown connexion">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a>
+                        <ul class="dropdown-menu " id="menu3" aria-labelledby="drop6">
+                            <a href="connexion.html">
+                                <li class="conexion">Se connecter</li>
+                            </a>
+                            <a href="connexion.html">
+                                <li class="conexion">S'inscrire</li>
+                            </a>
+                        </ul>
+                    </li>
 
-					  <div class="item">
-						<img src="img/mahaleo.jpg"  style="width:100%;">
-					  </div>
-					    <div class="item">
-						<img src="img/thb.png"  style="width:100%;">
-					  </div>
-					</div>
+                </ul>
 
-					<!-- Left and right controls -->
-					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-					  <span class="glyphicon glyphicon-chevron-left"></span>
-					  <span class="sr-only">Previous</span>
-					</a>
-					<a class="right carousel-control" href="#myCarousel" data-slide="next">
-					  <span class="glyphicon glyphicon-chevron-right"></span>
-					  <span class="sr-only">Next</span>
-					</a>
-				</div>
-			</div>
-		</section>
-		<!-- slide carousel end -->
-		
-		<!-- section categorie start -->
-		<section id="categorie-concert">
-			<div class="container custom-container">
-				<div class="categorie-item">
-					<h2 class="couleur_mot">Concerts</h2>
-					<div class="row">
-						<div class="col-sm-6 col-md-4">
-							<a href="detailup.html">
-							<div class="thumbnail"  onmouseover="mouseover('month12','title1')" onmouseleave="mouseleave('month12','title1')">
-								<div class="mg-image">
-									<img src="img/rigby.jpg" >
-								</div>
-							
-								<div class="caption taille ">
-									<a href="detailup.html">
-										<div class="limitelengh"><h3 ><a id="title1" href="#">Rugby</a></h3></div>
-										<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg in suscipitrterg in suscipitrterg in </p></a><br/></div>
-											<div class="row cbg">
-												<div class="col-md-3 col-xs-3">
-													<div class="calendar">
-														<h1 class="month" id="month12">Nov</h1>
-														<label class="jour">Mar</label>
-														<p class="day">20</p>
-													</div>
-												</div>
-												<div class="col-md-9 col-xs-9">
-													<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">610000</b> AR</div></a>
-													<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-													<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-												</div>
-											</div>	
-									</a>
-								</div>
-							</div>
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail" onmouseover="mouseover('month1','title2')" onmouseleave="mouseleave('month1','title2')">
-							<a href="detailup.html">
-								<div class="mg-image">
-									<img src="img/tence.jpg" alt="tence_mena" >
-								</div>
-								<div class="caption taille">
-									<div class="limitelengh"><h3><a id="title2" href="#">tence mena</a></h3></div>
-									<div class="limite"><a href="#"><p>Pellentesque amet </p></a><br/></div>
-									<div class="row cbg">
-										<div class="col-md-3 col-xs-3">
-											<div class="calendar">
-												<h1 class="month" id="month1">Dec</h1>
-												<label class="jour">Lun</label>
-												<p class="day">30</p>
-											</div>
-										</div>
-										<div class="col-md-9 col-xs-9 ">
-											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">100000</b> AR</div></a>
-											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-										</div>
-									</div>
-								</div>
-							</a>
-							</div>
-						</div>
-						<div id="cart" class="col-sm-6 col-md-4 ">
-							<div class="thumbnail"  onmouseover="mouseover('month2','title3')" onmouseleave="mouseleave('month2','title3')">
-							<a href="detailup.html">
-								<div class="mg-image">
-									<img src="img/dubuald3.jpg">
-								</div>
-								<div class="caption taille">
-								<div class="limitelengh"><h3><a id="title3" href="#">Lorem ipsum dolor </a></h3></div>
-								<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg in aenean, aliquetsuscipitrterg in aenean, aliquet</p></a><br/></div>
-									
-									<div  class="row cbg">
-										<div class="col-md-3 col-xs-3">
-											<div class="calendar">	
-												<a href="#"><h1 class="month" id="month2">Jan</h1></a>
-												<a href="#"><label class="jour">jeu</label></a>
-												<a href="#"><p class="day">31</p></a>
-											</div>
-										</div>
-										<div class="col-md-9 col-xs-9 ">
-											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">7000</b> AR</a></div></a>
-											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-										</div>
-									</div>
+            </div>
+        </div>
+    </nav>
+    <!-- header end -->
 
-								</div>
-							</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="">
-					<h2 class="couleur_mot">Sports</h2>
-					<div class="row">
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail"  onmouseover="mouseover('month3','title4')" onmouseleave="mouseleave('month3','title4')">
-							  <a href="detailup.html">
-							  <div class="mg-image">
-								<img src="img/motocross.jpg" alt="Lights" style="width:100%">
-								</div>
-								<div class="caption taille">
-									<div class="limitelengh"><h3><a id="title4" href="#">Lorem  vitae enim ultrices</a></h3></div>
-										<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg in aenean, aliquet</p></a><br/></div>
-									<div class="row cbg">
-										<div class="col-md-3 col-xs-3">
-											<div class="calendar">
-												<h1 class="month" id="month3">Avr</h1>
-												<label class="jour">Vend</label>
-												<p class="day">15</p>
-											</div>
-										</div>
-										<div class="col-md-9 col-xs-9 ">
-											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de<b class="prx"> 6000</b> AR</div></a>
-											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-										</div>
-									</div>
-								</div>
-							  </a>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail"  onmouseover="mouseover('month4','title5')" onmouseleave="mouseleave('month4','title5')">
-								<a href="detailup.html">
-									<div class="mg-image">
-										<img src="img/run.jpg">
-									</div>
-									<div class="caption taille">
-										<div class="limitelengh"><h3><a id="title5" href="#">Lorem ipsum dolor sit amet, s</a></h3></div>
-											<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg in aenean, aliquet Pellentesque amet vitae suscipitrterg in aenean, aliquet</p></a><br/></div>
-										<div class="row cbg">
-											<div class="col-md-3 col-xs-3">
-												<div class="calendar">
-													<h1 class="month" id="month4">Oct</h1>
-													<label class="jour">Mar</label>
-													<p class="day">4</p>
-												</div>
-											</div>
-											<div class="col-md-9 col-xs-9 ">
-												<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">5000</b> AR</div></a>
-												<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-												<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-											</div>
-										</div>
-									</div>
-								</a>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail"  onmouseover="mouseover('month5','title6')" onmouseleave="mouseleave('month5','title6')">
-							<a href="detailup.html">
-								<div class="mg-image">
-									<img src="img/motocross.jpg">
-								</div>
-								<div class="caption taille">
-									<div class="limitelengh"><h3><a id="title6" href="#">Lorem ipsum dolor sit amet, vitae </a></h3></div>
-										<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg</p></a><br/></div>
-									<div class="row cbg">
-										<div class="col-md-3 col-xs-3">
-											<div class="calendar">
-												<h1 class="month" id="month5">Nov</h1>
-												<label class="jour">Sam</label>
-												<p class="day">12</p>
-											</div>
-										</div>
-										<div class="col-md-9 col-xs-9 ">
-											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx"> 20000</b> AR</div></a>
-											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-										</div>
-									</div>
-								</div>
-								<a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- section categorie end -->
-		
-		<!-- sectin s'inscrire start -->
-		<section>
-			<div class="container custom-container ">
-				<div class="sinscrire">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2">
-							<div class="infopers">
-								<h1 class="inscriptioin"><strong>S'inscrire</strong></h1>
-								<label><strong>Une mise à jour mensuel des évènements à Madagascar</strong></label>
-							</div>
-							<div class="row">
-								<div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
-									<div class="row">
-										<div class="col-md-10 col-md-offset-1">
-											<form>
-												<div class="form-group">
-													<input type="email" class="form-control email-subscribe placehold" id="input-mail" aria-describedby="emailHelp" placeholder="| Enter l'adresse E-mail">
-												</div>
-											</form>
-										</div>
-									</div>
-										<div class="row">
-											<div class="col-md-10 col-md-offset-1">
-												<button type="button" class="btn btn-sinscrire btn-lg btn-block">S'inscrire</button>
-											</div>
-										</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- sectin s'inscrire end -->
-		
-		<!-- section categorie start -->
-		<section id="categorie-concert">
-			<div class="container custom-container">
-				<div class="categorie-dj">
-					<h2 class="couleur_mot">Evènements  de ce week-end</h2><br/>
-					<div class="row">
-					
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail"  onmouseover="mouseover('month6','title7')" onmouseleave="mouseleave('month6','title7')">
-							<a href="detailup.html">
-								<div class="mg-image">
-									<img src="img/afisy.jpg" alt="tence_mena" >
-								</div>
-								<div class="caption taille">
-									<div class="limitelengh"><h3><a id="title7" href="#">vitae enim ultrices</a></h3></div>
-										<div class="limite"><a href="#"><p>Pellentesque....</p></a><br/></div>
-									<div class="row cbg">
-										<div class="col-md-3 col-xs-3">
-											<div class="calendar">
-												<h1 class="month" id="month6">Sept</h1>
-												<label class="jour">Lun</label>
-												<p class="day">17</p>
-											</div>
-										</div>
-										<div class="col-md-9 col-xs-9 ">
-											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">16000</b>AR</div></a>
-											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-										</div>
-									</div>
-								</div>
-							</a>
-							</div>
-						</div>
-						
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail" onmouseover="mouseover('month7','title8')" onmouseleave="mouseleave('month7','title8')">
-							<a href="detailup.html">
-							<div class="mg-image">
-								<img src="img/run.jpg" alt="tence_mena" >
-							</div>
-								<div class="caption taille">
-									<div class="limitelengh"><h3><a id="title8" href="#">Lorem ipsum dolor </a></h3></div>
-										<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg in aenean, amet vitae suscipitrterg in aenean, amet vitae suscipitrterg in aenean,aliquet</p></a><br/></div>
-									<div class="row cbg">
-										<div class="col-md-3 col-xs-3">
-											<div class="calendar">
-												<h1 class="month" id="month7">Mai</h1>
-												<label class="jour">Dim</label>
-												<p class="day">23</p>
-											</div>
-										</div>
-										<div class="col-md-9 col-xs-9 ">
-											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de<b class="prx"> 5000</b> AR</div></a>
-											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-										</div>
-									</div>
-								</div>
-							</a>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail"  onmouseover="mouseover('month8','title9')" onmouseleave="mouseleave('month8','title9')">
-							<a href="detailup.html">
-							<div class="mg-image">
-								<img src="img/motocross.jpg" alt="tence_mena" >
-							</div>
-								<div class="caption taille">
-									<div class="limitelengh"><h3><a id="title9" href="#">Lorem ipsum dolor sit amet</a></h3></div>
-										<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipi</p></a><br/></div>
-									<div class="row cbg">
-										<div class="col-md-3 col-xs-3">
-											<div class="calendar">
-												<h1 class="month" id="month8">Juin</h1>
-												<label class="jour">Mar</label>
-												<p class="day">14</p>
-											</div>
-										</div>
-										<div class="col-md-9 col-xs-9 ">
-											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">15000</b> AR</div></a>
-											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-										</div>
-									</div>
-								</div>
-							</a>
-							</div>
-						</div>
-					</div>
-				</div>
-								
-				<div class="">
-					<h2 class="couleur_mot">Top ventes</h2><br/>
-					<div class="row">
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail"  onmouseover="mouseover('month9','title10')" onmouseleave="mouseleave('month9','title10')">
-							<a href="detailup.html">
-							<div class="mg-image">
-								<img src="img/afisy.jpg" alt="tence_mena" >
-							</div>
-								<div class="caption taille">
-									<div class="limitelengh"><h3><a id="title10" href="#">Lorem ipsum dolor sit amet, vitae enim ut amet</a></h3></div>
-										<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg in aent amet, vitae enim ut amet, vitae enim ut amet, vitae enim uean, aliquet</p></a><br/></div>
-									<div class="row cbg">
-										<div class="col-md-3 col-xs-3">
-											<div class="calendar">
-												<h1 class="month" id="month9">Sept</h1>
-												<label class="jour">Lun</label>
-												<p class="day">17</p>
-											</div>
-										</div>
-										<div class="col-md-9 col-xs-9 ">
-											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">1000 AR</b></div></a>
-											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-										</div>
-									</div>
-								</div>
-							</a>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail"  onmouseover="mouseover('month10','title11')" onmouseleave="mouseleave('month10','title11')">
-							<a href="detailup.html">
-							<div class="mg-image">
-								<img src="img/run.jpg" alt="tence_mena" >
-								</div>
-								<div class="caption taille">
-									<div class="limitelengh"><h3><a id="title11" href="#">Lorem ipsum dolor sit amet</a></h3></div>
-										<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg in aenean, aliquet</p></a><br/></div>
-									<div class="row cbg">
-										<div class="col-md-3 col-xs-3">
-											<div class="calendar">
-												<h1 class="month" id="month10">Juill</h1>
-												<label class="jour">Mar</label>
-												<p class="day">24</p>
-											</div>
-										</div>
-										<div class="col-md-9 col-xs-9 ">
-											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de<b class="prx"> 4000</b> AR</div></a>
-											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-										</div>
-									</div>
-								</div>
-							</a>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<a href="#">
-							<div class="thumbnail"  onmouseover="mouseover('month11','title12')" onmouseleave="mouseleave('month11','title12')">
-							<div class="mg-image">
-								<img src="img/motocross.jpg" alt="tence_mena" >
-							</div>
-								<div class="caption taille">
-									<div class="limitelengh"><h3><a id="title12" href="#">Lorem ipsum dolor</a></h3></div>
-										<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg in aenean, aliquet</p></a><br/></div>
-									<div class="row cbg">
-										<div class="col-md-3 col-xs-3">
-											<div class="calendar">
-												<h1 class="month" id="month11">Dec</h1>
-												<label class="jour">Lun</label>
-												<p class="day">25</p>
-											</div>
-										</div>
-										<div class="col-md-9 col-xs-9 ">
-												<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de<b class="prx"> 2000</b> AR</div></a>
-												<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-												<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-											
-										</div>
-									</div>
-								</div>
-							</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- section categorie end -->
-		
-	
-		<!-- footer start -->
-		<footer class="footer">
+    <!-- section navigation start -->
+    <section id="sectioncategorie" class="clearfix">
+        <div class="container custom-container">
+            <ul class="clearfix">
+                <li><a href="categorie.html">TOUS</a></li>
+                <li><a href="categorie.html">CONCERTS</a></li>
+                <li><a href="categorie.html">CABARET</a></li>
+                <li><a href="categorie.html">SPORTS</a></li>
+                <li><a href="categorie.html">SOIREES</a></li>
+                <li><a href="categorie.html">DANSES</a></li>
+                <li><a href="categorie.html">FESTIVAL</a></li>
+                <li><a href="categorie.html">CINEMA</a></li>
+                <li><a href="categorie.html">JEUX</a></li>
+            </ul>
+            <a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
+        </div>
+    </section>
+
+    <section id="sectionevenement" role="navigation">
+        <div class="container custom-container">
+            <ul>
+                <li><a href="categorie.html">Concerts</a></li>
+                <li><a href="categorie.html">Karaoke</a></li>
+                <li><a href="categorie.html">Cabaret</a></li>
+                <li><a href="categorie.html">Foot</a></li>
+                <li><a href="categorie.html">Basket-ball</a></li>
+                <li><a href="categorie.html">Natations</a></li>
+                <li><a href="categorie.html">DJs</a></li>
+                <li><a href="categorie.html">Loung</a></li>
+                <li><a href="categorie.html">Discotheque</a></li>
+                <li><a href="categorie.html">Aerobic</a></li>
+                <li><a href="categorie.html">Zumba</a></li>
+                <li><a href="categorie.html">St Valentin</a></li>
+                <li><a href="categorie.html">26 Juin</a></li>
+                <li><a href="categorie.html">Animations</a></li>
+                <li><a href="categorie.html">Oktoberfest</a></li>
+                <li><a href="categorie.html">Jazz</a></li>
+                <li><a href="categorie.html">Orchestre</a></li>
+                <li><a href="categorie.html">Exposition</a></li>
+                <li><a href="categorie.html">Projections</a></li>
+                <li><a href="categorie.html">Excursions</a></li>
+                <li><a href="categorie.html">Loisirs</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- section navigation end -->
+
+    <!-- slide carousel start -->
+    <section id="carousel-slide">
+        <div class="container custom-container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/stephani.jpg" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/prod-trusty.jpg" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/mahaleo.jpg" style="width:100%;">
+                    </div>
+                    <div class="item">
+                        <img src="img/thb.png" style="width:100%;">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- slide carousel end -->
+
+    <!-- section categorie start -->
+    <section id="categorie-concert">
+        <div class="container custom-container">
+            <div class="categorie-item">
+                <h2 class="couleur_mot">Concerts</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <a href="detailup.html">
+                            <div class="thumbnail" onmouseover="mouseover('month12','title1')" onmouseleave="mouseleave('month12','title1')">
+                                <div class="mg-image">
+                                    <img src="img/rigby.jpg">
+                                </div>
+
+                                <div class="caption taille ">
+                                    <a href="detailup.html">
+                                        <div class="limitelengh">
+                                            <h3><a id="title1" href="#">Rugby</a></h3></div>
+                                        <div class="limite">
+                                            <a href="#">
+                                                <p>Pellentesque amet vitae suscipitrterg in suscipitrterg in suscipitrterg in </p>
+                                            </a>
+                                            <br/>
+                                        </div>
+                                        <div class="row cbg">
+                                            <div class="col-md-3 col-xs-3">
+                                                <div class="calendar">
+                                                    <h1 class="month" id="month12">Nov</h1>
+                                                    <label class="jour">Mar</label>
+                                                    <p class="day">20</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9 col-xs-9">
+                                                <a href="#">
+                                                    <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">610000</b> AR</div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" onmouseover="mouseover('month1','title2')" onmouseleave="mouseleave('month1','title2')">
+                            <a href="detailup.html">
+                                <div class="mg-image">
+                                    <img src="img/tence.jpg" alt="tence_mena">
+                                </div>
+                                <div class="caption taille">
+                                    <div class="limitelengh">
+                                        <h3><a id="title2" href="#">tence mena</a></h3></div>
+                                    <div class="limite">
+                                        <a href="#">
+                                            <p>Pellentesque amet </p>
+                                        </a>
+                                        <br/>
+                                    </div>
+                                    <div class="row cbg">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="calendar">
+                                                <h1 class="month" id="month1">Dec</h1>
+                                                <label class="jour">Lun</label>
+                                                <p class="day">30</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9 ">
+                                            <a href="#">
+                                                <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">100000</b> AR</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="cart" class="col-sm-6 col-md-4 ">
+                        <div class="thumbnail" onmouseover="mouseover('month2','title3')" onmouseleave="mouseleave('month2','title3')">
+                            <a href="detailup.html">
+                                <div class="mg-image">
+                                    <img src="img/dubuald3.jpg">
+                                </div>
+                                <div class="caption taille">
+                                    <div class="limitelengh">
+                                        <h3><a id="title3" href="#">Lorem ipsum dolor </a></h3></div>
+                                    <div class="limite">
+                                        <a href="#">
+                                            <p>Pellentesque amet vitae suscipitrterg in aenean, aliquetsuscipitrterg in aenean, aliquet</p>
+                                        </a>
+                                        <br/>
+                                    </div>
+
+                                    <div class="row cbg">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="calendar">
+                                                <a href="#"><h1 class="month" id="month2">Jan</h1></a>
+                                                <a href="#">
+                                                    <label class="jour">jeu</label>
+                                                </a>
+                                                <a href="#">
+                                                    <p class="day">31</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9 ">
+                                            <a href="#">
+                                                <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">7000</b> AR</a>
+                                            </div>
+                            </a>
+                            <a href="#">
+                                <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                            </a>
+                            <a href="#">
+                                <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                            </a>
+                            </div>
+                            </div>
+
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spor">
+                <h2 class="couleur_mot">Sports</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" onmouseover="mouseover('month3','title4')" onmouseleave="mouseleave('month3','title4')">
+                            <a href="detailup.html">
+                                <div class="mg-image">
+                                    <img src="img/motocross.jpg" alt="Lights" style="width:100%">
+                                </div>
+                                <div class="caption taille">
+                                    <div class="limitelengh">
+                                        <h3><a id="title4" href="#">Lorem  vitae enim ultrices</a></h3></div>
+                                    <div class="limite">
+                                        <a href="#">
+                                            <p>Pellentesque amet vitae suscipitrterg in aenean, aliquet</p>
+                                        </a>
+                                        <br/>
+                                    </div>
+                                    <div class="row cbg">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="calendar">
+                                                <h1 class="month" id="month3">Avr</h1>
+                                                <label class="jour">Vend</label>
+                                                <p class="day">15</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9 ">
+                                            <a href="#">
+                                                <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de<b class="prx"> 6000</b> AR</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" onmouseover="mouseover('month4','title5')" onmouseleave="mouseleave('month4','title5')">
+                            <a href="detailup.html">
+                                <div class="mg-image">
+                                    <img src="img/run.jpg">
+                                </div>
+                                <div class="caption taille">
+                                    <div class="limitelengh">
+                                        <h3><a id="title5" href="#">Lorem ipsum dolor sit amet, s</a></h3></div>
+                                    <div class="limite">
+                                        <a href="#">
+                                            <p>Pellentesque amet vitae suscipitrterg in aenean, aliquet Pellentesque amet vitae suscipitrterg in aenean, aliquet</p>
+                                        </a>
+                                        <br/>
+                                    </div>
+                                    <div class="row cbg">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="calendar">
+                                                <h1 class="month" id="month4">Oct</h1>
+                                                <label class="jour">Mar</label>
+                                                <p class="day">4</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9 ">
+                                            <a href="#">
+                                                <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">5000</b> AR</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" onmouseover="mouseover('month5','title6')" onmouseleave="mouseleave('month5','title6')">
+                            <a href="detailup.html">
+                                <div class="mg-image">
+                                    <img src="img/motocross.jpg">
+                                </div>
+                                <div class="caption taille">
+                                    <div class="limitelengh">
+                                        <h3><a id="title6" href="#">Lorem ipsum dolor sit amet, vitae </a></h3></div>
+                                    <div class="limite">
+                                        <a href="#">
+                                            <p>Pellentesque amet vitae suscipitrterg</p>
+                                        </a>
+                                        <br/>
+                                    </div>
+                                    <div class="row cbg">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="calendar">
+                                                <h1 class="month" id="month5">Nov</h1>
+                                                <label class="jour">Sam</label>
+                                                <p class="day">12</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9 ">
+                                            <a href="#">
+                                                <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx"> 20000</b> AR</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section categorie end -->
+
+    <!-- sectin s'inscrire start -->
+    <section>
+        <div class="container custom-container ">
+            <div class="sinscrire">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="infopers">
+                            <h1 class="inscriptioin"><strong>S'inscrire</strong></h1>
+                            <label><strong>Une mise à jour mensuel des évènements à Madagascar</strong></label>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <form>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control email-subscribe placehold" id="input-mail" aria-describedby="emailHelp" placeholder="| Enter l'adresse E-mail">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <button type="button" class="btn btn-sinscrire btn-lg btn-block">S'inscrire</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sectin s'inscrire end -->
+
+    <!-- section categorie start -->
+    <section id="categorie-concert">
+        <div class="container custom-container">
+            <div class="categorie-dj">
+                <h2 class="couleur_mot">Evènements  de ce week-end</h2>
+                <br/>
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" onmouseover="mouseover('month6','title7')" onmouseleave="mouseleave('month6','title7')">
+                            <a href="detailup.html">
+                                <div class="mg-image">
+                                    <img src="img/afisy.jpg" alt="tence_mena">
+                                </div>
+                                <div class="caption taille">
+                                    <div class="limitelengh">
+                                        <h3><a id="title7" href="#">vitae enim ultrices</a></h3></div>
+                                    <div class="limite">
+                                        <a href="#">
+                                            <p>Pellentesque....</p>
+                                        </a>
+                                        <br/>
+                                    </div>
+                                    <div class="row cbg">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="calendar">
+                                                <h1 class="month" id="month6">Sept</h1>
+                                                <label class="jour">Lun</label>
+                                                <p class="day">17</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9 ">
+                                            <a href="#">
+                                                <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">16000</b>AR</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" onmouseover="mouseover('month7','title8')" onmouseleave="mouseleave('month7','title8')">
+                            <a href="detailup.html">
+                                <div class="mg-image">
+                                    <img src="img/run.jpg" alt="tence_mena">
+                                </div>
+                                <div class="caption taille">
+                                    <div class="limitelengh">
+                                        <h3><a id="title8" href="#">Lorem ipsum dolor </a></h3></div>
+                                    <div class="limite">
+                                        <a href="#">
+                                            <p>Pellentesque amet vitae suscipitrterg in aenean, amet vitae suscipitrterg in aenean, amet vitae suscipitrterg in aenean,aliquet</p>
+                                        </a>
+                                        <br/>
+                                    </div>
+                                    <div class="row cbg">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="calendar">
+                                                <h1 class="month" id="month7">Mai</h1>
+                                                <label class="jour">Dim</label>
+                                                <p class="day">23</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9 ">
+                                            <a href="#">
+                                                <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de<b class="prx"> 5000</b> AR</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" onmouseover="mouseover('month8','title9')" onmouseleave="mouseleave('month8','title9')">
+                            <a href="detailup.html">
+                                <div class="mg-image">
+                                    <img src="img/motocross.jpg" alt="tence_mena">
+                                </div>
+                                <div class="caption taille">
+                                    <div class="limitelengh">
+                                        <h3><a id="title9" href="#">Lorem ipsum dolor sit amet</a></h3></div>
+                                    <div class="limite">
+                                        <a href="#">
+                                            <p>Pellentesque amet vitae suscipi</p>
+                                        </a>
+                                        <br/>
+                                    </div>
+                                    <div class="row cbg">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="calendar">
+                                                <h1 class="month" id="month8">Juin</h1>
+                                                <label class="jour">Mar</label>
+                                                <p class="day">14</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9 ">
+                                            <a href="#">
+                                                <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">15000</b> AR</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="">
+                <h2 class="couleur_mot">Top ventes</h2>
+                <br/>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" onmouseover="mouseover('month9','title10')" onmouseleave="mouseleave('month9','title10')">
+                            <a href="detailup.html">
+                                <div class="mg-image">
+                                    <img src="img/afisy.jpg" alt="tence_mena">
+                                </div>
+                                <div class="caption taille">
+                                    <div class="limitelengh">
+                                        <h3><a id="title10" href="#">Lorem ipsum dolor sit amet, vitae enim ut amet</a></h3></div>
+                                    <div class="limite">
+                                        <a href="#">
+                                            <p>Pellentesque amet vitae suscipitrterg in aent amet, vitae enim ut amet, vitae enim ut amet, vitae enim uean, aliquet</p>
+                                        </a>
+                                        <br/>
+                                    </div>
+                                    <div class="row cbg">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="calendar">
+                                                <h1 class="month" id="month9">Sept</h1>
+                                                <label class="jour">Lun</label>
+                                                <p class="day">17</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9 ">
+                                            <a href="#">
+                                                <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">1000 AR</b></div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail" onmouseover="mouseover('month10','title11')" onmouseleave="mouseleave('month10','title11')">
+                            <a href="detailup.html">
+                                <div class="mg-image">
+                                    <img src="img/run.jpg" alt="tence_mena">
+                                </div>
+                                <div class="caption taille">
+                                    <div class="limitelengh">
+                                        <h3><a id="title11" href="#">Lorem ipsum dolor sit amet</a></h3></div>
+                                    <div class="limite">
+                                        <a href="#">
+                                            <p>Pellentesque amet vitae suscipitrterg in aenean, aliquet</p>
+                                        </a>
+                                        <br/>
+                                    </div>
+                                    <div class="row cbg">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="calendar">
+                                                <h1 class="month" id="month10">Juill</h1>
+                                                <label class="jour">Mar</label>
+                                                <p class="day">24</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9 ">
+                                            <a href="#">
+                                                <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de<b class="prx"> 4000</b> AR</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <a href="#">
+                            <div class="thumbnail" onmouseover="mouseover('month11','title12')" onmouseleave="mouseleave('month11','title12')">
+                                <div class="mg-image">
+                                    <img src="img/motocross.jpg" alt="tence_mena">
+                                </div>
+                                <div class="caption taille">
+                                    <div class="limitelengh">
+                                        <h3><a id="title12" href="#">Lorem ipsum dolor</a></h3></div>
+                                    <div class="limite">
+                                        <a href="#">
+                                            <p>Pellentesque amet vitae suscipitrterg in aenean, aliquet</p>
+                                        </a>
+                                        <br/>
+                                    </div>
+                                    <div class="row cbg">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="calendar">
+                                                <h1 class="month" id="month11">Dec</h1>
+                                                <label class="jour">Lun</label>
+                                                <p class="day">25</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9 ">
+                                            <a href="#">
+                                                <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de<b class="prx"> 2000</b> AR</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section categorie end -->
+
+    <!-- footer start -->
+    <footer class="footer">
         <div class="footer-top">
             <div class="container custom-container">
                 <div class="row">
                     <div class="col-sm-4 col-xs-6">
                         <img class="footer-logo" alt="tapakila" src="./img/logo.png">
                         <p class="small custom">
-                            By Tapakila.mg<br>
-                            IIB 63 Mahamasina<br>
-                            Antananarivo<br>
-                            Madagascar<br>
-                            +33 12 901432<br>
+                            By Tapakila.mg
+                            <br> IIB 63 Mahamasina
+                            <br> Antananarivo
+                            <br> Madagascar
+                            <br> +33 12 901432
+                            <br>
                             <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
                         </p>
                     </div>
                     <div class="col-sm-3 col-xs-6">
-                        <p class="titled"><strong >Acheter des tickets</strong></p>
+                        <p class="titled"><strong>Acheter des tickets</strong></p>
                         <ul class="list-unstyled">
                             <li><a href="Acheteur.html">Comment acheter</a></li>
                             <li><a href="service-clientele.html">Foire aux questions</a></li>
@@ -586,7 +744,7 @@
                         </ul>
                     </div>
                     <div class="col-sm-3 col-xs-6">
-                        <p class="titled"><strong >Organisateurs</strong></p>
+                        <p class="titled"><strong>Organisateurs</strong></p>
                         <ul class="list-unstyled">
                             <li><a href="organisateur.html">Pour les Organisateurs</a></li>
                             <li><a href="connexion.html">S'enregistrer</a></li>
@@ -599,64 +757,26 @@
                         <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
 
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
         </div>
         <div class="footer-bottom">
             <div class="container custom-container small">
-			<ul>
-                        <li><a href="aboutus.html">A propos de nous</a></li>|
-                        <li><a href="contactpage.html">Contact</a></li>|
-                        <li><a href="createevent">Ajouter votre evenement</a></li>|
-                        <li><a href="#">Publicite</a></li>|
-                        <li><a href="service-clientele.html">FAQ</a></li>|
-                        <li><a href="#">Vie privee</a></li>|
-                    </ul>
+                <ul>
+                    <li><a href="aboutus.html">A propos de nous</a></li>|
+                    <li><a href="contactpage.html">Contact</a></li>|
+                    <li><a href="createevent">Ajouter votre evenement</a></li>|
+                    <li><a href="#">Publicite</a></li>|
+                    <li><a href="service-clientele.html">FAQ</a></li>|
+                    <li><a href="#">Vie privee</a></li>|
+                </ul>
                 <p>Copyright &copy Tapakila 2017</p>
             </div>
         </div>
-    
-		</footer>
-		<!-- footer end -->
-		
-		<!-- script start -->
-<script type="text/javascript">
-		$('.dropdown-menu ul li a').click(function(event){
-		event.stopPropagation();
-		$(this).parent().toggleClass('active').siblings().removeClass('active');
-		var target=$(this).attr('href');
-		$('ul li .tab-content '+target).toggleClass(active);
-		});
-		function mouseover(id,idtext){
-			$('#'+id+'').css('background','#d70506');
-			$('#'+idtext+'').css('color','#d70506');
-		}
-		function mouseleave(id,idtext){
-			$('#'+id+'').css('background','#5cb85c');
-			$('#'+idtext+'').css('color','#333');
-		}
-</script>
 
-<script>
-		$(function() {
-		var pull 		= $('#pull');
-		menu 		= $('#sectioncategorie ul');
-		menuHeight	= menu.height();
+    </footer>
+</body>
 
-		$(pull).on('click', function(e) {
-		e.preventDefault();
-		menu.slideToggle();
-		});
-
-		$(window).resize(function(){
-		var w = $(window).width();
-		if(w > 320 && menu.is(':hidden')) {
-		menu.removeAttr('style');
-		}
-		});
-		});
-</script>
-
-
-		<!-- script end -->
-</body></html>
+</html>

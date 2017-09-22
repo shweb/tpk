@@ -1,811 +1,800 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tapakila-Details</title>
-	<link rel="shortcut icon" href="./img/logo.png">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/mediaqueries.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link href="css/datepicker.css" rel="stylesheet">
-	<link href="css/clockpiker.css" rel="stylesheet">
+    <title>Tapakila-Details</title>
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/clockpiker.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/datepicker.js"></script>
-	<script src="js/clockpicker.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/clockpicker.js"></script>
+    <script src="js/Tapakila.js"></script>
 
+</head>
 
+<body>
+    <!-- header start -->
+    <nav id="background" class="navbar navbar-default navbar-static-top">
+        <div class="container custom-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" title="tapakila">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
 
+                    <li><a href="panier.html">Panier</a></li>
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+											<span class="caret"></span> </a>
+                        <ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6">
+                            <li>
+                                <form action="./page/recherche.html" method="get">
+                                    <input type="text" name="query" placeholder="Search..." autocomplete="off">
+                                    <input type="submit" value="Search">
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
 
-	</head>
-	  <body>
-		 <!-- header start -->	
-		<nav  id="background" class="navbar navbar-default navbar-static-top">
-			 <div class="container custom-container">
-				<div class="navbar-header">
-								  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								  </button>
-								  <a class="navbar-brand" href="index.html">
-									<img src="./img/logo.png" title="tapakila">
-								  </a>
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-									<ul class="nav navbar-nav navbar-right">
-										<li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
-									
-										<li><a href="panier.html">Panier</a></li>
-										<li role="presentation" class="dropdown"> 
-											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
-											<span class="caret"></span> </a> 
-												<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
-												<li>
-												<form action="./page/recherche.html" method="get">
-												   <input type="text" name="query" placeholder="Search..." autocomplete="off">
-												   <input type="submit" value="Search">
-												</form>
-											   </li> 
-												</ul> 
-										</li>
-										
-										<li role="presentation" class="dropdown connexion" > 
-											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
-												<span class="caret"></span> </a> 
-												<ul class="dropdown-menu " id="menu3" aria-labelledby="drop6"> 
-													<a href ="connexion.html"><li class="conexion">Se connecter</li></a> 
-													<a href ="connexion.html"><li class="conexion">S'inscrire</li></a> 
-												</ul> 
-										</li>
-										
-									</ul>
+                    <li role="presentation" class="dropdown connexion">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a>
+                        <ul class="dropdown-menu " id="menu3" aria-labelledby="drop6">
+                            <a href="connexion.html">
+                                <li class="conexion">Se connecter</li>
+                            </a>
+                            <a href="connexion.html">
+                                <li class="conexion">S'inscrire</li>
+                            </a>
+                        </ul>
+                    </li>
 
-				</div>
-			</div>
-		</nav>
-		<!-- header end -->
-		
-		<!-- section navigation start -->
-		<section id="sectioncategorie" class="clearfix">
-			<div class="container custom-container">
-				<ul class="clearfix">
-				<li><a href="categorie.html">TOUS</a></li>
-				<li><a href="categorie.html">CONCERTS</a></li>
-				<li><a href="categorie.html">CABARET</a></li>
-				<li><a href="categorie.html">SPORTS</a></li>
-				<li><a href="categorie.html">SOIREES</a></li>
-				<li><a href="categorie.html">DANSES</a></li>
-				<li><a href="categorie.html">FESTIVAL</a></li>
-				<li><a href="categorie.html">CINEMA</a></li>
-				<li><a href="categorie.html">JEUX</a></li>
-				</ul>
-				<a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
-			</div>
-		</section>
-		
-		<section id="sectionevenement" role="navigation">
-			<div class="container custom-container">
-				<ul>
-					<li><a href="categorie.html">Concerts</a></li>
-					<li><a href="categorie.html">Karaoke</a></li>
-					<li><a href="categorie.html">Cabaret</a></li>
-					<li><a href="categorie.html">Foot</a></li>
-					<li><a href="categorie.html">Basket-ball</a></li>
-					<li><a href="categorie.html">Natations</a></li>
-					<li><a href="categorie.html">DJs</a></li>
-					<li><a href="categorie.html">Loung</a></li>
-					<li><a href="categorie.html">Discotheque</a></li>
-					<li><a href="categorie.html">Aerobic</a></li>
-					<li><a href="categorie.html">Zumba</a></li>
-					<li><a href="categorie.html">St Valentin</a></li>
-					<li><a href="categorie.html">26 Juin</a></li>
-					<li><a href="categorie.html">Animations</a></li>
-					<li><a href="categorie.html">Oktoberfest</a></li>
-					<li><a href="categorie.html">Jazz</a></li>
-					<li><a href="categorie.html">Orchestre</a></li>
-					<li><a href="categorie.html">Exposition</a></li>
-					<li><a href="categorie.html">Projections</a></li>
-					<li><a href="categorie.html">Excursions</a></li>
-					<li><a href="categorie.html">Loisirs</a></li>
-				</ul>
-			</div>
-		</section>
-		<!-- section navigation end -->
-		
-		 <!-- header end -->
-		<section>
-			<div class="container custom-container">
-				<div class=" hier1">
-					<div class="row ">
-						<div class="col-lg-7 ">
-							<div class="thumbnail det-picture">
-								<img src="img/dj1.jpg" class="image_detail"> 
-							</div>
-						</div>
-						<div class="col-lg-5">
-							<h3 class="couleur_mot">Samoela en live: 27 Août 2017</h3>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
-							<div class="div_style">
-								<i class="fa fa-product-hunt fa-2x zav" aria-hidden="true"></i><strong id="programme"class="couleur_mot"> Programme :  </strong>optio cumque nihil impedit
-								</div>
-							<div class="div_style">
-									<i class="fa fa-map-marker fa-2x loc zav" aria-hidden="true"></i><strong id="localisation" class="couleur_mot"> Localisation : </strong> Mahamasina
-							</div>
-							<div class="div_style">
-									<i class="fa fa-calendar-o fa-2x  zav" aria-hidden="true"></i><strong id="date" class="couleur_mot"> Date : </strong> 26 Juin 2017
-							</div>
-							<div class="div_style">
-									<i class="fa fa-clock-o fa-2x zav" aria-hidden="true"></i><strong id="heure" class="couleur_mot">  Heure :</strong> 10:00 AM
-							</div>
-							<div class="div_style">
-									<strong class="couleur_mot zav"> Partagez sur :</strong> <img src="img/facebook.png" style="width: 22px;">
-							</div>
-						</div>
-					</div> 
-					
-					<div class="men1">
-							<ul class="nav nav-tabs tabl" role="tablist">
-							
-								<li class=" active">
-									<a href="#about" role="tab" data-toggle="tab">22 Dec</a>
-								</li>
-								
-								<li>
-									<a href="#team" role="tab" data-toggle="tab">23 dec</a>
-								</li>
-								
-								<li>
-								<a href="#events" role="tab" data-toggle="tab">24 dec</a>
-								</li>
-								
-								<li>
-								<a href="#resources" role="tab" data-toggle="tab">25 dec</a>
-								</li>
-						</ul>
-					
+                </ul>
 
-					<div class="tab-content">
-						<div class="tab-pane tabulation  fade active in" id="about">
-							<div class="table-responsive tableau_detail">
-								<table class="table table-hover">
-									<thead>
-										<tr>
-											<th>Type de ticket</th>
-											<th>Disponiblité</th>
-											<th>Quantité</th>
-											<th>Prix unitaire</th>
-											<th>Totale</th>
-										</tr>
-									</thead>
-									
-									<tbody>
-										<tr>
-											<td><strong>VIP</strong><p>Description</p></td>
-											<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p class="tickets">20</p> tickets</td>
-											<td class="tableau-center">
-												<div class="tests">
-													<div class="input-group number-spinner">
-														<span class="input-group-btn test2">
-															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
-														</span>
-														<input class="form-control text-center" value="0" type="text">
-														<span class="input-group-btn test3">
-															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
-														</span>
-													</div>
-												</div>
-											</td>
-											<td><b>4000</b> Ar</td>
-											<td><b id="prixUnit1">0</b> Ar</td>
-										</tr>
-										<tr>
-											<td><strong>Standard</strong><p>Description</p></td>
-											<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p class="tickets2">20</p> tickets</td>
-												<td class="tableau-center">
-													<div class="tests">
-														<div class="input-group number-spinner2">
-															<span class="input-group-btn">
-																<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
-															</span>
-															<input class="form-control text-center ui" value="0" type="text">
-															<span class="input-group-btn">
-																<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up2"><span class="fa fa-plus"></span></button>
-															</span>
-														</div>
-													</div>
-												</td>
-											<td><b>4000</b> Ar</td>
-											<td><b id="prixUnit2">0</b> Ar</td>
-										</tr>
-										<tr>
-											<td><strong>Standard</strong><p>Description</p></td>
-											<td><i class="fa fa-close fa-2x" aria-hidden="true"></i><p>Non disponible</p></td>
-											<td></td>
-											<td><b>4000</b> Ar</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="td_detail"></td>
-											<td class="td_detail"></td>
-											<td class="td_detail">
-											</td>
-											<td><strong>Total</strong></td>
-											<td><b id="total">0</b> Ar</td>
-										</tr>
-										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td><button type="submit" class=" btn btn-danger btn_reset">Reset</button></td>
-											<td><button type="submit" class=" btn btn-success btn_acheterr">Acheter</button></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-						<div class="tab-pane tabulation fade" id="team">
-							<div class="table-responsive tableau_detail">
-								<table class="table table-hover">
-									<thead>
-										<tr>
-											<th>Type de ticket</th>
-											<th>Disponiblité</th>
-											<th>Quantité</th>
-											<th>Prix unitaire</th>
-											<th>Totale</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td><strong>VIP</strong><p>Description</p></td>
-											<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p class="tickets">60</p> tickets</td>
-											<td class="tableau-center">
-												<div class="tests">
-													<div class="input-group number-spinner">
-														<span class="input-group-btn test2">
-															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
-														</span>
-														<input class="form-control text-center" value="0" type="text">
-														<span class="input-group-btn test3">
-															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
-														</span>
-													</div>
-												</div>
-											</td>
-												<td><b>4000</b> Ar</td>
-												<td><b id="prixUnit1">0</b> Ar</td>
-										</tr>
-										<tr>
-											<td><strong>Standard</strong><p>Description</p></td>
-											<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p class="tickets2">60</p> tickets</td>
-											<td class="tableau-center">
-												<div class="tests">
-													<div class="input-group number-spinner2">
-														<span class="input-group-btn">
-															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
-														</span>
-														<input class="form-control text-center ui" value="0" type="text">
-														<span class="input-group-btn">
-															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up2"><span class="fa fa-plus"></span></button>
-														</span>
-													</div>
-												</div>
-											</td>
-											<td><b>4000</b> Ar</td>
-											<td><b id="prixUnit2">0</b> Ar</td>
-										</tr>
-										<tr>
-											<td><strong>Standard</strong><p>Description</p></td>
-											<td><i class="fa fa-close fa-2x" aria-hidden="true"></i><p>Non disponible</p></td>
-											<td></td>
-											<td><b>4000</b> Ar</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="td_detail"></td>
-											<td class="td_detail"></td>
-											<td class="td_detail"></td>
-											<td><strong>Total</strong></td>
-											<td><b id="total">0</b> Ar</td>
-										</tr>
-										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td><button type="submit" class=" btn btn-danger btn_reset">Reset</button></td>
-											<td><button type="submit" class=" btn btn-success btn_acheterr">Acheter</button></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-							
-						<div class="tab-pane  tabulation fade" id="events">
-							<div class="table-responsive tableau_detail">
-								<table class="table table-hover">
-									<thead>
-										<tr>
-											<th>Type de ticket</th>
-											<th>Disponiblité</th>
-											<th>Quantité</th>
-											<th>Prix unitaire</th>
-											<th>Totale</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td><strong>VIP</strong><p>Description</p></td>
-											<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p class="tickets">60</p> tickets</td>
-											<td class="tableau-center">
-												<div class="tests">
-													<div class="input-group number-spinner">
-														<span class="input-group-btn test2">
-															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
-														</span>
-														<input class="form-control text-center" value="0" type="text">
-														<span class="input-group-btn test3">
-															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
-														</span>
-													</div>
-												</div>
-											</td>
-												<td><b>4000</b> Ar</td>
-												<td><b id="prixUnit1">0</b> Ar</td>
-										</tr>
-										<tr>
-											<td><strong>Standard</strong><p>Description</p></td>
-											<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p class="tickets2">60</p> tickets</td>
-											<td class="tableau-center">
-												<div class="tests">
-													<div class="input-group number-spinner2">
-														<span class="input-group-btn">
-															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
-														</span>
-														<input class="form-control text-center ui" value="0" type="text">
-														<span class="input-group-btn">
-															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up2"><span class="fa fa-plus"></span></button>
-														</span>
-													</div>
-												</div>
-											</td>
-											<td><b>4000</b> Ar</td>
-											<td><b id="prixUnit2">0</b> Ar</td>
-										</tr>
-										<tr>
-											<td><strong>Standard</strong><p>Description</p></td>
-											<td><i class="fa fa-close fa-2x" aria-hidden="true"></i><p>Non disponible</p></td>
-											<td></td>
-											<td><b>4000</b> Ar</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="td_detail"></td>
-											<td class="td_detail"></td>
-											<td class="td_detail"></td>
-											<td><strong>Total</strong></td>
-											<td><b id="total">0</b> Ar</td>
-										</tr>
-										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td><button type="submit" class=" btn btn-danger btn_reset">Reset</button></td>
-											<td><button type="submit" class=" btn btn-success btn_acheterr">Acheter</button></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-						<div class="tab-pane tabulation fade" id="resources">
-							<div class="table-responsive tableau_detail">
-								<table class="table table-hover">
-									<thead>
-										<tr>
-											<th>Type de ticket</th>
-											<th>Disponiblité</th>
-											<th>Quantité</th>
-											<th>Prix unitaire</th>
-											<th>Totale</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td><strong>VIP</strong><p>Description</p></td>
-											<td><i class="fa fa-unlock fa-2x" aria-hidden="true"></i><p class="tickets">60</p> tickets</td>
-											<td class="tableau-center">
-												<div class="tests">
-													<div class="input-group number-spinner">
-														<span class="input-group-btn test2">
-															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
-														</span>
-														<input class="form-control text-center" value="0" type="text">
-														<span class="input-group-btn test3">
-															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
-														</span>
-													</div>
-												</div>
-											</td>
-												<td><b>4000</b> Ar</td>
-												<td><b id="prixUnit1">0</b> Ar</td>
-										</tr>
-										<tr>
-											<td><strong>Standard</strong><p>Description</p></td>
-											<td>  <i class="fa fa-lock fa-2x" aria-hidden="true"></i><p class="tickets2">60</p> tickets</td>
-											<td class="tableau-center">
-												<div class="tests">
-													<div class="input-group number-spinner2">
-														<span class="input-group-btn">
-															<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
-														</span>
-														<input class="form-control text-center ui" value="0" type="text">
-														<span class="input-group-btn">
-															<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up2"><span class="fa fa-plus"></span></button>
-														</span>
-													</div>
-												</div>
-											</td>
-											<td><b>4000</b> Ar</td>
-											<td><b id="prixUnit2">0</b> Ar</td>
-										</tr>
-										<tr>
-											<td><strong>Standard</strong><p>Description</p></td>
-											<td><i class="fa fa-close fa-2x" aria-hidden="true"></i><p>Non disponible</p></td>
-											<td></td>
-											<td><b>4000</b> Ar</td>
-											<td></td>
-										</tr>
-										<tr>
-											<td class="td_detail"></td>
-											<td class="td_detail"></td>
-											<td class="td_detail"></td>
-											<td><strong>Total</strong></td>
-											<td><b id="total">0</b> Ar</td>
-										</tr>
-										<tr>
-											<td></td>
-											<td></td>
-											<td></td>
-											<td><button type="submit" class=" btn btn-danger btn_reset">Reset</button></td>
-											<td><button type="submit" class=" btn btn-success btn_acheterr">Acheter</button></td>
-										</tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-						
-					</div>		
-					</div>
-				</div>
-					
-				
-								
-				<div class="voir">
-					<h2 class="couleur_mot">Voir aussi</h2><br/>
-					<div class="row">
-						<div class="col-sm-6 col-md-4">
-							<a href="detailup.html">
-							<div class="thumbnail"  onmouseover="mouseover('month12','title1')" onmouseleave="mouseleave('month12','title1')">
-								<div class="mg-image">
-									<img src="img/rigby.jpg" >
-								</div>
-							
-								<div class="caption taille ">
-									<a href="detailup.html">
-										<div class="limitelengh"><h3 ><a id="title1" href="#">Rugby</a></h3></div>
-										<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg in suscipitrterg in suscipitrterg in </p></a><br/></div>
-											<div class="row cbg">
-												<div class="col-md-3 col-xs-3">
-													<div class="calendar">
-														<h1 class="month" id="month12">Nov</h1>
-														<label class="jour">Mar</label>
-														<p class="day">20</p>
-													</div>
-												</div>
-												<div class="col-md-9 col-xs-9">
-													<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">610000</b> AR</div></a>
-													<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-													<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-												</div>
-											</div>	
-									</a>
-								</div>
-							</div>
-							</a>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail" onmouseover="mouseover('month1','title2')" onmouseleave="mouseleave('month1','title2')">
-							<a href="detailup.html">
-								<div class="mg-image">
-									<img src="img/tence.jpg" alt="tence_mena" >
-								</div>
-								<div class="caption taille">
-									<div class="limitelengh"><h3><a id="title2" href="#">tence mena</a></h3></div>
-									<div class="limite"><a href="#"><p>Pellentesque amet </p></a><br/></div>
-									<div class="row cbg">
-										<div class="col-md-3 col-xs-3">
-											<div class="calendar">
-												<h1 class="month" id="month1">Dec</h1>
-												<label class="jour">Lun</label>
-												<p class="day">30</p>
-											</div>
-										</div>
-										<div class="col-md-9 col-xs-9 ">
-											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">100000</b> AR</div></a>
-											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-										</div>
-									</div>
-								</div>
-							</a>
-							</div>
-						</div>
-						<div class="col-sm-6 col-md-4">
-							<div class="thumbnail"  onmouseover="mouseover('month2','title3')" onmouseleave="mouseleave('month2','title3')">
-							<a href="detailup.html">
-								<div class="mg-image">
-									<img src="img/dubuald3.jpg">
-								</div>
-								<div class="caption taille">
-								<div class="limitelengh"><h3><a id="title3" href="#">Lorem ipsum dolor </a></h3></div>
-								<div class="limite"><a href="#"><p>Pellentesque amet vitae suscipitrterg in aenean, aliquetsuscipitrterg in aenean, aliquet</p></a><br/></div>
-									
-									<div  class="row cbg">
-										<div class="col-md-3 col-xs-3">
-											<div class="calendar">	
-												<a href="#"><h1 class="month" id="month2">Jan</h1></a>
-												<a href="#"><label class="jour">jeu</label></a>
-												<a href="#"><p class="day">31</p></a>
-											</div>
-										</div>
-										<div class="col-md-9 col-xs-9 ">
-											<a href="#"><div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">7000</b> AR</a></div></a>
-											<a href="#"><div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div></a>
-											<a href="#"><div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div></a>
-										</div>
-									</div>
+            </div>
+        </div>
+    </nav>
+    <!-- header end -->
 
-								</div>
-							</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>	
-		</section>
+    <!-- section navigation start -->
+    <section id="sectioncategorie" class="clearfix">
+        <div class="container custom-container">
+            <ul class="clearfix">
+                <li><a href="categorie.html">TOUS</a></li>
+                <li><a href="categorie.html">CONCERTS</a></li>
+                <li><a href="categorie.html">CABARET</a></li>
+                <li><a href="categorie.html">SPORTS</a></li>
+                <li><a href="categorie.html">SOIREES</a></li>
+                <li><a href="categorie.html">DANSES</a></li>
+                <li><a href="categorie.html">FESTIVAL</a></li>
+                <li><a href="categorie.html">CINEMA</a></li>
+                <li><a href="categorie.html">JEUX</a></li>
+            </ul>
+            <a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
+        </div>
+    </section>
 
-		<footer class="footer">
-				<div class="footer-top">
-					<div class="container custom-container">
-						<div class="row">
-							<div class="col-sm-4 col-xs-6">
-								<img class="footer-logo" alt="tapakila" src="./img/logo.png">
-								<p class="small custom">
-									By Tapakila.mg<br>
-									IIB 63 Mahamasina<br>
-									Antananarivo<br>
-									Madagascar<br>
-									+33 12 901432<br>
-									<a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
-								</p>
-							</div>
-							<div class="col-sm-3 col-xs-6">
-								<p class="titled"><strong >Acheter des tickets</strong></p>
-								<ul class="list-unstyled">
-									<li><a href="Acheteur.html">Comment acheter</a></li>
-									<li><a href="service-clientele.html">Foire aux questions</a></li>
-									<li><a href="#">Conditions d'utilisation</a></li>
-								</ul>
-							</div>
-							<div class="col-sm-3 col-xs-6">
-								<p class="titled"><strong >Organisateurs</strong></p>
-								<ul class="list-unstyled">
-									<li><a href="organisateur.html">Pour les Organisateurs</a></li>
-									<li><a href="#">S'enregistrer</a></li>
-									<li><a href="#">Connexion</a></li>
-								</ul>
-							</div>
-							<div class="col-sm-2 col-xs-6 ">
-								<a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square facebookico" aria-hidden="true"></i></a>
-								<div id="fb-root"></div>
-								<div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
+    <section id="sectionevenement" role="navigation">
+        <div class="container custom-container">
+            <ul>
+                <li><a href="categorie.html">Concerts</a></li>
+                <li><a href="categorie.html">Karaoke</a></li>
+                <li><a href="categorie.html">Cabaret</a></li>
+                <li><a href="categorie.html">Foot</a></li>
+                <li><a href="categorie.html">Basket-ball</a></li>
+                <li><a href="categorie.html">Natations</a></li>
+                <li><a href="categorie.html">DJs</a></li>
+                <li><a href="categorie.html">Loung</a></li>
+                <li><a href="categorie.html">Discotheque</a></li>
+                <li><a href="categorie.html">Aerobic</a></li>
+                <li><a href="categorie.html">Zumba</a></li>
+                <li><a href="categorie.html">St Valentin</a></li>
+                <li><a href="categorie.html">26 Juin</a></li>
+                <li><a href="categorie.html">Animations</a></li>
+                <li><a href="categorie.html">Oktoberfest</a></li>
+                <li><a href="categorie.html">Jazz</a></li>
+                <li><a href="categorie.html">Orchestre</a></li>
+                <li><a href="categorie.html">Exposition</a></li>
+                <li><a href="categorie.html">Projections</a></li>
+                <li><a href="categorie.html">Excursions</a></li>
+                <li><a href="categorie.html">Loisirs</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- section navigation end -->
 
-							</div>
-						</div> <!-- row -->
-					</div> <!-- container -->
-				</div>
-				<div class="footer-bottom">
-					<div class="container custom-container small">
-					<ul>
-								<li><a href="#">A propos de nous</a></li>|
-								<li><a href="#">Contact</a></li>|
-								<li><a href="#">Ajouter votre evenement</a></li>|
-								<li><a href="#">Publicite</a></li>|
-								<li><a href="service-clientele.html">FAQ</a></li>|
-								<li><a href="#">Vie privee</a></li>|
-							</ul>
-						<p>Copyright &copy Tapakila 2017</p>
-					</div>
-				</div>
-		</footer>
-		
-<script type="text/javascript">
-		$('.dropdown-menu ul li a').click(function(event){
-		event.stopPropagation();
-		$(this).parent().toggleClass('active').siblings().removeClass('active');
-		var target=$(this).attr('href');
-		$('ul li .tab-content '+target).toggleClass(active);
-		});
-		function mouseover(id,idtext){
-			$('#'+id+'').css('background','#d70506');
-			$('#'+idtext+'').css('color','#d70506');
-		}
-		function mouseleave(id,idtext){
-			$('#'+id+'').css('background','#5cb85c');
-			$('#'+idtext+'').css('color','#333');
-		}
-</script>
+    <!-- header end -->
+    <div class="container custom-container">
+        <div class=" hier1">
+            <div class="row ">
+                <div class="col-lg-7 ">
+                    <div class="thumbnail det-picture">
+                        <img src="img/dj1.jpg" class="image_detail">
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <h3 class="couleur_mot">Samoela en live: 27 Août 2017</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
+                    <div class="div_style">
+                        <i class="fa fa-product-hunt fa-2x zav" aria-hidden="true"></i><strong id="programme" class="couleur_mot"> Programme :  </strong>optio cumque nihil impedit
+                    </div>
+                    <div class="div_style">
+                        <i class="fa fa-map-marker fa-2x loc zav" aria-hidden="true"></i><strong id="localisation" class="couleur_mot"> Localisation : </strong> Mahamasina
+                    </div>
+                    <div class="div_style">
+                        <i class="fa fa-calendar-o fa-2x  zav" aria-hidden="true"></i><strong id="date" class="couleur_mot"> Date : </strong> 26 Juin 2017
+                    </div>
+                    <div class="div_style">
+                        <i class="fa fa-clock-o fa-2x zav" aria-hidden="true"></i><strong id="heure" class="couleur_mot">  Heure :</strong> 10:00 AM
+                    </div>
+                    <div class="div_style">
+                        <strong class="couleur_mot zav"> Partagez sur :</strong> <img src="img/facebook.png" style="width: 22px;">
+                    </div>
+                </div>
+            </div>
 
-		<script>
-				<!-- calcul up down 1 start -->
-					$(document).ready(function(){
-						$('#total').html('0');
-					});
-					var newticket = 20;
-					$(document).on('click', '.number-spinner button', function () {    
-						var btn = $(this),
-							oldValue = btn.closest('.number-spinner').find('input').val().trim(),
-							newVal = 0;
-						if (btn.attr('data-dir') == 'up') {
-							if(oldValue < 20) {
-								newVal = parseInt(oldValue) + 1;
-								var prixUnit1 = 4000 * newVal;
-								newticket-=1;
-								$('.tickets').html(newticket);
-								$('#prixUnit1').html(0+prixUnit1);
-								
-								btn.closest('.number-spinner').find('input').val(newVal);
-								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
-								$('#total').html(total);
-							} else if(oldValue == 20){
-								$('.tickets').html('Epuisé');
-								$('.clock i').removeClass('fa-unlock');
-								$('.clock i').addClass('fa-lock');
-								$('#btn-up').attr('disabled','true');
-								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
-								$('#total').html(total);
-							}
-							
-						} 
-						else {
-							if (oldValue > 0) {
-								newVal = parseInt(oldValue) - 1;
-								var prixUnit1 = 4000 * newVal;
-								newticket+=1;
-								$('#prixUnit1').html(0+prixUnit1);
-								$('.tickets').html(newticket);
-								$('#btn-up').removeAttr('disabled');
-								$('.clock i').removeClass('fa-lock');
-								$('.clock i').addClass('fa-unlock');
-								btn.closest('.number-spinner').find('input').val(newVal);
-								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
-								$('#total').html(total);
-							}
-						}
-					});
-				<!-- calcul up down 1 end -->	
-				
-				$(document).on('click', '.number-spinner2 button', function () {    
-					var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
-						var btn = $(this),
-							oldValue = btn.closest('.number-spinner2').find('input').val().trim(),
-							newVal = 0;
-						
-						if (btn.attr('data-dir') == 'up') {
-							if(oldValue < 20) {
-								newVal = parseInt(oldValue) + 1;
-								var prixUnit1 = 4000 * newVal;
-								newticket-=1;
-								$('#prixUnit2').html(0+prixUnit1);
-								$('.tickets2').html(newticket);
-								btn.closest('.number-spinner2').find('input').val(newVal);
-								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
-								$('#total').html(total);
-							} else if(oldValue == 20){
-								$('.tickets2').html('Epuisé');
-								$('.unlock i').removeClass('fa-unlock');
-								$('.unlock i').addClass('fa-lock');
-								$('#btn-up2').attr('disabled','true');
-								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
-								$('#total').html(total);
-							}
-							
-						} 
-						else {
-							if (oldValue > 0) {
-								newVal = parseInt(oldValue) - 1;
-								var prixUnit1 = 4000 * newVal;
-								newticket+=1;
-								$('#prixUnit2').html(0+prixUnit1);
-								$('.tickets2').html(newticket);
-								$('#btn-up2').removeAttr('disabled');
-								$('.unlock i').removeClass('fa-lock');
-								$('.unlock i').addClass('fa-unlock');
-								btn.closest('.number-spinner2').find('input').val(newVal);
-								var total = parseInt($('#prixUnit1').html()) + parseInt($('#prixUnit2').html());
-								$('#total').html(total);
-							}
-						}
-					});
-				</script>
+            <div class="men1">
+                <ul class="nav nav-tabs tabl" role="tablist">
 
-				<script>
+                    <li class=" active">
+                        <a href="#date1" role="tab" data-toggle="tab">22 Dec</a>
+                    </li>
 
-$(".nav-tabs").find("li a").last().click();
+                    <li>
+                        <a href="#date2" role="tab" data-toggle="tab">23 dec</a>
+                    </li>
 
-var url = document.URL;
-var hash = url.substring(url.indexOf('#'));
+                    <li>
+                        <a href="#date3" role="tab" data-toggle="tab">24 dec</a>
+                    </li>
 
-$(".nav-tabs").find("li a").each(function(key, val) {
+                    <li>
+                        <a href="#date4" role="tab" data-toggle="tab">25 dec</a>
+                    </li>
+                </ul>
 
-  if (hash == $(val).attr('href')) {
+                <section>
+                    <div class="tab-content">
+                        <div class="tab-pane tabulation  fade active in" id="date1">
+                            <div class="table-responsive tableau_detail">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Type de ticket</th>
+                                            <th>Disponiblité</th>
+                                            <th>Quantité</th>
+                                            <th>Prix unitaire</th>
+                                            <th>Totale</th>
+                                        </tr>
+                                    </thead>
 
-    $(val).click();
+                                    <tbody>
+                                        <!-- prixunit1 -->
+                                        <tr>
+                                            <td><strong>VIP</strong>
+                                                <p>Description</p>
+                                            </td>
+                                            <td class="clock"><i class="fa fa-unlock fa-2x" aria-hidden="true"></i>
+                                                <p id="tickets1">20</p> tickets</td>
+                                            <td>
+                                                <div class="row postions">
+                                                    <div class="col-md-4 col-md-offset-2  ">
+                                                        <div class="input-group number-spinner">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+                                                            </span>
+                                                            <input class="form-control text-center ui" value="0" type="text">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up"><span class="fa fa-plus"></span></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-md-offset-1"></div>
+                                                </div>
+                                            </td>
+                                            <td><b>4000</b> Ar</td>
+                                            <td><b id="prixUnit1">0</b> Ar</td>
+                                        </tr>
+                                        <!-- prixunit1 -->
 
-  }
-  $(val).click(function(ky, vl) {
+                                        <!-- prixunit2 -->
+                                        <tr>
+                                            <td><strong>Standard</strong>
+                                                <p>Description</p>
+                                            </td>
+                                            <td class="unlock"> <i class="fa fa-unlock fa-2x" aria-hidden="true"></i>
+                                                <p id="tickets2">20</p> tickets</td>
+                                            <td>
+                                                <div class="row postions">
+                                                    <div class="col-md-4 col-md-offset-2 ">
+                                                        <div class="input-group number-spinner2">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+                                                            </span>
+                                                            <input class="form-control text-center ui" value="0" type="text">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up2"><span class="fa fa-plus"></span></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-md-offset-1"></div>
+                                                </div>
+                                            </td>
+                                            <td><b>4000</b> Ar</td>
+                                            <td><b id="prixUnit2">0</b> Ar</td>
+                                        </tr>
+                                        <!-- prixunit2 -->
 
-    console.log($(this).attr('href'));
-    location.hash = $(this).attr('href');
-  });
+                                        <tr>
+                                            <td><strong>Standard</strong>
+                                                <p>Description</p>
+                                            </td>
+                                            <td><i class="fa fa-close fa-2x" aria-hidden="true"></i>
+                                                <p>Non disponible</p>
+                                            </td>
+                                            <td></td>
+                                            <td><b>4000</b> Ar</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_detail"></td>
+                                            <td class="td_detail"></td>
+                                            <td class="td_detail"></td>
+                                            <td><strong>Total</strong></td>
+                                            <td><b id="total1">0</b> Ar</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <button type="submit" class=" btn btn-danger btn_reset">Reset</button>
+                                            </td>
+                                            <td>
+                                                <button type="submit" class=" btn btn-success btn_acheterr">Acheter</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
 
-});
-				</script>
+                                </table>
+                            </div>
+                        </div>
 
-			
+                        <!-- date 2 -->
+                        <div class="tab-pane tabulation fade" id="date2">
+                            <div class="table-responsive tableau_detail">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Type de ticket</th>
+                                            <th>Disponiblité</th>
+                                            <th>Quantité</th>
+                                            <th>Prix unitaire</th>
+                                            <th>Totale</th>
+                                        </tr>
+                                    </thead>
 
-			<script type="text/javascript">
-				$('.dropdown-menu ul li a').click(function(event){
-				event.stopPropagation();
-				$(this).parent().toggleClass('active').siblings().removeClass('active');
-				var target=$(this).attr('href');
-				$('ul li .tab-content '+target).toggleClass(active);
-				});
-				function mouseover(id,idtext){
-					$('#'+id+'').css('background','#d70506');
-					$('#'+idtext+'').css('color','#d70506');
-				}
-				function mouseleave(id,idtext){
-					$('#'+id+'').css('background','#5cb85c');
-					$('#'+idtext+'').css('color','#333');
-				}
-		</script>
-		
-		<script>
-				$(function() {
-				var pull 		= $('#pull');
-				menu 		= $('#sectioncategorie ul');
-				menuHeight	= menu.height();
-		
-				$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-				});
-		
-				$(window).resize(function(){
-				var w = $(window).width();
-				if(w > 320 && menu.is(':hidden')) {
-				menu.removeAttr('style');
-				}
-				});
-				});
-		</script>
-						<!-- script end -->
+                                    <tbody>
+                                        <!-- prixunit1 -->
+                                        <tr>
+                                            <td><strong>VIP</strong>
+                                                <p>Description</p>
+                                            </td>
+                                            <td class="clock"><i class="fa fa-unlock fa-2x" aria-hidden="true"></i>
+                                                <p id="tickets3">20</p> tickets</td>
+                                            <td>
+                                                <div class="row postions">
+                                                    <div class="col-md-4 col-md-offset-2  ">
+                                                        <div class="input-group number-spinner3">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+                                                            </span>
+                                                            <input class="form-control text-center ui" value="0" type="text">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up3"><span class="fa fa-plus"></span></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-md-offset-1"></div>
+                                                </div>
+                                            </td>
+                                            <td><b>4000</b> Ar</td>
+                                            <td><b id="prixUnit3">0</b> Ar</td>
+                                        </tr>
+                                        <!-- prixunit1 -->
 
-	</body>
+                                        <!-- prixunit2 -->
+                                        <tr>
+                                            <td><strong>Standard</strong>
+                                                <p>Description</p>
+                                            </td>
+                                            <td class="unlock"> <i class="fa fa-unlock fa-2x" aria-hidden="true"></i>
+                                                <p id="tickets4">20</p> tickets</td>
+                                            <td>
+                                                <div class="row postions">
+                                                    <div class="col-md-4 col-md-offset-2 ">
+                                                        <div class="input-group number-spinner4">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+                                                            </span>
+                                                            <input class="form-control text-center ui" value="0" type="text">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up4"><span class="fa fa-plus"></span></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-md-offset-1"></div>
+                                                </div>
+                                            </td>
+                                            <td><b>4000</b> Ar</td>
+                                            <td><b id="prixUnit4">0</b> Ar</td>
+                                        </tr>
+                                        <!-- prixunit2 -->
+
+                                        <tr>
+                                            <td><strong>Standard</strong>
+                                                <p>Description</p>
+                                            </td>
+                                            <td><i class="fa fa-close fa-2x" aria-hidden="true"></i>
+                                                <p>Non disponible</p>
+                                            </td>
+                                            <td></td>
+                                            <td><b>4000</b> Ar</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_detail"></td>
+                                            <td class="td_detail"></td>
+                                            <td class="td_detail"></td>
+                                            <td><strong>Total</strong></td>
+                                            <td><b id="total2">0</b> Ar</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <button type="submit" class=" btn btn-danger btn_reset">Reset</button>
+                                            </td>
+                                            <td>
+                                                <button type="submit" class=" btn btn-success btn_acheterr">Acheter</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <!-- date3 -->
+                        <div class="tab-pane  tabulation fade" id="date3">
+                            <div class="table-responsive tableau_detail">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Type de ticket</th>
+                                            <th>Disponiblité</th>
+                                            <th>Quantité</th>
+                                            <th>Prix unitaire</th>
+                                            <th>Totale</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <!-- prixunit1 -->
+                                        <tr>
+                                            <td><strong>VIP</strong>
+                                                <p>Description</p>
+                                            </td>
+                                            <td class="clock"><i class="fa fa-unlock fa-2x" aria-hidden="true"></i>
+                                                <p id="tickets5">20</p> tickets</td>
+                                            <td>
+                                                <div class="row postions">
+                                                    <div class="col-md-4 col-md-offset-2  ">
+                                                        <div class="input-group number-spinner5">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+                                                            </span>
+                                                            <input class="form-control text-center ui" value="0" type="text">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up5"><span class="fa fa-plus"></span></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-md-offset-1"></div>
+                                                </div>
+                                            </td>
+                                            <td><b>4000</b> Ar</td>
+                                            <td><b id="prixUnit5">0</b> Ar</td>
+                                        </tr>
+                                        <!-- prixunit1 -->
+
+                                        <!-- prixunit2 -->
+                                        <tr>
+                                            <td><strong>Standard</strong>
+                                                <p>Description</p>
+                                            </td>
+                                            <td class="unlock"> <i class="fa fa-unlock fa-2x" aria-hidden="true"></i>
+                                                <p id="tickets6">20</p> tickets</td>
+                                            <td>
+                                                <div class="row postions">
+                                                    <div class="col-md-4 col-md-offset-2 ">
+                                                        <div class="input-group number-spinner6">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+                                                            </span>
+                                                            <input class="form-control text-center ui" value="0" type="text">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up6"><span class="fa fa-plus"></span></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-md-offset-1"></div>
+                                                </div>
+                                            </td>
+                                            <td><b>4000</b> Ar</td>
+                                            <td><b id="prixUnit6">0</b> Ar</td>
+                                        </tr>
+                                        <!-- prixunit2 -->
+
+                                        <tr>
+                                            <td><strong>Standard</strong>
+                                                <p>Description</p>
+                                            </td>
+                                            <td><i class="fa fa-close fa-2x" aria-hidden="true"></i>
+                                                <p>Non disponible</p>
+                                            </td>
+                                            <td></td>
+                                            <td><b>4000</b> Ar</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_detail"></td>
+                                            <td class="td_detail"></td>
+                                            <td class="td_detail"></td>
+                                            <td><strong>Total</strong></td>
+                                            <td><b id="total3">0</b> Ar</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <button type="submit" class=" btn btn-danger btn_reset">Reset</button>
+                                            </td>
+                                            <td>
+                                                <button type="submit" class=" btn btn-success btn_acheterr">Acheter</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- date4 -->
+                        <div class="tab-pane tabulation fade" id="date4">
+                            <div class="table-responsive tableau_detail">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Type de ticket</th>
+                                            <th>Disponiblité</th>
+                                            <th>Quantité</th>
+                                            <th>Prix unitaire</th>
+                                            <th>Totale</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <!-- prixunit1 -->
+                                        <tr>
+                                            <td><strong>VIP</strong>
+                                                <p>Description</p>
+                                            </td>
+                                            <td class="clock"><i class="fa fa-unlock fa-2x" aria-hidden="true"></i>
+                                                <p id="tickets7">20</p> tickets</td>
+                                            <td>
+                                                <div class="row postions">
+                                                    <div class="col-md-4 col-md-offset-2  ">
+                                                        <div class="input-group number-spinner7">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+                                                            </span>
+                                                            <input class="form-control text-center ui" value="0" type="text">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up7"><span class="fa fa-plus"></span></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-md-offset-1"></div>
+                                                </div>
+                                            </td>
+                                            <td><b>4000</b> Ar</td>
+                                            <td><b id="prixUnit7">0</b> Ar</td>
+                                        </tr>
+                                        <!-- prixunit1 -->
+
+                                        <!-- prixunit2 -->
+                                        <tr>
+                                            <td><strong>Standard</strong>
+                                                <p>Description</p>
+                                            </td>
+                                            <td class="unlock"> <i class="fa fa-unlock fa-2x" aria-hidden="true"></i>
+                                                <p id="tickets8">20</p> tickets</td>
+                                            <td>
+                                                <div class="row postions">
+                                                    <div class="col-md-4 col-md-offset-2 ">
+                                                        <div class="input-group number-spinner8">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle smoins" data-dir="dwn" id="btn-down"><span class="fa fa-minus"></span></button>
+                                                            </span>
+                                                            <input class="form-control text-center ui" value="0" type="text">
+                                                            <span class="input-group-btn">
+																		<button class="btn btn-default btn-circle splus " data-dir="up" id="btn-up8"><span class="fa fa-plus"></span></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 col-md-offset-1"></div>
+                                                </div>
+                                            </td>
+                                            <td><b>4000</b> Ar</td>
+                                            <td><b id="prixUnit8">0</b> Ar</td>
+                                        </tr>
+                                        <!-- prixunit2 -->
+
+                                        <tr>
+                                            <td><strong>Standard</strong>
+                                                <p>Description</p>
+                                            </td>
+                                            <td><i class="fa fa-close fa-2x" aria-hidden="true"></i>
+                                                <p>Non disponible</p>
+                                            </td>
+                                            <td></td>
+                                            <td><b>4000</b> Ar</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_detail"></td>
+                                            <td class="td_detail"></td>
+                                            <td class="td_detail"></td>
+                                            <td><strong>Total</strong></td>
+                                            <td><b id="total4">0</b> Ar</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <button type="submit" class=" btn btn-danger btn_reset">Reset</button>
+                                            </td>
+                                            <td>
+                                                <button type="submit" class=" btn btn-success btn_acheterr">Acheter</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="categoriesport">
+            <h2 class="couleur_mot">Voir aussi</h2>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <a href="detailup.html">
+                        <div class="thumbnail" onmouseover="mouseover('month12','title1')" onmouseleave="mouseleave('month12','title1')">
+                            <div class="mg-image">
+                                <img src="img/rigby.jpg">
+                            </div>
+
+                            <div class="caption taille ">
+                                <a href="detailup.html">
+                                    <div class="limitelengh">
+                                        <h3><a id="title1" href="#">Rugby</a></h3></div>
+                                    <div class="limite">
+                                        <a href="#">
+                                            <p>Pellentesque amet vitae suscipitrterg in suscipitrterg in suscipitrterg in </p>
+                                        </a>
+                                        <br/>
+                                    </div>
+                                    <div class="row cbg">
+                                        <div class="col-md-3 col-xs-3">
+                                            <div class="calendar">
+                                                <h1 class="month" id="month12">Nov</h1>
+                                                <label class="jour">Mar</label>
+                                                <p class="day">20</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-9 col-xs-9">
+                                            <a href="#">
+                                                <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">610000</b> AR</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                            </a>
+                                            <a href="#">
+                                                <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail" onmouseover="mouseover('month1','title2')" onmouseleave="mouseleave('month1','title2')">
+                        <a href="detailup.html">
+                            <div class="mg-image">
+                                <img src="img/tence.jpg" alt="tence_mena">
+                            </div>
+                            <div class="caption taille">
+                                <div class="limitelengh">
+                                    <h3><a id="title2" href="#">tence mena</a></h3></div>
+                                <div class="limite">
+                                    <a href="#">
+                                        <p>Pellentesque amet </p>
+                                    </a>
+                                    <br/>
+                                </div>
+                                <div class="row cbg">
+                                    <div class="col-md-3 col-xs-3">
+                                        <div class="calendar">
+                                            <h1 class="month" id="month1">Dec</h1>
+                                            <label class="jour">Lun</label>
+                                            <p class="day">30</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-xs-9 ">
+                                        <a href="#">
+                                            <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">100000</b> AR</div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div id="cart" class="col-sm-6 col-md-4 ">
+                    <div class="thumbnail" onmouseover="mouseover('month2','title3')" onmouseleave="mouseleave('month2','title3')">
+                        <a href="detailup.html">
+                            <div class="mg-image">
+                                <img src="img/dubuald3.jpg">
+                            </div>
+                            <div class="caption taille">
+                                <div class="limitelengh">
+                                    <h3><a id="title3" href="#">Lorem ipsum dolor </a></h3></div>
+                                <div class="limite">
+                                    <a href="#">
+                                        <p>Pellentesque amet vitae suscipitrterg in aenean, aliquetsuscipitrterg in aenean, aliquet</p>
+                                    </a>
+                                    <br/>
+                                </div>
+
+                                <div class="row cbg">
+                                    <div class="col-md-3 col-xs-3">
+                                        <div class="calendar">
+                                            <a href="#"><h1 class="month" id="month2">Jan</h1></a>
+                                            <a href="#">
+                                                <label class="jour">jeu</label>
+                                            </a>
+                                            <a href="#">
+                                                <p class="day">31</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-9 col-xs-9 ">
+                                        <a href="#">
+                                            <div class="prixfx"><i class="fa fa-tag prices"></i>A partir de <b class="prx">7000</b> AR</a>
+                                        </div>
+                        </a>
+                        <a href="#">
+                            <div class="price"><i class="glyphicon glyphicon-time time"></i>22H15</div>
+                        </a>
+                        <a href="#">
+                            <div class="date"><i class="glyphicon glyphicon-map-marker position"></i>Antsahamanitra</div>
+                        </a>
+                        </div>
+                        </div>
+
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <img class="footer-logo" alt="tapakila" src="./img/logo.png">
+                        <p class="small custom">
+                            By Tapakila.mg
+                            <br> IIB 63 Mahamasina
+                            <br> Antananarivo
+                            <br> Madagascar
+                            <br> +33 12 901432
+                            <br>
+                            <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong>Acheter des tickets</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="Acheteur.html">Comment acheter</a></li>
+                            <li><a href="service-clientele.html">Foire aux questions</a></li>
+                            <li><a href="termservice.html">Conditions d'utilisation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong>Organisateurs</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="organisateur.html">Pour les Organisateurs</a></li>
+                            <li><a href="connexion.html">S'enregistrer</a></li>
+                            <li><a href="connexion.html">Connexion</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 ">
+                        <a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square facebookico" aria-hidden="true"></i></a>
+                        <div id="fb-root"></div>
+                        <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
+
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <div class="footer-bottom">
+            <div class="container custom-container small">
+                <ul>
+                    <li><a href="aboutus.html">A propos de nous</a></li>|
+                    <li><a href="contactpage.html">Contact</a></li>|
+                    <li><a href="createevent">Ajouter votre evenement</a></li>|
+                    <li><a href="#">Publicite</a></li>|
+                    <li><a href="service-clientele.html">FAQ</a></li>|
+                    <li><a href="#">Vie privee</a></li>|
+                </ul>
+                <p>Copyright &copy Tapakila 2017</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer end -->
+</body>
+
 </html>

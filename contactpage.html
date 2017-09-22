@@ -1,238 +1,245 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tapakila-Contact</title>
-	<link rel="shortcut icon" href="./img/logo.png">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/mediaqueries.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/font-awesome.css">
-	<link href="css/datepicker.css" rel="stylesheet">
-	<link href="css/clockpiker.css" rel="stylesheet">
+    <title>Tapakila-Contact</title>
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/clockpiker.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/datepicker.js"></script>
-	<script src="js/clockpicker.js"></script>
-	</head>
-	  <body>
-		 <!-- header start -->	
-		<nav  id="background" class="navbar navbar-default navbar-static-top">
-			 <div class="container custom-container">
-				<div class="navbar-header">
-								  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								  </button>
-								  <a class="navbar-brand" href="index.html">
-									<img src="./img/logo.png" title="tapakila">
-								  </a>
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-									<ul class="nav navbar-nav navbar-right">
-										<li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
-									
-										<li><a href="panier.html">Panier</a></li>
-										<li role="presentation" class="dropdown"> 
-											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
-											<span class="caret"></span> </a> 
-												<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
-												<li>
-												<form action="./page/recherche.html" method="get">
-												   <input type="text" name="query" placeholder="Search..." autocomplete="off">
-												   <input type="submit" value="Search">
-												</form>
-											   </li> 
-												</ul> 
-										</li>
-										
-										<li role="presentation" class="dropdown connexion" > 
-											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
-												<span class="caret"></span> </a> 
-												<ul class="dropdown-menu " id="menu3" aria-labelledby="drop6"> 
-													<a href ="connexion.html"><li class="conexion">Se connecter</li></a> 
-													<a href ="connexion.html"><li class="conexion">S'inscrire</li></a> 
-												</ul> 
-										</li>
-										
-									</ul>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/clockpicker.js"></script>
+    <script src="js/Tapakila.js"></script>
+</head>
 
-				</div>
-			</div>
-		</nav>
-		<!-- header end -->
-		
-		<!-- section navigation start -->
-		<section id="sectioncategorie" class="clearfix">
-			<div class="container custom-container">
-				<ul class="clearfix">
-				<li><a href="categorie.html">TOUS</a></li>
-				<li><a href="categorie.html">CONCERTS</a></li>
-				<li><a href="categorie.html">CABARET</a></li>
-				<li><a href="categorie.html">SPORTS</a></li>
-				<li><a href="categorie.html">SOIREES</a></li>
-				<li><a href="categorie.html">DANSES</a></li>
-				<li><a href="categorie.html">FESTIVAL</a></li>
-				<li><a href="categorie.html">CINEMA</a></li>
-				<li><a href="categorie.html">JEUX</a></li>
-				</ul>
-				<a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
-			</div>
-		</section>
-		
-		<section id="sectionevenement" role="navigation">
-			<div class="container custom-container">
-				<ul>
-					<li><a href="categorie.html">Concerts</a></li>
-					<li><a href="categorie.html">Karaoke</a></li>
-					<li><a href="categorie.html">Cabaret</a></li>
-					<li><a href="categorie.html">Foot</a></li>
-					<li><a href="categorie.html">Basket-ball</a></li>
-					<li><a href="categorie.html">Natations</a></li>
-					<li><a href="categorie.html">DJs</a></li>
-					<li><a href="categorie.html">Loung</a></li>
-					<li><a href="categorie.html">Discotheque</a></li>
-					<li><a href="categorie.html">Aerobic</a></li>
-					<li><a href="categorie.html">Zumba</a></li>
-					<li><a href="categorie.html">St Valentin</a></li>
-					<li><a href="categorie.html">26 Juin</a></li>
-					<li><a href="categorie.html">Animations</a></li>
-					<li><a href="categorie.html">Oktoberfest</a></li>
-					<li><a href="categorie.html">Jazz</a></li>
-					<li><a href="categorie.html">Orchestre</a></li>
-					<li><a href="categorie.html">Exposition</a></li>
-					<li><a href="categorie.html">Projections</a></li>
-					<li><a href="categorie.html">Excursions</a></li>
-					<li><a href="categorie.html">Loisirs</a></li>
-				</ul>
-			</div>
-		</section>
-		<!-- section navigation end -->
-		
-		
-		<!-- contact start -->
-		<section>
-		<div class="container custom-container">
-			<div class="bgcontact">
-				<h1 class="contactpg">Contact</h1>
-					<div class="row">
-						<div class="col-lg-5">
-							<div class="slogan">
-								Avec Tapakila vous aurrez vos billets 
-								d'entrée à nos événement sans frais
-								d'envoi ,sans déplacement,
-								sans perdre de temps...
-							</div>
-							<div class="spaceconect"></div>
-							<div class="infoline">
-								<h2>Infoline </h2>
-									<ul>
-										<li class=" statictitle"><i class="fa fa-home"></i><b>Mahamasina</b></li>
-										<li class=" statictitle"><i class="fa fa-phone"></i><b>032 54 230 24</b></li>
-										<li class=" statictitle"><i class="fa fa-envelope"></i><b>Trustylabs@gmail.com</b></li>
-										<li class=" statictitle"><i class="fa fa-globe" aria-hidden="true"></i><b>www.Tapakila.com</b></li>
-									</ul>
-							</div>
-						
-						</div>
-						<div class="col-lg-7">
-							<h2 class="message">Laissez nous un message</h2>
-							<div class="spacemessage"></div>
-								<form id="formcontact">
-								
-									<div class="form-group row">
-										<label  class="col-sm-3 col-form-label statictitle ">Nom<sup class="require1">*</sup></label>
-										<div class="col-sm-9">
-											<input type="password" class="form-control border" id="inputPassword">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label for="inputPassword" class="col-sm-3 col-form-label statictitle">Email/Phone <sup class="require2">*</sup> </label>
-										<div class="col-sm-9">
-											<input type="password" class="form-control border" id="inputPassword">
-										</div>
-									</div>
-									
-									<div class="form-group row">
-										<label for="staticEmail" class="col-sm-3 col-form-label statictitle">Organisateur <sup class="require3">*</sup></label>
-											<div class="col-sm-9">
-												<select class="form-control border" id="sel1">
-													<option></option>
-													<option></option>
-													<option></option>
-													<option></option>
-												</select>
+<body>
+    <!-- header start -->
+    <nav id="background" class="navbar navbar-default navbar-static-top">
+        <div class="container custom-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" title="tapakila">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
 
-											</div>
-									</div>	
-									
-									<div class="form-group row">
-										<label for="inputPassword" class="col-sm-3 col-form-label statictitle">Votre message<sup class="require4">*</sup> </label>
-											<div class="col-sm-9">
-												<div class="form-group">
-													<textarea class="form-control" rows="5" id="comment"></textarea>
-												</div> 
-											</div>
-									</div>
-								</form>
-								<div class="row">
-									<div class="col-lg-4"></div><div class="col-lg-4"></div>
-									<div class="col-lg-4"><button  type="button" class="btn btn-success pull-right btnenvoie">Envoyer</button></div>
-								</div>
-								
-								<div class="row">
-									<div class="col-lg-4"></div><div class="col-lg-4"></div>
-									<div class="col-lg-4">
-										<label class="labely pull-right"><sup class="require5">*</sup> : champs obligatoire</label>
-									</div>
-								</div>
-						</div>
-					</div>
-						
-					<!-- social footer start -->
-					
-	            <div class="row ico-social">
-					<div class="col-lg-6 footer-social">
-							<a href="#" target="_blank"><img class="social" src="./img/facebook.png"></a>
-							<a href="#" target="_blank"><img class="social" style="border-radius: 16px;" src="./img/twit.png"></a>
-							<a href="#" target="_blank"><img class="social" src="./img/google-plus.png"></a>
-							<a href="#" target="_blank"><img class="social" src="./img/dribbble.png"></a>
-					</div>
-				
-	                
-	            </div>
-	        
-					<!-- social end footer -->
-			</div>
-		</div>
-		</section>
-		
-		<!-- contact end -->
-	
-		<!-- footer start -->
-		<footer class="footer">
+                    <li><a href="panier.html">Panier</a></li>
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+											<span class="caret"></span> </a>
+                        <ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6">
+                            <li>
+                                <form action="./page/recherche.html" method="get">
+                                    <input type="text" name="query" placeholder="Search..." autocomplete="off">
+                                    <input type="submit" value="Search">
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li role="presentation" class="dropdown connexion">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a>
+                        <ul class="dropdown-menu " id="menu3" aria-labelledby="drop6">
+                            <a href="connexion.html">
+                                <li class="conexion">Se connecter</li>
+                            </a>
+                            <a href="connexion.html">
+                                <li class="conexion">S'inscrire</li>
+                            </a>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- header end -->
+
+    <!-- section navigation start -->
+    <section id="sectioncategorie" class="clearfix">
+        <div class="container custom-container">
+            <ul class="clearfix">
+                <li><a href="categorie.html">TOUS</a></li>
+                <li><a href="categorie.html">CONCERTS</a></li>
+                <li><a href="categorie.html">CABARET</a></li>
+                <li><a href="categorie.html">SPORTS</a></li>
+                <li><a href="categorie.html">SOIREES</a></li>
+                <li><a href="categorie.html">DANSES</a></li>
+                <li><a href="categorie.html">FESTIVAL</a></li>
+                <li><a href="categorie.html">CINEMA</a></li>
+                <li><a href="categorie.html">JEUX</a></li>
+            </ul>
+            <a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
+        </div>
+    </section>
+
+    <section id="sectionevenement" role="navigation">
+        <div class="container custom-container">
+            <ul>
+                <li><a href="categorie.html">Concerts</a></li>
+                <li><a href="categorie.html">Karaoke</a></li>
+                <li><a href="categorie.html">Cabaret</a></li>
+                <li><a href="categorie.html">Foot</a></li>
+                <li><a href="categorie.html">Basket-ball</a></li>
+                <li><a href="categorie.html">Natations</a></li>
+                <li><a href="categorie.html">DJs</a></li>
+                <li><a href="categorie.html">Loung</a></li>
+                <li><a href="categorie.html">Discotheque</a></li>
+                <li><a href="categorie.html">Aerobic</a></li>
+                <li><a href="categorie.html">Zumba</a></li>
+                <li><a href="categorie.html">St Valentin</a></li>
+                <li><a href="categorie.html">26 Juin</a></li>
+                <li><a href="categorie.html">Animations</a></li>
+                <li><a href="categorie.html">Oktoberfest</a></li>
+                <li><a href="categorie.html">Jazz</a></li>
+                <li><a href="categorie.html">Orchestre</a></li>
+                <li><a href="categorie.html">Exposition</a></li>
+                <li><a href="categorie.html">Projections</a></li>
+                <li><a href="categorie.html">Excursions</a></li>
+                <li><a href="categorie.html">Loisirs</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- section navigation end -->
+
+    <!-- contact start -->
+    <section>
+        <div class="container custom-container">
+            <div class="bgcontact">
+                <h1 class="contactpg">Contact</h1>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="slogan">
+                            Avec Tapakila vous aurrez vos billets d'entrée à nos événement sans frais d'envoi ,sans déplacement, sans perdre de temps...
+                        </div>
+                        <div class="spaceconect"></div>
+                        <div class="infoline">
+                            <h2>Infoline </h2>
+                            <ul>
+                                <li class=" statictitle"><i class="fa fa-home"></i><b>Mahamasina</b></li>
+                                <li class=" statictitle"><i class="fa fa-phone"></i><b>032 54 230 24</b></li>
+                                <li class=" statictitle"><i class="fa fa-envelope"></i><b>Trustylabs@gmail.com</b></li>
+                                <li class=" statictitle"><i class="fa fa-globe" aria-hidden="true"></i><b>www.Tapakila.com</b></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-7">
+                        <h2 class="message">Laissez nous un message</h2>
+                        <div class="spacemessage"></div>
+                        <form id="formcontact">
+
+                            <div class="form-group row">
+                                <label class="col-sm-3 col-form-label statictitle ">Nom<sup class="require1">*</sup></label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control border" id="inputPassword">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputPassword" class="col-sm-3 col-form-label statictitle">Email/Phone <sup class="require2">*</sup> </label>
+                                <div class="col-sm-9">
+                                    <input type="password" class="form-control border" id="inputPassword">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-3 col-form-label statictitle">Organisateur <sup class="require3">*</sup></label>
+                                <div class="col-sm-9">
+                                    <select class="form-control border" id="sel1">
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="inputPassword" class="col-sm-3 col-form-label statictitle">Votre message<sup class="require4">*</sup> </label>
+                                <div class="col-sm-9">
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="row">
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-success pull-right btnenvoie">Envoyer</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-4">
+                                <label class="labely pull-right"><sup class="require5">*</sup> : champs obligatoire</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- social footer start -->
+
+                <div class="row ico-social">
+                    <div class="col-lg-6 footer-social">
+                        <a href="#" target="_blank"><img class="social" src="./img/facebook.png"></a>
+                        <a href="#" target="_blank"><img class="social" style="border-radius: 16px;" src="./img/twit.png"></a>
+                        <a href="#" target="_blank"><img class="social" src="./img/google-plus.png"></a>
+                        <a href="#" target="_blank"><img class="social" src="./img/dribbble.png"></a>
+                    </div>
+
+                </div>
+
+                <!-- social end footer -->
+            </div>
+        </div>
+    </section>
+
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="footer">
         <div class="footer-top">
             <div class="container custom-container">
                 <div class="row">
                     <div class="col-sm-4 col-xs-6">
                         <img class="footer-logo" alt="tapakila" src="./img/logo.png">
                         <p class="small custom">
-                            By Tapakila.mg<br>
-                            IIB 63 Mahamasina<br>
-                            Antananarivo<br>
-                            Madagascar<br>
-                            +33 12 901432<br>
+                            By Tapakila.mg
+                            <br> IIB 63 Mahamasina
+                            <br> Antananarivo
+                            <br> Madagascar
+                            <br> +33 12 901432
+                            <br>
                             <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
                         </p>
                     </div>
                     <div class="col-sm-3 col-xs-6">
-                        <p class="titled"><strong >Acheter des tickets</strong></p>
+                        <p class="titled"><strong>Acheter des tickets</strong></p>
                         <ul class="list-unstyled">
                             <li><a href="Acheteur.html">Comment acheter</a></li>
                             <li><a href="service-clientele.html">Foire aux questions</a></li>
@@ -240,7 +247,7 @@
                         </ul>
                     </div>
                     <div class="col-sm-3 col-xs-6">
-                        <p class="titled"><strong >Organisateurs</strong></p>
+                        <p class="titled"><strong>Organisateurs</strong></p>
                         <ul class="list-unstyled">
                             <li><a href="organisateur.html">Pour les Organisateurs</a></li>
                             <li><a href="#">S'enregistrer</a></li>
@@ -253,53 +260,28 @@
                         <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
 
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
         </div>
         <div class="footer-bottom">
             <div class="container small custom-container">
-			<ul>
-                        <li><a href="#">A propos de nous</a></li>|
-                        <li><a href="#">Contact</a></li>|
-                        <li><a href="#">Ajouter votre evenement</a></li>|
-                        <li><a href="#">Publicite</a></li>|
-                        <li><a href="service-clientele.html">FAQ</a></li>|
-                        <li><a href="#">Vie privee</a></li>|
-                    </ul>
+                <ul>
+                    <li><a href="#">A propos de nous</a></li>|
+                    <li><a href="#">Contact</a></li>|
+                    <li><a href="#">Ajouter votre evenement</a></li>|
+                    <li><a href="#">Publicite</a></li>|
+                    <li><a href="service-clientele.html">FAQ</a></li>|
+                    <li><a href="#">Vie privee</a></li>|
+                </ul>
                 <p>Copyright &copy Tapakila 2017</p>
             </div>
         </div>
-    
-		</footer>
-		<!-- footer end -->
-		
-		<!-- script start -->
-		<script typae="text/javascript">
-		$('.dropdown-menu ul li a').click(function(event){
-		event.stopPropagation();
-		$(this).parent().toggleClass('active').siblings().removeClass('active');
-		var target=$(this).attr('href');
-		$('ul li .tab-content '+target).toggleClass(active in);
-		});
-		</script>
-		<script>
-		$(function() {
-		var pull 		= $('#pull');
-		menu 		= $('#sectioncategorie ul');
-		menuHeight	= menu.height();
 
-		$(pull).on('click', function(e) {
-		e.preventDefault();
-		menu.slideToggle();
-		});
+    </footer>
+    <!-- footer end -->
 
-		$(window).resize(function(){
-		var w = $(window).width();
-		if(w > 320 && menu.is(':hidden')) {
-		menu.removeAttr('style');
-		}
-		});
-		});
-		</script>
-		<!-- script end -->
-</body></html>
+</body>
+
+</html>

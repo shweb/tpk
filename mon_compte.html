@@ -1,246 +1,260 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="./img/logo.png">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/style1.css">
-	<link rel="stylesheet" href="css/mediaqueries.css">
-	<link rel="stylesheet" href="css/animate.css">
-		<link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
     <script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	</head>
-	  <body>
-		 <!-- header start -->	
-		<nav  id="background" class="navbar navbar-default navbar-static-top">
-			 <div class="container custom-container">
-				<div class="navbar-header">
-								  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								  </button>
-								  <a class="navbar-brand" href="index.html">
-									<img src="./img/logo.png" title="tapakila">
-								  </a>
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-									<ul class="nav navbar-nav navbar-right">
-										<li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
-									
-										<li><a href="panier.html">Panier</a></li>
-										<li role="presentation" class="dropdown"> 
-											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
-											<span class="caret"></span> </a> 
-												<ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6"> 
-												<li>
-												<form action="./page/recherche.html" method="get">
-												   <input type="text" name="query" placeholder="Search..." autocomplete="off">
-												   <input type="submit" value="Search">
-												</form>
-											   </li> 
-												</ul> 
-										</li>
-										
-										<li role="presentation" class="dropdown connexion" > 
-											<a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
-												<span class="caret"></span> </a> 
-												<ul class="dropdown-menu " id="menu3" aria-labelledby="drop6"> 
-													<a href ="connexion.html"><li class="conexion">Se connecter</li></a> 
-													<a href ="connexion.html"><li class="conexion">S'inscrire</li></a> 
-												</ul> 
-										</li>
-										
-									</ul>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Tapakila.js"></script>
+</head>
 
-				</div>
-			</div>
-		</nav>
-		
-		 <!-- header end -->
-		<section id="content" class="debut">
-			<div class="container custom-container">
-				<div class="row">
-					<div class="col-sm-2 gauche">
-						<div class="row">
-							<div class="col-md-6 col-md-offset-3">
-								<img src="img/user.png" id="sary">
-								<strong>Bonjour!</strong>
-							</div>
-						</div>
-						<div class="s_menu">
-							<div id="a_compte" class="activeee" onClick="changePage('div_compte', 'a_compte')"> Mon compte</div>
-							<div id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')"> Mes commandes</div>
-							<div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> Historiques</div>
-							<div id="a_news" onClick="changePage('div_news', 'a_news')"> Newsletter</div>
-						</div>
-					</div>
-					<div class="col-sm-10 droite">
-						<div id="div_compte">
-						<h1 id="compte">Mon compte</h1>
-							<div class="form-group contre">
-								<label for="usr">Nom:</label>
-								<input class="form-control forme" id="disabledInput" type="text" placeholder="Dina">
-								<label for="usr">Prénom:</label>
-								<input class="form-control forme" id="disabledInput" type="text" placeholder="Vonjy">
-								<label for="usr">Email:</label>
-								<input id="email" type="text" class="form-control forme" name="email"placeholder="dinavonjy@icloud.com">
-								<label for="usr">Changer mot de passe</label>
-								<input id="password" type="password" class="form-control forme" name="password"placeholder="mot de passe actuel">
-								<input id="password" type="password" class="form-control forme" name="password"placeholder="Nouveau mot de passe">
-								<input id="password" type="password" class="form-control forme" name="password"placeholder="Confirmer mot de passe">
-							</div>
-							<div class="contre5">
-							<button class="btn btn-danger btio2">Enregistrer</button>
-							</div>
-						</div>
-						<div id="div_commandes" class="hide">
-							<h1 id="compte">Mes commandes</h1>
-							<div class="contre">
-								<div class="table-responsive tableau_detail">          
-									  <table class="table table-hover">
-										<thead>
-										  <tr>
-											<th>N°</th>
-											<th>Date</th>
-											<th>Heure</th>
-											<th>Lieu</th>
-											<th>Avatar</th>
-											<th>Titre</th>
-											<th>Status</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr>
-											<td>1</td>
-											<td>12/10/2017</td>
-											<td>09:00 AM</td>
-											<td>Mahamasina</td>
-											<td><a href="detailup.html"><img src="img/mahaleo2.jpeg" class="detail_picture1"></a></td>
-											<td><a href="detailup.html"><strong>Mahaleo en live</strong></a></td>
-											<td>En attendant</td>
-										  </tr>
-										    <tr>
-											<td>1</td>
-											<td>20/10/2017</td>
-											<td>09:00 PM</td>
-											<td>Mahamasina</td>
-											<td><a href="detailup.html"><img src="img/danse.jpg" class="detail_picture1"></a></td>
-											<td><a href="detailup.html"><strong>Live party</strong></a></td>
-											<td>Annulé</td>
-										  </tr>
-										</tbody>
-									  </table>
-									  </div>
-							</div>
-						</div>
-						<div id="div_ev" class="hide">
-							<h1 id="compte">Mes Evènements</h1>
-							<div class="contre">
-								<div class="table-responsive tableau_detail">          
-									  <table class="table table-hover">
-										<thead>
-										  <tr>
-											<th>N°</th>
-											<th>Date</th>
-											<th>Heure</th>
-											<th>Lieu</th>
-											<th>Avatar</th>
-											<th>Titre</th>
-											<th>Status</th>
-										  </tr>
-										</thead>
-										<tbody>
-										  <tr>
-											<td>1</td>
-											<td>12/10/2017</td>
-											<td>09:00 AM</td>
-											<td>Mahamasina</td>
-											<td><a href="detailup.html"><img src="img/ercimanana.png" class="detail_picture1"></a></td>
-											<td><a href="detailup.html"><strong>Mahaleo en live</strong></a></td>
-											<td>En attendant</td>
-										  </tr>
-										    <tr>
-											<td>1</td>
-											<td>20/10/2017</td>
-											<td>09:00 PM</td>
-											<td>Mahamasina</td>
-											<td><a href="detailup.html"><img src="img/jerry.png" class="detail_picture1"></a></td>
-											<td><a href="detailup.html"><strong>Live party<strong></a></td>
-											<td>Annulé</td>
-										  </tr>
-										</tbody>
-									  </table>
-									  </div>
-							</div>
-						</div>
-					
-					<div id="div_news" class="hide">
-						<h1 id="compte">Newsletter</h1>
-						<div class="contre">
-							<div class="row row_new">
-								<div class="col-lg-4">
-									<img src="img/rigby.jpg" class="sary_new">
-								</div>
-								<div class="col-lg-8">
-									<h2>Newsletter 11 Août 2017:
+<body>
+    <!-- header start -->
+    <nav id="background" class="navbar navbar-default navbar-static-top">
+        <div class="container custom-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" title="tapakila">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
+
+                    <li><a href="panier.html">Panier</a></li>
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+											<span class="caret"></span> </a>
+                        <ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6">
+                            <li>
+                                <form action="./page/recherche.html" method="get">
+                                    <input type="text" name="query" placeholder="Search..." autocomplete="off">
+                                    <input type="submit" value="Search">
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li role="presentation" class="dropdown connexion">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a>
+                        <ul class="dropdown-menu " id="menu3" aria-labelledby="drop6">
+                            <a href="connexion.html">
+                                <li class="conexion">Se connecter</li>
+                            </a>
+                            <a href="connexion.html">
+                                <li class="conexion">S'inscrire</li>
+                            </a>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- header end -->
+    <section id="content" class="debut">
+        <div class="container custom-container">
+            <div class="row">
+                <div class="col-sm-2 gauche">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <img src="img/user.png" id="sary">
+                            <strong>Bonjour!</strong>
+                        </div>
+                    </div>
+                    <div class="s_menu">
+                        <div id="a_compte" class="activeee" onClick="changePage('div_compte', 'a_compte')"> Mon compte</div>
+                        <div id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')"> Mes commandes</div>
+                        <div id="a_ev" onClick="changePage('div_ev', 'a_ev')"> Historiques</div>
+                        <div id="a_news" onClick="changePage('div_news', 'a_news')"> Newsletter</div>
+                    </div>
+                </div>
+                <div class="col-sm-10 droite">
+                    <div id="div_compte">
+                        <h1 id="compte">Mon compte</h1>
+                        <div class="form-group contre">
+                            <label for="usr">Nom:</label>
+                            <input class="form-control forme" id="disabledInput" type="text" placeholder="Dina">
+                            <label for="usr">Prénom:</label>
+                            <input class="form-control forme" id="disabledInput" type="text" placeholder="Vonjy">
+                            <label for="usr">Email:</label>
+                            <input id="email" type="text" class="form-control forme" name="email" placeholder="dinavonjy@icloud.com">
+                            <label for="usr">Changer mot de passe</label>
+                            <input id="password" type="password" class="form-control forme" name="password" placeholder="mot de passe actuel">
+                            <input id="password" type="password" class="form-control forme" name="password" placeholder="Nouveau mot de passe">
+                            <input id="password" type="password" class="form-control forme" name="password" placeholder="Confirmer mot de passe">
+                        </div>
+                        <div class="contre5">
+                            <button class="btn btn-danger btio2">Enregistrer</button>
+                        </div>
+                    </div>
+                    <div id="div_commandes" class="hide">
+                        <h1 id="compte">Mes commandes</h1>
+                        <div class="contre">
+                            <div class="table-responsive tableau_detail">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>N°</th>
+                                            <th>Date</th>
+                                            <th>Heure</th>
+                                            <th>Lieu</th>
+                                            <th>Avatar</th>
+                                            <th>Titre</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>12/10/2017</td>
+                                            <td>09:00 AM</td>
+                                            <td>Mahamasina</td>
+                                            <td>
+                                                <a href="detailup.html"><img src="img/mahaleo2.jpeg" class="detail_picture1"></a>
+                                            </td>
+                                            <td><a href="detailup.html"><strong>Mahaleo en live</strong></a></td>
+                                            <td>En attendant</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>20/10/2017</td>
+                                            <td>09:00 PM</td>
+                                            <td>Mahamasina</td>
+                                            <td>
+                                                <a href="detailup.html"><img src="img/danse.jpg" class="detail_picture1"></a>
+                                            </td>
+                                            <td><a href="detailup.html"><strong>Live party</strong></a></td>
+                                            <td>Annulé</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div_ev" class="hide">
+                        <h1 id="compte">Mes Evènements</h1>
+                        <div class="contre">
+                            <div class="table-responsive tableau_detail">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>N°</th>
+                                            <th>Date</th>
+                                            <th>Heure</th>
+                                            <th>Lieu</th>
+                                            <th>Avatar</th>
+                                            <th>Titre</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>12/10/2017</td>
+                                            <td>09:00 AM</td>
+                                            <td>Mahamasina</td>
+                                            <td>
+                                                <a href="detailup.html"><img src="img/ercimanana.png" class="detail_picture1"></a>
+                                            </td>
+                                            <td><a href="detailup.html"><strong>Mahaleo en live</strong></a></td>
+                                            <td>En attendant</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>20/10/2017</td>
+                                            <td>09:00 PM</td>
+                                            <td>Mahamasina</td>
+                                            <td>
+                                                <a href="detailup.html"><img src="img/jerry.png" class="detail_picture1"></a>
+                                            </td>
+                                            <td><a href="detailup.html"><strong>Live party<strong></a></td>
+                                            <td>Annulé</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="div_news" class="hide">
+                        <h1 id="compte">Newsletter</h1>
+                        <div class="contre">
+                            <div class="row row_new">
+                                <div class="col-lg-4">
+                                    <img src="img/rigby.jpg" class="sary_new">
+                                </div>
+                                <div class="col-lg-8">
+                                    <h2>Newsletter 11 Août 2017:
 										<br>
 										Decouvrir les îles pacifique accompagnés les meilleurs expert
 									</h2>
 
-										<br>
-										<u><a>Cliquer ici pour voir accès à cette new</a></u>
-									
-								</div>
-							</div>
-							<div class="row row_new">
-									<div class="col-lg-4">
-										<img src="img/dj1.jpg" class="sary_new">
-									</div>
-									<div class="col-lg-8">
-										<h2>Newsletter 11 Août 2017:
+                                    <br>
+                                    <u><a>Cliquer ici pour voir accès à cette new</a></u>
+
+                                </div>
+                            </div>
+                            <div class="row row_new">
+                                <div class="col-lg-4">
+                                    <img src="img/dj1.jpg" class="sary_new">
+                                </div>
+                                <div class="col-lg-8">
+                                    <h2>Newsletter 11 Août 2017:
 											<br>
 											Decouvrir les îles pacifique accompagnés les meilleurs expert
 										</h2>
-	
-											<br>
-											<u><a>Cliquer ici pour voir accès à cette new</a></u>
-										
-									</div>
-								</div>
-						</div>
-					</div>
-					</div>
-				</div>
 
-		
-		
-		</div>
-		<!--/content goes here -->
-</section>
-<!-- footer start -->
-		<footer class="footer">
+                                    <br>
+                                    <u><a>Cliquer ici pour voir accès à cette new</a></u>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--/content goes here -->
+    </section>
+    <!-- footer start -->
+    <footer class="footer">
         <div class="footer-top">
             <div class="container custom-container">
                 <div class="row">
                     <div class="col-sm-4 col-xs-6">
                         <img class="footer-logo" alt="tapakila" src="./img/logo.png">
                         <p class="small custom">
-                            By Tapakila.mg<br>
-                            IIB 63 Mahamasina<br>
-                            Antananarivo<br>
-                            Madagascar<br>
-                            +33 12 901432<br>
+                            By Tapakila.mg
+                            <br> IIB 63 Mahamasina
+                            <br> Antananarivo
+                            <br> Madagascar
+                            <br> +33 12 901432
+                            <br>
                             <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
                         </p>
                     </div>
                     <div class="col-sm-3 col-xs-6">
-                        <p class="titled"><strong >Acheter des tickets</strong></p>
+                        <p class="titled"><strong>Acheter des tickets</strong></p>
                         <ul class="list-unstyled">
                             <li><a href="Acheteur.html">Comment acheter</a></li>
                             <li><a href="service-clientele.html">Foire aux questions</a></li>
@@ -248,7 +262,7 @@
                         </ul>
                     </div>
                     <div class="col-sm-3 col-xs-6">
-                        <p class="titled"><strong >Organisateurs</strong></p>
+                        <p class="titled"><strong>Organisateurs</strong></p>
                         <ul class="list-unstyled">
                             <li><a href="organisateur.html">Pour les Organisateurs</a></li>
                             <li><a href="connexion.html">S'enregistrer</a></li>
@@ -261,69 +275,28 @@
                         <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
 
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
         </div>
         <div class="footer-bottom">
             <div class="container custom-container small">
-			<ul>
-                        <li><a href="aboutus.html">A propos de nous</a></li>|
-                        <li><a href="contactpage.html">Contact</a></li>|
-                        <li><a href="createevent">Ajouter votre evenement</a></li>|
-                        <li><a href="#">Publicite</a></li>|
-                        <li><a href="service-clientele.html">FAQ</a></li>|
-                        <li><a href="#">Vie privee</a></li>|
-                    </ul>
+                <ul>
+                    <li><a href="aboutus.html">A propos de nous</a></li>|
+                    <li><a href="contactpage.html">Contact</a></li>|
+                    <li><a href="createevent">Ajouter votre evenement</a></li>|
+                    <li><a href="#">Publicite</a></li>|
+                    <li><a href="service-clientele.html">FAQ</a></li>|
+                    <li><a href="#">Vie privee</a></li>|
+                </ul>
                 <p>Copyright &copy Tapakila 2017</p>
             </div>
         </div>
-    
-		</footer>
-		<!-- footer end -->
-		
-		<!-- script start -->
-<script typae="text/javascript">
-		$('.dropdown-menu ul li a').click(function(event){
-		event.stopPropagation();
-		$(this).parent().toggleClass('active').siblings().removeClass('active');
-		var target=$(this).attr('href');
-		$('ul li .tab-content '+target).toggleClass(active in);
-		});
-</script>
 
-<script>
-		$(function() {
-		var pull 		= $('#pull');
-		menu 		= $('#sectioncategorie ul');
-		menuHeight	= menu.height();
+    </footer>
+    <!-- footer end -->
 
-		$(pull).on('click', function(e) {
-		e.preventDefault();
-		menu.slideToggle();
-		});
+</body>
 
-		$(window).resize(function(){
-		var w = $(window).width();
-		if(w > 320 && menu.is(':hidden')) {
-		menu.removeAttr('style');
-		}
-		});
-		});
-</script>
-
-<script>
-    function changePage(id, aId) {
-        document.getElementById("div_compte").className = "hide";
-        document.getElementById("div_commandes").className = "hide";
-        document.getElementById("div_ev").className = "hide";
-        document.getElementById("div_news").className = "hide";
-        document.getElementById(id).className = "show";
-
-        document.getElementById("a_compte").className = "";
-        document.getElementById("a_commandes").className = "";
-        document.getElementById("a_ev").className = "";
-        document.getElementById("a_news").className = "";
-        document.getElementById(aId).className = "activeee";
-    }
-</script>
-</body></html>
+</html>
