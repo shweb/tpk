@@ -3236,6 +3236,62 @@ div.tests .number-spinner .test2 .test3 {
     border-top: 3px solid #d70506;
 }
 
-/* confrimation */
 
-/* confirmation-end */
+/* bienvenu */
+.baner {
+    background-color: #d70506;
+    padding: 30px 30px 30px 30px;
+    border-radius: 5px;
+}
+.logobanier{
+	 display: block;
+    margin: 0 auto;
+}
+#globcontent{
+	background-color:white;
+	margin-top: 30px;
+}
+.contentwelcome{
+	padding: 10px 20px 10px 20px;
+}
+
+.footercontent p{
+	color:#b9b9b9;
+	line-height: 0.429;
+}
+.guide{
+	color:#81c1ef;	
+}
+.guide:hover{
+	color:#d70506;
+	text-decoration:underline;
+}
+
+.welcom{
+	text-decoration:underline #b3b3b3 ;
+	margin-bottom:30px;
+	
+}
+.btnaller{
+	background-color:#d70506;
+	color:white;
+	margin-top:30px;
+	margin-bottom:35px;
+}
+
+.btnaller:hover{
+	color:white;
+
+}
+.footercontent{
+	text-align:center;
+	
+}
+
+.separate{
+	border-top: 2px solid #b3b3b3;
+	width: 100%;
+}
+.sharefb{
+	margin-top:40px;
+}
