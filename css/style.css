@@ -3295,3 +3295,12 @@ div.tests .number-spinner .test2 .test3 {
 .sharefb{
 	margin-top:40px;
 }
+/* confirmation */
+#confirmation{
+    text-align: center;
+    color: white;
+}
+.enter {
+    margin-top: 66px;
+}
+/* confirmation_end */
