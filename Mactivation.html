@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <!-- header start -->
+      <!-- header start -->
     <nav id="background" class="navbar navbar-default navbar-static-top">
-        <div class="container custom-container">
+        <div class="container custom-container ">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -27,20 +27,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img src="./img/logo.png" title="tapakila">
                 </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
+                    <li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
 
-                    <li>
-                        <button type="" class="btn btn-success event"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></button>
-                    </li>
-                    <li><a href="#">Panier</a></li>
+                    <li><a href="panier.html">Panier</a></li>
                     <li role="presentation" class="dropdown">
                         <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
-										<span class="caret"></span> </a>
+											<span class="caret"></span> </a>
                         <ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6">
                             <li>
                                 <form action="./page/recherche.html" method="get">
@@ -50,40 +48,43 @@
                             </li>
                         </ul>
                     </li>
-                    <li role="presentation" class="dropdown connexion">
 
-                        <a href="#" class="dropdown-toggle" id="drop7"> Connexion
-										<span class="caret"></span> </li></a>
+                    <li role="presentation" class="dropdown connexion">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a>
+                        <ul class="dropdown-menu " id="menu3" aria-labelledby="drop6">
+                            <a href="connexion.html">
+                                <li class="conexion">Se connecter</li>
+                            </a>
+                            <a href="connexion.html">
+                                <li class="conexion">S'inscrire</li>
+                            </a>
+                        </ul>
+                    </li>
+
                 </ul>
+
             </div>
         </div>
     </nav>
-
     <!-- header end -->
     <section id="content">
         <div class="container custom-container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3">
+                <div class="col-md-10 col-md-offset-1">
 					<div id="globcontent">
-						<div class="baner">
-								<img class="logobanier" src="./img/logo.png" title="tapakila">
-						</div>
-						<div class="contentwelcome">
-							<h2 class="text-center welcom">Bienvenu chez Tapakila !</h2>
-							<p>Vous venez de créer votre compte Tapakila. Vous avez la possibilté d'acheter des ticket pour vos évènements favories.</p>
-							<p>Maintenant vous pouvez inviter votre famille ou vos amis à regarder l'évènement et faire la fête</p>
-							<p>C'est l'occassion pour vous d'être à l'affut des évènements  qui se déroulerent à Madagascar</p>
-							<p>Pour commencer, consulter notre <a href="#" class="guide">guide d'utilisation</a> du site ou rendez-vous directement sur le site</p>
-							<span class="btnalle"> <a href="#"><button type="button" class="btn btnaller btn-lg btn-block">Allez sur le site</button></a></span>
-							
-							<hr class="separate">
-							
-							<div class="footercontent">
-								<p>II B 63 Mahamasina Antanarivo Madagascar</p>
-								<p>+261 033 12 901 32</p>
-								<p>Contact@Tapakila.mg</p>
-								<p class="sharefb"><strong> Partagez sur :</strong> <img src="img/facebook.png" style="width: 30px;"></p>
+						<img class="logoactivate" src="./img/logo.png" title="tapakila">
+						<hr class="border-logo">
+						<h2><b>Vous y êtes presque</b></h2>
+						<p>Nous sommes prêts à activer votre compte. Il nous suffit de vérifier que cet adresse e-mail est bien le votre.</p>
+						<p>Après cela, vous pouvez commander , acheter ou ajouter à votre panier vos évènement favoris. </p><br>
+							<div class="row">
+								<div   class="col-md-4 col-md-offset-4 ccenter">
+									<button type="button" class=" btn btnactive btn-lg btn-block">Activer</button>
+								</div>
 							</div>
+						<div class="alert">
+							<p>Vous avez des question? consultez notre <a href="service-clientele.html">FAQ</a> dès maintenant</p>
 						</div>
 					</div>
                 </div>

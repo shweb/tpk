@@ -1,4 +1,4 @@
-/* team trustylabs */
+﻿/* team trustylabs */
 
 .custom-container {
     padding: 0 60px
@@ -161,7 +161,6 @@ body {
     height: 40px;
     width: 40px;
     display: block;
-    float: left;
     border: 0;
     font-size: 0;
     background: #680306 url(../img/searchicon.png) no-repeat center center;
@@ -3238,61 +3237,43 @@ div.tests .number-spinner .test2 .test3 {
 }
 
 
-/* bienvenu */
-.baner {
-    background-color: #d70506;
-    padding: 30px 30px 30px 30px;
-    border-radius: 5px;
-}
-.logobanier{
-	 display: block;
-    margin: 0 auto;
-}
+/* activation,mots depass,bienvenu */
+
 #globcontent{
 	background-color:white;
 	margin-top: 30px;
-}
-.contentwelcome{
-	padding: 10px 20px 10px 20px;
+	padding: 20px 25px 20px 25px;
 }
 
-.footercontent p{
-	color:#b9b9b9;
-	line-height: 0.429;
+.border-logo{
+	width:100%;
+	color:#b3b3b3;
 }
-.guide{
-	color:#81c1ef;	
-}
-.guide:hover{
-	color:#d70506;
-	text-decoration:underline;
-}
-
-.welcom{
-	text-decoration:underline #b3b3b3 ;
-	margin-bottom:30px;
-	
-}
-.btnaller{
+.btnactive{
 	background-color:#d70506;
 	color:white;
-	margin-top:30px;
-	margin-bottom:35px;
 }
 
-.btnaller:hover{
-	color:white;
-
+.btnactive:hover{
+	background-color:#d70506;
+	color:black;
 }
-.footercontent{
+.ccenter ,.alert{
 	text-align:center;
-	
 }
 
-.separate{
-	border-top: 2px solid #b3b3b3;
-	width: 100%;
+.alert{
+	background-color:#cccccc;
+	margin-top:25px;
 }
+
+.alert a {
+	color:#62b2eb
+}
+.alert a:hover {
+	color:#d70506;
+}
+
 .sharefb{
 	margin-top:40px;
 }
@@ -3355,3 +3336,4 @@ div.tests .number-spinner .test2 .test3 {
     padding-bottom: 10px;
 }
 /* activation_end */
+
