@@ -3322,14 +3322,14 @@ div.tests .number-spinner .test2 .test3 {
    
 }
 .img_activation{
-    width: 247px;
-    height: 138px;
+    width: 238px;
+    height: 133px;
 }
 #page_activation{
     background-color: white;
     padding: 46px; 
     font-family: roboto;
-    /* line-height: 5px; */
+    /* line-height: 5px;  */
 }
 .row_activation{
     border-bottom: 1px solid grey;
@@ -3344,8 +3344,14 @@ div.tests .number-spinner .test2 .test3 {
 }
 .col_activation{
     color: grey;
+    font-size: 12px;
 }
 .co_activation{
     color: #8e8e8e;
+    font-size: 12px;
+}
+.TOTAL{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 /* activation_end */
