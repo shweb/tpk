@@ -3305,3 +3305,47 @@ div.tests .number-spinner .test2 .test3 {
     margin-top: 66px;
 }
 /* confirmation_end */
+
+/* activation */
+.a_color{
+    color: #0b70b6;
+    
+}
+.high{
+    border-bottom: 2px solid grey;
+    padding-top: 27px;
+    padding-bottom: 15px;
+}
+.ha_style{
+    color: grey;
+    padding-top: 20px;
+   
+}
+.img_activation{
+    width: 247px;
+    height: 138px;
+}
+#page_activation{
+    background-color: white;
+    padding: 46px; 
+    font-family: roboto;
+    /* line-height: 5px; */
+}
+.row_activation{
+    border-bottom: 1px solid grey;
+    padding-bottom: 22px;
+    padding-top: 20px;
+}
+.p_activation{
+    margin-top: 56px;
+}
+.logo-activation{
+    margin-left: 28px;
+}
+.col_activation{
+    color: grey;
+}
+.co_activation{
+    color: #8e8e8e;
+}
+/* activation_end */

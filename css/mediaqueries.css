@@ -109,6 +109,10 @@
     .col_bout {
         text-align: center;
     }
+    #page_activation {
+        padding: 0px;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-device-width: 400px) and (max-device-width: 450px) {
@@ -158,6 +162,10 @@
     .col_bout {
         text-align: center;
     }
+    #page_activation {
+        padding: 0px;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-device-width:500px) and (max-device-width:615px) {
@@ -181,6 +189,10 @@
     .col_bout {
         text-align: center;
     }
+    #page_activation {
+        padding: 0px;
+        text-align: center;
+    }
 }
 
 @media only screen and (min-device-width:616px) and (max-device-width:767px) {
@@ -200,6 +212,10 @@
     }
     .select_recherche {
         margin-left: 22px;
+    }
+    #page_activation {
+        padding: 0px;
+        text-align: center;
     }
 }
 
@@ -367,6 +383,10 @@
     .select_recherche {
         margin-left: 22px;
     }
+    #page_activation {
+        padding: 0px;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 950px) {
@@ -498,7 +518,9 @@
     /*------------------Mon Compte end--------------------*/
 }
 
-@media screen and (min-width:1000px) {}
+@media screen and (min-width:1000px) {
+  
+}
 
 
 /* iPads (portrait and landscape) ----------- */
@@ -588,6 +610,8 @@
     .col_bout {
         text-align: center;
     }
+
+    
     /*-------------Mon Compte end------------------*/
 }
 
@@ -614,6 +638,8 @@
     .col_bout {
         text-align: center;
     }
+
+ 
 }
 
 
@@ -793,7 +819,9 @@
 
 /* Medium Devices, Desktops */
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+    
+}
 
 
 /* Desktops and laptops ----------- */
