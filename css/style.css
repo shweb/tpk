@@ -2316,6 +2316,7 @@ hr.couvert:after {
 
 .newsletter {
     margin-top: 35px;
+    color: black;
 }
 
 .vente {
@@ -2409,6 +2410,7 @@ hr.couvert:after {
 .all {
     border-bottom: 1px solid #e1dbdb;
     font-size: 27px;
+    color: black;
 }
 
 
@@ -2456,7 +2458,7 @@ hr.couvert:after {
 .titre {
     border-bottom: 1px solid grey;
     padding-bottom: 17px;
-    color: #3c3c3c;
+    color: black;
 }
 
 .centre {
@@ -2697,6 +2699,11 @@ hr.couvert:after {
 
 #div_compte a {
     cursor: pointer;
+}
+.spacy{
+    border-bottom: 1px solid #d70506;
+    width: 268px;
+    margin-left: 0px;
 }
 
 
@@ -3125,7 +3132,7 @@ table caption {
 .thumb1 {
     display: block;
     padding: 4px 4px 0px 4px;
-    margin-bottom: -14px;
+    margin-bottom: -8px;
     line-height: 1.42857143;
     background-color: #fff;
     border: none !important;
