@@ -1891,44 +1891,119 @@ div.calendar p {
 
 
 /* panier start */
-
-#custom-white {
+#custom-white{
     background-color: white;
     padding: 6px 35px 35px 35px;
     border-radius: 4px;
     margin-top: 6%;
+    }
+    
+    .panier{
+        border-bottom: 1px solid red;
+        margin-bottom:20px;
+    }
+ 
+    .right{
+        text-align:right;
+    }
+    .achat{
+        margin-bottom:15px 
+    }
+    .caisse{
+        margin-bottom:15px 
+    }
+.panier_body{
+    background-color: white;
+    padding: 0px 22px 11px 22px;
+    margin-top: 20px;
+}
+.h2_panier{
+    border-bottom: 1px solid red;  
+}
+.image_panier{
+    width: 150px;
 }
 
-.panier {
-    border-bottom: 1px solid red;
-    margin-bottom: 20px;
-}
+  .tably {
+ 
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .tably tr {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  .tably th {
+    padding: .625em;
+  }
+  .tably td {
+    padding: .625em;
+    
+  }
+  .tably th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width: 600px) {
+    .tably {
+      border: 0;
+    }
+ 
+    .tably thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+    .tably tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+    }
+    .tably td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+    }
+    .tably td:before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .tably td:last-child {
+      border-bottom: 0;
+    }
+  }
+  .th_panier{
+      width: 270px;
+  }
+  .sor{
+    margin-top: 29px;
+  }
+  .sel{
+    width: 60px;
+  }
 
-.table > tbody > tr > td,
-.table > tbody > tr > th,
-.table > tfoot > tr > td,
-.table > tfoot > tr > th,
-.table > thead > tr > td,
-.table > thead > tr > th {
-    padding: 10px;
-    line-height: 1.42857143;
-    vertical-align: middle ! important;
-    border-top: 1px solid #ddd;
-}
-
-.right {
-    text-align: right;
-}
-
-.achat {
-    margin-bottom: 15px
-}
-
-.caisse {
-    margin-bottom: 15px
-}
-
-
+  .tableau_panier td{
+      text-align: left;
+  }
+  .tableau_panier th{
+    text-transform: uppercase;
+  }
 /* panier end */
 
 
