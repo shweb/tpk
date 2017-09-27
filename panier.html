@@ -125,75 +125,239 @@
 
     <section>
         <div class="container custom-container">
-            <div id="custom-white">
-                <h1 class="couleur_mot">Votre Panier</h1>
-                <div class="panier"></div>
-                <div class="alert alert-success">
-                    La quantité a été mise à jour avec <strong>succès .</strong>
-                </div>
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>¨Produit</th>
-                                <th>Quantité</th>
-                                <th>Prix</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><img src="img/logo.png"></td>
-                                <td>Sports</td>
-                                <td>
-                                    <select class="selectpicker">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                    </select>
-                                </td>
-                                <td>6000 Ar</td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Supprimer</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td class="right">TOTAL :</td>
-                                <td>6000 Ar</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td class="right">Tax :</td>
-                                <td> 200 AR</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td class="right">Total :</td>
-                                <td> 5800 AR</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
                 <div class="row">
-                    <div id="footer-btn">
-                        <div class="col-md-10 col-sm-10 col-xs-12">
-                            <button type="button" class="btn btn-primary achat">Continuer vos achats</button>
-                            <button type="button" class="btn btn-success caisse">Commander</button>
-                        </div>
-                        <div class="col-md-2 col-sm-2 col-xs-12">
-                            <button type="button" class="btn btn-danger vide">Vider panier</button>
-                        </div>
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <div class="panier_body">
+                            <div class="h2_panier">
+                            <h2 class="couleur_mot">Votre panier</h2>
+                             </div>
+                             <div class="alert alert-success">
+                                    <p>Ces tickets sont ajoutés à votre panier</p>
+                                </div>
+                             <div class="table-responsive">
+                                    <table class="table tableau_panier">
+                                        <thead>
+                                            <tr>
+                                            <th scope="col" class="th_panier">Evénement</th>
+                                            <th scope="col">Ticket</th>
+                                            <th scope="col">Quantité</th>
+                                            <th scope="col">Prix</th>
+                                            </tr>
+                                        </thead>
+                                    <tbody>
+                                                <tr>
+                                                    <td>
+                                                            <div class="row">
+                                                                    <div class="col-lg-7">
+                                                                            <img src="img/danse.jpg" class="image_panier">
+                                                                    </div>
+                                                                    <div class="col-lg-5">
+                                                                                <p class="sor"> Jaojoby</p>
+                                                                     </div>
+                                                                </div>
+                                                    </td>
+                                                    <td>
+                                                        VIP
+                                                    </td>
+                                                    <td>
+                                                            <div class="form-group">
+                                                                    <select class="form-control sel" id="sel1">
+                                                                      <option>1</option>
+                                                                      <option>2</option>
+                                                                      <option>3</option>
+                                                                      <option>4</option>
+                                                                    </select>
+                                                             </div>
+                                                    </td>
+                                                    <td data-label="Prix">16000 AR</td>
+                                                    <td data-label="Prix"><p>X</p></td>
+                                                </tr>    
+
+                                                <tr>
+                                                        <td>
+                                                                <div class="row">
+                                                                        <div class="col-lg-7">
+                                                                                <img src="img/tence.jpg" class="image_panier">
+                                                                        </div>
+                                                                        <div class="col-lg-5">
+                                                                                    <p class="sor"> Tence mena</p>
+                                                                         </div>
+                                                                    </div>
+                                                        </td>
+                                                        <td>
+                                                            Public
+                                                        </td>
+                                                        <td>
+                                                                <div class="form-group">
+                                                                        <select class="form-control sel" id="sel1">
+                                                                          <option>1</option>
+                                                                          <option>2</option>
+                                                                          <option>3</option>
+                                                                          <option>4</option>
+                                                                        </select>
+                                                                 </div>
+                                                        </td>
+                                                        <td data-label="Prix">16000 AR</td>
+                                                        <td data-label="Prix"><p>X</p></td>
+                                                    </tr>    
+                                                    <tr>
+                                                            <td>
+                                                                    <div class="row">
+                                                                            <div class="col-lg-7">
+                                                                                    <img src="img/mahaleo.jpg" class="image_panier">
+                                                                            </div>
+                                                                            <div class="col-lg-5">
+                                                                                        <p class="sor"> Mahaleo</p>
+                                                                             </div>
+                                                                        </div>
+                                                            </td>
+                                                            <td>
+                                                                VIP
+                                                            </td>
+                                                            <td>
+                                                                    <div class="form-group">
+                                                                            <select class="form-control sel" id="sel1">
+                                                                              <option>1</option>
+                                                                              <option>2</option>
+                                                                              <option>3</option>
+                                                                              <option>4</option>
+                                                                            </select>
+                                                                     </div>
+                                                            </td>
+                                                            <td data-label="Prix">16000 AR</td>
+                                                            <td data-label="Prix"><p>X</p></td>
+                                                        </tr>    
+                                                        <tr>
+                                                                <td>
+                                                                        
+                                                                </td>
+                                                                <td>
+                                                                   
+                                                                </td>
+                                                                
+                                                                <td data-label="Prix">Total</td>
+                                                                <td data-label="Prix"><p>18000 AR</p></td>
+                                                                <td>
+                                                                        
+                                                                 </td>
+                                                            </tr>    
+                                            </tbody>
+                                    </table>
+                                  </div>
+
+<!-- gkhlfh -->
+<!-- <table class="tably">
+        <thead>
+                <tr>
+                  <th scope="col" class="th_panier">Evénement</th>
+                  <th scope="col">Ticket</th>
+                  <th scope="col">Quantité</th>
+                  <th scope="col">Prix</th>
+                </tr>
+              </thead>
+        
+        <tbody>
+          <tr>
+            <td data-label="Evénement">
+                <div class="row">
+                    <div class="col-lg-7">
+                            <img src="img/danse.jpg" class="image_panier">
                     </div>
+                    <div class="col-lg-5">
+                                <p class="sor"> Jaojoby</p>
+                     </div>
                 </div>
-            </div>
+                 </td>
+            <td data-label="Ticket">Public</td>
+            <td data-label="Quantité">
+                <div class="form-group">
+                    <select class="form-control sel" id="sel1">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                    </div>
+                </td>
+
+            <td data-label="Prix">16000 AR</td>
+            <td data-label="Prix"><p>X</p></td>
+          </tr>
+          <tr>
+                <td data-label="Evénement">
+                    <div class="row">
+                        <div class="col-lg-7">
+                                <img src="img/mahaleo.jpg" class="image_panier">
+                        </div>
+                        <div class="col-lg-5">
+                                    <p class="sor"> Mahaleo</p>
+                         </div>
+                    </div>
+                     </td>
+                <td data-label="Ticket">VIP</td>
+                <td data-label="Quantité">
+                    <div class="form-group">
+                        <select class="form-control sel" id="sel1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                        </select>
+                        </div>
+                    </td>
+    
+                <td data-label="Prix">8000 AR</td>
+                <td data-label="Prix"><p>X</p></td>
+              </tr>
+              <tr>
+                    <td data-label="Evénement">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                    <img src="img/tence.jpg" class="image_panier">
+                            </div>
+                            <div class="col-lg-5">
+                                        <p class="sor"> Tence mena</p>
+                             </div>
+                        </div>
+                         </td>
+                    <td data-label="Ticket">VIP</td>
+                    <td data-label="Quantité">
+                        <div class="form-group">
+                            <select class="form-control sel" id="sel1">
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                            </select>
+                            </div>
+                        </td>
+        
+                    <td data-label="Prix">16000 AR</td>
+                    <td data-label="Prix"><p>X</p></td>
+                  </tr>
+                  <tr>
+                        <td data-label="">
+                            
+                             </td>
+                        <td data-label=""></td>
+                        <td data-label="">Total
+                        </td>
+            
+                        <td data-label="">6000 AR</td>
+                        <td data-label=""><p></p></td>
+                      </tr>
+          
+        </tbody>
+      </table> -->
+
+<!-- kkjfkdsk -->
+
+
+                        </div>
+
+                    </div>
+
+                </div>
         </div>
     </section>
 
