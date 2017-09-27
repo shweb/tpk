@@ -3331,3 +3331,107 @@ div.tests .number-spinner .test2 .test3 {
 }
 /* activation_end */
 
+
+
+/* paiment */
+#achat-content{
+	background-color:#fff;
+	padding:10px 20px 10px 20px ;
+}
+.wcustom{
+	width:150px;
+}
+.tabl-content {
+  border: 1px solid #ccc;
+  border-collapse: none ! important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+.tabl-content caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+.tabl-content tr {
+background: #fff;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+.tabl-content th,
+.tabl-content td {
+  padding: .625em;
+  text-align: center;
+}
+.tabl-content th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 600px) {
+  .tabl-content {
+    border: 0;
+  }
+ .tabl-content caption {
+    font-size: 1.3em;
+  }
+  .tabl-content thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+ .tabl-content tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  .tabl-content td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  .tabl-content td:before {
+    
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .tabl-content td:last-child {
+    border-bottom: 0;
+  }
+}
+
+.mvola , .orangemoney , .airtelmoney {
+	width : 150px;
+	height: 85px;
+margin-right: 25px;
+margin-top: 10px
+}
+
+.check{
+	margin-top :30px;
+	
+}
+.modepaimenent{
+	margin-top:25px;
+}
+.intutulé{
+	margin-top:29px;
+}
+.Ttal{
+	margin-top: 30px;
+
+}
+.tright{
+	margin-right: 75px;
+}
+.t2right{
+margin-right: 8px;
+}
