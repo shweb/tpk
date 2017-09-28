@@ -3704,9 +3704,7 @@ margin-right: 15px;
 }
 .button.ticket {
     color: #ffffff;
-    background-image: -moz-linear-gradient(top, #d44845, #b00014);
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #d44845), color-stop(1, #b00014));
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d44845', endColorstr='#a63432', GradientType='0');
+   background-color:#d70506;
     border: 0;
     border-radius: 2px;
     padding: 8px 25px;
@@ -3717,4 +3715,8 @@ margin-right: 15px;
     background-image: -moz-linear-gradient(top, #c0413a, #b00014);
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #c0413a), color-stop(1, #b00014));
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c0413a', endColorstr='#a63432', GradientType='0');
+}
+
+.titlebuy {
+	color:#d70506 ;
 }
