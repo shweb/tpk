@@ -1992,7 +1992,7 @@ div.calendar p {
       width: 270px;
   }
   .sor{
-    margin-top: 29px;
+    margin-top: 33px;
   }
   .sel{
     width: 60px;
@@ -2004,6 +2004,32 @@ div.calendar p {
   .tableau_panier th{
     text-transform: uppercase;
   }
+.qt1{
+    text-align: center;
+}
+.to{
+    text-align: center;
+}
+.bt_panier{
+    width: 202px;
+    font-size: 16px;
+    background-color: #d70506;
+    border: none;
+}
+.commandy{
+    text-align: center;
+}
+.row_pane{
+    margin-top: 34px;
+}
+.col2_panier{
+    margin-top: 6px;
+    padding-bottom: 12px;
+}
+.suc{
+    text-align: left !important;
+    background-color: #dff0d8 !important;
+}
 /* panier end */
 
 
