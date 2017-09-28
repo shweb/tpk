@@ -3545,7 +3545,8 @@ background: #fff;
 
 }
 .tright{
-margin-right: 80px;
+    margin-right: 112px;
+   margin-left: 29px;
 }
 .t2right{
 margin-right: 10px;
@@ -3565,7 +3566,7 @@ margin-right: 10px;
 .Annulerbtn{
 margin-bottom:20px;
 text-align: center;
-margin-top: 17px;
+margin-top: 22px;
 color: #0d8fd6;
 }
 .Annulerbtn a {
@@ -3696,6 +3697,7 @@ margin-right: 15px;
 .Fraisservice{
 	margin-bottom:20px;
 	margin-top:10px;
+	padding: 10px 10px 10px 122px;
 }
 .sep{
 	width:50%;
@@ -3707,8 +3709,8 @@ margin-right: 15px;
    background-color:#d70506;
     border: 0;
     border-radius: 2px;
-    padding: 8px 25px;
-    font-size: 14px;
+    padding: 5px 30px;
+    font-size: 25px;
     text-transform: uppercase;
 }
 .button.ticket:hover {
@@ -3719,4 +3721,11 @@ margin-right: 15px;
 
 .titlebuy {
 	color:#d70506 ;
+}
+.TT{
+	color:#d70506 ;
+	font-size:30px;
+}
+.bold{
+	font-weight: 800 ! important;
 }
