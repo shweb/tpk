@@ -1917,6 +1917,10 @@ div.calendar p {
     padding: 0px 22px 11px 22px;
     margin-top: 20px;
 }
+.panier_body a{
+cursor: pointer;
+text-decoration: none;
+}
 .h2_panier{
     border-bottom: 1px solid red;  
 }
@@ -1930,10 +1934,15 @@ div.calendar p {
     margin: 0;
     padding: 0;
     width: 100%;
+    border-left: hidden;
+    border-right-style: hidden;
   }
   .tably tr {
-    background: #f8f8f8;
-    border: 1px solid #ddd;
+    border: 1px solid #5d5858;
+    padding: .35em;
+  }
+  .tably thead tr {
+    border-top: white;
     padding: .35em;
   }
   .tably th {
@@ -1967,6 +1976,7 @@ div.calendar p {
       border-bottom: 3px solid #ddd;
       display: block;
       margin-bottom: .625em;
+      border: 1px solid #ddd;
     }
     .tably td {
       border-bottom: 1px solid #ddd;
@@ -2011,10 +2021,12 @@ div.calendar p {
     text-align: center;
 }
 .bt_panier{
-    width: 202px;
+    width: 135px;
     font-size: 16px;
     background-color: #d70506;
     border: none;
+     
+    padding: 9px;
 }
 .commandy{
     text-align: center;
@@ -2033,6 +2045,10 @@ div.calendar p {
 
 .ko{
     margin-top: 3px;
+}
+.tot{
+    font-size: 16px;
+}
 }
 /* panier end */
 
