@@ -3467,7 +3467,9 @@ div.tests .number-spinner .test2 .test3 {
     padding: 0;
     width: 100%;
     table-layout: fixed;
-    border: hidden;
+    border-right: hidden;
+    border-left: hidden;
+    border-top: hidden;
 }
 }
 .tabl-content caption {
@@ -3544,6 +3546,7 @@ background: #fff;
 }
 .Ttal{
 	margin-top: 30px;
+	padding: 30px 10px 10px 125px;
 
 }
 .tright{
@@ -3700,7 +3703,7 @@ margin-right: 15px;
 .Fraisservice{
 	margin-bottom:20px;
 	margin-top:10px;
-	padding: 10px 10px 10px 122px;
+	padding: 11px 10px 10px 137px;
 }
 .sep{
 	width:50%;
@@ -3732,4 +3735,10 @@ margin-right: 15px;
 .bold{
 	font-weight: 799 !important;
 font-size: 16px;
+}
+.tableaucustom{
+	border-bottom:1px solid #ddd !important;
+}
+.custom-pg{
+	padding: 10px 87px 10px 85px;
 }
