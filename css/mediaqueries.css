@@ -427,8 +427,21 @@
 
 
 /* detail end */
+@media only screen and (max-width : 768px ){
+	.Fraisservice {
+    padding: 15px  !important;
+}
+.tright {
+    margin-right: 11px  !important;
+    margin-left: 0  !important;
+}
+.TT {
+    color: #d70506  !important;
+    font-size: 17px  !important;
+}
+}
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
     .recherche_no {
         background-color: none !important;
     }

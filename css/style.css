@@ -3477,12 +3477,14 @@ div.tests .number-spinner .test2 .test3 {
 	width:150px;
 }
 .tabl-content {
-  border: 1px solid #ccc;
-  border-collapse: none ! important;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  table-layout: fixed;
+    border: 1px solid #ccc;
+    border-collapse: none ! important;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    border: hidden;
+}
 }
 .tabl-content caption {
   font-size: 1.5em;
@@ -3561,7 +3563,8 @@ background: #fff;
 
 }
 .tright{
-margin-right: 80px;
+    margin-right: 112px;
+   margin-left: 29px;
 }
 .t2right{
 margin-right: 10px;
@@ -3581,7 +3584,7 @@ margin-right: 10px;
 .Annulerbtn{
 margin-bottom:20px;
 text-align: center;
-margin-top: 17px;
+margin-top: 22px;
 color: #0d8fd6;
 }
 .Annulerbtn a {
@@ -3661,6 +3664,7 @@ height: 27px;
 #ticket-radio2 .button .logo {
     vertical-align: middle;
     padding-right: 10px;
+	height: 42px;
 }
 
 .btn span.glyphicon {    			
@@ -3687,7 +3691,7 @@ height: 27px;
     color: #fff;
     background-color:#5cb85c ;
     border-color: #5cb85c ;
-	margin-top: 5px;
+	margin-top: 9px;
 }
 .gly-custom  {
     position: relative;
@@ -3712,6 +3716,7 @@ margin-right: 15px;
 .Fraisservice{
 	margin-bottom:20px;
 	margin-top:10px;
+	padding: 10px 10px 10px 122px;
 }
 .sep{
 	width:50%;
@@ -3723,8 +3728,8 @@ margin-right: 15px;
    background-color:#d70506;
     border: 0;
     border-radius: 2px;
-    padding: 8px 25px;
-    font-size: 14px;
+    padding: 5px 30px;
+    font-size: 25px;
     text-transform: uppercase;
 }
 .button.ticket:hover {
@@ -3735,4 +3740,12 @@ margin-right: 15px;
 
 .titlebuy {
 	color:#d70506 ;
+}
+.TT{
+	color:#d70506 ;
+	font-size:30px;
+}
+.bold{
+	font-weight: 799 !important;
+font-size: 16px;
 }
