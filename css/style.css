@@ -1999,7 +1999,7 @@ div.calendar p {
   }
 
   .tableau_panier td{
-      text-align: left;
+      text-align: center;
   }
   .tableau_panier th{
     text-transform: uppercase;
@@ -2029,6 +2029,10 @@ div.calendar p {
 .suc{
     text-align: left !important;
     background-color: #dff0d8 !important;
+}
+
+.ko{
+    margin-top: 3px;
 }
 /* panier end */
 
