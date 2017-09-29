@@ -3513,7 +3513,29 @@ background: #fff;
   letter-spacing: .1em;
   text-transform: uppercase;
 }
+
+.imgpaiment{
+	border:none;
+	padding:0 ! important;
+	margin-bottom: 0 ! important;
+	margin-top: 13px;
+	min-width: 115%;
+}
 @media screen and (max-width: 600px) {
+	.imgpaiment{
+	border:none;
+	padding:0 ! important;
+	margin-bottom: 0 ! important;
+	margin-top: 5px;
+	min-width: 100% ! important;
+	
+}
+.sor {
+    text-align: center;
+    margin-top: 13px;
+    font-size: 18px;
+}
+	
   .tabl-content {
     border: 0;
   }
@@ -3530,6 +3552,12 @@ background: #fff;
     position: absolute;
     width: 1px;
   }
+  .sor{
+	  text-align: center;
+  }
+  .image_panier {
+    width: 100%;
+}
  .tabl-content tr {
     border-bottom: 3px solid #ddd;
     display: block;
