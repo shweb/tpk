@@ -3405,6 +3405,7 @@ div.tests .number-spinner .test2 .test3 {
 }
 .alert a:hover {
 	color:#d70506;
+	text-decoration: underline;
 }
 
 .sharefb{
