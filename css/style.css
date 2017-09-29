@@ -1962,9 +1962,21 @@ text-decoration: none;
     letter-spacing: .1em;
     text-transform: uppercase;
   }
+  
   @media screen and (max-width: 600px) {
     .tably {
       border: 0;
+    }
+    .jer{
+        margin-top: 12px;
+    }
+    .ko{
+        margin-top: -23px !important;
+        
+    }
+    .tot{
+        font-size: 16px;
+        text-align: center !important;
     }
  
     .tably thead {
@@ -2039,13 +2051,14 @@ text-decoration: none;
     padding: 9px;
 }
 .commandy{
-    text-align: center;
+    text-align: right;
 }
 .row_pane{
     margin-top: 34px;
+    margin-bottom: 34px;
 }
 .col2_panier{
-    margin-top: 6px;
+    margin-top: 11px;
     padding-bottom: 12px;
 }
 .suc{
@@ -2054,10 +2067,13 @@ text-decoration: none;
 }
 
 .ko{
-    margin-top: 3px;
+    margin-top: 11px;
 }
 .tot{
     font-size: 16px;
+}
+.toto:hover{
+    color: red !important;
 }
 }
 /* panier end */
@@ -3797,3 +3813,17 @@ font-size: 16px;
 .custom-pg{
 	padding: 10px 87px 10px 85px;
 }
+
+/* FAQ */
+.body_faq{
+    background-color: white;
+    padding: 20px;
+}
+.mimi{
+    text-align: center;
+}
+.nav-tabs2{
+    border-bottom: 2px solid #d70506 ;
+}
+
+/* FAQ_END */

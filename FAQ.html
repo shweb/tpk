@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/clockpiker.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/clockpicker.js"></script>
+    <script src="js/Tapakila.js"></script>
+
+</head>
+
+<body>
+    <!-- header start -->
+    <nav id="background" class="navbar navbar-default navbar-static-top">
+        <div class="container custom-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" title="tapakila">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
+
+                    <li><a href="panier.html">Panier</a></li>
+                    <li role="presentation" class="dropdown">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
+											<span class="caret"></span> </a>
+                        <ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6">
+                            <li>
+                                <form action="./page/recherche.html" method="get">
+                                    <input type="text" name="query" placeholder="Search..." autocomplete="off">
+                                    <input type="submit" value="Search">
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li role="presentation" class="dropdown connexion">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a>
+                        <ul class="dropdown-menu " id="menu3" aria-labelledby="drop6">
+                            <a href="connexion.html">
+                                <li class="conexion">Se connecter</li>
+                            </a>
+                            <a href="connexion.html">
+                                <li class="conexion">S'inscrire</li>
+                            </a>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- header end -->
+
+    <!-- section navigation start -->
+    <section id="sectioncategorie" class="clearfix">
+        <div class="container custom-container">
+            <ul class="clearfix">
+                <li><a href="categorie.html">TOUS</a></li>
+                <li><a href="categorie.html">CONCERTS</a></li>
+                <li><a href="categorie.html">CABARET</a></li>
+                <li><a href="categorie.html">SPORTS</a></li>
+                <li><a href="categorie.html">SOIREES</a></li>
+                <li><a href="categorie.html">DANSES</a></li>
+                <li><a href="categorie.html">FESTIVAL</a></li>
+                <li><a href="categorie.html">CINEMA</a></li>
+                <li><a href="categorie.html">JEUX</a></li>
+            </ul>
+            <a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
+        </div>
+    </section>
+
+    <section id="sectionevenement" role="navigation">
+        <div class="container custom-container">
+            <ul>
+                <li><a href="categorie.html">Concerts</a></li>
+                <li><a href="categorie.html">Karaoke</a></li>
+                <li><a href="categorie.html">Cabaret</a></li>
+                <li><a href="categorie.html">Foot</a></li>
+                <li><a href="categorie.html">Basket-ball</a></li>
+                <li><a href="categorie.html">Natations</a></li>
+                <li><a href="categorie.html">DJs</a></li>
+                <li><a href="categorie.html">Loung</a></li>
+                <li><a href="categorie.html">Discotheque</a></li>
+                <li><a href="categorie.html">Aerobic</a></li>
+                <li><a href="categorie.html">Zumba</a></li>
+                <li><a href="categorie.html">St Valentin</a></li>
+                <li><a href="categorie.html">26 Juin</a></li>
+                <li><a href="categorie.html">Animations</a></li>
+                <li><a href="categorie.html">Oktoberfest</a></li>
+                <li><a href="categorie.html">Jazz</a></li>
+                <li><a href="categorie.html">Orchestre</a></li>
+                <li><a href="categorie.html">Exposition</a></li>
+                <li><a href="categorie.html">Projections</a></li>
+                <li><a href="categorie.html">Excursions</a></li>
+                <li><a href="categorie.html">Loisirs</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- section navigation end -->
+
+    <section>
+        <div class="container custom-container">
+           <div class="body_faq">
+               <div class="mimi">
+                   <h3>Questions les + fréquentes</h3>
+               </div>
+              
+                   
+                        <ul class="nav nav-tabs nav-tabs2">
+                            <li class="active ">
+                                <a href="#1" data-toggle="tab"><b>ACHETEURS </b></a>
+                            </li>
+                            <li><a href="#2" data-toggle="tab"><b>VENDEURS</b></a>
+                            </li>
+                        </ul>
+                   
+                        <div class="tab-content ">
+                            <div class="tab-pane active" id="1">
+                                ykjuukukyukyukiy
+                            </div>
+                            <div class="tab-pane" id="2">
+                                    ykjuukukyukyukiy lkldfgdefrerooà
+                            </div>
+                        </div>
+
+           </div>
+
+        </div>
+
+        <!-- End Page -->
+
+    </section>
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <img class="footer-logo" alt="tapakila" src="./img/logo.png">
+                        <p class="small custom">
+                            By Tapakila.mg
+                            <br> IIB 63 Mahamasina
+                            <br> Antananarivo
+                            <br> Madagascar
+                            <br> +33 12 901432
+                            <br>
+                            <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong>Acheter des tickets</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="Acheteur.html">Comment acheter</a></li>
+                            <li><a href="service-clientele.html">Foire aux questions</a></li>
+                            <li><a href="termservice.html">Conditions d'utilisation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong>Organisateurs</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="organisateur.html">Pour les Organisateurs</a></li>
+                            <li><a href="connexion.html">S'enregistrer</a></li>
+                            <li><a href="connexion.html">Connexion</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 ">
+                        <a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square facebookico" aria-hidden="true"></i></a>
+                        <div id="fb-root"></div>
+                        <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
+
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <div class="footer-bottom">
+            <div class="container custom-container small">
+                <ul>
+                    <li><a href="aboutus.html">A propos de nous</a></li>|
+                    <li><a href="contactpage.html">Contact</a></li>|
+                    <li><a href="createevent">Ajouter votre evenement</a></li>|
+                    <li><a href="#">Publicite</a></li>|
+                    <li><a href="service-clientele.html">FAQ</a></li>|
+                    <li><a href="#">Vie privee</a></li>|
+                </ul>
+                <p>Copyright &copy Tapakila 2017</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+</html>
