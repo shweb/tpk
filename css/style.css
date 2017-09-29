@@ -1962,6 +1962,9 @@ text-decoration: none;
     letter-spacing: .1em;
     text-transform: uppercase;
   }
+  .totaly{
+      font-size: 18px;
+  }
   
   @media screen and (max-width: 600px) {
     .tably {
