@@ -1459,7 +1459,12 @@ input[type="file"] {
 .limitelengh {
     height: 70px;
 }
-
+.col6_index{
+    padding-top: 43px;
+}
+.col16_index{
+    padding-top: 10px;
+}
 
 /* commit */
 
@@ -1769,14 +1774,14 @@ div.calendar p {
     background-repeat: no-repeat;
     margin-top: 25px;
     margin-bottom: 25px;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
     background-position: 36% 53%;
 }
 
 .infopers {
     text-align: center;
     color: white;
-    margin-bottom: 30px;
+   
 }
 
 .inscriptioin {
@@ -1922,7 +1927,7 @@ cursor: pointer;
 text-decoration: none;
 }
 .h2_panier{
-    border-bottom: 1px solid red;  
+    border-bottom: 2px solid red;  
 }
 .image_panier{
     width: 150px;
