@@ -1998,9 +1998,24 @@ text-decoration: none;
     letter-spacing: .1em;
     text-transform: uppercase;
   }
+  .totaly{
+      font-size: 18px;
+  }
+  
   @media screen and (max-width: 600px) {
     .tably {
       border: 0;
+    }
+    .jer{
+        margin-top: 12px;
+    }
+    .ko{
+        margin-top: -23px !important;
+        
+    }
+    .tot{
+        font-size: 16px;
+        text-align: center !important;
     }
  
     .tably thead {
@@ -2075,13 +2090,14 @@ text-decoration: none;
     padding: 9px;
 }
 .commandy{
-    text-align: center;
+    text-align: right;
 }
 .row_pane{
     margin-top: 34px;
+    margin-bottom: 34px;
 }
 .col2_panier{
-    margin-top: 6px;
+    margin-top: 11px;
     padding-bottom: 12px;
 }
 .suc{
@@ -2090,10 +2106,13 @@ text-decoration: none;
 }
 
 .ko{
-    margin-top: 3px;
+    margin-top: 11px;
 }
 .tot{
     font-size: 16px;
+}
+.toto:hover{
+    color: red !important;
 }
 }
 /* panier end */
@@ -3831,8 +3850,26 @@ font-size: 16px;
 	border-bottom:1px solid #ddd !important;
 }
 .custom-pg{
+	padding: 10px 87px 10px 85px;
+}
+
+/* FAQ */
+.body_faq {
+    background-color: white;
+    padding: 10px 25px 10px 25px;
+    margin-top: 40px;
+}
+.mimi{
+    text-align: center;
+}
+.nav-tabs2{
+    border-bottom: 2px solid #d70506 ;
+}
+
+/* FAQ_END */
 	padding: 10px 52px 10px 52px;
 }
+
 
 
 /* faq */
@@ -3986,3 +4023,4 @@ body.page:not(.woocommerce-page) p {
 .valt{
 	padding-left: 20px;
 }
+
