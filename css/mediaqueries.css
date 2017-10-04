@@ -223,6 +223,11 @@
 /* Smartphones (portrait) ----------- */
 
 @media only screen and (max-width: 320px) {
+		.panel-default > .panel-heading a {
+
+    padding: 0px 0 23px 15px  !important;
+
+}
     .tabl li .active a {
         background-color: #d70506 !important;
         border: none !important;
@@ -427,7 +432,17 @@
 
 
 /* detail end */
+@media only screen and (min-width : 365px) and (max-width : 768px){
+	.panel-default > .panel-heading a {
+
+    padding: 21px 0 23px 15px  !important;
+
+}
+}
+
+
 @media only screen and (max-width : 768px ){
+
 	.Fraisservice {
     padding: 15px  !important;
 }
