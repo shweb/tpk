@@ -1,4 +1,87 @@
 /* Smartphones (portrait and landscape) ----------- */
+/* text right lg md sm xs */
+/* Style pour tablette */
+@media (max-width: 768px) {
+	
+.content-custom{
+	padding:0 !important;
+}
+	.infoline ul {
+    padding-left: 0  !important;
+}
+	.container {
+    padding-right: 20px  !important;
+padding-left: 20px  !important;
+}
+    .text-left-sm, 
+    .text-left-xs {
+		
+        text-align: left; 
+    }
+    .text-center-sm, 
+    .text-center-xs { 
+        text-align: center; 
+    }
+    .text-right-sm, 
+    .text-right-xs	{ 
+
+        text-align: right; 
+    }
+    .text-justify-sm, 
+    .text-justify-xs { 
+        text-align: justify; 
+    }
+}
+/* Style pour desktop */
+@media (min-width: 992px) {
+      .text-left-md, 
+      .text-left-sm, 
+      .text-left-xs { 
+          text-align: left; 
+      }
+      .text-center-md, 
+      .text-center-sm, 
+      .text-center-xs { 
+          text-align: center; 
+      }
+    .text-right-md, 
+    .text-right-sm, 
+    .text-right-xs { 
+        text-align: right;
+    }
+    .text-justify-md, 
+    .text-justify-sm, 
+    .text-justify-xs { 
+        text-align: justify;
+    }
+}
+/* Style pour grand desktop */
+@media (min-width: 1200px) {
+    .text-left-lg, 
+    .text-left-md, 
+    .text-left-sm, 
+    .text-left-xs {
+        text-align: left;
+    }
+    .text-center-lg, 
+    .text-center-md, 
+    .text-center-sm, 
+    .text-center-xs {
+        text-align: center;
+    }
+    .text-right-lg, 
+    .text-right-md, 
+    .text-right-sm, 
+    .text-right-xs {
+        text-align: right;
+    }
+    .text-justify-lg, 
+    .text-justify-md, 
+    .text-justify-sm, 
+    .text-justify-xs {
+        text-align: justify;
+    }
+/* } */
 
 @media only screen and (min-device-width: 350px) and (max-device-width: 480px) {
     /* panier start */
@@ -223,10 +306,8 @@
 /* Smartphones (portrait) ----------- */
 
 @media only screen and (max-width: 320px) {
-		.panel-default > .panel-heading a {
-
-    padding: 0px 0 23px 15px  !important;
-
+	.panel-default > .panel-heading a {
+padding: 0px 0 23px 15px  !important;
 }
     .tabl li .active a {
         background-color: #d70506 !important;
@@ -712,6 +793,9 @@
 /* iPhone 4 (landscape) ----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	.panel-default > .panel-heading a {
+padding: 0px 0 23px 15px  !important;
+}
     /* Styles */
     .connexion {
         clear: both;
@@ -878,13 +962,25 @@
 /* Large screens ----------- */
 
 @media only screen and (min-width: 1824px) {
+	.header-search-box form input[type="text1"] {
+		min-width: 250px;
+  
+}
     /* Styles */
     .col_bout {
         text-align: center !important;
     }
 }
 
+@media only screen and (max-width: 1024px) {
+	.header-search-box form input[type="text1"] {
+		min-width: 250px  !important;
+  
+}
+	
+}
 @media only screen and (max-width: 1824px) {
+
     /* Styles */
     .col_bout {
         text-align: center !important;
