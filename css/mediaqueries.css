@@ -1,7 +1,19 @@
 /* Smartphones (portrait and landscape) ----------- */
 /* text right lg md sm xs */
 /* Style pour tablette */
+
+
+@media only screen and (min-width: 1000px) and (max-width:1050px) {
+	.header-search-box form input[type="text1"] {
+    min-width: 265px ! important;
+  
+}
+
+
 @media (max-width: 768px) {
+	.custom-container {
+    padding: 0 4px;
+}
 	
 .content-custom{
 	padding:0 !important;

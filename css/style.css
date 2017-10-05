@@ -57,6 +57,18 @@ a {
     color: black;
 }
 
+
+@media only screen and (max-width: 950px) {
+    .custom-container {
+        padding: 0 10px !important;
+    }
+	.panel-default > .panel-heading a {
+    padding: 0px 0 23px 15px !important;
+
+}
+}
+
+
 .nav > li > a:focus,
 .nav > li > a:hover {
     text-decoration: none;
