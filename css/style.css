@@ -1,25 +1,4 @@
 ﻿/* team trustylabs */
- @media only screen and (min-width:980px) and (max-width:1100px) {
-	 .fill {
-
-    width: 45%  ! important;
-}
- }
- @media only screen and ( min-width :955px) and (max-width:965px){
-	  .fill {
-
-    width: 23%  ! important;
-}
- }
-
- @media only screen and (max-width:950px) {
-	 .fill {
-
-width: 100% ! important;
-margin-top: 0 ! important;
-}
- }
-
 .fill {
   position: relative;
   display: table;
@@ -108,18 +87,6 @@ p {
 
 a {
     color: black;
-}
-
-
-@media only screen and (max-width: 950px) {
-    .custom-container {
-        padding: 0 10px !important;
-    }
-	.panel-default > .panel-heading a {
-
-    padding: 0px 0 23px 15px !important;
-
-}
 }
 
 
@@ -1714,93 +1681,7 @@ div.calendar p {
 }
 
 
-/*Styles for screen 700px > 1000*/
 
-@media screen and (min-width:500px) and (max-width: 1000px) {
-    #sectioncategorie {
-        height: 100px;
-        width: 100%;
-        background: #ffffffe6;
-        font-size: 11pt;
-        font-family: 'PT Sans', Arial, sans-serif;
-        font-weight: bold;
-        position: relative;
-        margin-top: -20px;
-    }
-}
-
-
-/*Styles for screen 600px and lower*/
-
-@media screen and (max-width: 600px) {
-    #sectioncategorie {
-        height: auto;
-    }
-    #sectioncategorie ul {
-        width: 100%;
-        display: block;
-        height: auto;
-    }
-    #sectioncategorie li {
-        width: 50%;
-        float: left;
-        position: relative;
-    }
-    #sectioncategorie a {
-        text-align: center;
-        width: 100%;
-    }
-}
-
-
-/*Styles for screen 515px and lower*/
-
-@media only screen and (max-width: 480px) {
-    #sectioncategorie {
-        border-bottom: 0;
-    }
-    #sectioncategorie ul {
-        display: none;
-        height: auto;
-    }
-    #sectioncategorie a#pull {
-        display: block;
-        width: 100%;
-        position: relative;
-        background-color: #f8f8f8;
-    }
-    #sectioncategorie a#pull:after {
-        content: "";
-        background: url('nav-icon.png') no-repeat;
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        position: absolute;
-        right: 15px;
-        top: 10px;
-    }
-    .menupull {
-        color: black;
-    }
-}
-
-
-/*Smartphone*/
-
-@media only screen and (max-width: 320px) {
-    #sectioncategorie li {
-        display: block;
-        float: none;
-        width: 100%;
-    }
-    #sectioncategorie li a {
-        border-bottom: 1px solid #576979;
-        margin-left: 20px;
-    }
-    .menupull {
-        color: black;
-    }
-}
 
 
 /* section-evenement-start */
@@ -2164,6 +2045,7 @@ text-decoration: none;
 }
 .tot{
     font-size: 16px;
+	margin-top: 10px;
 }
 .toto:hover{
     color: red !important;
@@ -3900,6 +3782,7 @@ margin-right: 15px;
 
 .titlebuy {
 	color:#d70506 ;
+	padding-left: 75px;
 }
 .TT{
 	color:#d70506 ;
@@ -3918,7 +3801,11 @@ font-size: 16px;
 
 /* FAQ */
 .padd{
-	padding-left:25px;
+	padding-left: 25px;
+font-weight: 100 !important;
+font-size: 15px;
+color: black;
+margin-top: 16px;
 }
 .content-custom{
 	padding: 0px 35px 0px 35px;
@@ -4073,7 +3960,7 @@ font-size: 16px;
     padding: 15px;
     border-left: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
-	padding-left: 70px;
+	padding-left: 40px;
 }
 body.page:not(.woocommerce-page) p {
     line-height: 2.2rem;
