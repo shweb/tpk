@@ -1,6 +1,51 @@
+@media screen and (min-width:1100px) and (max-width:1199px){
+	.fill {
+    width: 45%!important;
+}
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+   
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+	.custom-container {
+    padding: 0 0px !important;
+}
+}
+
+
 /*Smartphone*/
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 500px) {
     #sectioncategorie li {
         display: block;
         float: none;
@@ -16,7 +61,7 @@
 }
 
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
     #sectioncategorie {
         border-bottom: 0;
     }
@@ -68,6 +113,13 @@
     }
 }
 
+@media screen and (min-width:990px) and (max-width:1199px){
+	.searchbox {
+    margin-top: -48px ! important;
+    margin-left: 106px ! important;
+    width: 89% ! important;
+}
+}
 
 
 /*Styles for screen 700px > 1000*/
@@ -84,9 +136,9 @@
         margin-top: -20px;
     }
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
     .custom-container {
-        padding: 0 10px !important;
+        padding: 0 5px !important;
     }
 	.panel-default > .panel-heading a {
 
@@ -109,14 +161,7 @@
 }
  }
 
- @media only screen and (max-width:950px) {
-	 .fill {
-
-width: 100% ! important;
-margin-top: 0 ! important;
-}
- }
-
+ 
 @media only screen and (min-width: 1000px) and (max-width:1050px) {
 	.header-search-box form input[type="text1"] {
     min-width: 265px ! important;
@@ -124,14 +169,19 @@ margin-top: 0 ! important;
 }
 }
 
+@media (max-width: 1024px){
+			.custom-pg {
+   padding: 5px 0px 10px 0px !important;
+}
+
+}
+
+
 @media (max-width: 768px) {
 	.titlebuy {
     color: #d70506;
     padding-left: 0 !important;
     text-align: center !important;
-}
-		.custom-pg {
-    padding: 5px 5px 10px 5px  !important;
 }
 
 	.custom-container {
@@ -167,6 +217,9 @@ padding-left: 20px  !important;
         text-align: justify; 
     }
 }
+
+
+
 /* Style pour desktop */
 @media (min-width: 992px) {
       .text-left-md, 
@@ -656,11 +709,14 @@ padding: 0px 0 23px 15px  !important;
 }
 }
 
-
-@media only screen and (max-width : 768px ){
-	.custom-pg {
+@media only screen and (max-width:1024px){
+		.custom-pg {
     padding: 5px 5px 10px 5px  !important;
 }
+
+}
+
+@media only screen and (max-width : 768px ){
 
 	.Fraisservice {
     padding: 15px  !important;
