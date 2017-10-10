@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./img/logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/mediaqueries.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Tapakila.js"></script>
+</head>
+
+<body>
+    <!-- header start -->
+    <nav id="background" class="navbar navbar-default navbar-static-top ">
+        <div class="container custom-container ">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/logo.png" title="leguichet">
+                </a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="margin-left: 10px;">
+                        <div class="panier-header"><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></div>
+                    </li>
+
+                    <li><a href="panier.html">Panier</a></li>
+                    <li role="presentation" class="dropdown connexion">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a>
+                        <ul class="dropdown-menu " id="menu3" aria-labelledby="drop6">
+                            <a href="connexion.html">
+                                <li class="conexion">Se connecter</li>
+                            </a>
+                            <a href="connexion.html">
+                                <li class="conexion">S'inscrire</li>
+                            </a>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-md-6  col-md-offsset-4">
+                        <div id="custom-search-input">
+                            <div class="input-group col-md-12 searchbox">
+                                <input type="text" class="form-control input-lg" placeholder="Rechercher..." />
+                                <span class="input-group-btn">
+                        <button class="btn btn-info1 btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <!-- header end -->
+
+    <!-- section navigation start -->
+    <section id="sectioncategorie" class="clearfix">
+        <div class="container custom-container">
+            <ul class="clearfix">
+                <li><a href="categorie.html">TOUS</a></li>
+                <li><a href="categorie.html">CONCERTS</a></li>
+                <li><a href="categorie.html">CABARET</a></li>
+                <li><a href="categorie.html">SPORTS</a></li>
+                <li><a href="categorie.html">SOIREES</a></li>
+                <li><a href="categorie.html">DANSES</a></li>
+                <li><a href="categorie.html">FESTIVAL</a></li>
+                <li><a href="categorie.html">CINEMA</a></li>
+                <li><a href="categorie.html">JEUX</a></li>
+            </ul>
+            <a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
+        </div>
+    </section>
+
+    <section id="sectionevenement" role="navigation">
+        <div class="container custom-container">
+            <ul>
+                <li><a href="categorie.html">Concerts</a></li>
+                <li><a href="categorie.html">Karaoke</a></li>
+                <li><a href="categorie.html">Cabaret</a></li>
+                <li><a href="categorie.html">Foot</a></li>
+                <li><a href="categorie.html">Basket-ball</a></li>
+                <li><a href="categorie.html">Natations</a></li>
+                <li><a href="categorie.html">DJs</a></li>
+                <li><a href="categorie.html">Loung</a></li>
+                <li><a href="categorie.html">Discotheque</a></li>
+                <li><a href="categorie.html">Aerobic</a></li>
+                <li><a href="categorie.html">Zumba</a></li>
+                <li><a href="categorie.html">St Valentin</a></li>
+                <li><a href="categorie.html">26 Juin</a></li>
+                <li><a href="categorie.html">Animations</a></li>
+                <li><a href="categorie.html">Oktoberfest</a></li>
+                <li><a href="categorie.html">Jazz</a></li>
+                <li><a href="categorie.html">Orchestre</a></li>
+                <li><a href="categorie.html">Exposition</a></li>
+                <li><a href="categorie.html">Projections</a></li>
+                <li><a href="categorie.html">Excursions</a></li>
+                <li><a href="categorie.html">Loisirs</a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- section navigation end -->
+    <section>
+        <div class="container custom-container">
+            <div class="compte-bg">
+                <div class="Modifcompte2"></div>
+					<div class="row row-custom position-custom">
+						<div class="col-md-5">
+							<div class="row">
+								<div class="col-md-4 text-center-md text-center-lg text-center-xs text-center-sm ">
+									<img src="img/usercircle.png" id="sary" class="postion">
+								</div>
+								<div class="col-md-8 text-left-md text-left-lg text-center-xs text-center-sm">
+									<label class="pseudoname">Hasina</label><br>
+									<p><i class="fa fa-envelope fenalope" aria-hidden="true"></i>trusty@gmail.com</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 text-right-md text-right-lg text-center-xs text-center-sm ">
+							<a class="modifinfo" href="#">Modifier mes Information</a>
+						</div>
+					</div>
+					
+					<div class="padding-custom">
+					
+						<ul class="nav nav-tabs nav-tabs2 faqtp col-md-12 text-center-xs">
+							<li class="active tex-"><a href="#VP" data-toggle="tab"><b>Mes Ventes passés</b></a></li>
+							<li><a href="#VA" data-toggle="tab"><b>Mes ventes Actuel</b></a></li>
+							<li><a href="#AP" data-toggle="tab"><b>Mes achat passés</b></a></li>
+							<li><a href="#AA" data-toggle="tab"><b>Mes achats Actuels</b></a></li>
+						</ul>
+						
+						<!-- test -->
+						
+						<!-- test -->
+						
+						<div class="tab-content">
+							<div class="tab-pane tabulation  fade active in" id="VP">
+								<table class="tabl-content">
+									<thead>
+										<tr>
+											<th scope="col" class="th_panier "><b class="bold">Evènement</b></th>
+											<th scope="col"><b class="bold">Tickets</b></th>
+											<th scope="col"><b class="bold">Date</b></th>
+											<th scope="col"><b class="bold">Prix Unitaire</b></th>
+											<th scope="col"><b class="bold"></b></th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td  data-label="">
+												<div class="thumbnail imgpaiment">
+													<img src="img/danse.jpg" class="image_panier">
+												</div>
+											</td>	
+											<td data-label="Tickets">VIP<br>STANDARD</br></td>
+											<td data-label="Quantité">02/10/17</td>
+											<td data-label="Prix">16.000 AR</td>
+											<td data-label=""><p><a href="#" alt="Supprimer" class="rapport">Rapport</a></p></td>
+										</tr>
+									   <tr>
+											<td  data-label="">
+												<div class="thumbnail imgpaiment">
+													<img src="img/danse.jpg" class="image_panier">
+												</div>
+											</td>	
+											<td data-label="Tickets">VIP<br></td>
+											<td data-label="Quantité">02/10/17</td>
+											<td data-label="Prix">16.000 AR</td>
+											<td data-label=""><p><a href="#" alt="Supprimer" class="rapport">Rapport</a></p></td>
+										</tr>
+										<tr>
+											<td  data-label="">
+												<div class="thumbnail imgpaiment">
+													<img src="img/danse.jpg" class="image_panier">
+												</div>
+											</td>	
+											<td data-label="Tickets">VIP</td>
+											<td data-label="Quantité">02/10/17</td>
+											<td data-label="Prix">16.000 AR</td>
+											<td data-label=""><p><a href="#" alt="Supprimer" class="rapport">Rapport</a></p></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							
+							<div class="tab-pane tabulation fade" id="VA">
+								<div id="2" role="tablist" aria-multiselectable="true" class="panel-group">
+									<table class="tabl-content">
+									<thead>
+										<tr>
+											<th scope="col" class="th_panier "><b class="bold">Evènement</b></th>
+											<th scope="col"><b class="bold">Tickets</b></th>
+											<th scope="col"><b class="bold">Date</b></th>
+											<th scope="col"><b class="bold">Prix Unitaire</b></th>
+											<th scope="col"><b class="bold"></b></th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td  data-label="">
+												<div class="thumbnail imgpaiment">
+													<img src="img/danse.jpg" class="image_panier">
+												</div>
+											</td>	
+											<td data-label="Tickets">VIP<br>STANDARD</br></td>
+											<td data-label="Quantité">02/10/17</td>
+											<td data-label="Prix">16.000 AR</td>
+											<td data-label=""><p><a href="#" alt="Supprimer" class="rapport">Rapport</a></p></td>
+										</tr>
+									   <tr>
+											<td  data-label="">
+												<div class="thumbnail imgpaiment">
+													<img src="img/danse.jpg" class="image_panier">
+												</div>
+											</td>	
+											<td data-label="Tickets">VIP<br></td>
+											<td data-label="Quantité">02/10/17</td>
+											<td data-label="Prix">16.000 AR</td>
+											<td data-label=""><p><a href="#" alt="Supprimer" class="rapport">Rapport</a></p></td>
+										</tr>
+										<tr>
+											<td  data-label="">
+												<div class="thumbnail imgpaiment">
+													<img src="img/danse.jpg" class="image_panier">
+												</div>
+											</td>	
+											<td data-label="Tickets">VIP</td>
+											<td data-label="Quantité">02/10/17</td>
+											<td data-label="Prix">16.000 AR</td>
+											<td data-label=""><p><a href="#" alt="Supprimer" class="rapport">Rapport</a></p></td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+							</div>
+							
+							<div class="tab-pane tabulation fade" id="AP">
+								<div id="3" role="tablist" aria-multiselectable="true" class="panel-group">
+									<table class="tabl-content">
+									<thead>
+										<tr>
+											<th scope="col" class="th_panier "><b class="bold">Evènement</b></th>
+											<th scope="col"><b class="bold">Tickets</b></th>
+											<th scope="col"><b class="bold">Date</b></th>
+											<th scope="col"><b class="bold">Prix Unitaire</b></th>
+											<th scope="col"><b class="bold"></b></th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td  data-label="">
+												<div class="thumbnail imgpaiment">
+													<img src="img/danse.jpg" class="image_panier">
+												</div>
+											</td>	
+											<td data-label="Tickets">VIP<br>STANDARD</br></td>
+											<td data-label="Quantité">02/10/17</td>
+											<td data-label="Prix">16.000 AR</td>
+											<td data-label=""><p><a href="#" alt="Supprimer" class="rapport">Rapport</a></p></td>
+										</tr>
+									   <tr>
+											<td  data-label="">
+												<div class="thumbnail imgpaiment">
+													<img src="img/danse.jpg" class="image_panier">
+												</div>
+											</td>	
+											<td data-label="Tickets">VIP<br></td>
+											<td data-label="Quantité">02/10/17</td>
+											<td data-label="Prix">16.000 AR</td>
+											<td data-label=""><p><a href="#" alt="Supprimer" class="rapport">Rapport</a></p></td>
+										</tr>
+										<tr>
+											<td  data-label="">
+												<div class="thumbnail imgpaiment">
+													<img src="img/danse.jpg" class="image_panier">
+												</div>
+											</td>	
+											<td data-label="Tickets">VIP</td>
+											<td data-label="Quantité">02/10/17</td>
+											<td data-label="Prix">16.000 AR</td>
+											<td data-label=""><p><a href="#" alt="Supprimer" class="rapport">Rapport</a></p></td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+							</div>
+							
+							<div class="tab-pane tabulation fade" id="AA">
+								<div id="4" role="tablist" aria-multiselectable="true" class="panel-group">
+									<table class="tabl-content">
+									<thead>
+										<tr>
+											<th scope="col" class="th_panier "><b class="bold">Evènement</b></th>
+											<th scope="col"><b class="bold">Tickets</b></th>
+											<th scope="col"><b class="bold">Date</b></th>
+											<th scope="col"><b class="bold">Prix Unitaire</b></th>
+											<th scope="col"><b class="bold"></b></th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td  data-label="">
+												<div class="thumbnail imgpaiment">
+													<img src="img/danse.jpg" class="image_panier">
+												</div>
+											</td>	
+											<td data-label="Tickets">VIP<br>STANDARD</br></td>
+											<td data-label="Quantité">02/10/17</td>
+											<td data-label="Prix">16.000 AR</td>
+											<td data-label=""><p><a href="#" alt="Supprimer" class="rapport">Rapport</a></p></td>
+										</tr>
+									   <tr>
+											<td  data-label="">
+												<div class="thumbnail imgpaiment">
+													<img src="img/danse.jpg" class="image_panier">
+												</div>
+											</td>	
+											<td data-label="Tickets">VIP<br></td>
+											<td data-label="Quantité">02/10/17</td>
+											<td data-label="Prix">16.000 AR</td>
+											<td data-label=""><p><a href="#" alt="Supprimer" class="rapport">Rapport</a></p></td>
+										</tr>
+										<tr>
+											<td  data-label="">
+												<div class="thumbnail imgpaiment">
+													<img src="img/danse.jpg" class="image_panier">
+												</div>
+											</td>	
+											<td data-label="Tickets">VIP</td>
+											<td data-label="Quantité">02/10/17</td>
+											<td data-label="Prix">16.000 AR</td>
+											<td data-label=""><p><a href="#" alt="Supprimer" class="rapport">Rapport</a></p></td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+							</div>
+						</div>
+					</div>
+		</div>
+    </section>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-6">
+                        <img class="footer-logo" alt="tapakila" src="./img/logo.png">
+                        <p class="small custom">
+                            By Tapakila.mg
+                            <br> IIB 63 Mahamasina
+                            <br> Antananarivo
+                            <br> Madagascar
+                            <br> +33 12 901432
+                            <br>
+                            <a href="mailto:contact@tapakila.mg">contact@tapakila.mg</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong>Acheter des tickets</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="Acheteur.html">Comment acheter</a></li>
+                            <li><a href="service-clientele.html">Foire aux questions</a></li>
+                            <li><a href="termservice.html">Conditions d'utilisation</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <p class="titled"><strong>Organisateurs</strong></p>
+                        <ul class="list-unstyled">
+                            <li><a href="organisateur.html">Pour les Organisateurs</a></li>
+                            <li><a href="connexion.html">S'enregistrer</a></li>
+                            <li><a href="connexion.html">Connexion</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2 col-xs-6 ">
+                        <a class="fb-link-icon" href="https://www.facebook.com/tapakila/" target="_blank"><i class="fa fa-facebook-square facebookico" aria-hidden="true"></i></a>
+                        <div id="fb-root"></div>
+                        <div class="fb-like" data-href="https://www.facebook.com/tapakila/" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-colorscheme="dark" data-share="false"></div>
+
+                    </div>
+                </div>
+                <!-- row -->
+            </div>
+            <!-- container -->
+        </div>
+        <div class="footer-bottom">
+            <div class="container custom-container small">
+                <ul>
+                    <li><a href="aboutus.html">A propos de nous</a></li>|
+                    <li><a href="contactpage.html">Contact</a></li>|
+                    <li><a href="createevent">Ajouter votre evenement</a></li>|
+                    <li><a href="#">Publicite</a></li>|
+                    <li><a href="service-clientele.html">FAQ</a></li>|
+                    <li><a href="#">Vie privee</a></li>|
+                </ul>
+                <p>Copyright &copy Tapakila 2017</p>
+            </div>
+        </div>
+
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+</html>

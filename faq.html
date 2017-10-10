@@ -131,13 +131,14 @@
                 <div class="mimi">
                     <h3>Questions les + fréquentes</h3>
                 </div>
-                <ul class="nav nav-tabs nav-tabs2 faqtp">
-                    <li class="active ">
-                        <a href="#acheteur" data-toggle="tab"><b>ACHETEURS </b></a>
-                    </li>
-                    <li><a href="#vendeur" data-toggle="tab"><b>VENDEURS</b></a>
-                    </li>
-                </ul>
+				<div class="row">
+				
+					<ul class="nav nav-tabs nav-tabs2 faqtp">
+						<li class="active "><a href="#acheteur" data-toggle="tab"><b>ACHETEURS </b></a></li>
+						<li><a href="#vendeur" data-toggle="tab"><b>VENDEURS</b></a></li>
+					</ul>
+				
+				</div>
                 <div class="content-custom">
                     <div class="tab-content">
                         <div class="tab-pane tabulation  fade active in" id="acheteur">
@@ -1134,7 +1135,7 @@
         </div>
 
         </div>
-leguichet
+
         <!-- End Page -->
 
     </section>
@@ -1494,6 +1495,17 @@ leguichet
             }
         }
     </script>	
+	
+	<script type="text/javascript">
+        function accord30() {
+            if ($('#demo30').hasClass('hidden')) {
+                $('#demo30').removeClass('hidden');
+            } else {
+                $('#demo30').addClass('hidden');
+            }
+        }
+    </script>	
+	
 	<script type="text/javascript">
         function accord31() {
             if ($('#demo31').hasClass('hidden')) {
@@ -1549,7 +1561,7 @@ leguichet
         }
     </script>
 	<script type="text/javascript">
-        function accord31() {
+        function accord37() {
             if ($('#demo37').hasClass('hidden')) {
                 $('#demo37').removeClass('hidden');
             } else {
