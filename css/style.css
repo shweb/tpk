@@ -1985,13 +1985,16 @@ margin-bottom:10px;
     background-color: #d70506;
     border: none;
     padding: 9px;
+	color:#fff;
 }
+
 .bt_panier:hovers {
     width: 135px;
     font-size: 16px;
     background-color: #d70506;
     border: none;
     padding: 9px;
+	color:#fff;
 }
 
 .commandy {
