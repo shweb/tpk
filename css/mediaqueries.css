@@ -1,6 +1,37 @@
 /* team trustylabs */
 /* text-align by trustylabs */
 /* text-align-xs */
+@media (min-width:675px) and (max-width:750px){
+	ul.tabs li {
+    font-size: 16px ! important;
+	}
+}
+
+@media screen and (max-width: 675px) {
+	.tabs {
+		display: none;
+	}
+	.tab_drawer_heading {
+		background-color:  #d70506;
+		color: #fff;
+		border-top: 1px solid #fff;
+		margin: 0;
+		padding: 10px 0px 14px 12px;
+		display: block;
+		cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		margin-bottom: 3px;
+	}
+	.d_active {
+		background-color:  #d70506;
+		color: #fff;
+	}
+}
 @media (max-width: 767px) { 
 .text-left-xs {text-align: left;}
 .text-center-xs {text-align: center;}
