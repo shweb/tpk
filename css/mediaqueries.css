@@ -306,7 +306,7 @@ margin: 0 0 30px 0;
 
 @media only screen and (max-width: 320px) {
 .panel-default > .panel-heading a {
-padding: 0px 0 19px 15px !important;
+    padding: 0px 0 20px 15px !important;
 }
 .panel-default .panel-heading + .panel-collapse .panel-body p {
 padding-left: 0 !important;
