@@ -7,6 +7,13 @@
 	}
 }
 
+
+@media screen and (min-width:601px) and (max-width:1023px){
+	.th_panier {
+    width: 150px !important;
+}
+}
+
 @media screen and (max-width: 675px) {
 	.tabs {
 		display: none;
@@ -400,9 +407,9 @@ padding: 5px 0px 10px 0px !important;
 
 @media screen and (min-width:601px) and  (max-width:1199px) {
 .sor {
-margin-top: 40px !important;
-text-align: -moz-center !important;
-margin-left: 40px !important;
+    margin-top: 25px !important;
+    text-align: -moz-center !important;
+    margin-left: 30px !important;
 }
 }
 
@@ -643,6 +650,7 @@ padding: 0px;
 text-align: center;
 }
 }
+
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
 .tabl li .active a {

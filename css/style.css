@@ -3,6 +3,13 @@
  /* #5cb85c : vert */
  /* #d70506;rouge */
  
+ 
+ @media screen and (min-width:601px) and (max-width:1023px){
+	.th_panier {
+    width: 150px !important;
+				}
+}
+
 ul.tabs {
    margin: 0 10px 10px 21px;
 padding: 0 0 0 21px;
@@ -3573,7 +3580,7 @@ div.tests .number-spinner .test2 .test3 {
     border-bottom:1px solid #ddd !important;
 }
 .custom-pg {
-    padding: 10px 87px 10px 85px;
+    padding: 10px 70px 10px 70px;
 }
 
 /* FAQ */
