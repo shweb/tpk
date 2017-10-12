@@ -108,7 +108,7 @@ padding: 0 0px !important;
 
 @media screen and (max-width:999px){
 .modifinfo{
-color:black !important;
+color:#5cb85c  !important;
 text-align:center !important;
 }
 .pseudoname{
