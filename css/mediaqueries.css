@@ -645,9 +645,6 @@ text-align: center;
 }
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
-.panel-default > .panel-heading a {
-padding: 0px 0 23px 15px !important;
-}
 .tabl li .active a {
 background-color: #d70506 !important;
 border: none !important;
