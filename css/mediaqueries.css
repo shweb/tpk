@@ -234,6 +234,12 @@ border-bottom: 0;
 }
 }
 
+/* @media screen and (min-width:1001px) and (max-width:1199px) { */
+	/* #sectioncategorie { */
+    /* height: 79px ! important; */
+	/* } */
+/* } */
+
 @media screen and (max-width: 767px) {
 table caption {
 border-bottom: 1px solid #ddd;
@@ -362,9 +368,9 @@ width: 89% ! important;
 
 /*Styles for screen 700px > 1000*/
 
-@media screen and (min-width:500px) and (max-width: 1000px) {
+@media screen and (min-width:500px) and (max-width: 991px) {
 #sectioncategorie {
-height: 100px;
+height: 90px;
 width: 100%;
 background: #ffffffe6;
 font-size: 11pt;

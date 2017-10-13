@@ -2,7 +2,11 @@
  /* code couleur  */
  /* #5cb85c : vert */
  /* #d70506;rouge */
- .mini-submenu{
+ 
+ 
+ 
+ 
+.mini-submenu{
   display:none;  
   background-color: rgba(0, 0, 0, 0);  
   border: 1px solid rgba(0, 0, 0, 0.9);
@@ -1809,7 +1813,7 @@ div.calendar p {
 #sectioncategorie a {
     color: #b91027;
     display: inline-block;
-    width: 100px;
+    width: 95px;
     text-align: center;
     text-decoration: none;
     line-height: 40px;
@@ -3510,7 +3514,7 @@ div.tests .number-spinner .test2 .test3 {
 #ticket-radio2 .button {
     color: #000000;
     text-align: left;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
     font-family: RobotoBold,
     sans-serif;
