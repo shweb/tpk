@@ -10,7 +10,12 @@
 
 @media screen and (min-width:601px) and (max-width:1023px){
 	.th_panier {
-    width: 150px !important;
+    width: 187px !important;
+}
+}
+@media screen and (min-width:1024px) and (max-width:1035px){
+	.th_panier {
+    width: 210px !important;
 }
 }
 
@@ -240,6 +245,19 @@ border-bottom: 0;
 	/* } */
 /* } */
 
+@media only screen (max-width:600px) {
+	.th_panier {
+		width: 220px !important;
+	}
+}
+
+
+@media screen (max-width:550px;){
+	.th_panier {
+		width: 200px ! important;
+	}
+}
+
 @media screen and (max-width: 767px) {
 table caption {
 border-bottom: 1px solid #ddd;
@@ -312,7 +330,7 @@ margin: 0 0 30px 0;
 
 @media only screen and (max-width: 320px) {
 .panel-default > .panel-heading a {
-    padding: 0px 0 20px 15px !important;
+    padding: 0px 0 20px 18px !important;
 }
 .panel-default .panel-heading + .panel-collapse .panel-body p {
 padding-left: 0 !important;
@@ -1063,9 +1081,11 @@ margin-left: 18px;
 .col_bout {
 text-align: center;
 }
+
 }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	
 /* Styles */
 .connexion {
 clear: both;
@@ -1073,6 +1093,7 @@ clear: both;
 }
 /* iPad 3 (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	
 /* Styles */
 .connexion {
 clear: both;
@@ -1080,6 +1101,7 @@ clear: both;
 }
 /* iPad 3 (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	
 /* Styles */
 .connexion {
 clear: both;
