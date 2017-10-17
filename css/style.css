@@ -3429,7 +3429,7 @@ div.tests .number-spinner .test2 .test3 {
     padding:0 ! important;
     margin-bottom: 0 ! important;
     margin-top: 13px;
-    min-width: 115%;
+    min-width: 100%;
 }
 
 .check {
@@ -3717,9 +3717,13 @@ padding: 10px 52px 10px 52px;
     font-size: 16px;
     color: inherit;
 }
+/* .vos{
+    font-size: 13px !important;
+    font-weight:bold;
+} */
 .panel-default>.panel-heading a {
-    font-size: 14px;
-    font-size: 1.4rem;
+    font-size: 13px;
+   
     color: #333333;
     font-weight: 700;
     display: block;
