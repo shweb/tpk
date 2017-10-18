@@ -90,8 +90,8 @@
                 <li><a href="categorie.html">SOIREES</a></li>
                 <li><a href="categorie.html">FESTIVAL</a></li>
                 <li><a href="categorie.html">DANSES</a></li>
-                <li><a href="categorie.html">JEUX </a></li>
-                <li><a href="categorie.html">CINEMA</a></li>
+                <li><a href="categorie.html">CINEMA </a></li>
+                <li><a href="categorie.html">JEUX</a></li>
             </ul>
             <a href="#" class="menupull" id="pull"><strong>Catégories</strong></a>
         </div>
@@ -150,7 +150,7 @@
 
             <!-- detail end -->
             <div class="row">
-                <div class="col-lg-9 col-sm-9">
+                <div class="col-lg-9 col-sm-9  col-xs-10">
                     <div id="div_details">
                         <form method="POST" action="#">
                             <div class="panel panel-content">
@@ -1259,8 +1259,9 @@
                 </div>
 
                 <!-- menu droit start -->
-                <div class="col-lg-3 col-sm-3 creat">
-                    <ul class="navtab">
+                <div class="col-lg-3 col-sm-3 col-xs-2 creat">
+                        <a href="#menu" class="myDiv" id="toggle"><span></span></a>
+                    <ul class="navtab" id="menu">
                         <li class="categorimenu"><strong>Achats</strong></li>
                         <li><a id="a_rapport" onClick="changePage('div_rapport', 'a_rapport')">Rapports</a></li>
                         <li><a id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')">Commandes</a></li>
@@ -1392,7 +1393,7 @@
         });
     </script>
 
-    <!--Script de l'image------------->
+    <!- -Script de l'image------------->
 
     <script>
         var output = document.getElementById('output');
@@ -1513,6 +1514,53 @@
                 reader.readAsDataURL(file);
             });
         });
+    </script>
+    <script>
+    var theToggle = document.getElementById('toggle');
+
+// based on Todd Motto functions
+// https://toddmotto.com/labs/reusable-js/
+
+// hasClass
+function hasClass(elem, className) {
+	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+}
+// addClass
+function addClass(elem, className) {
+    if (!hasClass(elem, className)) {
+    	elem.className += ' ' + className;
+    }
+}
+// removeClass
+function removeClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+	if (hasClass(elem, className)) {
+        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+            newClass = newClass.replace(' ' + className + ' ', ' ');
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    }
+}
+// toggleClass
+function toggleClass(elem, className) {
+	var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+    if (hasClass(elem, className)) {
+        while (newClass.indexOf(" " + className + " ") >= 0 ) {
+            newClass = newClass.replace( " " + className + " " , " " );
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    } else {
+        elem.className += ' ' + className;
+    }
+}
+
+theToggle.onclick = function() {
+   toggleClass(this, 'on');
+   return false;
+}
+$(document).scroll(function(){
+     $('.myDiv').toggleClass('scrolled', $(this).scrollTop() > 50);
+ });
     </script>
 
 </body>
