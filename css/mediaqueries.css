@@ -50,7 +50,12 @@
 .text-right-xs {text-align: right;}
 .text-justify-xs {text-align: justify;}
 }
-
+@media screen and (min-width:1020px) and (max-width:1050px){
+	.sec {
+		margin-top: 22px;
+		padding-right: 0px ! important;
+	}
+}
 /* text-align-sm */
 @media (min-width: 768px) and (max-width: 991px) { 
 .text-left-sm {text-align: left;}
@@ -98,8 +103,12 @@ width: 45%!important;
 		padding-top: 28px;
 		padding-bottom: 36px;
 	}
+	.iio {
+		margin-left: 0px;
+	}
 	.sec{
 		text-align: center;
+		padding-right: 2px;
 	}
 	.fi{
 		text-align: center;
@@ -477,7 +486,6 @@ padding-left: 0 !important;
 padding-right: 20px !important;
 padding-left: 20px !important;
 }
-
 
 
 @media only screen and (min-device-width: 350px) and (max-device-width: 480px) {
@@ -903,6 +911,10 @@ padding: 5px 5px 10px 5px !important;
 .Fraisservice {
 padding: 15px !important;
 }
+.sec {
+    margin-top: 22px;
+    padding-right: 2px;
+}
 .tright {
 margin-right: 11px !important;
 margin-left: 0 !important;
@@ -1106,11 +1118,17 @@ text-align: center;
 }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-	
+
 /* Styles */
 .connexion {
 clear: both;
 }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2){
+	.sec {
+		margin-top: 22px;
+		padding-right: 2px;
+	}
 }
 /* iPad 3 (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
@@ -1128,6 +1146,8 @@ clear: both;
 clear: both;
 }
 }
+
+
 /* iPhone 4 (landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
 .panel-default > .panel-heading a {
