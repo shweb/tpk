@@ -898,7 +898,7 @@ button.nonpublier:hover:visited:focus {
 .select {
     background-color: white;
     color: red !important;
-    width: 92%;
+    width: 100%;
     padding-right: 10px;
 }
 .creat{
@@ -1463,6 +1463,9 @@ html|* > svg {
     margin-top: 0px;
     padding-top: 28px;
     padding-bottom: 36px;
+}
+.row_creat{
+    text-align: center;
 }
 
 .primary {
