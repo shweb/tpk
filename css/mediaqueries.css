@@ -98,6 +98,12 @@ width: 45%!important;
 		padding-top: 28px;
 		padding-bottom: 36px;
 	}
+	.sec{
+		text-align: center;
+	}
+	.fi{
+		text-align: center;
+	}
 .navbar-header {
 float: none;
 }
