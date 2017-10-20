@@ -83,6 +83,21 @@ width: 45%!important;
 }
 
 @media (max-width: 768px) {
+	.com_contenu_type {
+		background-color: white;
+		padding-left: 16px;
+		padding-right: 16px;
+		margin-top: 41px;
+		padding-top: 28px;
+		padding-bottom: 36px;
+	}
+	.com_contenu {
+		padding-left: 16px;
+		padding-right: 16px;
+		margin-top: 18px;
+		padding-top: 28px;
+		padding-bottom: 36px;
+	}
 .navbar-header {
 float: none;
 }

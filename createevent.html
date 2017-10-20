@@ -129,10 +129,8 @@
     <section id="detail">
         <div class="container custom-container">
             <div class="page-menu row">
-                <div class="col-md-9">
-                    <h1>Créér un évènement</h1>
-                </div>
-                <div class="col-md-3">
+               
+                <div class="col-md-3 sec">
                     <div class="btn-group margin-bottom-5">
                         <div class="btn-group" role="group">
                             <button type="button" class="btn btn-sm nonpublier dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -146,11 +144,31 @@
                     </div>
                     <a class="btn btn-sm btn-default btn-aperçu " href="#" target="_blank">Aperçu</a>
                 </div>
+                <div class="col-md-9">
+                        <h1>Créér un évènement</h1>
+                    </div>
             </div>
 
             <!-- detail end -->
             <div class="row">
-                <div class="col-lg-9 col-sm-9  col-xs-10">
+                    <div class="col-lg-3 col-sm-3 creat">
+                            
+                           <ul class="navtab">
+                               <li class="categorimenu"><strong>Achats</strong></li>
+                               <li><a id="a_rapport" onClick="changePage('div_rapport', 'a_rapport')">Rapports</a></li>
+                               <li><a id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')">Commandes</a></li>
+                               <li><a id="a_valideTicket" onClick="changePage('div_valideTicket', 'a_valideTicket')">Tickets Validés</a></li>
+                               <li class="categorimenu"><strong>Editer</strong></li>
+                               <li><a id="a_details" class="select" onClick="changePage('div_details', 'a_details')">Détails</a></li>
+                               <li><a id="a_type" onClick="changePage('div_type', 'a_type')">Types de Ticket  &amp; prix</a></li>
+                               <li><a id="a_siteweb" onClick="changePage('div_siteweb', 'a_siteweb')">Apparence du site</a></li>
+                               <li><a id="a_pdf" onClick="changePage('div_pdf', 'a_pdf')">PDF</a></li>
+                               <li><a id="a_cpersonalize" onClick="changePage('div_cpersonalize', 'a_cpersonalize')">Champs additioneles</a></li>
+                               <li class="categorimenu"><strong>Paramètre</strong></li>
+                               <li><a id="a_paiement" onClick="changePage('div_paiement', 'a_paiement')">Méthodes de payements</a></li>
+                           </ul>
+                       </div>
+                <div class="col-lg-9 col-sm-9 ">
                     <div id="div_details">
                         <form method="POST" action="#">
                             <div class="panel panel-content">
@@ -409,8 +427,9 @@
                     <!------------------------------------Commande-end--------------------------------------------------------------------------->
 
                     <!-- -----------------------------------rapport----------------------------------------------------------------------- -->
-
+                    
                     <div id="div_rapport" class="hide">
+                            <h2>Rapports</h2>
                         <div id="rapport">
 
                             <ul class="nav nav-tabs nav-tabs1">
@@ -1011,7 +1030,7 @@
 
                     <div id="div_cpersonalize" class="hide">
                         <div class="com_contenu_type1">
-                            <h2>Les champs personnalisés</h2>
+                            <h2>Les champs additioneles</h2>
                             <p>
                                 Par défaut, les clients sont invités à fournir une seule adresse électronique et un numéro de téléphone obligatoires. Ici, vous pouvez ajouter d'autres questions telles que le prénom, l'adresse etc.</p>
                         </div>
@@ -1035,8 +1054,8 @@
 
                     <div id="div_paiement" class="hide">
                         <div class="com_contenu_type1">
-                            <h2>Liens et cartes bancaires</h2>
-                            <div class="row">
+                            <h2>Le méthodes des paiements</h2>
+                            <!-- <div class="row">
                                 <div class="col-lg-6">
                                     <label class="control-label block">Liens et cartes bancaires activés</label>
                                     <div class="form-group">
@@ -1076,7 +1095,7 @@
 
                                 </div>
 
-                            </div>
+                            </div> -->
                         </div>
                         <div class="com_contenu_type2">
                             <div class="row">
@@ -1259,23 +1278,7 @@
                 </div>
 
                 <!-- menu droit start -->
-                <div class="col-lg-3 col-sm-3 col-xs-2 creat">
-                        <a href="#menu" class="myDiv" id="toggle"><span></span></a>
-                    <ul class="navtab" id="menu">
-                        <li class="categorimenu"><strong>Achats</strong></li>
-                        <li><a id="a_rapport" onClick="changePage('div_rapport', 'a_rapport')">Rapports</a></li>
-                        <li><a id="a_commandes" onClick="changePage('div_commandes', 'a_commandes')">Commandes</a></li>
-                        <li><a id="a_valideTicket" onClick="changePage('div_valideTicket', 'a_valideTicket')">Tickets Validés</a></li>
-                        <li class="categorimenu"><strong>Editer</strong></li>
-                        <li><a id="a_details" class="select" onClick="changePage('div_details', 'a_details')">Détails</a></li>
-                        <li><a id="a_type" onClick="changePage('div_type', 'a_type')">Types de Ticket  &amp; prix</a></li>
-                        <li><a id="a_siteweb" onClick="changePage('div_siteweb', 'a_siteweb')">Site web</a></li>
-                        <li><a id="a_pdf" onClick="changePage('div_pdf', 'a_pdf')">PDF</a></li>
-                        <li><a id="a_cpersonalize" onClick="changePage('div_cpersonalize', 'a_cpersonalize')">Champs additioneles</a></li>
-                        <li class="categorimenu"><strong>Paramètre</strong></li>
-                        <li><a id="a_paiement" onClick="changePage('div_paiement', 'a_paiement')">Méthodes de payements</a></li>
-                    </ul>
-                </div>
+                
 
             </div>
 
@@ -1367,6 +1370,10 @@
             document.getElementById("a_cpersonalize").className = "";
             document.getElementById("a_paiement").className = "";
             document.getElementById(aId).className = "select";
+            
+			if (screen.width <= 750) {
+				window.location.hash = id;
+			}
         }
     </script>
 
