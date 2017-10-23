@@ -2,7 +2,11 @@
  /* code couleur  */
  /* #5cb85c : vert */
  /* #d70506;rouge */
- .mini-submenu{
+ 
+ 
+ 
+ 
+.mini-submenu{
   display:none;  
   background-color: rgba(0, 0, 0, 0);  
   border: 1px solid rgba(0, 0, 0, 0.9);
@@ -16,7 +20,9 @@
 .mini-submenu:hover{
   cursor: pointer;
 }
-
+.iio{
+    margin-left: -12px;
+}
 .mini-submenu .icon-bar {
   border-radius: 1px;
   display: block;
@@ -709,6 +715,91 @@ fieldset[disabled] .form-control {
     opacity: 1;
 }
 
+
+/* Important styles */
+#toggle {
+    display: block;
+    width: 28px;
+    height: 30px;
+    margin: 30px auto 10px;
+  }
+  
+  #toggle span:after,
+  #toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
+  #toggle span:after{
+    top: 9px;
+  }
+  #toggle span {
+    position: relative;
+    display: block;
+  }
+  
+  #toggle span,
+  #toggle span:after,
+  #toggle span:before {
+    width: 100%;
+    height: 5px;
+    background-color: #888;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
+  
+  /* on activation */
+  #toggle.on span {
+    background-color: transparent;
+  }
+  #toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  #toggle.on + #menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* menu appearance*/
+  #menu {
+    position: relative;
+    color: #999;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+    /* just for this demo */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
+  }
+  #menu:after {
+    position: absolute;
+    top: -15px;
+    left: 95px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
+  }
+  .myDiv{position:relative;}
+  .scrolled { 
+     position:fixed;top:50px;
+  }
+/* blablblablablalb */
+
+
+
 .image-preview-input {
     position: relative;
     overflow: hidden;
@@ -759,7 +850,7 @@ fieldset[disabled] .form-control {
     text-decoration: none;
     list-style-type: none;
     color: #727171;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 ul {
@@ -807,8 +898,11 @@ button.nonpublier:hover:visited:focus {
 .select {
     background-color: white;
     color: red !important;
-    width: 85%;
+    width: 100%;
     padding-right: 10px;
+}
+.creat{
+    margin-top: -21px;
 }
 
 a:hover {
@@ -823,17 +917,19 @@ a:hover {
     cursor: pointer;
 }
 
-.select:before {
+.select:after {
     content: '';
     display: block;
     position: absolute;
-    right: 100%;
-    top: 0px;
+    left: 100%;
+    top: 0;
     border-top: 22px solid transparent;
     border-bottom: 22px solid transparent;
-    border-right: 23px solid white;
+    border-left: 18px solid white;
 }
-
+.sec{
+    margin-top: 22px;
+}
 .Confirme {
     padding: 17px 30px;
     background-color: #f5f5f5;
@@ -1306,7 +1402,7 @@ html|* > svg {
 .com_contenu {
     padding-left: 60px;
     padding-right: 60px;
-    margin-top: 18px;
+    margin-top: 0px;
     padding-top: 28px;
     padding-bottom: 36px;
 }
@@ -1346,6 +1442,15 @@ html|* > svg {
     padding-top: 15px;
     margin-bottom: 20px;
 }
+.com_contenu_type12{
+    background-color: white;
+    padding-left: 46px;
+    padding-right: 16px;
+    margin-top: 0px;
+    padding-top: 28px;
+    padding-bottom: 36px;
+    border-bottom: 2px solid #f5f5f5;
+}
 
 .menu_type {
     background-color: white !important;
@@ -1355,9 +1460,12 @@ html|* > svg {
     background-color: white;
     padding-left: 60px;
     padding-right: 60px;
-    margin-top: 41px;
+    margin-top: 0px;
     padding-top: 28px;
     padding-bottom: 36px;
+}
+.row_creat{
+    text-align: center;
 }
 
 .primary {
@@ -1809,7 +1917,7 @@ div.calendar p {
 #sectioncategorie a {
     color: #b91027;
     display: inline-block;
-    width: 100px;
+    width: 95px;
     text-align: center;
     text-decoration: none;
     line-height: 40px;
@@ -3425,7 +3533,7 @@ div.tests .number-spinner .test2 .test3 {
     padding:0 ! important;
     margin-bottom: 0 ! important;
     margin-top: 13px;
-    min-width: 115%;
+    min-width: 100%;
 }
 
 .check {
@@ -3510,7 +3618,7 @@ div.tests .number-spinner .test2 .test3 {
 #ticket-radio2 .button {
     color: #000000;
     text-align: left;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 20px;
     font-family: RobotoBold,
     sans-serif;
@@ -3596,7 +3704,7 @@ div.tests .number-spinner .test2 .test3 {
 
 .titlebuy {
     color:#d70506;
-    padding-left: 40px;
+    padding-left: 26px;
 }
 .TT {
     color:#d70506;
@@ -3713,9 +3821,10 @@ padding: 10px 52px 10px 52px;
     font-size: 16px;
     color: inherit;
 }
+
 .panel-default>.panel-heading a {
     font-size: 14px;
-    font-size: 1.4rem;
+   
     color: #333333;
     font-weight: 700;
     display: block;

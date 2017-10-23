@@ -10,7 +10,12 @@
 
 @media screen and (min-width:601px) and (max-width:1023px){
 	.th_panier {
-    width: 150px !important;
+    width: 187px !important;
+}
+}
+@media screen and (min-width:1024px) and (max-width:1035px){
+	.th_panier {
+    width: 210px !important;
 }
 }
 
@@ -45,7 +50,12 @@
 .text-right-xs {text-align: right;}
 .text-justify-xs {text-align: justify;}
 }
-
+@media screen and (min-width:1020px) and (max-width:1050px){
+	.sec {
+		margin-top: 22px;
+		padding-right: 0px ! important;
+	}
+}
 /* text-align-sm */
 @media (min-width: 768px) and (max-width: 991px) { 
 .text-left-sm {text-align: left;}
@@ -78,6 +88,49 @@ width: 45%!important;
 }
 
 @media (max-width: 768px) {
+	.com_contenu_type {
+		background-color: white;
+		padding-left: 16px;
+		padding-right: 16px;
+		margin-top: 41px;
+		padding-top: 28px;
+		padding-bottom: 36px;
+	}
+	.com_contenu {
+		padding-left: 16px;
+		padding-right: 16px;
+		margin-top: 18px;
+		padding-top: 28px;
+		padding-bottom: 36px;
+	}
+	.iio {
+		margin-left: 0px;
+	}
+	.sec{
+		text-align: center;
+		padding-right: 2px;
+	}
+	.fi{
+		text-align: center;
+	}
+	.com_contenu_type12 {
+		background-color: white;
+		padding-left: 11px;
+		padding-right: 16px;
+		margin-top: 0px;
+		padding-top: 28px;
+		padding-bottom: 36px;
+		border-bottom: 2px solid #f5f5f5;
+	}
+	.com_contenu_type2 {
+		background-color: white;
+		padding-left: 30px;
+		padding-right: 16px;
+		margin-top: 0px;
+		padding-top: 28px;
+		padding-bottom: 36px;
+		border-bottom: 2px solid #f5f5f5;
+	}
 .navbar-header {
 float: none;
 }
@@ -234,6 +287,25 @@ border-bottom: 0;
 }
 }
 
+/* @media screen and (min-width:1001px) and (max-width:1199px) { */
+	/* #sectioncategorie { */
+    /* height: 79px ! important; */
+	/* } */
+/* } */
+
+@media only screen (max-width:600px) {
+	.th_panier {
+		width: 220px !important;
+	}
+}
+
+
+@media screen (max-width:550px;){
+	.th_panier {
+		width: 200px ! important;
+	}
+}
+
 @media screen and (max-width: 767px) {
 table caption {
 border-bottom: 1px solid #ddd;
@@ -306,7 +378,7 @@ margin: 0 0 30px 0;
 
 @media only screen and (max-width: 320px) {
 .panel-default > .panel-heading a {
-    padding: 0px 0 20px 15px !important;
+    padding: 0px 0 20px 18px !important;
 }
 .panel-default .panel-heading + .panel-collapse .panel-body p {
 padding-left: 0 !important;
@@ -362,9 +434,9 @@ width: 89% ! important;
 
 /*Styles for screen 700px > 1000*/
 
-@media screen and (min-width:500px) and (max-width: 1000px) {
+@media screen and (min-width:500px) and (max-width: 991px) {
 #sectioncategorie {
-height: 100px;
+height: 90px;
 width: 100%;
 background: #ffffffe6;
 font-size: 11pt;
@@ -434,7 +506,6 @@ padding-left: 20px !important;
 }
 
 
-
 @media only screen and (min-device-width: 350px) and (max-device-width: 480px) {
 /* panier start */
 #custom-white > h1 {
@@ -496,7 +567,7 @@ padding-bottom: 36px;
 }
 .com_contenu_type2 {
 background-color: white;
-padding-left: 18px;
+padding-left: 30px;
 padding-right: 18px;
 margin-top: 40px;
 padding-top: 28px;
@@ -858,6 +929,10 @@ padding: 5px 5px 10px 5px !important;
 .Fraisservice {
 padding: 15px !important;
 }
+.sec {
+    margin-top: 22px;
+    padding-right: 2px;
+}
 .tright {
 margin-right: 11px !important;
 margin-left: 0 !important;
@@ -1057,16 +1132,25 @@ margin-left: 18px;
 .col_bout {
 text-align: center;
 }
+
 }
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
 /* Styles */
 .connexion {
 clear: both;
 }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2){
+	.sec {
+		margin-top: 22px;
+		padding-right: 2px;
+	}
+}
 /* iPad 3 (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	
 /* Styles */
 .connexion {
 clear: both;
@@ -1074,11 +1158,14 @@ clear: both;
 }
 /* iPad 3 (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	
 /* Styles */
 .connexion {
 clear: both;
 }
 }
+
+
 /* iPhone 4 (landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
 .panel-default > .panel-heading a {
@@ -1173,6 +1260,10 @@ clear: both;
 /* Samsung Galaxy S5 (landscape) ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
 /* Styles */
+.vos{
+    font-size: 13px !important;
+    font-weight:bold;
+}
 .connexion {
 clear: both;
 }
@@ -1180,6 +1271,10 @@ clear: both;
 /* Samsung Galaxy S5 (portrait) ----------- */
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
 /* Styles */
+.vos{
+    font-size: 13px !important;
+    font-weight:bold;
+}
 .connexion {
 clear: both;
 }
