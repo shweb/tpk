@@ -3678,6 +3678,26 @@ div.tests .number-spinner .test2 .test3 {
 .operateur {
     margin-right: 15px;
 }
+.che{
+    margin-top: 8px;
+}
+.che label input {
+    margin: 0 .15em 0 0;
+    padding: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+    top: -.1em;
+  }
+  
+  input[type="radio"], input[type="checkbox"] {
+    position: relative;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    font-size: 1em;
+    line-height: 1
+  }
 .spacing {
     border-bottom:2px solid #d70506;
     margin-bottom: 30px;
@@ -3896,3 +3916,4 @@ body.page:not(.woocommerce-page) p {
 .valt {
     padding-left: 20px;
 }
+
