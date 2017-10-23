@@ -3,8 +3,18 @@
  /* #5cb85c : vert */
  /* #d70506;rouge */
  
+ .btn-renvoye{
+	 color:#fff
+	 
+ }
  
- 
+ .ici{
+	color: #62b2eb;
+ }
+  .ici:hover{
+	color: #d70506;
+text-decoration: underline;
+ }
  
 .mini-submenu{
   display:none;  
