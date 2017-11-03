@@ -1,4 +1,14 @@
-﻿/* team trustylabs */
+﻿
+.btn span.glyphicon {    			
+	opacity: 0;				
+}
+.btn.active span.glyphicon {				
+	opacity: 1;				
+}
+
+
+
+/* team trustylabs */
  /* code couleur  */
  /* #5cb85c : vert */
  /* #d70506;rouge */
@@ -3934,3 +3944,60 @@ body.page:not(.woocommerce-page) p {
     padding-left: 20px;
 }
 
+
+
+/* questionsecrete */
+.bg-back-sustom{
+	margin-top: 50px;
+	background-color:white;
+	padding:10px 25px 25px 25px;
+}
+
+.quiz {
+	text-align:center;
+}
+.img-quiz {
+	width: 100%;
+}
+
+.separated{
+	width:100%
+}
+
+.ask1{
+margin-top:40px;
+text-align:center;
+}
+
+.ask2{
+margin-top:50px;
+text-align:center;
+}
+
+.answer1{
+margin-top:40px;	
+}
+
+.answer2{
+margin-top:35px;	
+}
+
+@media screen and (max-width:768px){
+	.ask1{
+margin-top:20px ! important;
+text-align:center;
+}
+
+.ask2{
+margin-top:20px ! important;
+text-align:center;
+}
+
+.answer1{
+margin-top:20px ! important;	
+}
+
+.answer2{
+margin-top:20px ! important;	
+}
+}
