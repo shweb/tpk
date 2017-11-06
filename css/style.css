@@ -1,4 +1,14 @@
-﻿/* team trustylabs */
+﻿
+.btn span.glyphicon {    			
+	opacity: 0;				
+}
+.btn.active span.glyphicon {				
+	opacity: 1;				
+}
+
+
+
+/* team trustylabs */
  /* code couleur  */
  /* #5cb85c : vert */
  /* #d70506;rouge */
@@ -933,13 +943,21 @@ a:hover {
     position: absolute;
     left: 100%;
     top: 0;
-    border-top: 22px solid transparent;
-    border-bottom: 22px solid transparent;
+ border-top: 21px solid transparent;
+border-bottom: 21px solid transparent;
     border-left: 18px solid white;
 }
 .sec{
     margin-top: 22px;
 }
+
+.nonpublier:hover {
+    background-color: #df3838;
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+}
+
 .Confirme {
     padding: 17px 30px;
     background-color: #f5f5f5;
@@ -2271,7 +2289,6 @@ margin-bottom:10px;
 
 .nav > li > a:focus, .nav > li > a:hover {
     text-decoration: none !important;
-    background-color: #fff !important;
 	color:black;
 }
 
@@ -3927,3 +3944,60 @@ body.page:not(.woocommerce-page) p {
     padding-left: 20px;
 }
 
+
+
+/* questionsecrete */
+.bg-back-sustom{
+	margin-top: 50px;
+	background-color:white;
+	padding:10px 25px 25px 25px;
+}
+
+.quiz {
+	text-align:center;
+}
+.img-quiz {
+	width: 100%;
+}
+
+.separated{
+	width:100%
+}
+
+.ask1{
+margin-top:40px;
+text-align:center;
+}
+
+.ask2{
+margin-top:50px;
+text-align:center;
+}
+
+.answer1{
+margin-top:40px;	
+}
+
+.answer2{
+margin-top:35px;	
+}
+
+@media screen and (max-width:768px){
+	.ask1{
+margin-top:20px ! important;
+text-align:center;
+}
+
+.ask2{
+margin-top:20px ! important;
+text-align:center;
+}
+
+.answer1{
+margin-top:20px ! important;	
+}
+
+.answer2{
+margin-top:20px ! important;	
+}
+}

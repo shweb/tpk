@@ -88,6 +88,13 @@ width: 45%!important;
 }
 
 @media (max-width: 768px) {
+	
+	.select::after {
+    border-top: 0px solid transparent ! important;
+    border-bottom: 0px solid transparent ! important;
+    border-left: 0px solid white ! important;;
+}
+
 	.com_contenu_type {
 		background-color: white;
 		padding-left: 16px;
