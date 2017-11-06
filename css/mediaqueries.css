@@ -948,6 +948,10 @@ padding: 15px !important;
     margin-top: 22px;
     padding-right: 2px;
 }
+.image_detail {
+    width: 617px;
+    height: 190px !important;
+}
 .tright {
 margin-right: 11px !important;
 margin-left: 0 !important;
