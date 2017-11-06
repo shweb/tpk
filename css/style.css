@@ -3421,11 +3421,24 @@ div.tests .number-spinner .test2 .test3 {
 #globcontent {
     background-color: white;
     margin-top: 30px;
-    padding: 20px 25px 20px 25px;
+    padding: 55px 25px 55px 25px;
+
+}
+.dia{
+    background-color: #d70506;
+    color: white;
+}
+#globcontent p{
+    font-size: 16px;
+    font-family: FreeMono, monospace;
 }
 .border-logo {
     width: 100%;
-    color: #b3b3b3;
+    color: #050505;
+}
+.mim{
+border-bottom: 1px solid black;
+padding-bottom: 2px;
 }
 .btnactive {
     background-color: #d70506;
