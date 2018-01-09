@@ -18,9 +18,9 @@
 </head>
 
 <body>
-    <!-- header start -->
-    <nav id="background" class="navbar navbar-default navbar-static-top">
-        <div class="container custom-container">
+   <!-- header start -->
+    <nav id="background" class="navbar navbar-default navbar-static-top ">
+        <div class="container custom-container ">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -33,15 +33,28 @@
                 </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
+
+                <ul class="nav navbar-nav ">
 
                     <li>
-                        <button type="" class="btn btn-success event"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></button>
+
+                        <div class="header-search-box hidden-xs">
+                            <form action="./page/recherche.html" method="get">
+                                <input type="text1" name="query" placeholder="Search..." autocomplete="off">
+                                <input type="submit" value="Search">
+                            </form>
+                        </div>
                     </li>
-                    <li><a href="#">Panier</a></li>
-                    <li role="presentation" class="dropdown">
+
+                    <li>
+                        <div class="panier-header"><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></div>
+                    </li>
+
+                    <li><a href="panier.html">Panier</a></li>
+
+                    <li role="presentation" class="dropdown hidden-lg hidden-md">
                         <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
-										<span class="caret"></span> </a>
+											<span class="caret"></span> </a>
                         <ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6">
                             <li>
                                 <form action="./page/recherche.html" method="get">
@@ -51,17 +64,28 @@
                             </li>
                         </ul>
                     </li>
-                    <li role="presentation" class="dropdown connexion">
 
-                        <a href="#" class="dropdown-toggle" id="drop7"> Connexion
-										<span class="caret"></span> </li></a>
+                    <li role="presentation" class="dropdown connexion">
+                        <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Connexion 
+												<span class="caret"></span> </a>
+                        <ul class="dropdown-menu " id="menu3" aria-labelledby="drop6">
+                            <a href="connexion.html">
+                                <li class="conexion">Se connecter</li>
+                            </a>
+                            <a href="connexion.html">
+                                <li class="conexion">S'inscrire</li>
+                            </a>
+                        </ul>
+                    </li>
+
                 </ul>
+
             </div>
         </div>
     </nav>
-
     <!-- header end -->
-    <!-------menu------->
+
+    <!-- section navigation start -->
     <section id="sectioncategorie" class="clearfix">
         <div class="container custom-container">
             <ul class="clearfix">
@@ -106,6 +130,7 @@
             </ul>
         </div>
     </section>
+    <!-- section navigation end -->
     <section>
         <div class="container custom-container">
             <div class="row performe">

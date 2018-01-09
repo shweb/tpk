@@ -18,7 +18,7 @@
 
 <body>
    <!-- header start -->
-    <nav id="background" class="navbar navbar-default navbar-static-top">
+       <nav id="background" class="navbar navbar-default navbar-static-top ">
         <div class="container custom-container ">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -32,11 +32,26 @@
                 </a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></li>
+
+                <ul class="nav navbar-nav ">
+
+                    <li>
+
+                        <div class="header-search-box hidden-xs">
+                            <form action="./page/recherche.html" method="get">
+                                <input type="text1" name="query" placeholder="Search..." autocomplete="off">
+                                <input type="submit" value="Search">
+                            </form>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="panier-header"><a href="createevent.html" class="btn btn-success event" role="button"><span class="ico"></span><span class="descr">AJOUTER<br/> VOTRE EVENEMENT</span></a></div>
+                    </li>
 
                     <li><a href="panier.html">Panier</a></li>
-                    <li role="presentation" class="dropdown">
+
+                    <li role="presentation" class="dropdown hidden-lg hidden-md">
                         <a href="#" class="dropdown-toggle" id="drop6" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Rechercher 
 											<span class="caret"></span> </a>
                         <ul class="dropdown-menu search" id="menu3" aria-labelledby="drop6">
